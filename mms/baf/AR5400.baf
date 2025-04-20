@@ -1,0 +1,7 @@
+IF
+	Global("MM#STO","MYAREA",0)
+THEN
+	RESPONSE #100
+		CreateCreature("MM#STO",[827.752],13)
+		SetGlobal("MM#STO","MYAREA",1)
+END

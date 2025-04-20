@@ -1,0 +1,478 @@
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	Die()
+THEN
+	RESPONSE #100
+		SetGlobal("MM#MEET","GLOBAL",5)
+END
+
+//最近的玩家隐形，开红外灯
+IF
+	!GlobalTimerNotExpired("inferred","locals")
+	Allegiance(Myself,EVILCUTOFF)
+	Detect([GOODCUTOFF])
+	OR(2)
+		!See(LastSeenBy(Myself))
+		StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("inferred","locals",ONE_ROUND)
+		ReallyForceSpellRES("MM#IRED",Myself)
+		DisplayStringHead(Myself,@182)
+		Continue()
+END
+
+//玩家在10呎外，炮击
+IF
+	!GlobalTimerNotExpired("fireinterval","locals")
+	Allegiance(Myself,EVILCUTOFF)
+	OR(2)
+		See(WeakestOf([GOODCUTOFF]))
+		See(MostDamagedOf([GOODCUTOFF]))
+	!Range(LastSeenBy(Myself),10)
+	!CheckStatGT(LastSeenBy(Myself),49,RESISTCRUSHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",LastSeenBy(Myself))
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",LastSeenBy(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("fireinterval","locals")
+	Allegiance(Myself,EVILCUTOFF)
+	OR(2)
+		See(WeakestOf([GOODCUTOFF]))
+		See(MostDamagedOf([GOODCUTOFF]))
+	!Range(LastSeenBy(Myself),10)
+	CheckStatGT(LastSeenBy(Myself),50,RESISTCRUSHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",LastSeenBy(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("fireinterval","locals")
+	Allegiance(Myself,EVILCUTOFF)
+	OR(5)
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!StateCheck(LastSeenBy(Myself),STATE_SILENCED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!Range(LastSeenBy(Myself),10)
+	!CheckStatGT(LastSeenBy(Myself),49,RESISTCRUSHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",LastSeenBy(Myself))
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",LastSeenBy(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("fireinterval","locals")
+	Allegiance(Myself,EVILCUTOFF)
+	OR(5)
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!StateCheck(LastSeenBy(Myself),STATE_SILENCED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!Range(LastSeenBy(Myself),10)
+	CheckStatGT(LastSeenBy(Myself),49,RESISTCRUSHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",LastSeenBy(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("fireinterval","locals")
+	See(FarthestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),10)
+	!CheckStatGT(LastSeenBy(Myself),49,RESISTCRUSHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",LastSeenBy(Myself))
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",LastSeenBy(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("fireinterval","locals")
+	See(FarthestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),10)
+	CheckStatGT(LastSeenBy(Myself),49,RESISTCRUSHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",LastSeenBy(Myself))
+END
+
+//玩家在5呎外，机枪扫射
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	OR(2)
+		See(WeakestOf([GOODCUTOFF]))
+		See(MostDamagedOf([GOODCUTOFF]))
+	WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	!Range(LastSeenBy(Myself),5)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	OR(5)
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	!Range(LastSeenBy(Myself),5)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	See(FourthNearestEnemyOf(Myself))
+	WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	See(FifthNearestEnemyOf(Myself))
+	WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	See(SixthNearestEnemyOf(Myself))
+	WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+//玩家靠近，主动撞击或肇事逃逸
+IF
+	!Global("knockaway","locals",1)
+	Allegiance(Myself,EVILCUTOFF)
+	Detect([GOODCUTOFF])
+	Range(LastSeenBy(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobal("knockaway","locals",1)
+		MoveToObject(LastSeenBy(Myself))
+	RESPONSE #100
+		ReallyForceSpellRES("MM#ROLL0",Myself)
+		RunAwayFrom(LastSeenBy(Myself),45)
+END
+
+IF
+	Global("knockaway","locals",1)
+	Allegiance(Myself,EVILCUTOFF)
+	Detect([GOODCUTOFF])
+	Range(LastSeenBy(Myself),4)
+THEN
+	RESPONSE #100
+		SetGlobal("knockaway","locals",0)
+		ReallyForceSpellRES("MM#ROLL2",LastSeenBy(Myself))
+END
+
+//前面都不成立，意味着玩家可能在10呎内5呎外并且免疫机枪
+//10呎内，物免，拉远开炮
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	See([GOODCUTOFF])
+	!WeaponCanDamage(LastSeenBy(Myself),BOTH)
+	Range(LastSeenBy(Myself),10)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastSeenBy(Myself),45)
+END
+//10呎内，免疫普通武器，撞或者拉远开炮
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	See([GOODCUTOFF])
+	!WeaponEffectiveVs(LastSeenBy(Myself),BOTH)
+	Range(LastSeenBy(Myself),10)
+THEN
+	RESPONSE #100
+		SetGlobal("knockaway","locals",1)
+		MoveToObject(LastSeenBy(Myself))
+	RESPONSE #100
+		RunAwayFrom(LastSeenBy(Myself),45)
+END
+
+//玩家逃出视野外时，随机攻击
+IF
+	GlobalTimerExpired("fireinterval","locals")
+	Global("SCOPE","LOCALS",1)
+	!See([PC])
+	RandomNumGT(6,5)
+	InMyArea(Player6)
+	!Dead(Player6)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player6)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player6)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player6)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player6)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player6)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player6)
+		SetGlobal("SCOPE","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("fireinterval","locals")
+	Global("SCOPE","LOCALS",1)
+	!See([PC])
+	RandomNumGT(6,4)
+	InMyArea(Player5)
+	!Dead(Player5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player5)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player5)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player5)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player5)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player5)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player5)
+		SetGlobal("SCOPE","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("fireinterval","locals")
+	Global("SCOPE","LOCALS",1)
+	!See([PC])
+	RandomNumGT(6,3)
+	InMyArea(Player4)
+	!Dead(Player4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player4)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player4)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player4)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player4)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player4)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player4)
+		SetGlobal("SCOPE","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("fireinterval","locals")
+	Global("SCOPE","LOCALS",1)
+	!See([PC])
+	RandomNumGT(6,2)
+	InMyArea(Player3)
+	!Dead(Player3)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player3)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player3)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player3)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player3)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player3)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player3)
+		SetGlobal("SCOPE","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("fireinterval","locals")
+	Global("SCOPE","LOCALS",1)
+	!See([PC])
+	RandomNumGT(6,1)
+	InMyArea(Player2)
+	!Dead(Player2)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player2)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player2)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player2)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player2)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player2)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player2)
+		SetGlobal("SCOPE","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("fireinterval","locals")
+	Global("SCOPE","LOCALS",1)
+	!See([PC])
+	InMyArea(Player1)
+	!Dead(Player1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player1)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player1)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player1)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL1",Player1)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL2",Player1)
+		SetGlobal("SCOPE","LOCALS",0)
+	RESPONSE #50
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		ForceSpellRES("MM#SHL3",Player1)
+		SetGlobal("SCOPE","LOCALS",0)
+END
+
+IF
+	!GlobalTimerNotExpired("fireinterval","locals")
+	!Global("SCOPE","LOCALS",1)
+	!See([PC])
+	OR(6)
+		InMyArea(Player1)
+		InMyArea(Player2)
+		InMyArea(Player3)
+		InMyArea(Player4)
+		InMyArea(Player5)
+		InMyArea(Player6)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
+		DisplayStringHead(Myself,@183)
+		SetGlobal("SCOPE","LOCALS",1)
+END

@@ -1,0 +1,278 @@
+IF
+	OnCreation()
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Existime","LOCALS",600)
+		ReallyForceSpellRES("MM#UAV1A",Myself)
+		SetGlobal("ACTVMODE","LOCALS",1)
+		DisplayStringHead(Myself,@151)	//室外环境，可高空飞行。攻击模式默认开启
+		Continue()
+END
+
+IF
+	OnCreation()
+	!AreaType(OUTDOOR)
+	!AreaType(FOREST)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Existime","LOCALS",600)
+		ReallyForceSpellRES("MM#UAV1B",Myself)
+		SetGlobal("ACTVMODE","LOCALS",1)
+		DisplayStringHead(Myself,@152)	//室内环境，可低空飞行，请小心障碍物。攻击模式默认开启
+		Continue()
+END
+//拿走召唤者身上留存的召唤媒介物（也可能是没用过的，总之会删一个）
+IF
+	!GlobalGT("moveitem","LOCALS",0)
+	Exists(LastSummonerOf())
+	OR(3)
+		CheckItemSlot(LastSummonerOf(),"MM#UAV1",SLOT_MISC0)
+		CheckItemSlot(LastSummonerOf(),"MM#UAV1",SLOT_MISC1)
+		CheckItemSlot(LastSummonerOf(),"MM#UAV1",SLOT_MISC2)
+THEN
+	RESPONSE #100
+		SetGlobal("moveitem","LOCALS",1)
+		ClearActions(LastSummonerOf())
+		ActionOverride(LastSummonerOf(),GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
+END
+//没召唤者，按距离顺序遍历队员，拿走身上留存的召唤媒介物（也可能是没用过的，总之会删一个）
+IF
+	!GlobalGT("moveitem","LOCALS",0)
+	!Exists(LastSummonerOf())
+	OR(3)
+		CheckItemSlot([PC],"MM#UAV1",SLOT_MISC0)
+		CheckItemSlot([PC],"MM#UAV1",SLOT_MISC1)
+		CheckItemSlot([PC],"MM#UAV1",SLOT_MISC2)
+THEN
+	RESPONSE #100
+		SetGlobal("moveitem","LOCALS",1)
+		ClearActions([PC])
+		ActionOverride([PC],GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
+END
+
+IF
+	!GlobalGT("moveitem","LOCALS",0)
+	!Exists(LastSummonerOf())
+	OR(3)
+		CheckItemSlot(SecondNearest([PC]),"MM#UAV1",SLOT_MISC0)
+		CheckItemSlot(SecondNearest([PC]),"MM#UAV1",SLOT_MISC1)
+		CheckItemSlot(SecondNearest([PC]),"MM#UAV1",SLOT_MISC2)
+THEN
+	RESPONSE #100
+		SetGlobal("moveitem","LOCALS",1)
+		ClearActions(SecondNearest([PC]))
+		ActionOverride(SecondNearest([PC]),GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
+END
+
+IF
+	!GlobalGT("moveitem","LOCALS",0)
+	!Exists(LastSummonerOf())
+	OR(3)
+		CheckItemSlot(ThirdNearest([PC]),"MM#UAV1",SLOT_MISC0)
+		CheckItemSlot(ThirdNearest([PC]),"MM#UAV1",SLOT_MISC1)
+		CheckItemSlot(ThirdNearest([PC]),"MM#UAV1",SLOT_MISC2)
+THEN
+	RESPONSE #100
+		SetGlobal("moveitem","LOCALS",1)
+		ClearActions(ThirdNearest([PC]))
+		ActionOverride(ThirdNearest([PC]),GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
+END
+
+IF
+	!GlobalGT("moveitem","LOCALS",0)
+	!Exists(LastSummonerOf())
+	OR(3)
+		CheckItemSlot(FourthNearest([PC]),"MM#UAV1",SLOT_MISC0)
+		CheckItemSlot(FourthNearest([PC]),"MM#UAV1",SLOT_MISC1)
+		CheckItemSlot(FourthNearest([PC]),"MM#UAV1",SLOT_MISC2)
+THEN
+	RESPONSE #100
+		SetGlobal("moveitem","LOCALS",1)
+		ClearActions(FourthNearest([PC]))
+		ActionOverride(FourthNearest([PC]),GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
+END
+
+IF
+	!GlobalGT("moveitem","LOCALS",0)
+	!Exists(LastSummonerOf())
+	OR(3)
+		CheckItemSlot(FifthNearest([PC]),"MM#UAV1",SLOT_MISC0)
+		CheckItemSlot(FifthNearest([PC]),"MM#UAV1",SLOT_MISC1)
+		CheckItemSlot(FifthNearest([PC]),"MM#UAV1",SLOT_MISC2)
+THEN
+	RESPONSE #100
+		SetGlobal("moveitem","LOCALS",1)
+		ClearActions(FifthNearest([PC]))
+		ActionOverride(FifthNearest([PC]),GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
+END
+
+IF
+	!GlobalGT("moveitem","LOCALS",0)
+	!Exists(LastSummonerOf())
+	OR(3)
+		CheckItemSlot(SixthNearest([PC]),"MM#UAV1",SLOT_MISC0)
+		CheckItemSlot(SixthNearest([PC]),"MM#UAV1",SLOT_MISC1)
+		CheckItemSlot(SixthNearest([PC]),"MM#UAV1",SLOT_MISC2)
+THEN
+	RESPONSE #100
+		SetGlobal("moveitem","LOCALS",1)
+		ClearActions(SixthNearest([PC]))
+		ActionOverride(SixthNearest([PC]),GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
+END
+//拿走后摧毁，保证只剩一个
+IF
+	HasItem("MM#UAV1",Myself)
+THEN
+	RESPONSE #100
+		DestroyItem("MM#UAV1")
+		Continue()
+END
+//拿走后产生一个坏的用来丢地上
+IF
+	Global("moveitem","LOCALS",1)
+THEN
+	RESPONSE #100
+		CreateItem("MM#UAV1A",0,0,0)
+		SetGlobal("moveitem","LOCALS",2)
+		Continue()
+END
+//死了丢地上
+IF
+	Die()
+THEN
+	RESPONSE #100
+		DropItem("MM#UAV1A",[-1.-1])
+		DestroySelf()
+END
+//关机回收
+IF
+	OR(2)
+		GlobalTimerExpired("Existime","LOCALS")
+		Global("SHUTDOWN","LOCALS",1)
+	Range([PC],4)
+THEN
+	RESPONSE #100
+		GiveItemCreate("MM#UAV1",[PC],0,0,0)
+		DestroySelf()
+END
+//关机先返回
+IF
+	OR(2)
+		GlobalTimerExpired("Existime","LOCALS")
+		Global("SHUTDOWN","LOCALS",1)
+	!Range([PC],4)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@150)	//返回中……
+		MoveToObject([PC])
+END
+
+//如果中途出问题
+IF
+	!Allegiance(Myself,CONTROLLED)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,CONTROLLED)
+		Continue()
+END
+
+//被动模式
+IF
+	HotKey(D)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#UAV1U",Myself)
+END
+//主动模式
+IF
+	HotKey(F)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#UAV1V",Myself)
+END
+
+//和队友太近的话
+IF
+	OR(3)
+		Range([PC],1)
+		Range([GOODCUTOFF.0.0.0.0.SUMMONED],1)
+		Range([GOODCUTOFF.0.0.0.0.BOTH],1)
+THEN
+	RESPONSE #100
+		JumpToObject(Nearest())
+		Continue()
+END
+
+//在最近七个敌人中找不免疫主手武器的打
+IF
+	ActionListEmpty()
+	Global("ACTVMODE","LOCALS",1)
+	See(NearestEnemyOf())
+	WeaponEffectiveVs(NearestEnemyOf(),MAINHAND)
+THEN
+  RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(),30)
+END
+
+IF
+	ActionListEmpty()
+	Global("ACTVMODE","LOCALS",1)
+	See(SecondNearestEnemyOf())
+	WeaponEffectiveVs(SecondNearestEnemyOf(),MAINHAND)
+THEN
+  RESPONSE #100
+		AttackReevaluate(SecondNearestEnemyOf(),30)
+END
+
+IF
+	ActionListEmpty()
+	Global("ACTVMODE","LOCALS",1)
+	See(ThirdNearestEnemyOf())
+	WeaponEffectiveVs(ThirdNearestEnemyOf(),MAINHAND)
+THEN
+  RESPONSE #100
+		AttackReevaluate(ThirdNearestEnemyOf(),30)
+END
+
+IF
+	ActionListEmpty()
+	Global("ACTVMODE","LOCALS",1)
+	See(FourthNearestEnemyOf())
+	WeaponEffectiveVs(FourthNearestEnemyOf(),MAINHAND)
+THEN
+  RESPONSE #100
+		AttackReevaluate(FourthNearestEnemyOf(),30)
+END
+
+IF
+	ActionListEmpty()
+	Global("ACTVMODE","LOCALS",1)
+	See(FifthNearestEnemyOf())
+	WeaponEffectiveVs(FifthNearestEnemyOf(),MAINHAND)
+THEN
+  RESPONSE #100
+		AttackReevaluate(FifthNearestEnemyOf(),30)
+END
+
+IF
+	ActionListEmpty()
+	Global("ACTVMODE","LOCALS",1)
+	See(SixthNearestEnemyOf())
+	WeaponEffectiveVs(SixthNearestEnemyOf(),MAINHAND)
+THEN
+  RESPONSE #100
+		AttackReevaluate(SixthNearestEnemyOf(),30)
+END
+
+IF
+	ActionListEmpty()
+	Global("ACTVMODE","LOCALS",1)
+	See(SeventhNearestEnemyOf())
+	WeaponEffectiveVs(SeventhNearestEnemyOf(),MAINHAND)
+THEN
+  RESPONSE #100
+		AttackReevaluate(SeventhNearestEnemyOf(),30)
+END

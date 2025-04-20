@@ -1,0 +1,145 @@
+//时间未到且战斗模式且距离敌人很近时被摧毁自爆
+IF
+	Die()
+	!GlobalTimerExpired("Existime","LOCALS")
+	Global("ACTVMODE","LOCALS",1)
+	Range(NearestEnemyOf(),10)
+THEN
+	RESPONSE #100
+		DestroyItem("MM#GRN2")
+		CreateVisualEffect("MM#GRN1",[-1.-1])
+		PlaySound("MM#GRN1")
+		ReallyForceSpellDeadRES("MM#GRN2",Myself)
+		ReallyForceSpellDeadRES("MM#GRN2A",Myself)
+		DestroySelf()
+END
+//否则留下手榴弹
+IF
+	Die()
+THEN
+	RESPONSE #100
+		DropItem("MM#GRN2",[-1.-1])
+		DestroySelf()
+END
+
+IF
+	GlobalTimerExpired("Existime","LOCALS")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@159)	//动力耗尽
+		DropItem("MM#GRN2",[-1.-1])
+		DestroySelf()
+END
+
+//初始化高度
+IF
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+THEN
+	RESPONSE #100
+		CreateItem("MM#GRN2",1,0,0)
+		SetGlobalTimer("Existime","LOCALS",900)
+		ReallyForceSpellRES("MM#UAV2A",Myself)
+		DisplayStringHead(Myself,@153)	//室外环境，可高空飞行。自爆模式默认关闭
+		Continue()
+END
+
+IF
+	!AreaType(OUTDOOR)
+	!AreaType(FOREST)
+THEN
+	RESPONSE #100
+		CreateItem("MM#GRN2",1,0,0)
+		SetGlobalTimer("Existime","LOCALS",900)
+		ReallyForceSpellRES("MM#UAV2B",Myself)
+		DisplayStringHead(Myself,@154)	//室内环境，可低空飞行，请小心障碍物。自爆模式默认关闭
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,CONTROLLED)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,CONTROLLED)
+		Continue()
+END
+
+//被动模式
+IF
+	HotKey(D)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#UAV2U",Myself)	//变量ACTVMODE变成0
+END
+//主动模式
+IF
+	HotKey(B)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#UAV2W",Myself)	//变量ACTVMODE变成1
+END
+
+//和队友太近的话
+IF
+	OR(3)
+		Range([PC],1)
+		Range([GOODCUTOFF.0.0.0.0.SUMMONED],1)
+		Range([GOODCUTOFF.0.0.0.0.BOTH],1)
+THEN
+	RESPONSE #100
+		JumpToObject(Nearest())
+		Continue()
+END
+
+//自爆攻击
+IF
+	Global("ACTVMODE","LOCALS",1)
+	Range(NearestEnemyOf(),4)
+	!Race(NearestEnemyOf(),DRAGON)
+THEN
+  RESPONSE #100
+		DestroyItem("MM#GRN2")
+		ReallyForceSpellRES("MM#GRN2",Myself)
+		ReallyForceSpellRES("MM#GRN2A",Myself)
+		DestroySelf()
+END
+
+IF
+	Global("ACTVMODE","LOCALS",1)
+	Range(NearestEnemyOf(),9)
+	Race(NearestEnemyOf(),DRAGON)
+THEN
+  RESPONSE #100
+		DestroyItem("MM#GRN2")
+		ReallyForceSpellRES("MM#GRN2",Myself)
+		ReallyForceSpellRES("MM#GRN2A",Myself)
+		DestroySelf()
+END
+//接近敌人准备引爆，移除高空状态
+IF
+	Global("ACTVMODE","LOCALS",1)
+	ActionListEmpty()
+	See(NearestEnemyOf())
+	!Range(NearestEnemyOf(),4)
+	!Race(NearestEnemyOf(),DRAGON)
+THEN
+  RESPONSE #100
+		DisplayStringHead(Myself,@155)	//发现敌人，开始攻击
+		ReallyForceSpellRES("MM#UAV2B",Myself)
+		MoveToObject(NearestEnemyOf())
+END
+
+IF
+	Global("ACTVMODE","LOCALS",1)
+	ActionListEmpty()
+	See(NearestEnemyOf())
+	!Range(NearestEnemyOf(),9)
+	Race(NearestEnemyOf(),DRAGON)
+THEN
+  RESPONSE #100
+		DisplayStringHead(Myself,@155)	//发现敌人，开始攻击
+		ReallyForceSpellRES("MM#UAV2B",Myself)
+		MoveToObject(NearestEnemyOf())
+END
+

@@ -1,0 +1,9 @@
+IF
+	Global("MM#STO","MYAREA",0)
+	Dead("amtgen01")
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		CreateCreature("MM#STO",[1062.530],0)
+		SetGlobal("MM#STO","MYAREA",1)
+END

@@ -1,0 +1,11 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("SHOHY")
+		FadeToColor([30.0],0)
+		SetGlobal("trained","LOCALS",1)
+		Wait(2)
+		FadeFromColor([30.0],0)
+		Dialog([PC])
+END

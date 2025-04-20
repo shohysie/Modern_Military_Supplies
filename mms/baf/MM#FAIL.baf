@@ -1,0 +1,83 @@
+IF
+	OR(2)
+		GlobalTimerExpired("Existime","LOCALS")
+		!Detect(LastSummonerOf())
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		SetGlobalTimer("ExistTime","LOCALS",5)
+		Continue()
+END
+
+//处理枪械熟练度
+IF
+	!TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRF","LOCALS",0))
+	TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRFA","LOCALS",100))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#PRF0I",LastSummonerOf())	//1星
+		ReallyForceSpellRES("MM#PRFA",LastSummonerOf())	//记录归零
+		DisplayStringHead(LastSummonerOf(),@72) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),Global("MM#PRF","LOCALS",1))
+	TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRFA","LOCALS",500))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#PRF1I",LastSummonerOf())
+		ReallyForceSpellRES("MM#PRFA",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@73) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),Global("MM#PRF","LOCALS",2))
+	TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRFA","LOCALS",1000))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#PRF2I",LastSummonerOf())
+		ReallyForceSpellRES("MM#PRFA",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@74) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),Global("MM#PRF","LOCALS",3))
+	TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRFA","LOCALS",2000))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#PRF3I",LastSummonerOf())
+		ReallyForceSpellRES("MM#PRFA",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@75) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),Global("MM#PRF","LOCALS",4))
+	TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRFA","LOCALS",5000))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#PRF4I",LastSummonerOf())
+		ReallyForceSpellRES("MM#PRFA",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@76) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRF","LOCALS",4))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MM#PRFA",LastSummonerOf())
+		DestroySelf()
+END
+
+
+

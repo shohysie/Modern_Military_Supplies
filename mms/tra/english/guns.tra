@@ -1,0 +1,2623 @@
+@1001 = "Repair this Colt 'Python' for me please."
+@1002 = "Repair this Ruger 'Blackhawk' for me please."
+@1003 = "Repair this Smith & Wesson M500 for me please."
+@1011 = "Repair this Luger P08 for me please."
+@1012 = "Repair this Colt M1911 for me please."
+@1013 = "Repair this Tokarev TT-33 for me please."
+@1014 = "Repair this Walther PPK for me please."
+@1015 = "Repair this CZ 75 for me please."
+@1016 = "Repair this Glock 17 for me please."
+@1017 = "Repair this Desert Eagle for me please."
+@1018 = "Repair this FN Five-seveN for me please."
+@2001 = "Repair this Mauser C96/M1932 for me please."
+@2002 = "Repair this Micro Uzi for me please."
+@2003 = "Repair this Škorpion Vz.61 for me please."
+@2004 = "Repair this H&K MP5 for me please."
+@2005 = "Repair this FN P90 for me please."
+@2006 = "Repair this H&K UMP45 for me please."
+@2007 = "Repair this PP-2000 for me please."
+@2011 = "Repair this Thompson M1921 for me please."
+@2012 = "Repair this MP40 for me please."
+@2013 = "Repair this Sten Mk.II for me please."
+@2014 = "Repair this PPSh-41 for me please."
+@2015 = "Repair this M3 Grease Gun for me please."
+@2016 = "Repair this ShAK-12 for me please."
+@3001 = "Repair this Lee-Enfield No.1 Mk.III for me please."
+@3002 = "Repair this Type 38 Arisaka for me please."
+@3003 = "Repair this Mosin-Nagant M1891/30 for me please."
+@3004 = "Repair this Mauser Kar98k for me please."
+@3005 = "Repair this PTRD-41 for me please."
+@3011 = "Repair this M1 Garand for me please."
+@3012 = "Repair this M1 Carbine for me please."
+@3013 = "Repair this Gewehr 43 for me please."
+@3014 = "Repair this SKS for me please."
+@3021 = "Repair this StG-44 for me please."
+@3022 = "Repair this AK-47 for me please."
+@3023 = "Repair this FN FAL for me please."
+@3024 = "Repair this M16A1 for me please."
+@3025 = "Repair this Steyr AUG for me please."
+@3026 = "Repair this H&K G11 for me please."
+@3027 = "Repair this AN-94 for me please."
+@4001 = "Repair this Sawed-off Colt M1878 for me please."
+@4002 = "Repair this Winchester M1887 for me please."
+@4003 = "Repair this Remington M870 for me please."
+@4004 = "Repair this Benelli M1014/M4 Super 90 for me please."
+@4005 = "Repair this AA-12 for me please."
+@5001 = "Repair this Springfield M1903A4 for me please."
+@5002 = "Repair this Remington 700 for me please."
+@5003 = "Repair this SVD for me please."
+@5004 = "Repair this Barrett M82A1 for me please."
+@5005 = "Repair this AWM for me please."
+@5006 = "Repair this CheyTac M200 for me please."
+@5007 = "Repair this QLU-11 for me please."
+@6001 = "Repair this BAR M1918A2 for me please."
+@6002 = "Repair this ZB-26 for me please."
+@6003 = "Repair this DP-28 for me please."
+@6004 = "Repair this M249 SAW for me please."
+@6005 = "Repair this Ultimax 100 for me please."
+@6011 = "Repair this MG42 for me please."
+@6012 = "Repair this M60 for me please."
+@6013 = "Repair this PKM for me please."
+@6014 = "Repair this QJZ-171 for me please."
+@6021 = "Repair this Maxim Gun for me please."
+@6022 = "Repair this M2HB for me please."
+@6023 = "Repair this M134 Minigun for me please."
+
+
+@1101 = "Colt Python"
+@1201 = "The Python revolver is hailed as one of the finest wheelguns ever produced, renowned for its smooth operation, match-grade accuracy, and lustrous finish. Its .357 Magnum bullets deliver sufficient stopping power to drop large predators at close range. The combination of legendary reliability, competition-level precision, and elegant aesthetics made the Python an instant favorite among civilian enthusiasts upon its release. 'God created people, Colt made them equal.'
+This firearm fires high-velocity .357 cartridges with moderate armor penetration capabilities, particularly effective against medium armor targets. However, it suffers from over-penetration against unarmored/light armor and insufficient penetration against heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 21|21|42|15% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 1D10
+THAC0: +2
+Damage Type: Missile
+Attacks Per Round: 2
+Range: 20
+Speed Factor: 1
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 10 Strength
+Weight: 3"
+
+@1102 = "Ruger Blackhawk"
+@1202 = "This .44 Magnum Super Blackhawk single-action revolver was proclaimed by Ruger as 'the ultimate evolution of single-action revolvers.' Embraced by competitive speed shooters in America's fastest-growing shooting sport, it dominates most fanning competitions. While hours of rapid trigger manipulation stress the flat-top design, these revolvers prove nearly indestructible.
+The high-velocity .44 Magnum bullets deliver moderate armor penetration, particularly effective against medium armor. However, they tend to over-penetrate unarmored/light targets while struggling against heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D4 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 30|30|60|21% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 2D6+1
+THAC0: +3
+Dmg Type: Missile
+Attacks Per Round: 3
+Range: 20
+Speed Factor: 2
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 14 Strength
+Weight: 2"
+
+@1103 = "Smith & Wesson M500"
+@1203 = "This .500 S&W Magnum revolver's fame stems from its massive bore and devastating power. Limited to 5 bullets instead of standard 6 due to oversized chambers, its reinforced cylinder withstands +50% overpressure loads to prevent jamming. The punishing recoil makes rapid follow-up shots difficult, requiring exceptional strength for single-handed operation.
+The high-energy .500 bullets penetrate medium armor effectively while delivering substantial impact against other armor types through sheer kinetic force.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 35|35|70|25% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 2D10
+THAC0: +2
+Dmg Type: Missile
+Attacks Per Round: 1
+Range: 24
+Speed Factor: 4
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 17 Strength
+Weight: 5"
+
+@1111 = "Luger P08"
+@1211 = "The Luger P08 holds distinction as the world's first military-issue semi-automatic pistol, featuring its iconic toggle-lock mechanism inspired by Maxim machine guns and Winchester lever-action rifles. Renowned for surgical accuracy and battlefield reliability, it became a trusted sidearm for German troops. Its streamlined aesthetics and masterful craftsmanship cement its status as a firearms masterpiece, highly prized by collectors.
+Chambered in 9×19mm Parabellum, this pistol delivers superior stopping power against unarmored/light/medium targets but suffers from poor penetration against heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D2 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 30|30|30|9% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 1D7
+THAC0: +3
+Dmg Type: Missile
+Attacks Per Round: 3
+Range: 20
+Speed Factor: 2
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 8 Strength
+Weight: 2"
+
+@1112 = "Colt M1911"
+@1212 = "The M1911 became the standard-issue sidearm for the U.S. military immediately upon its introduction and remained in service for 74 years. As the first semi-automatic pistol adopted by the U.S. military, its massive 11.43mm caliber grants incomparable lethality. Additionally, it possesses numerous advantages including reliability, durability, and ease of maintenance. Its primary drawbacks are substantial weight/bulk, curved trajectory, and heavy recoil - all factors that somewhat compromise accuracy.
+This firearm fires low-velocity .45 caliber pistol bullets with exceptional stopping power, performing excellently against unarmored/light armor targets. However, its low penetration capability reduces effectiveness against medium armor and proves inadequate against heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 40|40|27|5% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 1D10+1
+THAC0: +1
+Damage Type: Missile
+Attacks Per Round: 2
+Range: 20
+Speed Factor: 1
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 14 Strength
+Weight: 2"
+
+@1113 = "Tokarev TT-33"
+@1213 = "The TT-33 is a Soviet-manufactured semi-automatic pistol designed by Tokarev, originally serving as the Red Army's standard sidearm. With only 46 total components, it features moderate dimensions, formidable muzzle energy, and strong deterrent power. Its simple yet rugged design enables excellent performance in harsh environments, establishing it as a classic tactical pistol.
+This firearm fires high-velocity 7.62mm pistol bullets with moderate penetration capabilities, effective against medium armor targets. However, it tends to over-penetrate unarmored/light targets while proving insufficient against heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 14|14|28|10% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 1D10
+THAC0: +2
+Damage Type: Missile
+Attacks Per Round: 2.5
+Range: 20
+Speed Factor: 2
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 12 Strength
+Weight: 2"
+
+@1114 = "Walther PPK"
+@1214 = "The Walther PPK's compact dimensions and reliable operation make it ideal for concealed carry and undercover operations, having long served as James Bond's signature firearm in the 007 film series. Its design incorporates cutting-edge safety and firing mechanisms that inspired subsequent pistols, with design principles enduring for over a century. Despite low lethality, it permits effortless rapid fire with minimal strength requirements.
+This firearm fires .32 caliber pistol bullets with relatively weak kinetic energy, showing limited effectiveness against unarmored/light/medium targets. Its low penetration capability makes it largely ineffective against heavily armored opponents.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D1 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 12|12|12|3% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 1D5
+Damage Type: Missile
+Attacks Per Round: 4
+Range: 18
+Speed Factor: 1
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 4 Strength
+Weight: 1"
+
+@1115 = "CZ 75"
+@1215 = "The Czechoslovakian CZ-75 pistol has become one of the most successful handguns in the world due to its ingenious design and exceptional performance, offering shooters unparalleled accuracy and operational flexibility. This pistol excels not only in competitive shooting but has also been widely adopted by military, police, and law enforcement agencies. Through continuous innovation and evolution, the CZ-75 has maintained the prestige of its classic original version while introducing optimized models and derivatives, establishing itself as a benchmark that continues to lead and shape the global handgun landscape.
+This firearm fires 10mm pistol cartridges with good stopping power, performing well against unarmored/light/medium armor targets, but exhibits lower penetration against heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 40|40|40|12% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 2D5
+Damage Type: Missile
+Attacks Per Round: 2.5
+Range: 20
+Speed Factor: 1
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 9 Strength
+Weight: 2"
+
+@1116 = "Glock 17"
+@1216 = "The Glock 17 semi-automatic pistol has been adopted by military and police forces in over 40 countries, making it one of the most famous modern firearms. The pistol extensively uses engineering plastics, resulting in low manufacturing costs, improved ergonomics, and revolutionary weight reduction. Its safety mechanism requires no manual operation, allowing quick deployment. Additionally, its internal design provides exceptional controllability during firing—reports indicate a 20% improvement in shooting scores among US police officers after its adoption. The pistol also boasts excellent maintainability with only 32 components, disassemblable within one minute using a single pin.
+This firearm fires 9mm pistol cartridges with decent stopping power, effective against unarmored/light/medium armor targets, but shows reduced penetration against heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D2 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 30|30|30|9% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 1D7
+THAC0: +3
+Damage Type: Missile
+Attacks Per Round: 3
+Range: 20
+Speed Factor: 1
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 6 Strength
+Weight: 1"
+
+@1117 = "Desert Eagle"
+@1217 = "The Desert Eagle employs a gas-operated mechanism similar to assault rifles, allowing it to withstand greater recoil and fire more powerful ammunition. However, its large size, weight, significant recoil, complex structure, and low reliability make it unsuitable for harsh combat environments. Its aggressive appearance and hard-hitting power caught Hollywood's attention, making it an iconic prop in thousands of films and TV shows. In reality, its primary uses are target shooting and hunting.
+This firearm fires high-velocity .500 caliber pistol bullets with moderate penetration, particularly effective against medium armor targets. Its tremendous kinetic energy also delivers substantial impact against other armor types.
+
+Equipped abilities:
+
+- Charisma +1
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D4 Damage/Weaken Attack & Defense (Partly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 32|32|64|23% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 2D8
+THAC0: +3
+Damage Type: Missile
+Attacks Per Round: 1.5
+Range: 28
+Speed Factor: 4
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 16 Strength
+Weight: 4"
+
+@1118 = "FN Five-seveN"
+@1218 = "In the 1990s, Belgian company FN introduced this revolutionary weapon—the FN Five-seveN pistol. While its caliber is relatively small, its bullets travel at nearly twice the muzzle velocity of comparable pistols. This high-velocity design enhances penetration and lethality, with SS190 armor-piercing bullets capable of penetrating light body armor at 100 meters, earning it the nickname 'Body Armor Terminator'. It features exceptional shooting accuracy with remarkably low recoil, allowing even female users to handle it effortlessly.
+This firearm fires specialized 5.7mm high-velocity pistol bullets with strong penetration against medium armor targets, but tends to over-penetrate unarmored/light targets while remaining insufficient against heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D2 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 16|16|32|11% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge
+Damage: 1D8
+THAC0: +4
+Damage Type: Missile
+Attacks Per Round: 3.5
+Range: 24
+Speed Factor: 1
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 6 Strength
+Weight: 1"
+
+
+
+
+
+@2101 = "Mauser C96/M1932"
+@2201 = "The world's first military automatic pistol, renowned for its powerful performance, reliable action, and ease of use, saw widespread distribution across numerous nations. Its original design approached perfection to such an extent that its internal mechanisms remained virtually unchanged throughout four decades of mass production. However, no nation officially adopted it as standard-issue military sidearm due to its excessive size/weight for a pistol role, formidable recoil hindering sustained accurate fire, and the operational complexity requiring stock attachment for muzzle climb control. This firearm gained true popularity in China, where users developed simple yet effective methods to overcome its limitations.
+This weapon fires high-velocity 7.62mm pistol bullets with moderate penetration capabilities, effective against medium armor targets. However, it tends to over-penetrate unarmored/light targets while proving insufficient against heavy armor.
+The rapid full-auto fire rate generates intense recoil, making single-handed control extremely difficult. Improving automatic weapon proficiency significantly enhances burst fire stability, allowing more bullets to hit targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 14|14|28|10% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/Magazines/Drums
+Damage: 1D10
+THAC0: +3
+Damage Type: Missile
+Attacks Per Round: 2.5 (when single-shot)
+Range: 26
+Speed Factor: 3
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 12 Strength
+Weight: 3"
+
+@2102 = "Micro Uzi"
+@2202 = "The Uzi Micro SMG matches pistol dimensions yet delivers a terrifying 1,200 RPM rate of fire, emptying magazines within two seconds - making it unsuitable for regular troops but ideal for agents and bodyguards. As the pioneer of compact submachine guns, it features simple manufacturing, lightweight construction, intuitive operation, and reliable functionality with strong instant firepower. However, its limited effective range and stopping power restrict it to close-quarters combat, failing to meet mid-range engagement requirements.
+This weapon fires 9mm pistol bullets with moderate stopping power against unarmored/medium targets but poor penetration against heavy armor.
+The extreme fire rate makes full-auto control extremely challenging single-handed. Improving automatic weapon proficiency dramatically enhances burst fire stability, allowing more bullets to hit targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D2 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 26|26|26|7% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/Magazines/Drums
+Damage: 1D6
+Damage Type: Missile
+Attacks Per Round: 3.5 (when single-shot)
+Range: 18
+Speed Factor: 3
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 14 Strength
+Weight: 4"
+
+@2103 = "Škorpion Vz.61"
+@2203 = "The Škorpion Vz.61 submachine gun provides non-frontline combat infantry with a lightweight personal defense weapon superior to pistols, holding significant historical status in small arms development. Its compact form factor and select-fire capability (single-shot/full-auto) make it a pioneer of modern PDWs. The folding stock design ensures easy carry without hindering tactical movements. In full-auto mode, it delivers sufficient firepower to repel enemy assaults.
+This firearm fires .32 ACP bullets with relatively weak kinetic energy, showing limited effectiveness against unarmored/light/medium armor targets. Its low penetration capability makes it largely ineffective against heavily armored opponents.
+Despite high cyclic rate, its extremely low recoil allows easy single-handed control even during full-auto fire. Therefore, improving automatic weapon proficiency only marginally enhances burst fire stability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D1 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 12|12|12|3% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/Magazines/Drums
+Damage: 1D5
+THAC0: +1
+Damage Type: Missile
+Attacks Per Round: 4 (when single-shot)
+Range: 18
+Speed Factor: 1
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 8 Strength
+Weight: 3"
+
+@2104 = "H&K MP5"
+@2204 = "Designed and manufactured by German armorer Heckler & Koch, this SMG has been adopted as standard-issue firearm by numerous military/police units worldwide. As its slogan suggests, the MP5 has become synonymous with counter-terrorism units. The semi-roller delayed blowback operation and roller-locked mechanism provide superior performance, delivering precision unmatched by contemporary SMGs - even permitting accurate single-handed short bursts.
+This weapon fires 9mm bullets with moderate stopping power against unarmored/medium targets but poor penetration against heavy armor.
+The high fire rate combines with manageable recoil for single-handed full-auto control. Improving automatic weapon proficiency slightly enhances burst stability for increased hit probability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor:  32|32|32|9% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/Magazines/Drums
+Damage: 1D8
+THAC0: +2
+Damage Type: Missile
+Attacks Per Round: 3 (when single-shot)
+Range: 20
+Weight: 5
+Speed Factor: 3
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 10 Strength
+Weight: 5"
+
+@2105 = "FN P90"
+@2205 = "The P90's radical ergonomic design results from extensive human engineering research, offering exceptional handling comfort. With minimal components (field-strippable in 15 seconds), it combines easy maintenance with solid accuracy. Notably, it's the world's first PDW using proprietary ammunition - the low-pressure SS190 bullets produce minimal recoil, further reduced by dual recoil springs and a recoil buffer.
+This firearm fires high-velocity 5.7×28mm specialty bullets with strong penetration against medium armor targets. However, they tend to over-penetrate unarmored/light targets while remaining insufficient against heavy armor.
+The rapid fire rate pairs with mild recoil for controllable single-handed operation. Improving automatic weapon proficiency slightly enhances burst stability for increased hit probability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor:  18|18|36|13% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/Magazines/Drums
+Damage: 1D9
+THAC0: +4
+Damage Type: Missile
+Attacks Per Round: 3.5 (when single-shot)
+Range: 28
+Speed Factor: 4
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 9 Strength
+Weight: 6"
+
+@2106 = "H&K UMP45"
+@2206 = "The UMP45 was developed by H&K at the request of U.S. special forces and police units to meet requirements for ammunition compatibility, high stopping power, and suppressor capability. Initial designs incorporated concepts from the G36 assault rifle while utilizing polymer materials to reduce weight and production costs. The straight blowback operation inherently prioritizes rate of fire over accuracy, leading to the installation of a rate reducer maintaining 600 RPM. Renowned for reliability, precision, and formidable power, it's hailed by operators as 'the spec-ops standard' and 'perfect secondary weapon'.
+This firearm fires low-velocity .45 ACP bullets with exceptional stopping power against unarmored/light targets, though penetration drops significantly against medium armor and proves inadequate against heavy armor.
+The moderate cyclic rate and controllable recoil permit single-handed full-auto operation. Improving automatic weapon proficiency provides limited enhancement to burst fire stability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor:  42|42|28|5% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/Magazines/Drums
+Damage: 1D10+1
+THAC0: +2
+Damage Type: Missile
+Attacks Per Round: 3 (when single-shot)
+Range: 22
+Speed Factor: 4
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 10 Strength
+Weight: 6"
+
+@2107 = "PP-2000"
+@2207 = "The PP-2000 is a micro-SMG designed for specific missions, featuring ultra-compact dimensions and lightweight construction for concealed carry while delivering essential close-quarters firepower. Despite its abbreviated length, a well-designed recoil buffer maintains manageable cyclic rates. While innovative in form factor, its operating principles remain conventional - though ammunition selection proves exceptional.
+This weapon fires specialized 9mm bullets with high muzzle velocity and armor-piercing capability, effective against medium armor targets. However, bullets tend to over-penetrate unarmored/light targets while struggling against heavy armor.
+Though capable of single-handed use, rapid fire control proves challenging. Improving automatic weapon proficiency significantly enhances burst stability for increased hit probability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor:  16|16|32|11% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/Magazines/Drums
+Damage: 1D9
+THAC0: +2
+Damage Type: Missile
+Attacks Per Round: 3 (when single-shot)
+Range: 28
+Speed Factor: 3
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 11 Strength
+Weight: 3"
+
+
+
+
+@2111 = "Thompson M1921"
+@2211 = "Thompson submachine gun, also known as Chicago Typewriter (due to its firing sound resembling typewriter keys) and Chicago Violin (as disassembled components can fit in a violin case), was the most iconic American SMG during WWII. The Thompson exhibits obvious drawbacks: excessive weight, complex mechanism, high production cost, limited effective range, mediocre accuracy, and relatively high malfunction rate. Nevertheless, it remains one of the most outstanding automatic weapons of its era. Its unique delayed-blowback operating system allows chambering of large-caliber .45 ACP bullets, delivering significantly superior stopping power compared to contemporary SMGs. The overwhelming firepower even necessitated rate-reducer modifications in later variants.
+This weapon fires low-velocity .45 ACP bullets with exceptional stopping power against unarmored/light armored targets, but demonstrates poor penetration performance against medium armor and becomes nearly ineffective versus heavy armor.
+With high cyclic rate and noticeable recoil impulse, controlling sustained bursts requires considerable skill. Increasing automatic weapons proficiency marginally improves stability during short/long bursts, allowing more bullets to stay on target.
+
+STATISTICS:
+
+Combat abilities:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor:  45|45|30|6% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/magazine/drum
+Damage: 1D10+2
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 2.5
+Range: 26
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 13 Strength
+Weight: 10"
+
+@2112 = "MP40"
+@2212 = "The MP40 submachine gun, frequently misnomered as Schmeisser, saw extensive deployment in German armed forces during WWII. As the first modern-design SMG in history, it profoundly influenced subsequent small arms development. Notable for its precision, minimal recoil, and moderate fire rate, this weapon delivers unparalleled accuracy in sustained fire. The streamlined design allows easy disassembly, though its limited magazine capacity and slower cyclic rate left it vulnerable to Soviet SMG suppressive fire in CQC. Additionally, the magazine design demands meticulous maintenance and proper handling for reliable feeding - a standard often unattainable for average infantrymen.
+The 9mm Parabellum bullets offer decent stopping power against unarmored/medium armored targets, but exhibit poor penetration versus heavy armor.
+Featuring a long receiver/guide rod assembly that effectively absorbs recoil energy and advanced primer ignition mechanism that counters muzzle climb, this SMG's controllability rivals garden hose handling. Thus, automatic weapons proficiency provides no additional stability bonuses for burst fire.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 34|34|34|10% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/magazine/drum
+Damage: 1D8
+THAC0: +2
+Damage type: ranged
+Attacks Per Round: 3.5
+Range: 26
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 9 Strength
+Weight: 9"
+
+@2113 = "Sten Mk.II"
+@2213 = "The Sten SMG stands as arguably the ugliest firearm of WWII - essentially crude steel tubing welded together. Following Dunkirk equipment losses, British forces desperately needed mass-producible small arms. Enfield engineers responded with this minimalist design: only barrel and bolt require machining, while other components can be fabricated in primitive workshops. Chronic issues include frequent jams and accidental discharges. This 'excellent trash' earned nicknames like 'The Woolworth Special', 'The Plumbers Delight' and 'The Stench Gun'. among troops.
+The 9mm bullets provide decent stopping power against unarmored/medium armored targets, but exhibit poor penetration versus heavy armor.
+With moderate fire rate and manageable recoil, controlling bursts proves relatively easy. However, automatic weapons proficiency only minimally improves burst stability.
+
+STATISTICS:
+
+Equipped abilities:
+
+- Charisma -1
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 34|34|34|10% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/magazine/drum
+Damage: 1D8
+THAC0: +2
+Damage type: ranged
+Attacks Per Round: 3
+Range: 26
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 7 Strength
+Weight: 7"
+
+@2114 = "PPSh-41"
+@2214 = "The PPSh-41 'Papasha' SMG delivered exceptional reliability with simple disassembly and manufacturing processes. Producing over 6 million units under primitive wartime conditions, it granted Soviet troops overwhelming CQB superiority that contributed to their Eastern Front victory. Chambered in 7.62×25mm Tokarev with extended barrel length, it achieved higher muzzle velocity and effective range than contemporary SMGs. Its user-friendly operation, devastating firepower, and controllable bursts made it iconic in Stalingrad's urban combat. Captured specimens even received formal German military designations.
+This weapon's high-velocity 7.62mm pistol bullets exhibit moderate penetration effectiveness against medium armor, though prone to over-penetration vs unarmored/light targets and insufficient penetration against heavy armor.
+Despite rapid fire rate, manageable recoil allows sustained control. Automatic weapons proficiency slightly improves burst stability for better hit probability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 18|18|36|13% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/magazine/drum
+Damage: 1D11
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 3
+Range: 28
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: One-handed
+Requires: 11 Strength
+Weight: 8"
+
+@2115 = "M3 Grease Gun"
+@2215 = "Following WWII's outbreak, the US military urgently required mass-produced SMGs, leading to the M3's development inspired by British Sten. Initially mocked by troops for its unorthodox appearance (earning 'Grease Gun' derision), this SMG quickly proved its worth through exceptional controllability in combat.
+Firing low-velocity .45 ACP bullets, it delivers superb stopping power against unarmored/light armor, but suffers penetration deficiencies against medium/heavy armor.
+Subdued recoil from slow fire rate partially offsets heavy bolt-induced vibration during bursts. Automatic weapons proficiency provides minimal burst control enhancement.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D3 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 45|45|30|6% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/magazine/drum
+Damage: 1D10+2
+THAC0: +2
+Damage type: ranged
+Attacks Per Round: 3
+Range: 26
+Speed factor: 2
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 10 Strength
+Weight: 8"
+
+@2116 = "ShAK-12"
+@2216 = "Reflecting Russia's counter-terror doctrine prioritizing absolute neutralization of threats (even at hostage cost), the ShAK-12 emerged as specialized CQB weapon for urban counter-terror operations against heavily-armed targets. Featuring compact dimensions and firing proprietary 12.7×55mm STs-130 ammunition, this weapon bridges SMG and assault rifle roles with extreme close-range stopping power.
+The low-velocity 12.7mm rimless bullets deliver catastrophic stopping effects against unarmored/light armor, though penetration rapidly diminishes against medium/heavy armor.
+Moderate fire rate combined with surprisingly manageable recoil (considering caliber) enables controllable bursts. Automatic weapons proficiency offers slight burst performance improvements.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 60|60|40|8% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition Type: cartridge/magazine/drum
+Damage: 2D8+1
+THAC0: +1
+Damage type: ranged
+Attacks Per Round: 2
+Range: 28
+Speed factor: 4
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 15 Strength
+Weight: 13"
+
+
+@3101 = "Lee-Enfield No.1 Mk.III"
+@3201 = "The Lee-Enfield Short Magazine rifle served as standard issue for Commonwealth forces through WWI, WWII and the Korean War. Featuring a bolt-action mechanism with detachable box magazine, it ranks among the fastest-operating bolt-action rifles. Its rapid fire capability proved decisive in trench warfare. Renowned for reliability, short bolt throw, and user-friendliness, this rifle's performance can be significantly upgraded with modern ammunition replacement. Though originally equipped with a bayonet, its notoriously poor design led to frequent abandonment.
+This weapon fires full-power 7.7mm rifle bullets with superior penetration effectiveness that increases against heavier armor, while prone to over-penetration vs unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 22|22|37|42% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge
+Damage: 2D8+1
+THAC0: +4
+Damage type: ranged
+Attacks Per Round: 2.5
+Range: 38
+Speed factor: 2
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 13 Strength
+Weight: 9"
+
+@3102 = "Type 38 Arisaka"
+@3202 = "During WWII, Japanese forces in China prioritized fortress/trench warfare over mechanized combat, adopting this exceptionally long rifle - the Type 38, WWII's lengthiest service rifle. Simple construction and mild recoil characterize this weapon. Its extended barrel enhances accuracy and range, while combined bayonet length compensated for shorter-statured Japanese soldiers in melee. However, the small 6.5mm caliber with stable bullet trajectory results in poor stopping power at certain ranges.
+Despite its modest caliber, the full-power 6.5mm rifle bullets exhibit high penetration effectiveness that increases against heavier armor, while prone to over-penetration vs unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 19|19|31|36% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge
+Damage: 1D12
+THAC0: +5
+Damage type: ranged
+Attacks Per Round: 2
+Range: 33
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 8 Strength
+Weight: 9"
+
+@3103 = "Mosin-Nagant M1891/30"
+@3203 = "The Mosin-Nagant features a crude, outdated bolt-action design with cumbersome operation, offset by simple manufacturing and ease of use. Its brutal recoil matches formidable power and range. Maintenance-friendly yet prone to bolt jams requiring forceful kicking to open (earning 'Boot Action Rifle' nickname from Chinese volunteers). Remarkably accurate - Finnish, Soviet and Chinese sniper record holders all used Mosin variants.
+This specimen last saw maintenance in 1945 Berlin. Originally coated with anti-corrosion lacquer, it was buried under a Budapest apartment. Using ammunition excavated from Ukrainian farmland, it achieves 16-inch groups at 1000 yards!
+The 7.62mm full-power rifle bullets exhibit high penetration effectiveness that increases against heavier armor, while prone to over-penetration vs unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 24|24|39|45% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge
+Damage: 3D6
+THAC0: +6
+Damage type: ranged
+Attacks Per Round: 1.5
+Range: 40
+Speed factor: 5
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 14 Strength
+Weight: 10"
+
+@3104 = "Mauser Kar98k"
+@3204 = "The Mauser Kar98k bolt-action rifle served as Germany's standard-issue infantry weapon during WWII, widely regarded as one of the finest turnbolt designs of its era. While offering balanced performance with excellent accuracy and formidable power, its limitations included low 5-bullets capacity, slow rate of fire, and demanding operator skill requirements. The intricate mechanism with numerous components also resulted in high production costs and subpar reliability.
+Late-war production models suffered progressive quality deterioration due to wartime pressures. Fortunately, this particular Kar98k is an early-production specimen boasting superior precision and reliability.
+This rifle fires full-power 7.92mm rifle bullets with high penetration effectiveness that increases against heavier armor, while prone to over-penetration vs unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 22|22|37|42% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge
+Damage: 2D8+1
+THAC0: +5
+Attacks Per Round: 2
+Range: 38
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+
+@3105 = "PTRD-41"
+@3205 = "The PTRD-41 anti-tank rifle fielded by Soviet forces during WWII concealed sophisticated recoil-mitigation systems beneath its crude exterior. As infantry portable artillery, its excessive length/weight and thunderous report induced operator apprehension. Initially effective against early-war light armor, it became obsolete against advanced tanks later in the Eastern Front.
+This weapon fires specialized 14.5×114mm armor-piercing bullets with overkill potential against human targets, ideally employed against giant creatures/constructs. Penetration effectiveness increases against heavier armor, while prone to over-penetration vs unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 4D8 Damage/Weaken Attack & Defense (Limited immunity for inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 60|60|70|90% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Ammunition type: cartridge
+Damage: 4D10
+THAC0: +5
+Attacks Per Round: 1
+Range: 41
+Speed factor: 8
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 12 Strength
+Weight: 38"
+
+@3111 = "M1 Garand"
+@3211 = "The M1 Garand served as the standard-issue rifle for US forces during WWII, becoming the first semi-automatic rifle mass-produced for military service. Renowned for its accuracy, ease of disassembly/cleaning, and proven reliability/durability, it earned recognition as WWII's finest combat rifle. Post-war ROK Army troops struggled with its substantial weight despite being major users.
+This rifle fires full-power 7.62mm rifle bullets with high penetration effectiveness that increases against heavier armor, while prone to over-penetration vs unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 25|25|41|48% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge
+Damage: 2D10
+THAC0: +5
+Attacks Per Round: 2.5
+Range: 38
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 14 Strength
+Weight: 10"
+
+@3112 = "M1 Carbine"
+@3212 = "Designed for logistics personnel and non-combat specialists, the M1 Carbine provides lightweight operation with minimal recoil, requiring minimal training. Outranging pistols in effective range/accuracy while maintaining sustainable firepower, it proved ideal as a close-quarters defensive weapon. Though its .30 Carbine bullets underperform in complex/long-range engagements, numerous successful defense cases validate its utility.
+This weapon fires intermediate 7.62mm carbine bullets with moderate penetration effectiveness peaking against medium armor, showing limited performance vs light/heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D4 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 19|19|38|13% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition type: cartridge
+Damage: 2D6
+THAC0: +3
+Attacks Per Round: 4
+Range: 28
+Speed factor: 1
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 5 Strength
+Weight: 5"
+
+@3113 = "Gewehr 43"
+@3213 = "The Gewehr 43 (G43) marked Nazi Germany's first practical semi-automatic rifle, innovatively developed with SVT-40 influences. Despite Allied captures and STG44's competition, it demonstrated technological superiority with lightweight construction, durability, formidable firepower, and mass-production feasibility. Though rapidly solving feeding issues, its ambiguous role led to eventual obsolescence. Production quality declined as Germany's war situation deteriorated, but this early-manufactured specimen retains exceptional accuracy/reliability.
+This rifle fires full-power 7.92mm bullets with high penetration effectiveness that increases against heavier armor, while prone to over-penetration vs unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 21|21|35|40% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge
+Damage: 2D8+1
+THAC0: +4
+Attacks Per Round: 3
+Range: 38
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 11 Strength
+Weight: 9"
+
+@3114 = "SKS Carbine"
+@3214 = "The 1946-adopted Simonov semi-automatic carbine pioneered intermediate cartridge adoption, offering compact size, reduced weight/recoil, simplified mechanics, and enhanced reliability compared to traditional semi-autos. Though competent across metrics, its ill-timed debut relegated it to transitional status in origin countries, while socialist bloc variants (notably China's Type 56) achieved legendary status through marksmanship feats.
+This weapon fires 7.62mm intermediate bullets with superior penetration against medium/heavy armor, while prone to over-penetration vs light/unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 18|18|36|36% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge
+Damage: 2D6+1
+THAC0: +4
+Attacks Per Round: 3.5
+Range: 32
+Speed factor: 2
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 8 Strength
+Weight: 8"
+
+@3121 = "StG-44"
+@3221 = "The StG-44 assault rifle stands as one of modern infantry's epochal achievements, being the first mass-produced assault rifle utilizing intermediate cartridges. Early prototypes received widespread frontline acclaim before Hitler personally designated it 'Sturmgewehr' in 1944 after final upgrades. It filled critical 200-500m engagement gaps with devastating suppressive fire, outperforming both SMGs and full-power rifles at common combat distances.
+This weapon fires 7.92×33mm Kurz intermediate bullets with superior penetration against medium/heavy armor, while prone to over-penetration vs light/unarmored targets.
+Controlled cyclic rate and manageable recoil allow sustained bursts. Automatic weapons proficiency slightly improves short/long burst stability for increased hit probability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 16|16|32|32% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge/magazine/drum
+Damage: 1D12+1
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 3.5
+Range: 30
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 10 Strength
+Weight: 11"
+
+@3122 = "AK-47"
+@3222 = "The AK-47 represents the Soviet Union's first-generation assault rifle. Renowned for simplicity, reliability, and durability, it maintains functionality under extreme conditions with decent semi-auto accuracy. However, heavy recoil, muzzle climb during bursts, and crude sights limit precision, optimized for close-quarter ambush tactics. Global proliferation made it warfare's most ubiquitous firearm, responsible for unprecedented casualties.
+This rifle can be operated by illiterate conscripts from double-digit GDP nations against elite forces. It requires zero maintenance - ever. Malfunctions are fixable with sledgehammers and kicks.
+Chambered in 7.62×39mm intermediate bullets, it exhibits superior penetration against medium/heavy armor, while prone to over-penetration vs light/unarmored targets.
+Moderate cyclic rate combines with violent recoil patterns requiring skilled handling. Automatic weapons proficiency moderately improves burst control for tighter shot groups.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 16|16|32|32% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition type: cartridge/magazine/drum
+Damage: 2D6+1
+THAC0: +4
+Damage type: ranged
+Attacks Per Round: 3.5
+Range: 31
+Speed factor: 2
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+
+@3123 = "FN FAL"
+@3223 = "The FN FAL battle rifle originated from post-WWII British rifle development programs. Initially designed for 7×43mm intermediate cartridges in full-auto prototypes, it was compelled to adopt 7.62×51mm NATO bullets under U.S. pressure. Becoming one of the most mass-produced and widely distributed military rifles post-war due to cost-effectiveness, it earned mercenary acclaim as 'one of the 20th century's greatest mercenary weapons' in American contractor publications.
+This rifle fires full-power 7.62mm bullets with high penetration effectiveness against medium/heavy armor, while prone to over-penetration vs light/unarmored targets.
+Rapid cyclic rate and intense recoil demand expert handling. Automatic weapons proficiency significantly improves burst stability for enhanced hit probability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 24|24|39|45% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge/magazine/drum
+Damage: 3D6
+THAC0: +5
+Damage type: ranged
+Attacks Per Round: 2.5
+Range: 38
+Weight:9
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 15 Strength
+Weight: 9"
+
+@3124 = "M16A1"
+@3224 = "The M16A1 represents America's second-generation post-WWII service rifle, pioneering small-caliber ammunition that revolutionized firearms miniaturization. Initial Colt marketing overstated its maintenance-free operation, leading to catastrophic jams/corrosion in Vietnam's jungles. Though technologically advanced, it demands frequent cleaning/lubrication for reliability.
+Firing 5.56mm bullets that yaw/fragment upon impact, this weapon excels against unarmored/medium armor targets but underperforms vs heavy armor.
+High cyclic rate combines with mild recoil. Automatic weapons proficiency slightly improves burst control for tighter shot groups.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 50|50|50|30% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge/magazine/drum
+Damage: 1D12+1
+THAC0: +4
+Damage type: ranged
+Attacks Per Round: 3.5
+Range: 35
+Speed factor: 2
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 9 Strength
+Weight: 8"
+
+@3125 = "Steyr AUG"
+@3225 = "The Steyr AUG modular weapon system incorporates polymer components (including hammer/sear/trigger) requiring no lubrication, offering durability and tool-free maintenance. Compact bullpup design enables superior handling with exceptional burst accuracy. Rare among bullpups for law enforcement/SOF adoption, it stands as commercially successful assault rifle.
+Firing 5.56mm bullets that yaw/fragment upon impact, this weapon excels against unarmored/medium armor targets but underperforms vs heavy armor.
+Controllable recoil complements high cyclic rate. Automatic weapons proficiency moderately improves burst stability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 50|50|50|30% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition type: cartridge/magazine/drum
+Damage: 1D12+1
+THAC0: +5
+Damage type: ranged
+Attacks Per Round: 3.5
+Range: 35
+Speed factor: 2
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 8 Strength
+Weight: 7"
+
+@3126 = "H&K G11"
+@3226 = "The H&K G11 spent two decades resolving caseless ammunition self-ignition issues. Eliminating ejection cycles enables extreme fire rates with match-grade precision. Its most impressive party trick is to deliver three bullets at blistering speed (2,100 RPM) before recoil notices them, achieving unparalleled short-burst accuracy. Sustained fire defaults to 600-700 RPM. The sealed bullpup configuration resembles Swiss watchmaking precision encased in polymer.
+This rifle fires 4.7×33mm high-velocity bullets offering fragmentation effects against soft targets plus moderate penetration. Effective vs unarmored/medium armor, less effective against heavy armor.
+Hyperburst mode negates recoil impact; sustained fire remains controllable. No automatic weapons proficiency bonus applies to burst stability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D4 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 35|35|35|21% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Fires a fixed burst of three bullets instantly during magazine reloading, maintaining continuous action without pause
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition type: cartridge/magazine/drum
+Damage: 1D12
+THAC0: +4
+Damage type: ranged
+Attacks Per Round: 4
+Range: 32
+Weight:8
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 7 Strength
+Weight: 8"
+ 
+@3127 = "AN-94"
+@3227 = "The AN-94 can deliver two bullets at 1,800 RPM while the recoil isn't paying attention, reverting to standard 600 RPM from third shot onward. This hyperburst mode surpasses single-fire in penetration/stopping power while maintaining equivalent accuracy. Russian military assessments deem this capability superfluous for rank-and-file troops, reserving effectiveness for elite units. Its dual-reciprocating bolt/pulley system increases production/maintenance costs, limiting widespread adoption.
+Firing 5.45×39mm bullets with extreme yaw/fragmentation effects, this weapon excels against unarmored/medium armor but underperforms vs heavy armor.
+Hyperburst negates recoil; sustained fire remains manageable. No automatic weapons proficiency bonus applies to burst stability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 45|45|45|27% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Fires a fixed burst of two bullets instantly during magazine reloading, maintaining continuous action without pause
+
+Ammunition type: cartridge/magazine/drum
+Damage: 1D12
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 4
+Range: 36
+Weight:8
+Speed factor: 3
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 9 Strength
+Weight: 8"
+
+@4101 = "Colt M1878 (Sawed-Off)"
+@4201 = "For concealment and portability, this shotgun features a truncated barrel and removed stock, enabling single-handed use in tight spaces. The lack of barrel constraint drastically increases pellet spread while reducing effective range to point-blank engagements.
+Firing 12mm buckshot with underpowered pellets due to missing barrel acceleration, it shows marginal effectiveness against unarmored/light armor; performance drops against medium armor and becomes nearly useless vs heavy armor.
+
+STATISTICS:
+
+Combat abilities:
+
+- 10ft cone (60° arc) where each creature may be struck by 2-4 pellets (large creatures hit by more)
+
+- Each pellet may inflict Bleeding/Slow/Stun/Unconscious/Additional 2D1 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 7|7|5|1% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition type: cartridge
+Damage: 1D2
+THAC0: +6
+Damage type: ranged
+Attacks Per Round: 2
+Range: 10
+Weight:4
+Speed factor: 0
+Proficiency: Automatic Weapons (Crossbow)
+Type: One-handed
+Requires: 13 Strength
+Weight: 10"
+
+@4102 = "Winchester M1887"
+@4202 = "The Winchester M1887 holds distinction as the first successful repeating shotgun. Despite Browning's preference for pump-action designs, Winchester insisted on lever-action mechanisms. Though outpaced by pump-actions commercially, its cultural immortality was secured through the Terminator franchise's iconic motorcycle reload scene.
+This smoothbore 12mm shotgun devastates unarmored/light armor, with reduced effectiveness against medium/heavy armor.
+Capable of breaching ordinary door locks when fired at optimal angles to avoid ricochets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 75|75|50|10% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Special ability:
+
+- Breach ordinary locks
+
+Ammunition type: cartridge
+Damage: 4D4
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 1
+Range: 24
+Weight:8
+Speed factor: 1
+Proficiency: Automatic Weapons (Crossbow)
+Type: One-handed
+Requires: 16 Strength
+Weight: 8"
+
+@4103 = "Remington M870"
+@4203 = "The Remington M870 reigns as America's pump-action shotgun monarch, prized for compact design, reliability, and affordability across military/police/civilian sectors. Vietnam War performance cemented its global reputation. Delivering firepower equivalent to dozens of pistol bullets per shot, it excels in CQB and defensive operations.
+This smoothbore 12mm shotgun devastates unarmored/light armor, with reduced effectiveness against medium/heavy armor.
+Capable of breaching ordinary door locks when fired at optimal angles to avoid ricochets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 75|75|50|10% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Special ability:
+
+- Breach ordinary locks
+
+Ammunition type: cartridge
+Damage: 4D4
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 2.5
+Range: 24
+Weight:7
+Speed factor: 1
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 12 Strength
+Weight: 7"
+
+@4104 = "Benelli M1014/M4 SUPER 90"
+@4204 = "The Benelli M4 semi-automatic shotgun employs a gas-operated system instead of traditional inertia-driven mechanics. Its dual-piston design ensures reliable cycling with low-recoil shells across temperature extremes, capable of firing various shell types without adjustments. Rated for 25,000+ bullets without major component replacement, it maintains all-weather reliability.
+This smoothbore 12mm shotgun devastates unarmored/light armor, with reduced effectiveness against medium/heavy armor.
+Capable of breaching ordinary door locks when fired at optimal angles to avoid ricochets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 75|75|50|10% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Special ability:
+
+- Breach ordinary locks
+
+Ammunition type: cartridge
+Damage: 4D4
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 3
+Range: 24
+Speed factor: 1
+Proficiency: Automatic Weapons (Crossbow)
+Type: Two-handed
+Requires: 12 Strength
+Weight: 7"
+
+@4105 = "MPS AA-12"
+@4205 = "The AA-12's Constant Recoil system reduces kick to 10% of conventional shotguns, enabling full-auto control comparable to SMGs - even fired one-handed without shoulder contact. Self-cleaning mechanics eject contaminants, requiring only water rinses for maintenance in extreme conditions. Though oversized as military sidearms and overpowered for law enforcement, it shines in zombie apocalypse scenarios.
+This smoothbore 12mm shotgun devastates unarmored/light armor, with reduced effectiveness against medium/heavy armor.
+Capable of breaching ordinary door locks when fired at optimal angles to avoid ricochets.
+Low cyclic rate and negligible recoil negate automatic weapons proficiency bonuses for stability.
+
+Special ability:
+
+- Breach ordinary locks
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Mostly negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 75|75|50|10% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Receives melee hit/defense bonuses instead of standard ranged weapon penalties
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 4D4
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 3
+Range: 24
+Speed factor: 2
+Proficiency: Automatic Weapons (Crossbow)
+Type: One-handed
+Requires: 10 Strength
+Weight: 11"
+
+@5101 = "Springfield M1903A4"
+@5201 = "To counter Japanese snipers, U.S. forces urgently modified M1903A3 rifles with precision barrels and 2.2× telescopic sights (removing iron sights/sight rails). The optic mounting prohibited stripper clip reloading and disabled aiming if damaged. Though limited by low magnification and lack of bipod, it filled critical sniper role gaps using standard .30-06 bullets instead of specialized ammunition. 
+This rifle fires 7.62mm full-power bullets with superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D7 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 27|27|44|51% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Special ability:
+
+- Scope extends vision range: Attack targets beyond normal sight (within weapon range) for 1 round, granting +2 ranged hit bonus
+
+Ammunition type: cartridge
+Damage: 3D6+1
+THAC0: +5
+Damage type: ranged
+Attacks Per Round: 1
+Range: 38
+Speed factor: 9
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 8 Strength
+Weight: 9"
+
+@5102 = "Remington 700"
+@5202 = "The Remington 700 bolt-action sniper rifle, introduced in 1962, gained fame for precision and power. Excellent quality control and simple design made it a civilian market benchmark. Adopted by USMC with Redfield Accu-Range 3-9×40mm scope, its manufacturer proclaimed: 'The world's most powerful turnbolt rifle.'
+Chambered in .308 Winchester PST bullets, it exhibits superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D7 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 28|28|46|54% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Special ability:
+
+- Scope extends vision range: Attack targets beyond normal sight (within weapon range) for 1 round, granting +3 ranged hit bonus
+
+Ammunition type: cartridge
+Damage: 2D10+1
+THAC0: +8
+Damage type: ranged
+Attacks Per Round: 1
+Range: 38
+Speed factor: 7
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 8 Strength
+Weight: 7"
+
+@5103 = "SVD Sniper Rifle"
+@5203 = "The SVD semi-automatic sniper rifle was designed based on the AK-47, offering excellent accuracy, light weight, reliability, and exceptional durability for its time. It was the first sniper rifle in history to form a complete system, utilizing a 4x magnification PSO-1 scope. However, it was designed simply to extend the effective range of infantry squads, and many of its details negatively impacted shooting accuracy—it even came with a bayonet, so it cannot be considered a true professional sniper rifle. The original SVD design did not account for the use of a bipod, and mounting a bipod on the free-floating barrel would degrade accuracy. Later, Russia incorporated feedback from snipers and developed a dedicated telescoping bipod to resolve this issue. 
+Firing 7.62mm full-power bullets, it exhibits superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 24|24|39|45% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Special ability:
+
+- Scope extends vision range: Attack targets beyond normal sight (within weapon range) for 1 round, granting +4 ranged hit bonus
+
+Ammunition type: cartridge
+Damage: 3D6
+THAC0: +7
+Damage type: ranged
+Attacks Per Round: 1.5
+Range: 43
+Speed factor: 7
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 7 Strength
+Weight: 9"
+
+@5104 = "Barrett M82A1"
+@5204 = "The Barrett M82A1 dominates the .50-caliber sniper market through first-mover advantage rather than precision. Extensively used by U.S. forces with 1500m+ effective range, it shreds human targets, penetrates concrete walls, and neutralizes equipment like radar stations/trucks - earning 'Anti-Materiel Rifle' designation. Minimal recoil ensures shooter comfort and accuracy.
+This weapon devastates targets with 12.7mm bullets: exceptional vs heavy/medium armor, effective against light/unarmored foes, and threatening even to constructs/large creatures.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 4D6 Damage/Weaken Attack & Defense (Limited immunity for inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 52|52|60|78% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Special ability:
+
+- Scope extends vision range: Attack targets beyond normal sight (within weapon range) for 1 round, granting +6 ranged hit bonus
+
+Ammunition type: cartridge
+Damage: 3D10
+THAC0: +7
+Damage type: ranged
+Attacks Per Round: 1.5
+Range: 45
+Speed factor: 10
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 12 Strength
+Weight: 28"
+
+@5105 = "AWM Sniper Rifle"
+@5205 = "Designed by champion marksman Malcolm Cooper, this rifle combines reliability, moderate weight, and minimal recoil with ergonomic excellence. Guaranteed 100% hit probability within 600m (extendable to 1200m with precision optics), its military variants became notorious in Middle Eastern conflicts through successive upgrades.
+Firing .338 Lapua Magnum bullets with stable trajectory and high penetration: devastating vs heavy/medium armor, effective against light/unarmored targets.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D10 Damage/Weaken Attack & Defense (Limited immunity for inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 40|40|65|75% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Special ability:
+
+- Scope extends vision range: Attack targets beyond normal sight (within weapon range) for 1 round, granting +6 ranged hit bonus
+
+Ammunition type: cartridge
+Damage: 3D8
+THAC0: +9
+Damage type: ranged
+Attacks Per Round: 1
+Range: 43
+Speed factor: 8
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 10 Strength
+Weight: 17"
+
+@5106 = "CheyTac M200"
+@5206 = "The CheyTac M200 'Intervention' is a bolt-action sniper rifle produced by the American company CheyTac, primarily designed for engaging long-range soft targets. As a semi-intelligent sniper rifle, CheyTac's 'Long Range Rifle System' includes a ballistic computer, a small weather-tracking device connected to a personal digital assistant (PDA), a laser rangefinder, a scope, and a muzzle device. The entire system is capable of achieving sub-1 MOA accuracy at distances up to 2,286 meters, making it the longest-range rifle among all modern sniper rifles. Despite its excellence, the rifle has seen very poor sales due to its high cost and difficulty in carrying. 
+Chambered in purpose-built .408 CheyTac bullets for ultimate precision/range: devastating penetration vs all armor types including heavy/medium.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D12 Damage/Weaken Attack & Defense (Limited immunity for inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 50|50|58|75% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Special ability:
+
+- Scope extends vision range: Attack targets beyond normal sight (within weapon range) for 1 round, granting +8 ranged hit bonus
+
+Ammunition type: cartridge
+Damage: 2D12+2
+THAC0: +10
+Damage type: ranged
+Attacks Per Round: 1
+Range: 47
+Speed factor: 10
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 11 Strength
+Weight: 31"
+
+@5107 = "QLU-11"
+@5207 = "The world's only formally adopted sniper grenade launcher to date, equipped with a smart fire control system featuring laser rangefinding, ballistic calculation, and night vision capabilities. It measures and compensates for environmental factors such as air pressure, temperature, and firing angle to significantly improve first-shot accuracy. The system includes programmable functionality, allowing grenades to detonate at preset flight distances or timings. To enhance long-range precision, the grenade is launched at an extremely high muzzle velocity. Despite incorporating multiple recoil mitigation measures, it still generates significant recoil.
+This weapon fires programmable 35mm explosive grenades. Due to safety programming protocols, the grenade will not detonate when striking targets at close range. However, getting a 200g projectile slapping you in the face at supersonic speeds isn't exactly a spa day.
+
+STATISTICS:
+
+Combat abilities:
+
+- Detonates upon impact, dealing 3D4 piercing and 3D4 slashing damage within a 6ft radius
+
+- Will not detonate if the target is within 7ft of the user, instead dealing direct impact damage to the single target.
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Special ability:
+
+- Scope extends vision range: Attack targets beyond normal sight (within weapon range) for 1 round, granting +6 ranged hit bonus
+
+Ammunition type: magazine
+Damage: 2D12+1 (direct impact)
+THAC0: +6
+Damage type: bludgeoning
+Attacks Per Round: 1.5
+Range: 41
+Speed factor: 10
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 14 Strength
+Weight: 28"
+
+@6101 = "BAR M1918A2"
+@6201 = "Initially designed as an automatic rifle, the BAR's full-power rifle bullets necessitated its role as squad support weaponry, bridging the gap between heavy machine guns and SMGs. Subsequent modifications solidified its light machine gun position. Overweight as a rifle yet underweight as LMG, its 20-cartridge magazines and fixed barrel limit sustained fire. Still favored for retaining 'marching fire' capability.
+This weapon fires 7.62mm full-power bullets with superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+Moderate cyclic rate combines with substantial weight for stability, though recoil complicates mobile firing. Automatic weapons proficiency moderately improves burst control.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 24|24|39|45% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 3D6
+THAC0: +4
+Damage type: ranged
+Attacks Per Round: 2.5
+Range: 38
+Speed factor: 4
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 14 Strength
+Weight: 19"
+
+@6102 = "ZB-26"
+@6202 = "The ZB-26 light machine gun gained global popularity through simplicity, reliability, and quick barrel changes. Effective in mobile assaults despite top-mounted magazine obstructing sight picture. Infantry could operate it with minimal training.
+Chambered in 7.92mm full-power bullets with superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+Controlled cyclic rate and substantial weight enable stable mobile firing. Automatic weapons proficiency slightly improves burst accuracy.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 24|24|40|46% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 3D6
+THAC0: +4
+Damage type: ranged
+Attacks Per Round: 2.5
+Range: 41
+Speed factor: 5
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 13 Strength
+Weight: 21"
+
+@6103 = "DP-28"
+@6203 = "The DP light machine gun, also known as the Degtyaryov light machine gun, was the primary light machine gun used by the Soviet Union during World War II, and its large pan magazine is impressive. It has a simple structure, making it suitable for mass production, and is also an easy-to-operate, reliable machine gun—no matter how dirty it gets, its firing performance is hardly affected. The DP light machine gun was praised by soldiers during the Great Patriotic War, but after sustained firing, its operation could be compromised due to the heating of the recoil spring. Additionally, its front-heavy, rear-light design made it less suitable for hip firing or shooting on the move.
+Firing 7.62mm full-power bullets with superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+Moderate cyclic rate combines with unbalanced weight distribution, complicating mobile engagements. Automatic weapons proficiency moderately improves burst control.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 24|24|39|45% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 3D6
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 2.5
+Range: 38
+Speed factor: 5
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 14 Strength
+Weight: 20"
+
+@6104 = "M249 SAW"
+@6204 = "In the 1960s, the U.S. Army wanted a one-man light machine gun: lighter than the M60, deadlier than the M16. After flip-flopping between experimental ammo and the trusty 5.56mm NATO, they settled on Belgium's FN Minimi (the least problematic option in a mediocre lineup). Though not a star performer, it checked all boxes: compact, versatile, and stubbornly adequate. Soldiers appreciated its suppressing fire capabilities, but cursed its finicky nature – field maintenance often felt like solving a puzzle blindfolded.
+This weapon fires 5.56mm bullets prone to fragmentation at range: effective vs unarmored/medium armor, less effective against heavy armor.
+High cyclic rate with manageable recoil enables mobile firing. Automatic weapons proficiency moderately improves burst control.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D4 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 45|45|45|27% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 2D6
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 3.5
+Range: 38
+Speed factor: 3
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 11 Strength
+Weight: 17"
+
+@6105 = "Ultimax 100"
+@6205 = "This Singaporean LMG employs Constant Recoil mechanics and polymer construction, weighing less than unloaded counterparts. Minimal 5.56mm recoil allows single-handed stability, resembling a heavy-barrel automatic rifle. Despite advantages, complex mechanics reduce reliability/service life, while high costs limit adoption.
+Firing 5.56mm bullets prone to fragmentation at range: effective vs unarmored/medium armor, less effective against heavy armor.
+Controlled cyclic rate and negligible recoil negate automatic weapons proficiency bonuses for stability.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 50|50|50|30% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 1D12+1
+THAC0: +4
+Damage type: ranged
+Attacks Per Round: 3.5
+Range: 32
+Speed factor: 2
+Proficiency: Automatic Weapon (Crossbow)
+Type: One-handed
+Requires: 8 Strength
+Weight: 11"
+
+@6111 = "MG42 GPMG"
+@6211 = "Post-WWI Germany developed this general-purpose machine gun under Versailles Treaty restrictions. With blistering 1,200-1,500 RPM rate (earning 'Hitler's Buzzsaw' moniker), it delivers multiple hits per trigger pull. Revolutionary features include quick-change barrels, simplified manufacturing, and versatile mounting. Though vibration and short sight radius limit long-range accuracy, its suppressive fire dominated battlefields.
+This weapon fires 7.92mm full-power bullets with superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+Extreme cyclic rate and heavy recoil demand physical stabilization. Automatic weapons proficiency moderately improves burst control.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 21|21|35|40% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Ammunition type: magazine/drum/belt
+Damage: 2D8+1
+THAC0: +5
+Damage type: ranged
+Attacks Per Round: 3
+Range: 44
+Speed factor: 7
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 15 Strength
+Weight: 24"
+
+@6112 = "M60 GPMG"
+@6212 = "During World War II, the Americans were impressed by Nazi Germany's concept of general-purpose machine guns. After thorough study of the MG42, they developed the M60 machine gun. Many people know the M60 through the movie First Blood – to this day, it's still nicknamed the 'Rambo Gun'. However, the M60's performance was far from stellar. It committed numerous production and design sins, and was ultimately adopted by the military mainly because competing designs at the time were even more outlandish. Its reliability was notoriously temperamental – operators had to constantly monitor barrel overheating during firing, and its maintenance time far exceeded actual firing time, especially in harsh environments. This legendary machine gun essentially operated on the principle of: 'Either muzzle constipation, or chamber diarrhea – only works when it's in the mood.'
+Chambered in 7.62mm full-power bullets with superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+Moderate cyclic rate with controllable recoil. Automatic weapons proficiency slightly improves burst accuracy.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D5 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 25|25|41|48% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 2D10
+THAC0: +6
+Damage type: ranged
+Attacks Per Round: 3
+Range: 43
+Speed factor: 7
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 15 Strength
+Weight: 24"
+
+@6113 = "PKM GPMG"
+@6213 = "Another masterpiece from Kalashnikov's team, the PKM stands as the pinnacle of Cold War Soviet small arms - a GPMG that tops every performance metric. Its precision, manufacturability and longevity are unmatched, with the iconic saying among firearm enthusiasts: 'No weapon stays technologically leading for over 30 years... except the PKM.' The revolutionary elastic mount, designed through manual finite element analysis by Soviet mathematicians (who computed complex equations without modern computers), reduces weight without sacrificing accuracy. Western engineers still puzzle over how they achieved such ballistic witchcraft with slide rules and graph paper.
+Firing 7.62mm full-power bullets with superior penetration against medium/heavy armor, prone to over-penetration vs light/unarmored targets.
+Stable cyclic rate with mount-induced dispersion during sustained fire. Automatic weapons proficiency slightly improves burst control.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 24|24|40|46% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Ammunition type: magazine/drum/belt
+Damage: 3D6
+THAC0: +7
+Damage type: ranged
+Attacks Per Round: 3
+Range: 43
+Speed factor: 6
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 13 Strength
+Weight: 17"
+
+@6114 = "QJZ-171"
+@6214 = "The only .50-caliber GPMG, surpassing predecessors through titanium components and advanced recoil mitigation. Redefines crew-served weapon portability with new-material ammunition/cases. As a mountain-specialized machine gun, it writes the rules: Outclimb me? You’re undergunned. Outgun me? You’re out-terrained. The old meme 'Three Gun-Bearers Chasing a Chubby' which‌ crystallizing both the Type 89's operational burden and troops' dark humor about equipment weight may become 'One carrier chasing a chubby' on QJZ-171 which weights ‌27% lighter‌ than Type 89.
+Firing optimized 12.7mm bullets: devastating vs all armor types, effective against constructs/large creatures.
+Controlled cyclic rate with mount-induced dispersion. Automatic weapons proficiency slightly improves burst control.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 4D6 Damage/Weaken Attack & Defense (Limited immunity for inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 54|54|63|81% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to redeploy bipod after firing, immobilizing user during setup
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 3D10+2
+THAC0: +6
+Damage type: ranged
+Attacks Per Round: 3
+Range: 45
+Weight:37
+Speed factor: 8
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 9 Strength
+Weight: 37"
+
+@6121 = "Maxim Heavy Machine Gun"
+@6221 = "The world's first truly automatic firearm powered by gas operation made its bloody debut in WWI's Somme Offensive, where German units used it to claim 60,000 British lives in a single day - essentially inventing industrialized warfare. Nicknamed 'The Reaper's Lawnmower', this water-cooled behemoth traded portability for relentless fire. While its tripod stability and steady rate of fire made it a trench warfare superstar, soldiers joked that operating it required 'three men to carry, four more to feed it ammo, and a priest to pray the belt doesn't jam'.
+This weapon fires 7.7mm full-power bullets with superior penetration against heavier armor, while prone to over-penetration vs unarmored targets.
+Mounted on its tripod fortress, firing stability is absolute - no automatic weapons proficiency bonuses apply.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 22|22|37|42% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1 round to redeploy tripod after firing, immobilizing user during setup
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 2D8+1
+THAC0: +6
+Damage type: ranged
+Attacks Per Round: 3.5
+Range: 45
+Weight:60
+Speed factor: 9
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 8 Strength
+Weight: 60"
+
+@6122 = "M2HB"
+@6222 = "The 'Ma Deuce' - warfare's centenarian superstar still rocking its Roaring Twenties design. This .50cal dinosaur crusher laughs at armor, aircraft, and the concept of retirement. Armorers quip: 'Maintenance requires three things - a wrench, a prayer, and selective memory about its 1921 birth certificate'. With ballistics flatter than Kansas and recoil management smoother than jazz, its only weakness is sounding like grandma's sewing machine when firing.
+Firing 12.7mm bullets that turn cover into confetti, this weapon devastates all armor types including constructs/large creatures.
+Tripod-mounted stability negates automatic weapons proficiency bonuses.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 4D6 Damage/Weaken Attack & Defense (Limited immunity for inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 54|54|63|81% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1 round to redeploy tripod after firing, immobilizing user during setup
+
+Ammunition type: cartridge/magazine/drum/belt
+Damage: 3D10+1
+THAC0: +6
+Damage type: ranged
+Attacks Per Round: 3
+Range: 47
+Speed factor: 10
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 13 Strength
+Weight: 84"
+
+@6123 = "M134 Minigun"
+@6223 = "The M134 uses an electric motor to drive the rotation of six barrels, enabling it to spew a metal storm at a rate of thousands of rounds per minute, shredding targets into pieces. This also results in significant drawbacks: excessive ammunition consumption and barrels prone to overheating. Although the weapon boasts an extremely low malfunction rate, its complex structure makes timely troubleshooting difficult once malfunctions occur. While the gun itself is relatively compact and lightweight, its accompanying external power supply, control system, ammunition storage and feeding systems are notably bulky, severely limiting its operational versatility. Even if batteries and ammunition are placed on the ground to reduce weight, the recoil force exceeding 150 kilograms during high-rate firing becomes unbearable. Therefore, when modified into a handheld version, the weapon's firing rate is adjusted downward accordingly.
+Firing 7.62mm bullets with armor-piercing enthusiasm, prone to over-penetration vs light/unarmored targets.
+Controlling this angry beehive requires master-level automatic weapons proficiency.
+
+STATISTICS:
+
+Combat abilities:
+
+- May inflict Bleeding/Slow/Stun/Unconscious/Additional 2D6 Damage/Weaken Attack & Defense (Partially negated by inorganic targets/large creatures). Effect trigger probability vs unarmored|light|medium|heavy armor: 25|25|41|48% (Large creatures/constructs count as Heavy armor, chitinous beings as Medium armor)
+
+- Requires 1/2 round to manage power cells/ammo feed, immobilizing user during setup
+
+Ammunition type: magazine/drum/belt
+Damage: 2D10
+THAC0: +3
+Damage type: ranged
+Attacks Per Round: 2
+Range: 41
+Weight:57
+Speed factor: 4
+Proficiency: Automatic Weapon (Crossbow)
+Type: Two-handed
+Requires: 18 Strength
+Weight: 57"
+
+
+
+
+@1301 = "Malfunctioning Colt 'Python'"
+@1302 = "Malfunctioning Ruger 'Blackhawk'"
+@1303 = "Malfunctioning Smith & Wesson M500"
+@1311 = "Malfunctioning Luger P08"
+@1312 = "Malfunctioning Colt M1911"
+@1313 = "Malfunctioning Tokarev TT-33"
+@1314 = "Malfunctioning Walther PPK"
+@1315 = "Malfunctioning CZ 75"
+@1316 = "Malfunctioning Glock 17"
+@1317 = "Malfunctioning Desert Eagle"
+@1318 = "Malfunctioning FN Five-seveN"
+@2301 = "Malfunctioning Mauser C96/M1932"
+@2302 = "Malfunctioning Micro Uzi"
+@2303 = "Malfunctioning Škorpion Vz.61"
+@2304 = "Malfunctioning H&K MP5"
+@2305 = "Malfunctioning FN P90"
+@2306 = "Malfunctioning H&K UMP45"
+@2307 = "Malfunctioning PP-2000"
+@2311 = "Malfunctioning Thompson M1921"
+@2312 = "Malfunctioning MP40"
+@2313 = "Malfunctioning Sten MkII"
+@2314 = "Malfunctioning PPSh-41"
+@2315 = "Malfunctioning M3 Grease Gun"
+@2316 = "Malfunctioning ShAK-12"
+@3301 = "Malfunctioning Lee-Enfield No1 MkIII"
+@3302 = "Malfunctioning Type 38 Arisaka"
+@3303 = "Malfunctioning Mosin-Nagant M1891/30"
+@3304 = "Malfunctioning Mauser Kar98k"
+@3305 = "Malfunctioning PTRD-41"
+@3311 = "Malfunctioning M1 Garand"
+@3312 = "Malfunctioning M1 Carbine"
+@3313 = "Malfunctioning Gewehr 43"
+@3314 = "Malfunctioning SKS"
+@3321 = "Malfunctioning StG-44"
+@3322 = "Malfunctioning AK-47"
+@3323 = "Malfunctioning FN FAL"
+@3324 = "Malfunctioning M16A1"
+@3325 = "Malfunctioning Steyr AUG"
+@3326 = "Malfunctioning H&K G11"
+@3327 = "Malfunctioning AN-94"
+@4301 = "Malfunctioning Sawed-off Colt M1878"
+@4302 = "Malfunctioning Winchester M1887"
+@4303 = "Malfunctioning Remington M870"
+@4304 = "Malfunctioning Benelli M1014/M4 Super90"
+@4305 = "Malfunctioning AA-12"
+@5301 = "Malfunctioning Springfield M1903A4"
+@5302 = "Malfunctioning Remington 700"
+@5303 = "Malfunctioning SVD"
+@5304 = "Malfunctioning Barrett M82A1"
+@5305 = "Malfunctioning AWM"
+@5306 = "Malfunctioning CheyTac M200"
+@5307 = "Malfunctioning QLU-11"
+@6301 = "Malfunctioning BAR M1918A2"
+@6302 = "Malfunctioning ZB-26"
+@6303 = "Malfunctioning DP-28"
+@6304 = "Malfunctioning M249 SAW"
+@6305 = "Malfunctioning Ultimax 100"
+@6311 = "Malfunctioning MG42"
+@6312 = "Malfunctioning M60"
+@6313 = "Malfunctioning PKM"
+@6314 = "Malfunctioning QJZ-171"
+@6321 = "Malfunctioning Maxim Gun"
+@6322 = "Malfunctioning M2HB"
+@6323 = "Malfunctioning M134 Minigun"
+
+
+@1401 = "Unserviceable Colt 'Python'"
+@1402 = "Unserviceable Ruger 'Blackhawk'"
+@1403 = "Unserviceable Smith & Wesson M500"
+@1411 = "Unserviceable Luger P08"
+@1412 = "Unserviceable Colt M1911"
+@1413 = "Unserviceable Tokarev TT-33"
+@1414 = "Unserviceable Walther PPK"
+@1415 = "Unserviceable CZ 75"
+@1416 = "Unserviceable Glock 17"
+@1417 = "Unserviceable Desert Eagle"
+@1418 = "Unserviceable FN Five-seveN"
+@2401 = "Unserviceable Mauser C96/M1932"
+@2402 = "Unserviceable Micro Uzi"
+@2403 = "Unserviceable Škorpion Vz.61"
+@2404 = "Unserviceable H&K MP5"
+@2405 = "Unserviceable FN P90"
+@2406 = "Unserviceable H&K UMP45"
+@2407 = "Unserviceable PP-2000"
+@2411 = "Unserviceable Thompson M1921"
+@2412 = "Unserviceable MP40"
+@2413 = "Unserviceable Sten MkII"
+@2414 = "Unserviceable PPSh-41"
+@2415 = "Unserviceable M3 Grease Gun"
+@2416 = "Unserviceable ShAK-12"
+@3401 = "Unserviceable Lee-Enfield No1 MkIII"
+@3402 = "Unserviceable Type 38 Arisaka"
+@3403 = "Unserviceable Mosin-Nagant M1891/30"
+@3404 = "Unserviceable Mauser Kar98k"
+@3405 = "Unserviceable PTRD-41"
+@3411 = "Unserviceable M1 Garand"
+@3412 = "Unserviceable M1 Carbine"
+@3413 = "Unserviceable Gewehr 43"
+@3414 = "Unserviceable SKS"
+@3421 = "Unserviceable StG-44"
+@3422 = "Unserviceable AK-47"
+@3423 = "Unserviceable FN FAL"
+@3424 = "Unserviceable M16A1"
+@3425 = "Unserviceable Steyr AUG"
+@3426 = "Unserviceable H&K G11"
+@3427 = "Unserviceable AN-94"
+@4401 = "Unserviceable Sawed-off Colt M1878"
+@4402 = "Unserviceable Winchester M1887"
+@4403 = "Unserviceable Remington M870"
+@4404 = "Unserviceable Benelli M1014/M4 Super90"
+@4405 = "Unserviceable AA-12"
+@5401 = "Unserviceable Springfield M1903A4"
+@5402 = "Unserviceable Remington 700"
+@5403 = "Unserviceable SVD"
+@5404 = "Unserviceable Barrett M82A1"
+@5405 = "Unserviceable AWM"
+@5406 = "Unserviceable CheyTac M200"
+@5407 = "Unserviceable QLU-11"
+@6401 = "Unserviceable BAR M1918A2"
+@6402 = "Unserviceable ZB-26"
+@6403 = "Unserviceable DP-28"
+@6404 = "Unserviceable M249 SAW"
+@6405 = "Unserviceable Ultimax 100"
+@6411 = "Unserviceable MG42"
+@6412 = "Unserviceable M60"
+@6413 = "Unserviceable PKM"
+@6414 = "Unserviceable QJZ-171"
+@6421 = "Unserviceable Maxim Gun"
+@6422 = "Unserviceable M2HB"
+@6423 = "Unserviceable M134 Minigun"
+
+
+
+
+@2513 = "Sten MkII with Bayonet"
+@3501 = "Lee-Enfield No1 MkIII with Bayonet"
+@3502 = "Type 38 Arisaka with Bayonet"
+@3503 = "Mosin-Nagant M1891/30 with Bayonet"
+@3504 = "Mauser Kar98k with Bayonet"
+@3511 = "M1 Garand with Bayonet"
+@3512 = "M1 Carbine with Bayonet"
+@3514 = "SKS with Bayonet"
+@3522 = "AK-47 with Bayonet"
+@3523 = "FN FAL with Bayonet"
+@3524 = "M16A1 with Bayonet"
+@3525 = "Steyr AUG with Bayonet"
+@3526 = "H&K G11 with Bayonet"
+@3527 = "AN-94 with Bayonet"
+@5503 = "SVD with Bayonet"
+
+
+@2613 = "Sten MkII with enchanted Bayonet"
+@3601 = "Lee-Enfield No1 MkIII with enchanted Bayonet"
+@3602 = "Type 38 Arisaka with enchanted Bayonet"
+@3603 = "Mosin-Nagant M1891/30 with enchanted Bayonet"
+@3604 = "Mauser Kar98k with enchanted Bayonet"
+@3611 = "M1 Garand with enchanted Bayonet"
+@3612 = "M1 Carbine with enchanted Bayonet"
+@3614 = "SKS with enchanted Bayonet"
+@3622 = "AK-47 with enchanted Bayonet"
+@3623 = "FN FAL with enchanted Bayonet"
+@3624 = "M16A1 with enchanted Bayonet"
+@3625 = "Steyr AUG with enchanted Bayonet"
+@3626 = "H&K G11 with enchanted Bayonet"
+@3627 = "AN-94 with enchanted Bayonet"
+@5603 = "SVD with enchanted Bayonet"
+
+
+@2713 = "This crude Sten MkII is fitted with an equally crude 'No.4 Iron Nail' bayonet, representing the ultimate in bayonet simplicity from WWII. It looks like a pile of scrap metal whose sole purpose is to let you die... somewhat less, uh, still not particularly dignified after emptying your magazine in melee combat.
+
+STATISTICS:
+
+Damage: 1D4 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 3
+Proficiency: Spear
+Type: Two-handed
+Requires: 7 Strength
+Weight: 7"
+
+@2813 = "This crude Sten MkII is fitted with an equally crude 'No.4 Iron Nail' bayonet, representing the ultimate in bayonet simplicity from WWII. It looks like a pile of scrap metal whose sole purpose is to let you die... somewhat less, uh, still not particularly dignified after emptying your magazine in melee combat.
+The bayonet now bears standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually hit. One wonders what kind of terminally bored individual would bother enchanting this heap of junk?
+
+STATISTICS:
+
+Damage: 1D4 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 3
+Proficiency: Spear
+Type: Two-handed
+Requires: 7 Strength
+Weight: 7"
+
+@3701 = "The No.4 bayonet on this Lee-Enfield No1 MkIII breaks all bayonet design conventions. Resembling an oversized railroad spike more than a proper blade, it simply slides onto the barrel without even a locking spring - practically failing bayonet qualification. Modern metallurgy has surprisingly made this historical oddity more effective than its original incarnation.
+
+STATISTICS:
+
+Damage: 1D6 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 13 Strength
+Weight: 9"
+
+@3801 = "The No.4 bayonet on this Lee-Enfield No1 MkIII breaks all bayonet design conventions. Resembling an oversized railroad spike more than a proper blade, it simply slides onto the barrel without even a locking spring - practically failing bayonet qualification. Modern metallurgy has surprisingly made this historical oddity more effective than its original incarnation.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D6 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 13 Strength
+Weight: 9"
+
+
+@3702 = "This Type 38 Arisaka rifle comes equipped with a Type 30 bayonet. The Type 38 itself was the longest standard-issue rifle among WWII combatants, and the Type 30 bayonet similarly holds the title of longest standard-issue bayonet. When mounted, the combined length approaches 1.8 meters - often surpassing the average user's height, making it exceptionally lethal in bayonet charges.
+
+STATISTICS:
+
+Damage: 1D10 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+@3802 = "This Type 38 Arisaka rifle comes equipped with a Type 30 bayonet. The Type 38 itself was the longest standard-issue rifle among WWII combatants, and the Type 30 bayonet similarly holds the title of longest standard-issue bayonet. When mounted, the combined length approaches 1.8 meters - often surpassing the average user's height, making it exceptionally lethal in bayonet charges.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D10 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+
+@3703 = "This Mosin-Nagant features a folding quadrangular bayonet that gives it the silhouette of antique muzzleloaders. Longer than your leg, it dominates in thrusting combat - though its monofunctional design prohibited slashing or chopping maneuvers, ultimately leading to its obsolescence. Modern metallurgical upgrades have surprisingly transformed this historical relic into a more effective weapon.
+
+STATISTICS:
+
+Damage: 1D10 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 14 Strength
+Weight: 10"
+@3803 = "This Mosin-Nagant features a folding quadrangular bayonet that gives it the silhouette of antique muzzleloaders. Longer than your leg, it dominates in thrusting combat - though its monofunctional design prohibited slashing or chopping maneuvers, ultimately leading to its obsolescence. Modern metallurgical upgrades have surprisingly transformed this historical relic into a more effective weapon.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D10 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Weight: 10
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requirement: STR 14"
+
+@3704 = "This Mauser Model 1898 rifle bears the S84/98 bayonet - the German military's standard from 1915 to 1945 and a global icon of bayonet design. Resembling an elongated dagger, this precursor to multi-purpose bayonets (though unsharpened) excelled at everything except its supposed primary function: actual bayonet fighting. Contemporary manufacturing has ironically improved its combat performance.
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+@3804 = "This Mauser Model 1898 rifle bears the S84/98 bayonet - the German military's standard from 1915 to 1945 and a global icon of bayonet design. Resembling an elongated dagger, this precursor to multi-purpose bayonets (though unsharpened) excelled at everything except its supposed primary function: actual bayonet fighting. Contemporary manufacturing has ironically improved its combat performance.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+
+
+
+@3711 = "This Garand rifle carries the M5 bayonet, a complete redesign based on the M4 bayonet for carbines. Breaking from traditional Garand bayonet designs (M1905/M1), the M5 uniquely lacks muzzle rings above its crossguard, making it look more like a combat knife than a proper bayonet - which it technically isn't.
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 13 Strength
+Weight: 10"
+@3811 = "This Garand rifle carries the M5 bayonet, a complete redesign based on the M4 bayonet for carbines. Breaking from traditional Garand bayonet designs (M1905/M1), the M5 uniquely lacks muzzle rings above its crossguard, making it look more like a combat knife than a proper bayonet - which it technically isn't.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Weight: 10
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 13 Strength
+Weight: 10"
+
+@3712 = "This M1 Carbine sports the M4 bayonet, modified from the M3 fighting knife. Ironically, early carbines lacked bayonet lugs entirely, forcing soldiers to tape knives onto their rifles. The military only added proper mounts in the war's final weeks. Modern upgrades have made this afterthought design surprisingly competent.
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 10 Strength
+Weight: 8"
+@3812 = "This M1 Carbine sports the M4 bayonet, modified from the M3 fighting knife. Ironically, early carbines lacked bayonet lugs entirely, forcing soldiers to tape knives onto their rifles. The military only added proper mounts in the war's final weeks. Modern upgrades have made this afterthought design surprisingly competent.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 10 Strength
+Weight: 8"
+
+@3714 = "This SKS rifle features the CKC folding bayonet, an evolution of the 1944 pattern. Its all-metal hilt locks securely to the rifle, with a predominantly single-edged blade transitioning to double-edged tip and blood grooves. When folded under the barrel, it becomes deceptively compact - perfect for surprising overconfident opponents.
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 8 Strength
+Weight: 8"
+@3814 = "This SKS rifle features the CKC folding bayonet, an evolution of the 1944 pattern. Its all-metal hilt locks securely to the rifle, with a predominantly single-edged blade transitioning to double-edged tip and blood grooves. When folded under the barrel, it becomes deceptively compact - perfect for surprising overconfident opponents.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 8 Strength
+Weight: 8"
+
+@3722 = "This AK-47 carries the classic sword-type bayonet - a single-edged, upward-curving blade with blunt tip. Though less versatile than later AKM/AK-74 multi-tool bayonets, its stabbing efficiency remains uncompromised. Modern reforging has enhanced what was already brutally simple.
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 13 Strength
+Weight: 9"
+@3822 = "This AK-47 carries the classic sword-type bayonet - a single-edged, upward-curving blade with blunt tip. Though less versatile than later AKM/AK-74 multi-tool bayonets, its stabbing efficiency remains uncompromised. Modern reforging has enhanced what was already brutally simple.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 13 Strength
+Weight: 9"
+
+@3723 = "This FN FAL comes with the cursed brainchild of Herstal's engineers - a purpose-built tubular bayonet. The entire thing is forged from a single metal rod, achieving peak Belgian minimalism: no blade to speak of except the stabbing tip, making it less a knife and more a 'pointy metal stick'. But hey, when your design brief is 'make it stab good and cost 3 francs', they absolutely nailed it.
+
+STATISTICS:
+
+Damage: 1D10 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+@3823 = "This FN FAL comes with the cursed brainchild of Herstal's engineers - a purpose-built tubular bayonet. The entire thing is forged from a single metal rod, achieving peak Belgian minimalism: no blade to speak of except the stabbing tip, making it less a knife and more a 'pointy metal stick'. But hey, when your design brief is 'make it stab good and cost 3 francs', they absolutely nailed it.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D10 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+
+@3724 = "This M16 is paired with the M9 bayonet - a Buckmaster hunting knife derivative that moonlights as field tool. Its complex multi-functionality makes it the Swiss Army knife of bayonets, assuming you need a bayonet that can also open cans and cut wire.
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 10 Strength
+Weight: 8"
+@3824 = "This M16 is paired with the M9 bayonet - a Buckmaster hunting knife derivative that moonlights as field tool. Its complex multi-functionality makes it the Swiss Army knife of bayonets, assuming you need a bayonet that can also open cans and cut wire.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 10 Strength
+Weight: 8"
+@3725 = "This AUG rifle features the Glock bayonet, developed for Austria's Jagdkommando forces. A masterpiece of brutal simplicity with perfect balance, it essentially won the AUG bayonet contract by default - because who else would bother competing against perfection?
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 10 Strength
+Weight: 7"
+@3825 = "This AUG rifle features the Glock bayonet, developed for Austria's Jagdkommando forces. A masterpiece of brutal simplicity with perfect balance, it essentially won the AUG bayonet contract by default - because who else would bother competing against perfection?
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 10 Strength
+Weight: 7"
+
+@3726 = "The G11 assault rifle somehow manages to mount a bayonet, which is like welding a steak knife to a calculator. This 'metal spike protruding from a plastic brick' defies both ergonomics and common sense - perfect for when you need to stab someone while calculating bullet velocity in your head.
+
+STATISTICS:
+
+Damage: 1D6 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 10 Strength
+Weight: 8"
+@3826 = "The G11 assault rifle somehow manages to mount a bayonet, which is like welding a steak knife to a calculator. This 'metal spike protruding from a plastic brick' defies both ergonomics and common sense - perfect for when you need to stab someone while calculating bullet velocity in your head.
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D6 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 10 Strength
+Weight: 8"
+
+@3727 = "This AN-94 employs the M83 bayonet mounted unusually on the right side of the front sight. While theoretically enhancing thrusting power, the real reason is maintaining grenade launcher compatibility. The thin, shallowly-ground blade prioritizes penetration over durability - because why make sense when you can make physics?
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing]
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 8"
+@3827 = "This AN-94 employs the M83 bayonet mounted unusually on the right side of the front sight. While theoretically enhancing thrusting power, the real reason is maintaining grenade launcher compatibility. The thin, shallowly-ground blade prioritizes penetration over durability - because why make sense when you can make physics?
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 8"
+
+@5703 = "The SVD, being a designated marksman rifle with commitment issues, comes with an AK-style bayonet lug because its users are literally regular grunts expected to join bayonet charges between cigarettes. This particular specimen sports the AKM bayonet - the original Swiss Army knife of stabby things, introducing revolutionary features like 'having a saw' and 'being able to cut wire' that apparently never occurred to bayonet designers before 1953. Shockingly competent in both design and functionality, it's been in service with basically the same design (only received minor tweaks - mostly to stop soldiers losing fingers).
+
+STATISTICS:
+
+Damage: 1D8 +1
+THAC0 Bonus: +1
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+@5803 = "The SVD, being a designated marksman rifle with commitment issues, comes with an AK-style bayonet lug because its users are literally regular grunts expected to join bayonet charges between cigarettes. This particular specimen sports the AKM bayonet - the original Swiss Army knife of stabby things, introducing revolutionary features like 'having a saw' and 'being able to cut wire' that apparently never occurred to bayonet designers before 1953. Shockingly competent in both design and functionality, it's been in service with basically the same design (only received minor tweaks - mostly to stop soldiers losing fingers).
+This freak of bayonet engineering now carries standard-issue military enchantments, functioning as a +2 weapon when determining what it can actually impale.
+
+STATISTICS:
+
+Damage: 1D8 +3
+THAC0 Bonus: +3
+Damage Type: Piercing/Crushing
+Speed Factor: 2
+Proficiency: Spear
+Type: Two-handed
+Requires: 12 Strength
+Weight: 9"
+
+
+
+
+@7001 = "Cartridge"
+@7101 = "A cartridge is a firearm-launched projectile, serving as the simplest tool for eliminating enemies or destroying materiel. Composed of bullet, casing, propellant, and primer, it represents a culmination of physics, chemistry, materials science, aerodynamics, and manufacturing - albeit designed for lethality. Utilizing gunpowder propulsion and rifling-stabilized flight, it easily penetrates standard armor. Even musket-fired projectiles surpass melee weapons in penetration.
+Without a firearm, it remains merely inert metal.
+
+STATISTICS:
+
+THAC0 Bonus: +2
+Damage: Special
+Damage Type: Ranged
+Compatible Firearms: All single-shot firearms
+Weight: 0"
+
+@7002 = "Magazine"
+@7102 = "Magazines store cartridges, typically in curved or straight configurations. Their spring-driven mechanism feeds cartridges into chambering position. This magazine enables precise burst fire, concentrating multiple bullets on a single target rapidly.
+Without a firearm, it functions as basic metalware.
+
+STATISTICS:
+
+THAC0 Bonus: +2
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Potential extra hits against targets larger than human-sized
+- Additional hits with Automatic Weapons Proficiency
+Compatible Firearms: All short burst-capable firearms
+Weight: 1"
+
+@7003 = "Drum Magazine"
+@7103 = "Featuring complex rotary feed mechanisms, drum magazines provide extended capacity without reloading. Particularly effective with automatic weapons for sustained fire. This model enables controlled full-auto bursts across 45° arcs - challenging to manage with high-recoil platforms.
+Without a firearm, it constitutes bulky metal components.
+
+STATISTICS:
+
+THAC0 Bonus: +2
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Potential extra hits against targets larger than human-sized
+- Additional hits with Automatic Weapons Proficiency
+Compatible Firearms: All long burst-capable firearms
+Weight: 2"
+
+@7004 = "Ammunition Belt"
+@7104 = "Linked cartridges in belt configuration feed machine guns for continuous suppression fire. Typically stored in belt boxes attached to light/medium/general-purpose machine guns. This belt facilitates 90° suppressive arcs - extremely challenging to control in high-vibration platforms.
+Without a firearm, it remains simple metal links.
+
+STATISTICS:
+
+THAC0 Bonus: +2
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Potential extra hits against targets larger than human-sized
+- Additional hits with Automatic Weapons Proficiency
+Compatible Firearms: All full-auto-sweep-capable firearms
+Weight: 3"
+
+@7005 = "Dum-dum Cartridge"
+@7105 = "Originally referring to British-manufactured cartridges at Dum Dum Arsenal (1890s), these bullets feature an exposed lead core designed to expand upon impact. The resulting cavitation wounds caused excruciating pain and were notoriously difficult to treat, leading to their prohibition by 1899 Hague Convention Declaration IV,3. Modern variants like this advanced jacketed hollow-point (JHP) maintain higher muzzle velocity than traditional soft-point designs while delivering improved stopping power through controlled expansion. Perfect for putting down drug-crazed raiders, but utterly useless against power armor.
+Without a firearm, it functions as basic metalware.
+
+STATISTICS:
+
+THAC0 Bonus: +1
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Alters firearm effects: 
+ Greatly improves special effect chance vs unarmored/light armor
+ Moderate effect vs medium armor
+ Negligible effect vs heavy armor
+Compatible Firearms: All single-shot firearms
+Weight: 0"
+
+
+@7011 = "Enchanted Cartridge"
+@7111 = "A cartridge is a firearm-launched projectile, serving as the simplest tool for eliminating enemies or destroying materiel. Composed of bullet, casing, propellant, and primer, it represents a culmination of physics, chemistry, materials science, aerodynamics, and manufacturing - albeit designed for lethality. Utilizing gunpowder propulsion and rifling-stabilized flight, it easily penetrates standard armor. Even musket-fired projectiles surpass melee weapons in penetration.
+This batch of munitions now radiates arcane energy. When calculating whether your shots will actually hit, they count as +3 weapons. 
+Without a firearm, it remains merely inert metal.
+
+STATISTICS:
+
+THAC0 Bonus: +2
+Damage: Special
+Damage Type: Ranged
+Compatible Firearms: All single-shot firearms
+Weight: 0"
+@7012 = "Enchanted Magazine"
+@7112 = "Magazines store cartridges, typically in curved or straight configurations. Their spring-driven mechanism feeds cartridges into chambering position. This magazine enables precise burst fire, concentrating multiple bullets on a single target rapidly.
+This batch of munitions now radiates arcane energy. When calculating whether your shots will actually hit, they count as +3 weapons. 
+Without a firearm, it functions as basic metalware.
+
+STATISTICS:
+
+THAC0 Bonus: +2
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Potential extra hits against targets larger than human-sized
+- Additional hits with Automatic Weapons Proficiency
+Weight: 1"
+@7013 = "Enchanted Drum"
+@7113 = "Featuring complex rotary feed mechanisms, drum magazines provide extended capacity without reloading. Particularly effective with automatic weapons for sustained fire. This model enables controlled full-auto bursts across 45° arcs - challenging to manage with high-recoil platforms.
+This batch of munitions now radiates arcane energy. When calculating whether your shots will actually hit, they count as +3 weapons.
+Without a firearm, it constitutes bulky metal components. 
+
+STATISTICS:
+
+THAC0 Bonus: +2
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Potential extra hits against targets larger than human-sized
+- Additional hits with Automatic Weapons Proficiency
+Compatible Firearms: All long burst-capable firearms
+Weight: 2"
+@7014 = "Enchanted Ammunition Belt"
+@7114 = "Linked cartridges in belt configuration feed machine guns for continuous suppression fire. Typically stored in belt boxes attached to light/medium/general-purpose machine guns. This belt facilitates 90° suppressive arcs - extremely challenging to control in high-vibration platforms.
+This batch of munitions now radiates arcane energy. When calculating whether your shots will actually hit, they count as +3 weapons. 
+Without a firearm, it remains simple metal links.
+
+STATISTICS:
+
+THAC0 Bonus: +2
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Potential extra hits against targets larger than human-sized
+- Additional hits with Automatic Weapons Proficiency
+Compatible Firearms: All full-auto-sweep-capable firearms
+Weight: 3"
+@7015 = "Enchanted Dum-dum Cartridge"
+@7115 = "Originally referring to British-manufactured cartridges at Dum Dum Arsenal (1890s), these bullets feature an exposed lead core designed to expand upon impact. The resulting cavitation wounds caused excruciating pain and were notoriously difficult to treat, leading to their prohibition by 1899 Hague Convention Declaration IV,3. Modern variants like this advanced jacketed hollow-point (JHP) maintain higher muzzle velocity than traditional soft-point designs while delivering improved stopping power through controlled expansion. Perfect for putting down drug-crazed raiders, but utterly useless against power armor.
+This batch of munitions now radiates arcane energy. When calculating whether your shots will actually hit, they count as +3 weapons. 
+Without a firearm, it functions as basic metalware.
+
+STATISTICS:
+
+THAC0 Bonus: +1
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Alters firearm effects: 
+ Greatly improves special effect chance vs unarmored/light armor
+ Moderate effect vs medium armor
+ Negligible effect vs heavy armor
+Compatible Firearms: All single-shot firearms
+Weight: 0"
+
+
+@7021 = "Silver Bullet"
+@7121 = "Forged from pure silver quenched in holy oil, these cartridges bear intricate engravings of Solomon's seals and hexagram motifs. The consecration ritual involves Benedictine monks chanting Psalms 91:5-7 during lunar eclipses, imbuing each round with photophobic properties. While ineffective against mundane targets, they manifest quantum tunneling effects against supernatural entities - essentially making lycanthropic regeneration cycles as useful as a screen door on a submarine. The aerogel-coated core maintains ballistic stability while keeping mass equivalent to standard bullets.
+
+STATISTICS:
+
+THAC0 Bonus: +5
+Damage: Special
+Damage Type: Ranged
+Special Features:
+- Instant disintegration of lycanthropes
+- 4D4 magic damage vs undead/planar beings/aberrations
+Compatible Firearms: All single-shot firearms
+Weight: 0"
+
+
+
+@7201 = "Stealth Dual-Protective Suit"
+@7301 = "This dual-protective suit combines Kevlar and ultra-high-molecular-weight polyethylene (UHMWPE) fibers, with an outer layer of polyester-cotton blend fabric. Indistinguishable from regular clothing in appearance and comfort, it effectively disperses kinetic energy from impacts, offering protection against blades, handgun bullets, explosive shrapnel, while providing water/acid/UV resistance. Lightweight and mobility-friendly, it meets NIJ Level II standards.
+
+STATISTICS:
+
+Equipped abilities:
+
+- Chance to block handgun/shotgun attacks (excluding high-velocity pistol bullets)
+- Chance to block fragmentation damage by explosive ordnance such as grenades
+- Slashing Resistance: 20%
+- Piercing/Ranged Resistance: 15%
+- Fire/Lightning/Cold/Acid Resistance: 10%
+Armor Class: 6
+Weight: 6"
+
+@7202 = "Light Dual-Protective Suit"
+@7302 = "Constructed with Kevlar composites and lightweight trauma plates, this suit balances concealment and pistol protection. Adjustable via side/shoulder hook-and-loop fasteners (Velcro) for all body types. Primarily used by law enforcement, it maintains flexibility while achieving NIJ Level IIIA protection.
+
+STATISTICS:
+
+Equipped abilities:
+
+- Chance to block handgun/shotgun attacks (ineffective against rifles)
+- Chance to block fragmentation damage by explosive ordnance such as grenades
+- Slashing/Piercing Resistance: 20%
+- Ranged Resistance: 25%
+- Fire/Lightning/Cold/Acid Resistance: 10%
+- Disable arcane spells
+Armor Class: 4
+Requires: 4 Strength
+Weight: 8"
+
+@7203 = "Medium Dual-Protective Suit"
+@7303 = "A modular tactical vest with rigid trauma plates capable of stopping small-caliber rifle bullets. Sacrifices mobility for defense, appearing bulkier while meeting NIJ Level III standards.
+
+STATISTICS:
+
+Equipped abilities:
+
+- Chance to block handgun/low-caliber rifle bullets (ineffective against full-power/large-caliber rifles)
+- Chance to block fragmentation damage by explosive ordnance such as grenades
+- Crushing Resistance: 20%
+- Slashing/Piercing Resistance: 25%
+- Ranged Resistance: 30%
+- Fire/Lightning/Cold/Acid Resistance: 15%
+- Disable stealth, thief skills, and arcane spells
+Armor Class: 2
+Requires: 8 Strength
+Weight: 15"
+
+@7204 = "Heavy Dual-Protective Suit"
+@7304 = "A ceramic-metal composite fortress designed for high-risk combat. Stops medium-caliber rifle/machine gun fire at the cost of mobility, meeting NIJ Level IV standards.
+
+STATISTICS:
+
+Equipped abilities:
+
+- Chance to block handgun/medium-caliber weapons (ineffective against large-caliber rifles)
+- Chance to block fragmentation damage by explosive ordnance such as grenades
+- Crushing Resistance: 25%
+- Slashing/Piercing Resistance: 30%
+- Ranged Resistance: 35%
+- Fire/Lightning/Cold/Acid Resistance: 20%
+- Dexterity -1
+- Disable stealth, thief skills, and arcane spells
+Armor Class: 0
+Requires: 10 Strength
+Weight: 20"
+
+
+@7401 = "Arm Shield"
+@7501 = "This arm-mounted shield balances protection and portability. Offering greater coverage than standard bucklers without hindering movement, its UHMWPE construction resists slashes/stabs while providing limited fire/corrosion resistance. Two tungsten steel spikes on the front edge can breach obstacles.
+
+STATISTICS:
+
+Equipped abilities:
+- Crushing/Ranged Resistance: 5%
+- Slashing/Piercing Resistance: 10%
+- Fire/Lightning/Cold/Acid Resistance: 5%
+- Unarmed attacks gain +1D3 piercing and +1D3 crushing damage
+- AC Bonus: +2 (+1 vs ranged weapons)
+Weight: 4"
+
+@7402 = "Electro-Shock Riot Shield"
+@7502 = "A transparent polycarbonate shield for riot control, combining defense with 50,000V taser spikes. Its strobing function disorients attackers - field manuals warn: 'Never stare directly at the flash... or your next meal will be hospital pudding.'
+
+STATISTICS:
+
+Combat abilities:
+- Melee attackers must save vs. Death with +4 bonus or be stunned 4 rounds, make save vs. Breath or be paralyzed 2 rounds (ineffective vs constructs/large creatures)
+
+Special ability:
+- Strobe Flash (1/day): Attackers targeting wielder suffer Breath saving throw - failure causes 1-round blindness, success still imposes -4 attack/defense penalties
+
+Equipped abilities:
+- Fire/Lightning/Cold/Acid Resistance: 10%
+- Attack Bonus: +1
+- AC Bonus: +3
+Requires: 7 Strength
+Weight:7"
+
+@7403 = "Riot Shield"
+@7503 = "Standard-issue transparent shield for crowd control. Ballistic-rated against handgun bullets and shrapnel, though officers joke: 'If you hear a rifle crack, start writing your will.'
+
+STATISTICS:
+
+Equipped abilities:
+- High chance to block handgun/shotgun attacks (excluding high-velocity pistol bullets)
+- High chance to block fragmentation damage by explosive ordnance such as grenades
+- Physical Resistance: 15%
+- Fire/Lightning/Cold/Acid Resistance: 20%
+- Attack Bonus: +1
+- AC Bonus: +4 (+1 vs ranged weapons)
+Requires: 8 Strength
+Weight: 8"
+
+@7404 = "Tactical Assault Shield"
+@7504 = "SWAT-grade shield with Kevlar-ceramic composite construction. Observation ports and firing slits allow full combat capability - though users complain: 'Peeking through the viewport feels like storming Normandy through a mail slot.'
+
+STATISTICS:
+
+Equipped abilities:
+- High chance to block handgun/intermediate rifle bullets (ineffective against full-power/large-caliber rifles)
+- High chance to block fragmentation damage by explosive ordnance such as grenades
+- Physical Resistance: 20%
+- Fire/Lightning/Cold/Acid Resistance: 20%
+- AC Bonus: +5 (+2 vs ranged weapons)
+Requires: 12 Strength
+Weight: 15"
+
+@7405 = "Heavy Tactical Shield"
+@7505 = "A wheeled alloy-ceramic monstrosity weighing as much as a refrigerator. Deployment requires either a wheeled cart or Hulk-level strength - hence its nickname 'The Backbreaker'.
+
+STATISTICS:
+
+Equipped abilities:
+
+- High chance to block medium-caliber MG fire (ineffective against large-caliber rifles)
+- High chance to block fragmentation damage by explosive ordnance such as grenades
+- Physical Resistance: 25%
+- Fire/Lightning/Cold/Acid Resistance: 20%
+- Dexterity -1
+- AC Bonus: +5 (+2 vs ranged weapons)
+Requires: 16 Strength
+Weight: 30"
+
+
+@7601 = "Steel Helmet"
+@7701 = "The modern military helmet evolved from ancient designs. Its smooth curved surface deflects attacks. Made of standard steel with moderate thickness, it primarily protects against shrapnel and improves battlefield survival.
+
+STATISTICS:
+
+Equipped abilities:
+- Minor chance‌ to block handgun/shotgun attacks (ineffective vs high-velocity bullets)
+- AC Bonus: +1
+– Protects against critical hits
+Weight: 2"
+
+@7602 = "High-Strength Steel Helmet"
+@7702 = "A modern military helmet with smooth ballistically-curved surfaces. Forged from rare-earth alloy steel with increased thickness, it represents the pinnacle of metallic head protection.
+
+STATISTICS:
+
+Equipped abilities:
+- Minor chance‌ to block handgun/shotgun attacks (ineffective vs rifles)
+- AC Bonus: +2
+- Physical Resistance: 5%
+– Protects against critical hits
+Weight: 3"
+
+@7603 = "Composite Combat Helmet"
+@7703 = "Constructed from carbon fiber and UHMWPE composites, this helmet outperforms steel models against pistol/small-caliber rifle fire while being 30% lighter.
+
+STATISTICS:
+
+Equipped abilities:
+- Minor chance‌ to blockhandgun/low-caliber rifles (ineffective vs full-power/large-caliber rifles)
+- AC Bonus: +1
+- Slashing/Ranged/Piercing Resistance: 5%
+- Fire/Lightning/Cold/Acid Resistance: 5%
+– Protects against critical hits
+Weight: 2"
+
+@7604 = "Enhanced Combat Helmet"
+@7704 = "Featuring carbon fiber-UHMWPE construction with non-Newtonian fluid layer, this helmet withstands direct rifle impacts - the current apex of headgear protection.
+
+STATISTICS:
+
+Combat abilities:
+
+Equipped abilities:
+- Minor chance‌ to blockmedium-caliber MGs (ineffective vs .50cal+)
+- AC Bonus: +1
+- Physical Resistance: 5%
+- Fire/Lightning/Cold/Acid Resistance: 5
+– Protects against critical hits
+Weight: 3"
+
+@7801 = "Cut-Resistant Gloves"
+@7901 = "Engineered with UHMWPE fibers over glass fiber/spandex/steel wire cores. Enables barehanded blade grabbing - field tested against combat knives with zero penetration.
+
+STATISTICS:
+
+Equipped abilities:
+- AC Bonus: +4 vs slashing weapons
+- AC Bonus: +3 vs piercing/ranged weapons
+- Fire/Lightning/Cold/Acid Resistance: 5%
+- 10% chance to disarm opponents when unarmed (vs humanoids wielding slashing/piercing weapons)
+Weight: 2"

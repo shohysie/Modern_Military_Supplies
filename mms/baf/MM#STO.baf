@@ -1,0 +1,179 @@
+//被非PC打施法消失/在那西凯矿场被PC打施法消失/挑战后被PC打施法消失
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	OR(4)
+		AttackedBy([NOTGOOD],DEFAULT)
+		AreaCheck("AR5400")
+		AreaCheck("BG5400")
+		GlobalGT("MM#MEET","GLOBAL",5)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_SHADOW_DOOR)
+		DestroySelf()
+END
+//如果已经在其它地方见过，在那西凯矿场直接消失
+IF
+	OR(2)
+		AreaCheck("AR5400")
+		AreaCheck("BG5400")
+	GlobalGT("MM#MEET","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SmallWait(1)
+		DestroySelf()
+END
+//不在那西凯矿场，被PC打视为挑战
+IF
+	!GlobalGT("MM#MEET","GLOBAL",3)
+	!AreaCheck("AR5400")
+	!AreaCheck("BG5400")
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		SetGlobal("MM#MEET","GLOBAL",3)
+		SmallWait(1)
+		StartDialogNoSet([PC])
+END
+//坦克被打爆
+IF
+	Global("MM#MEET","GLOBAL",5)
+THEN
+	RESPONSE #100
+		Activate(Myself)
+END
+
+IF
+	Global("MM#MEET","GLOBAL",5)
+	IsActive(Myself)
+	See([PC])
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+//在博德之门或其它地方遇到，如果MM#MEET为1则商店删除送的东西
+IF
+	!AreaCheck("AR5400")
+	!AreaCheck("BG5400")
+	Global("MM#MEET","GLOBAL",1)
+THEN
+	RESPONSE #100
+		RemoveStoreItem("MM#STO","MM#PST3",1)
+		RemoveStoreItem("MM#STO","MM#MCR1",1)
+		RemoveStoreItem("MM#STO","MM#SBM3",1)
+		RemoveStoreItem("MM#STO","MM#BLT3",1)
+		RemoveStoreItem("MM#STO","MM#AST2",1)
+		RemoveStoreItem("MM#STO","MM#SHT2",1)
+		RemoveStoreItem("MM#STO","MM#SNP1",1)
+		RemoveStoreItem("MM#STO","MM#LMC2",1)
+		RemoveStoreItem("MM#STO","MM#HMC1",1)
+		SetGlobal("MM#MEET","GLOBAL",2)
+END
+//如果之前为0则商店内容不变，但之后都变2
+IF
+	!AreaCheck("AR5400")
+	!AreaCheck("BG5400")
+	!GlobalGT("MM#MEET","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MM#MEET","GLOBAL",2)
+END
+
+IF
+	AreaCheck("BD0122")	//SOD
+	!GlobalGT("addammo","LOCALS",0)
+THEN
+	RESPONSE #100
+		AddStoreItem("MM#STO","MM#AMMF",800,1)
+		AddStoreItem("MM#STO","MM#AMMG",400,1)
+		AddStoreItem("MM#STO","MM#AMMH",200,1)
+		AddStoreItem("MM#STO","MM#AMMI",200,1)
+		AddStoreItem("MM#STO","MM#AMMJ",200,1)
+		AddStoreItem("MM#STO","MM#AMMK",20,1)
+		AddStoreItem("MM#STO","MM#GRN3",50,1)
+		AddStoreItem("MM#STO","MM#GRN4",50,1)
+		AddStoreItem("MM#STO","MM#GRN5",50,1)
+		AddStoreItem("MM#STO","MM#GRN6",50,1)
+		AddStoreItem("MM#STO","MM#GRN7",20,1)
+		AddStoreItem("MM#STO","MM#GRN8",20,1)
+		AddStoreItem("MM#STO","MM#GRN9",10,1)
+		AddStoreItem("MM#STO","MM#LND4",50,1)
+		AddStoreItem("MM#STO","MM#FLM1",1,1)
+		AddStoreItem("MM#STO","MM#RPG1",1,1)
+		AddStoreItem("MM#STO","MM#DRG1",100,1)
+		AddStoreItem("MM#STO","MM#DRG2",100,1)
+		AddStoreItem("MM#STO","MM#DRG3",100,1)
+		AddStoreItem("MM#STO","MM#DRG4",100,1)
+		AddStoreItem("MM#STO","MM#DOG1",1,1)
+		SetGlobal("addammo","LOCALS",1)
+END
+
+IF
+	AreaCheck("AR2000")	//SOA
+	!GlobalGT("addammo","LOCALS",1)
+THEN
+	RESPONSE #100
+		AddStoreItem("MM#STO","MM#AMMF",1600,1)
+		AddStoreItem("MM#STO","MM#AMMG",800,1)
+		AddStoreItem("MM#STO","MM#AMMH",400,1)
+		AddStoreItem("MM#STO","MM#AMMI",400,1)
+		AddStoreItem("MM#STO","MM#AMMJ",400,1)
+		AddStoreItem("MM#STO","MM#AMMK",40,1)
+		AddStoreItem("MM#STO","MM#GRN3",100,1)
+		AddStoreItem("MM#STO","MM#GRN4",100,1)
+		AddStoreItem("MM#STO","MM#GRN5",100,1)
+		AddStoreItem("MM#STO","MM#GRN6",100,1)
+		AddStoreItem("MM#STO","MM#GRN7",50,1)
+		AddStoreItem("MM#STO","MM#GRN8",50,1)
+		AddStoreItem("MM#STO","MM#GRN9",20,1)
+		AddStoreItem("MM#STO","MM#LND4",100,1)
+		AddStoreItem("MM#STO","MM#LND5",10,1)
+		AddStoreItem("MM#STO","MM#LND6",5,1)
+		AddStoreItem("MM#STO","MM#LND7",5,1)
+		AddStoreItem("MM#STO","MM#FLM1",1,1)
+		AddStoreItem("MM#STO","MM#RPG1",1,1)
+		AddStoreItem("MM#STO","MM#DRG1",100,1)
+		AddStoreItem("MM#STO","MM#DRG2",100,1)
+		AddStoreItem("MM#STO","MM#DRG3",100,1)
+		AddStoreItem("MM#STO","MM#DRG4",100,1)
+		AddStoreItem("MM#STO","MM#UAV1",1,1)
+		AddStoreItem("MM#STO","MM#UAV2",1,1)
+		AddStoreItem("MM#STO","MM#DOG1",1,1)
+		SetGlobal("addammo","LOCALS",2)
+END
+
+IF
+	AreaCheck("AR6300")	//TOB
+	!GlobalGT("addammo","LOCALS",2)
+THEN
+	RESPONSE #100
+		AddStoreItem("MM#STO","MM#AMMF",1600,1)
+		AddStoreItem("MM#STO","MM#AMMG",800,1)
+		AddStoreItem("MM#STO","MM#AMMH",400,1)
+		AddStoreItem("MM#STO","MM#AMMI",400,1)
+		AddStoreItem("MM#STO","MM#AMMJ",400,1)
+		AddStoreItem("MM#STO","MM#AMMK",40,1)
+		AddStoreItem("MM#STO","MM#GRN3",100,1)
+		AddStoreItem("MM#STO","MM#GRN4",100,1)
+		AddStoreItem("MM#STO","MM#GRN5",100,1)
+		AddStoreItem("MM#STO","MM#GRN6",100,1)
+		AddStoreItem("MM#STO","MM#GRN7",50,1)
+		AddStoreItem("MM#STO","MM#GRN8",50,1)
+		AddStoreItem("MM#STO","MM#GRN9",20,1)
+		AddStoreItem("MM#STO","MM#LND4",100,1)
+		AddStoreItem("MM#STO","MM#LND5",20,1)
+		AddStoreItem("MM#STO","MM#LND6",5,1)
+		AddStoreItem("MM#STO","MM#LND7",5,1)
+		AddStoreItem("MM#STO","MM#FLM1",1,1)
+		AddStoreItem("MM#STO","MM#RPG1",1,1)
+		AddStoreItem("MM#STO","MM#DRG1",100,1)
+		AddStoreItem("MM#STO","MM#DRG2",100,1)
+		AddStoreItem("MM#STO","MM#DRG3",100,1)
+		AddStoreItem("MM#STO","MM#DRG4",100,1)
+		AddStoreItem("MM#STO","MM#UAV1",1,1)
+		AddStoreItem("MM#STO","MM#UAV2",1,1)
+		AddStoreItem("MM#STO","MM#UAV3",3,1)
+		AddStoreItem("MM#STO","MM#DOG1",1,1)
+		AddStoreItem("MM#STO","MM#DOG2",1,1)
+		SetGlobal("addammo","LOCALS",3)
+END

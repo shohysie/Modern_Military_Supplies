@@ -1,0 +1,7 @@
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_SHADOW_DOOR)
+		DestroySelf()
+END

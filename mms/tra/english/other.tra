@@ -1,0 +1,364 @@
+@8111 = "Offensive grenade"
+@8211 = "This grenade carries a larger charge to destroy enemy fortifications and eliminate targets inside with blast effects. Its thin casing produces minimal fragmentation, reducing lethality in open areas and lowering risks to throwers and allies. Allows advancing infantry to continue movement post-throw without protective measures. Aerodynamic design enables longer throws with delayed fuse.
+
+STATISTICS:
+
+- Deals 5D6 crushing damage to creatures within 6-ft radius
+Weight: 1"
+
+@8112 = "Defensive grenade"
+@8212 = "Designed to scatter heavy fragments/steel balls lethal at extended ranges, ideal against grouped enemies. Requires throwers to take cover and monitor ally positions. Features pre-fragmented shell, either specially manufactured or via added metal sleeve on standard offensive grenades.
+
+STATISTICS:
+
+- Deals 2D6 crushing damage to creatures within 6-ft radius
+- Deals 2D6 slashing + 2D6 piercing damage to creatures within 15-ft radius (Damage halved if target succeeds in making saving throw vs. breath)
+Weight: 1"
+
+@8113 = "Flash grenade"
+@8213 = "A plastic sphere containing magnesium and potassium perchlorate pyrotechnics. Upper hemisphere houses the fuse sealed with a rubber cap; lower hemisphere has spiked rubber coating to prevent rolling. Prioritizes light emission—detonation produces 125dB noise and 30 million candela flash visible through closed eyelids. Causes temporary blindness, deafness, and disorientation.
+
+STATISTICS:
+
+- Afflicts creatures within 15-ft radius with Blindness, Deafness, and Slow for 6 rounds
+- Duration halved if targets roll successful Saving Throws vs. Death at -4 penalty
+- No effect on unnatural beings
+Weight: 1"
+
+@8114 = "Stun grenade"
+@8214 = "Non-lethal grenade for intense flash/bang effects, ideal for CQB. Prioritizes acoustic impact—blast causes temporary deafness, tinnitus, and inner ear fluid disruption inducing imbalance/dizziness. Covering ears provides minimal protection.
+
+STATISTICS:
+
+- Inflicts Deafness and Slow for 1 round (no save) on creatures within 15-ft radius
+- Blinds for 4 rounds unless targets succeed Saving Throws vs. Death (halved duration on success)
+- Knocks unconscious for 1 round creatures within 6-ft radius failing Saving Throws vs. Death at -4 penalty
+- No effect on unnatural beings
+Weight: 1"
+
+@8115 = "Smoke grenade"
+@8215 = "Creates visual obstruction for tactical advantage. Detonation disperses burning compounds to generate dense smoke blocking infrared/microwave detection. Military-grade smoke resists wind dispersion.
+
+STATISTICS:
+
+- Creates 10-ft radius gas cloud lasting 5 rounds
+- Cloud-afflicted creatures become Blinded and Invisible, immune to direct targeting but vulnerable to area effects
+- Effects immediately end upon leaving cloud
+Weight: 1"
+
+@8116 = "Tear gas grenade"
+@8216 = "Deploys lachrymatory agents for riot control. Irritates eyes/nasal membranes, causing tearing, coughing, and temporary disability. Symptoms subside minutes after leaving contaminated area.
+
+STATISTICS:
+
+- Creates 10-ft radius irritant cloud lasting 5 rounds
+- Cloud-afflicted creatures must save vs. Poison at -2 penalty each round or become Confused
+- Successful saves still impose -4 penalties to Attack/AC/Damage and 50% spell/ability failure
+- Panicked/Confused states clear 2 rounds after exiting cloud; other penalties last 1 round
+- No effect on no-breathing beings
+Weight: 1"
+
+@8117 = "White Phosphorus Grenade"
+@8217 = "This grenade disperses white phosphorus in all directions, which ignites upon contact with air and clings to flesh, causing continuous corrosion down to the bone. Its toxic smoke severely irritates eyes and nasal passages. Though containing limited explosive charge for armor penetration, close-range phosphorus contact with bare skin proves catastrophic. 
+
+STATISTICS:
+
+- Creatures within 6 ft during detonation must save vs. Breath at -4 penalty. Those failing become phosphorus-coated, suffering 1 acid + 1 fire damage every 3 seconds for 5 rounds (50% protection for armored/encased creatures)
+- Affected creatures must save vs. Death each round. Failure induces fear state for that round (acid-immune creatures unaffected)
+- Toxic smoke lingers in 10-ft radius for 5 rounds. Creatures in area must save vs. Poison each round. Failure causes 1D4 acid damage and confusion (no effect on acid-immune or non-breathing creatures)
+Weight: 1"
+
+@8118 = "Napalm Grenade"
+@8218 = "This gelatinous gasoline compound adheres to targets, generating 1000°C inextinguishable flames. While limited in combustion range, its victims face agonizing demise. 
+
+STATISTICS:
+
+- Creatures within 6 ft during detonation catch fire, taking 1D3 fire damage per second for 4 rounds
+- Creatures within 10 ft must save vs. Breath. Those failing burn for 4 rounds with 1D2 fire damage per second
+- Burning creatures must save vs. Death at -4 penalty each round. Failure causes panic until flames extinguish or death occurs
+- 10-ft radius ground fire persists 4 rounds, dealing 1D8 fire damage per round to creatures in area
+- Fire-immune creatures remain unaffected
+Weight: 1"
+
+@8119 = "Thermobaric Grenade"
+@8219 = "The most devastating grenade utilizing fuel-air explosive technology. Its aerosolized cloud detonation creates prolonged overpressure waves and extreme heat, particularly lethal against soft targets. 
+
+STATISTICS:
+
+- Deals 10D6 crushing damage + 2D8 fire damage to creatures within 10-ft radius. Targets failing Breath saving throws die instantly
+- Fire-immune creatures cannot be instantly killed by this effect
+- Non-living objects take half damage and cannot be instantly killed
+Weight: 1"
+
+
+
+@8121 = "Butterfly Mine"
+@8221 = "The Butterfly Mine is a miniature anti-personnel mine effective at disrupting enemy transportation, typically deployed via air drop. Small in size but low-cost and mass-produced, its minimal explosive charge usually maims the trigger's foot rather than causing fatal injuries, creating significant logistical burdens. Its pressure-activated fuse is highly sensitive, cannot be reset once armed, and poses grave threats to civilians due to difficulties in clearance.
+
+STATISTICS:
+
+- Can be thrown onto visible empty ground, exploding five times per throw
+- Triggers when creatures approach within 2 ft after deployment
+- Deals 1D3 crushing damage to single target within 3 ft, target must save vs. Breath at -4 penalty or be slowed for 1 hour
+- Creatures protected by Stoneskin, large-sized creatures, and non-footed movers remain unaffected
+Weight: 1"
+
+@8122 = "Directional Mine"
+@8222 = "This curved plastic-cased anti-personnel mine contains steel pellets in front and explosives behind. Upon detonation, it projects shrapnel in 60-degree horizontal arcs. Flexible deployment options allow frontal defense, flank attacks, or booby trap configurations. Can be triggered by tripwires, pressure, or manual electric ignition. [Note: This mine sometimes disappears without triggering when placed on ground - recommended to activate directly against targets]
+
+STATISTICS:
+
+- Can target enemies within 10 ft without deployment
+- Triggers only when hostile creatures approach within 10 ft after deployment
+- Deals 6D8 piercing damage to enemies in 15ft radius 120° arc, targets roll successful Saving Throws vs. Breath receive half damage
+Weight: 3"
+
+@8123 = "Bounding Mine"
+@8223 = "A compact anti-personnel mine that detonates when weight is removed rather than applied. Upon triggering, it launches 3 ft airborne before exploding with near-omnidirectional shrapnel coverage from 2,000 directions, leaving minimal dead zones.
+
+STATISTICS:
+
+- Can only be placed within 3 ft of user
+- Triggers when creatures approach within 2 ft after deployment
+- Deals 3D6 piercing damage and 3D6 slashing damage to all creatures within 15 ft
+Weight: 2"
+
+@8124 = "Tripwire Mine"
+@8224 = "Advanced anti-personnel mine with remote deployment capabilities. Automatically deploys four tripwires upon landing. When tripped, launches explosive payload airborne for fragmentation detonation.
+
+STATISTICS:
+
+- Can be thrown onto visible empty ground
+- Triggers when creatures approach within 10 ft after deployment
+- Deals 3D6 slashing damage and 3D6 piercing damage to all creatures within 15ft radius
+Weight: 4"
+
+@8125 = "Homing Mine"
+@8225 = "A smart mine equipped with detectors for electromagnetic fields, vibrations, and infrared radiation to identify targets. Upon hostile confirmation, its small engine launches a drone-like payload into the air to track and detonate on targets, primarily attacking armored units' weak top armor.
+
+STATISTICS:
+
+- Can only be placed within 3 feet of user
+- Triggers only when hostile creatures approach within 15 feet after deployment
+- Detonates on nearest hostile creature upon triggering, dealing 8D6 crushing damage to all within 6ft radius
+Weight: 10"
+
+@8126 = "Spider Mine"
+@8226 = "An intelligent mine with sensors to identify targets within range. Hostile detection triggers alignment and firing of its six sequential warheads. Originally designed against tanks/helicopters, this version uses personnel-targeting flechette warheads.
+
+STATISTICS:
+
+- Can only be placed within 3 feet of user
+-Triggers only when hostile creatures approach within 10 feet after deployment
+- Activates once per round up to 6 times, dealing 3D8 piercing damage and 3D8 slashing damage to each hostile in 15ft radius 60° cone per activation, targets roll successful Saving Throws vs. Breath receive half damage
+Weight: 20"
+
+@8127 = "Anti-Tank Mine"
+@8227 = "Designed to destroy tanks/APCs with concentrated shaped charges, these mines typically require vehicle pressure to trigger. This modified version's sensitive fuse detonates even when stepped on by personnel.
+
+STATISTICS:
+
+- Can only be placed within 3 feet of user
+- Triggers when creatures approach within 2 feet after deployment
+- Deals 12D8 crushing damage to all creatures within 8ft radius
+Weight: 18"
+
+
+
+@8131 = "Stimulant"
+@8231 = "This drug enhances soldiers' physical capabilities by stimulating muscles and regulating protein metabolism, temporarily increasing strength and endurance for long-distance marches. Short-term use shows no obvious side effects, but repeated use provides no additional benefits. Its effects are non-magical and thus unaffected by Dispel Magic.
+
+STATISTICS:
+
+- Increases Strength and Constitution by 1 for 8 hours (non-stackable)
+Weight: 0"
+
+@8132 = "Alertness Drug"
+@8232 = "This stimulant improves mental alertness, memory retention, and learning capacity, allowing soldiers to maintain heightened focus. Short-term use shows no obvious side effects, but repeated use provides no additional benefits. Its effects are non-magical and thus unaffected by Dispel Magic.
+
+STATISTICS:
+
+- Increases Dexterity, Intelligence and Wisdom by 1 and grants sleep immunity for 8 hours (non-stackable)
+Weight: 0"
+
+@8133 = "Sedative"
+@8233 = "Combat stress and battlefield fatigue often overwhelm soldiers. This drug reduces anxiety, helps recruits stay relaxed, and maintains mental clarity. Its effects are non-magical and thus unaffected by Dispel Magic.
+
+STATISTICS:
+
+- Cures and provides 8-hour immunity against fear, confusion, charm, and berserker effects
+Weight: 0"
+
+@8134 = "Stamina Restorer"
+@8234 = "This military-grade nutritional supplement rapidly replenishes proteins, electrolytes, and essential nutrients. Designed for post-combat recovery, it eliminates fatigue and maintains combat readiness.
+
+STATISTICS:
+
+- Removes and grants 8-hour immunity against fatigue, including exhaustion caused by Haste or Restoration spells
+Weight: 0"
+
+@8135 = "Metal Ammo Crate"
+@8235 = "This sturdy metal container securely stores firearms, ammunition, and explosives.
+
+STATISTICS:
+
+Weight: 60"
+
+@8136 = "Plastic Ammo Crate"
+@8236 = "This lightweight plastic container is designed for transporting loose ammunition and small quantities of firearms/explosives.
+
+STATISTICS:
+
+Weight: 20"
+
+
+
+@8141 = "Stun Flashlight"  
+@8241 = "This dual-function flashlight combines blinding strobe and electrical discharge. Its concentrated beam induces temporary blindness at close range, while the front electrode delivers non-lethal high-voltage pulses causing neuromuscular incapacitation. Built with hardened waterproof casing, it withstands extreme conditions. Battery allows 10 strobe activations and 10 shock uses.  
+
+STATISTICS:  
+
+Charged Ability:
+- Strobe: Affects enemies within 30ft in 45° frontal arc with 6-round blindness, duration halved if targets roll successful Saving Throws vs. Breath at -4 penalty. No effect on non-living targets  
+- Shock: Single target within 3ft must save vs. Death or be unconscious for 4 rounds, additionally must save vs. Breath at -4 penalty or be paralyzed for 2 rounds. No effect on constructs/large creatures  
+Weight: 2"  
+
+@8142 = "Pepper Spray"  
+@8242 = "Contains 2 million SHU capsaicin-tear gas mixture inducing immediate incapacitation through respiratory distress and skin irritation. 20-use canister enables rapid crowd control.  
+
+STATISTICS:  
+
+Charged Ability:
+- Targets must save vs. Poison at -4 penalty or become panicked/confused for 5 rounds. Successful saves still impose -5 penalty to attack/AC/damage and 100% spell/ability failure  
+- No effect on constructs   
+Range: 5  
+Area of Effect: Single target
+Weight: 1"  
+
+@8143 = "Flamethrower"  
+@8243 = "Napalm-fueled terror weapon using compressed nitrogen propulsion. Adheres to targets while causing psychological warfare effects. 20-use fuel capacity makes operators priority targets.  
+
+STATISTICS: 
+
+Charged Ability: 
+- Flame Jet: Ignites creatures in 30ft 15° arc, dealing 1D3 fire damage per second for 4 rounds. Targets must save vs. Death at -4 penalty each round or flee panic-stricken until fire or his life extinguished. Fire-immune creatures unaffected  
+Weight: 40"  
+
+@8144 = "Rocket Launcher"  
+@8244 = "First disposable anti-armor system combining portability with devastating firepower. Fires multi-purpose shell utilizing zirconium-enhanced shrapnel dispersion and incendiary effects.  
+
+STATISTICS:
+
+Charged Ability:  
+- Fires a rocket which deals 6D6 crushing damage to 6ft radius on explosion, plus 3D6 piercing damage, 3D6 slashing damage and 2D6 fire damage to 15ft radius
+Weight: 20"
+
+
+
+@8151 = "Night Vision Goggles"  
+@8251 = "These enhanced goggles combine traditional night vision with thermal imaging, projecting thermal signatures onto the standard low-light display. Enables vision in near-total darkness while detecting heat signatures of hidden enemies. Continuous night vision operation with manually activated thermal mode due to higher power consumption.  
+
+STATISTICS:  
+
+Equipped abilities:
+- Night vision capability  
+
+Charged Ability:  
+- 1/day reveals invisible non-party members within visual range (ineffective against non-thermal entities) for 1 minute  
+Weight: 2"  
+
+@8152 = "Life Detector"  
+@8252 = "This advanced sensor detects living organisms and moving objects through infrared, audio, and radar technologies. Capable of identifying ultra-low frequency bioelectric fields, respiration, and heartbeat patterns, with adjustable sensitivity for suspicious activity.  
+
+STATISTICS:  
+
+Charged Ability:  
+- 3/day dispels invisibility and illusions of non-party members within visual range (penetrates obstacles) for 1 minute  
+Weight: 28"  
+
+@8153 = "Gas Mask"  
+@8253 = "Personal protective equipment covering respiratory system, eyes and face. Filters toxic gases, particulates, biological agents and chemical vapors through integrated facepiece, breathing tube and filter canister system. Only permits purified air intake.  
+
+STATISTICS:  
+
+- Immunity to cloud-based effects (Stinking Cloud, Cloudkill, tear gas) and area poison spells  
+Weight: 2"
+
+
+
+@8161 = "Drone"
+@8261 = "Radio-controlled multirotor drone with extended flight endurance. Equipped with HD camera for reconnaissance and armed with small-caliber rifle (non-enchanted ammo) + four fragmentation grenades. Maintains altitude advantage outdoors making it immune to most melee attacks and area spells - indoor operations negate these benefits.
+
+STATISTICS:
+
+- Can deploy once daily: controllable drone with shared vision for 10 rounds, auto-recalled when expired. Use [Shutdown and retrieve] button for early retrieval 
+- Defaults to Fighting Mode: autonomously fires single shot/round at nearest enemy. Manual targeting available 
+- Press [Disable Fighting Mode] button (or select + D) to deactivate aggression. Use [Fighting Mode] button (or select + F) to re-enable 
+- Manual grenade deployment required: detonation deals 2D6 crushing damage (no save) within 6 ft, 2D6 slashing + 2D6 piercing damage within 15 ft (targets roll successful Saving Throws vs. Breath receive half damage) 
+- Indoor grenade deployment risks self-damage from shrapnel 
+Weight: 15"
+
+@8361 = "Damaged Drone"
+
+@8162 = "Flying Grenade"
+@8262 = "Backpack containing 15 semi-micro drones with 100g HE payloads. Features obstacle avoidance and optical guidance for area denial. Outdoor altitude protects from direct attacks and most spells - indoor use forfeits protection but high speed grants partial evasion.
+
+STATISTICS:
+
+- Deploy single-use scout drone per activation: 15-round flight duration before auto-destruction 
+- Defaults to Recon Mode: press [Bombing‌ Mode] button (or select + B) for kamikaze attacks against nearest hostiles. Manual target designation available 
+- Loses altitude protection during attack approach: becomes vulnerable to interception. Destruction causes immediate detonation 
+- Press [Disable Bombing‌] (or select + D) for pure reconnaissance 
+- Detonation equivalent to frag grenade: 2D6 crushing damage (no save) within 6 ft, 2D6 slashing + 2D6 piercing damage within 15 ft (targets roll successful Saving Throws vs. Breath receive half damage) 
+Weight: 32"
+
+@8163 = "Hover Turret"
+@8263 = "Auto-orbiting smart drone with integrated small-caliber rifle (non-enchanted ammo). Prioritizes attackers targeting operator. Outdoor altitude grants immunity to most attacks and spells - indoor operations disable protection.
+
+STATISTICS:
+
+- Can deploy once daily: autonomous escort drone for 10 rounds, auto-recalled when expired. Use [Shutdown and retrieve] for early retrieval 
+- Defaults to Fighting Mode: fires single shot/round at nearest threat. Manual override available 
+- Press [Disable Fighting Mode] button (or select + D) for passive escort. Use [Fighting Mode] button (or select + F) to re-activate aggression 
+Weight: 12"
+
+@8363 = "Damaged Hover Turret"
+
+
+
+
+@8171 = "Robot Dog"
+@8271 = "Radio-controlled quadrupedal combat platform with integrated small-caliber assault rifle (non-enchanted ammo). Advanced vision systems and shock-compensation mechanisms counteract firing vibrations/joint looseness/center-of-mass fluctuations through real-time posture adjustments. Outperforms human marksmen in accuracy and reaction speed. Heavy metallic construction grants inherent resistance to melee attacks and magic, but cannot receive magical healing when damaged.
+
+STATISTICS:
+
+- Can deploy once daily: controllable unit with shared vision for 10 rounds, auto-recalled when expired. Press [Shutdown and retrieve] for early retrieval 
+- Defaults to Passive Mode: press [Fighting Mode] button(or select + F) to activate autonomous targeting - fires single precision shot/round at nearest enemy. Manual targeting available 
+- Press [Disable Fighting Mode] button (or select + D) to deactivate aggression. Re-enable via [Fighting Mode] button (select + F) 
+- Cannot heal damaged units via spells or similar means 
+Weight: 150"
+
+@8371 = "Damaged Robot Dog"
+
+@8172 = "Robot Boar"
+@8272 = "Heavy quadrupedal platform optimized for weapons stabilization. Mounts Gatling gun with ammunition belt feed system. Enhanced mass provides superior firing platform stability compared to smaller units. Metallic body resists physical/magical attacks but cannot receive magical repairs.
+
+STATISTICS:
+
+- Can deploy once daily: controllable unit with shared vision for 5 rounds, auto-recalled when expired. Press [Shutdown and retrieve] for early retrieval 
+- Defaults to Passive Mode: press [Fighting Mode] button (or select + F) to activate autonomous targeting - fires single burst/round at nearest enemy. Manual targeting available 
+- Press [Disable Fighting Mode] button (or select + D) to deactivate aggression. Re-enable via [Fighting Mode] button (select + F) 
+Weight: 350"
+
+@8372 = "Damaged Robot Boar"
+
+@8173 = "Robot Wolf Pack"
+@8273 = ""
+
+@8373 = "Damaged Robot Wolf Pack"
+
+
+
+
+
+

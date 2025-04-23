@@ -268,7 +268,7 @@ IF
 	!See([PC])
 	RandomNumGT(6,5)
 	InMyArea(Player6)
-	!Dead(Player6)
+	HPGT(Player6,0)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
@@ -301,7 +301,7 @@ IF
 	!See([PC])
 	RandomNumGT(6,4)
 	InMyArea(Player5)
-	!Dead(Player5)
+	HPGT(Player5,0)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
@@ -334,7 +334,7 @@ IF
 	!See([PC])
 	RandomNumGT(6,3)
 	InMyArea(Player4)
-	!Dead(Player4)
+	HPGT(Player4,0)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
@@ -367,7 +367,7 @@ IF
 	!See([PC])
 	RandomNumGT(6,2)
 	InMyArea(Player3)
-	!Dead(Player3)
+	HPGT(Player3,0)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
@@ -400,7 +400,7 @@ IF
 	!See([PC])
 	RandomNumGT(6,1)
 	InMyArea(Player2)
-	!Dead(Player2)
+	HPGT(Player2,0)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("fireinterval","locals",ONE_ROUND)
@@ -432,7 +432,7 @@ IF
 	Global("SCOPE","LOCALS",1)
 	!See([PC])
 	InMyArea(Player1)
-	!Dead(Player1)
+	HPGT(Player1,0)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("fireinterval","locals",ONE_ROUND)

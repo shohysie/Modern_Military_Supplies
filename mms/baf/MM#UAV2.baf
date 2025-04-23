@@ -13,14 +13,6 @@ THEN
 		ReallyForceSpellDeadRES("MM#GRN2A",Myself)
 		DestroySelf()
 END
-//否则留下手榴弹
-IF
-	Die()
-THEN
-	RESPONSE #100
-		DropItem("MM#GRN2",[-1.-1])
-		DestroySelf()
-END
 
 IF
 	GlobalTimerExpired("Existime","LOCALS")
@@ -33,23 +25,28 @@ END
 
 //初始化高度
 IF
+	!GlobalGT("initialize","LOCALS",0)
 	OR(2)
 		AreaType(OUTDOOR)
 		AreaType(FOREST)
 THEN
 	RESPONSE #100
+		SetGlobal("initialize","LOCALS",1)
 		CreateItem("MM#GRN2",1,0,0)
 		SetGlobalTimer("Existime","LOCALS",900)
 		ReallyForceSpellRES("MM#UAV2A",Myself)
+		AddSpecialAbility("MM#UAV1J")
 		DisplayStringHead(Myself,@153)	//室外环境，可高空飞行。自爆模式默认关闭
 		Continue()
 END
 
 IF
+	!GlobalGT("initialize","LOCALS",0)
 	!AreaType(OUTDOOR)
 	!AreaType(FOREST)
 THEN
 	RESPONSE #100
+		SetGlobal("initialize","LOCALS",1)
 		CreateItem("MM#GRN2",1,0,0)
 		SetGlobalTimer("Existime","LOCALS",900)
 		ReallyForceSpellRES("MM#UAV2B",Myself)

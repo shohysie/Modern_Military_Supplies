@@ -270,7 +270,7 @@ COPY ~%MOD_FOLDER%/spl/MM#AMM9E.spl~ ~override~
 
 //在弹药上以#326检查开枪者的十字弓熟练度
 COPY_EXISTING ~MM#AMMB.itm~ ~override~ ~MM#AMMC.itm~ ~override~ ~MM#AMMD.itm~ ~override~ ~MM#AMMG.itm~ ~override~ ~MM#AMMH.itm~ ~override~ ~MM#AMMI.itm~ ~override~
-	PATCH_PRINT ~splprot_row=%splprot_row%~
+	//PATCH_PRINT ~splprot_row=%splprot_row%~
 	LPF ALTER_ITEM_EFFECT INT_VAR check_headers = 1 header_type = 2 match_opcode = 326 parameter2 = splprot_row END
 //熟练度满足要求即施展下列范围法术
 COPY ~%MOD_FOLDER%/spl/MM#AMEX1.spl~ ~override/MM#AMEX1.spl~ ~%MOD_FOLDER%/spl/MM#AMEX4.spl~ ~override/MM#AMEX4.spl~
@@ -1404,82 +1404,82 @@ COPY ~%MOD_FOLDER%/itm/MM#DTC2.itm~ ~override~	//生命探测仪
 	SAY IDENTIFIED_DESC @8252
 
 
+/****************召唤坦克*******************/
+
+ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#SHL1.pro~	//普通炮弹飞行轨迹
+ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#SHL3.pro~	//钢针
+
+//添加坦克动画
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~) BEGIN	//不能新增动画，取消挑战对话和情节
+	COPY_EXISTING ~MM#STO.bcs~ ~override~
+		REPLACE_BCS_BLOCK ~%MOD_FOLDER%/baf/MM#STO0.baf~ ~%MOD_FOLDER%/baf/MM#STO1.baf~ ON_MISMATCH END
+	COPY_EXISTING ~MM#STO.dlg~ ~override~
+		REPLACE_TEXTUALLY ~~~~~Global("challenge","LOCALS",0)~~~~~ ~~~~~False()~~~~~
+	PRINT ~@6~
+END ELSE BEGIN
+
+	LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+	ACTION_IF (slot <= 0) BEGIN	//没有空位新增动画，取消挑战对话和情节
+		COPY_EXISTING ~MM#STO.bcs~ ~override~
+			REPLACE_BCS_BLOCK ~%MOD_FOLDER%/baf/MM#STO0.baf~ ~%MOD_FOLDER%/baf/MM#STO1.baf~ ON_MISMATCH END
+		COPY_EXISTING ~MM#STO.dlg~ ~override~
+			REPLACE_TEXTUALLY ~~~~~Global("challenge","LOCALS",0)~~~~~ ~~~~~False()~~~~~
+		PRINT ~@7~
+	END ELSE BEGIN
+		//新增动画
+		LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+		APPEND ~animate.ids~ ~0x%hexNumber% MM#TANK~ UNLESS ~MM#TANK~
+		APPEND ~anisnd.ids~ ~0x%hexNumber% MMTK MM#TANK~ UNLESS ~MM#TANK~
+		CLEAR_IDS_MAP
+		COPY ~%MOD_FOLDER%/tank/MM#TANK.ini~ ~override/%hexNumber%.ini~
+		ACTION_BASH_FOR ~%MOD_FOLDER%/tank~ ~^.+\.bam$~ BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/MMTK%BASH_FOR_FILE%~
+		END
+		
+	END
+END
+
+COPY ~%MOD_FOLDER%/cre/MM#TANK.cre~ ~override~
+	SAY NAME1 @180
+	SAY NAME2 @180
+	WRITE_SHORT 0x28 (IDS_OF_SYMBOL (~animate~ ~MM#TANK~))
+
+COPY ~%MOD_FOLDER%/spl/MM#TANK1.spl~ ~override~
+	SAY NAME1 @181    SAY UNIDENTIFIED_DESC @181
+
+COPY ~%MOD_FOLDER%/spl/MM#TANK2.spl~ ~override~
+	SAY NAME1 @182    SAY UNIDENTIFIED_DESC @182
+
+COMPILE ~%MOD_FOLDER%/baf/MM#TANK.baf~
+	
+COPY ~%MOD_FOLDER%/itm/MM#HMCB.itm~ ~override~
+	SAY NAME2 @149
+	SAY IDENTIFIED_DESC @149
+
+COPY ~%MOD_FOLDER%/itm/MM#TANK.itm~ ~override~
+	SAY NAME2 @184
+	SAY IDENTIFIED_DESC @185
+
+COPY ~%MOD_FOLDER%/spl/MM#SHL1.spl~ ~override~
+	SAY NAME1 @187    SAY UNIDENTIFIED_DESC @187
+	WRITE_SHORT   0x98 ~%MM#SHL1%~
+	
+COPY ~%MOD_FOLDER%/spl/MM#SHL2.spl~ ~override~
+	SAY NAME1 @188    SAY UNIDENTIFIED_DESC @188
+	WRITE_SHORT   0x98 ~%MM#SHL1%~
+	
+COPY ~%MOD_FOLDER%/spl/MM#SHL3.spl~ ~override~
+	SAY NAME1 @189    SAY UNIDENTIFIED_DESC @189
+	WRITE_SHORT   0x98 ~%MM#SHL3%~
+
+COPY ~%MOD_FOLDER%/spl/MM#SHL1A.spl~ ~override~ ~%MOD_FOLDER%/spl/MM#SHL2A.spl~ ~override~
+	WRITE_SHORT   0x98 ~%MM#GRN1%~
+
+COPY ~%MOD_FOLDER%/spl/MM#SHL2B.spl~ ~override~
+	WRITE_SHORT   0x98 ~%MM#GRN2%~
+
 
 /****************无人兵器*******************/
-
-//在可以飞行的地图，免疫AOE
-//遍历对敌AOE
-ACTION_CLEAR_ARRAY areapro
-OUTER_SET MM#AMM2 = MM#AMM2 - 1
-OUTER_SET MM#AMM3 = MM#AMM3 - 1
-OUTER_SET MM#AMM4 = MM#AMM4 - 1
-OUTER_SET MM#AMM5 = MM#AMM7 - 1
-OUTER_SET MM#AMM6 = MM#AMM6 - 1
-OUTER_SET MM#AMM7 = MM#AMM7 - 1
-OUTER_SET MM#GRN1 = MM#GRN1 - 1
-OUTER_SET MM#GRN2 = MM#GRN2 - 1
-OUTER_SET MM#GRN6 = MM#GRN6 - 1
-OUTER_SET MM#GRN8 = MM#GRN8 - 1
-OUTER_SET MM#GRN9 = MM#GRN9 - 1
-OUTER_SET MM#LND1 = MM#LND1 - 1
-OUTER_SET MM#LND3 = MM#LND3 - 1
-OUTER_SET MM#LND4 = MM#LND4 - 1
-OUTER_SET MM#LND7 = MM#LND7 - 1
-OUTER_SET MM#FLM1 = MM#FLM1 - 1
-OUTER_SET MM#RPG1A = MM#RPG1A - 1
-ACTION_DEFINE_ASSOCIATIVE_ARRAY areapro BEGIN	//硬编码的AOE投射和本MOD需要防护的投射
-	BurningHands => 21 ConeOfCold => 24 ConeOfFire => 25 Invisibletravelling => 78 Colorspray => 98 Cow => 188 ScorcherIce => 190
-	proAMM2=> "%MM#AMM2%" proAMM3=> "%MM#AMM3%" proAMM4=> "%MM#AMM4%" proAMM5=> "%MM#AMM5%" proAMM6=> "%MM#AMM6%" proAMM7=> "%MM#AMM7%"
-	proGRN1=> "%MM#GRN1%" proGRN2=> "%MM#GRN2%" proGRN6=> "%MM#GRN6%" proGRN8=> "%MM#GRN8%" proGRN9=> "%MM#GRN9%"
-	proLND1=> "%MM#LND1%" proLND3=> "%MM#LND3%" proLND4=> "%MM#LND4%" proLND7=> "%MM#LND7%"
-	proFLM1=> "%MM#FLM1%" proRPG1A=> "%MM#RPG1A%" 
-END
-//非硬编码的AOE投射
-COPY_EXISTING ~PROJECTL.IDS~ ~override~
-	COUNT_2DA_ROWS 2 arearows
-	FOR (arearow = 1; arearow < arearows; ++arearow) BEGIN
-		READ_2DA_ENTRY arearow 0 2 readprohex
-		READ_2DA_ENTRY arearow 1 2 readproname
-		SET temppro = readprohex + 1
-		SET readpro = temppro - 1
-		PATCH_IF (FILE_EXISTS_IN_GAME ~%readproname%.pro~) && (~%desc%~ STRING_CONTAINS_REGEXP ~^D2~) && (~%desc%~ STRING_CONTAINS_REGEXP ~^MM#~) BEGIN
-				INNER_ACTION BEGIN
-				COPY_EXISTING ~%readproname%.pro~ ~override~
-					READ_SHORT 0x08 protype
-					READ_BYTE 0x2c proflag1
-					READ_BYTE 0x2d proflag2
-					PATCH_IF (proflag1 & 0b00000010 = 0b00000010)||(proflag2 & 0b01000000 = 0b01000000) BEGIN	//线型AOE，敌我不分
-						SET $areapro(~%readproname%~) = readpro
-					END ELSE BEGIN
-						PATCH_IF (protype == 3)||(proflag2 & 0b10100000 > 0) BEGIN	//是方形/圆形/彗星AOE
-							READ_BYTE 0x200 proflagaoe1
-							READ_BYTE 0x201 proflagaoe2
-							PATCH_IF (NOT (proflagaoe1 & 0b10000000 = 0b10000000)) && (NOT (proflagaoe2 & 0b10000000 = 0b10000000)) BEGIN	//排除仅对友方和单人AOE
-								SET $areapro(~%readproname%~) = readpro
-							END
-						END
-					END
-				BUT_ONLY
-			END
-		END
-		PATCH_IF arearow > 100 BEGIN SET arearow = arearows + 1 END	//太多了放不下了
-	END
-BUT_ONLY
-//添加对AOE的免疫
-COPY ~%MOD_FOLDER%/spl/MM#UAV1A.spl~ ~override~ //高空状态，动画高，免疫AOE，不会成为直接目标。1B移除1A，动画降低高度
-	PHP_EACH areapro AS proname => proindex BEGIN
-		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 83 target = 1 timing = 1 duration = 2400 parameter2 = proindex END
-	END
-
-COPY_EXISTING ~MM#UAV1A.spl~ ~override/MM#UAV2A.spl~
-	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 321 STR_VAR resource = ~MM#UAV2B~ END
-	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 215 STR_VAR resource = ~MM#UAV2A~ END
-	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 206 STR_VAR resource = ~MM#UAV2A~ END
-
-COPY_EXISTING ~MM#UAV1A.spl~ ~override/MM#UAV3A.spl~
-	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 321 STR_VAR resource = ~MM#UAV3B~ END
-	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 215 STR_VAR resource = ~MM#UAV3A~ END
-	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 206 STR_VAR resource = ~MM#UAV3A~ END
 
 COPY ~%MOD_FOLDER%/spl/MM#UAV1Z.spl~ ~override~	//回收
 	SAY NAME1 @140
@@ -1500,6 +1500,10 @@ COPY ~%MOD_FOLDER%/spl/MM#UAV2U.spl~ ~override~	//关闭自爆模式
 COPY ~%MOD_FOLDER%/spl/MM#UAV2W.spl~ ~override~	//自爆模式
 	SAY NAME1 @144
 	SAY UNIDENTIFIED_DESC @144
+
+COPY ~%MOD_FOLDER%/spl/MM#UAV1J.spl~ ~override~ //飞跃障碍
+	SAY NAME1 @145
+	SAY UNIDENTIFIED_DESC @145
 
 COPY ~%MOD_FOLDER%/itm/MM#UAV1.itm~ ~override~	//无人机
 	SAY NAME2 @8161
@@ -1596,9 +1600,79 @@ COPY ~%MOD_FOLDER%/itm/MM#ASTB.itm~ ~override~	//191
 COPY ~%MOD_FOLDER%/itm/MM#HMCA.itm~ ~override~	//Gatlin
 	SAY NAME2 @149
 
-/****************防毒面具*******************/
+
+/****************AOE类法术处理，包括防毒面具和无人机*******************/
+
+//在无人机可以飞行的地图，免疫伤害类AOE法术
+//遍历对敌AOE
+ACTION_CLEAR_ARRAY areapro
+/*
+OUTER_SET MM#AMM2 = MM#AMM2 - 1
+OUTER_SET MM#AMM3 = MM#AMM3 - 1
+OUTER_SET MM#AMM4 = MM#AMM4 - 1
+OUTER_SET MM#AMM5 = MM#AMM5 - 1
+OUTER_SET MM#AMM6 = MM#AMM6 - 1
+OUTER_SET MM#AMM7 = MM#AMM7 - 1
+OUTER_SET MM#GRN1 = MM#GRN1 - 1
+OUTER_SET MM#GRN2 = MM#GRN2 - 1
+OUTER_SET MM#GRN6 = MM#GRN6 - 1
+OUTER_SET MM#GRN8 = MM#GRN8 - 1
+OUTER_SET MM#GRN9 = MM#GRN9 - 1
+OUTER_SET MM#LND1 = MM#LND1 - 1
+OUTER_SET MM#LND3 = MM#LND3 - 1
+OUTER_SET MM#LND4 = MM#LND4 - 1
+OUTER_SET MM#LND7 = MM#LND7 - 1
+OUTER_SET MM#FLM1 = MM#FLM1 - 1
+OUTER_SET MM#FLS1 = MM#FLS1 - 1
+OUTER_SET MM#RPG1A = MM#RPG1A - 1
+OUTER_SET MM#SHL3 = MM#SHL3 - 1
+*/
+ACTION_DEFINE_ASSOCIATIVE_ARRAY areapro BEGIN	//硬编码的AOE投射和可能影响到无人机的投射
+	BurningHands => 21 ConeOfCold => 24 ConeOfFire => 25 Colorspray => 98 Cow => 188 ScorcherIce => 190
+//	proAMM2=> "%MM#AMM2%" proAMM3=> "%MM#AMM3%" proAMM4=> "%MM#AMM4%" proAMM5=> "%MM#AMM5%" proAMM6=> "%MM#AMM6%" proAMM7=> "%MM#AMM7%"
+//	proGRN1=> "%MM#GRN1%" proGRN2=> "%MM#GRN2%" proGRN6=> "%MM#GRN6%" proGRN8=> "%MM#GRN8%" proGRN9=> "%MM#GRN9%"
+//	proLND1=> "%MM#LND1%" proLND3=> "%MM#LND3%" proLND4=> "%MM#LND4%" proLND7=> "%MM#LND7%"
+//	proFLM1=> "%MM#FLM1%" proFLS1=> "%MM#FLS1%" proRPG1A=> "%MM#RPG1A%" proSHL3=> "%MM#SHL3%" 
+END
+//非硬编码的AOE投射
+COPY_EXISTING ~PROJECTL.IDS~ ~override~
+	COUNT_2DA_ROWS 2 arearows
+	FOR (arearow = 1; arearow < arearows; ++arearow) BEGIN
+		READ_2DA_ENTRY arearow 0 2 readprohex
+		READ_2DA_ENTRY arearow 1 2 readproname
+		//PATCH_PRINT ~readproname=%readproname%~
+		SET temppro = readprohex + 1
+		SET readpro = temppro - 1
+		//PATCH_IF (FILE_EXISTS_IN_GAME ~%readproname%.pro~) && (~%desc%~ STRING_CONTAINS_REGEXP ~^D2~) && (~%desc%~ STRING_CONTAINS_REGEXP ~^MM#~) BEGIN
+		PATCH_IF FILE_EXISTS_IN_GAME ~%readproname%.pro~ BEGIN
+				INNER_ACTION BEGIN
+				COPY_EXISTING ~%readproname%.pro~ ~override~
+					READ_SHORT 0x08 protype
+					READ_BYTE 0x2c proflag1
+					READ_BYTE 0x2d proflag2
+					PATCH_IF (proflag1 & 0b00000010 = 0b00000010)||(proflag2 & 0b01000000 = 0b01000000) BEGIN	//线型AOE，敌我不分
+						SET $areapro(~%readproname%~) = readpro
+						//PATCH_PRINT ~lineAOE:%readproname%~
+					END ELSE BEGIN
+						PATCH_IF (protype == 3)||(proflag2 & 0b10100000 > 0) BEGIN	//是方形/圆形/彗星AOE
+							//PATCH_PRINT ~AOE:%readproname%~
+							READ_BYTE 0x200 proflagaoe1
+							READ_BYTE 0x201 proflagaoe2
+							PATCH_IF (NOT (proflagaoe1 & 0b10000000 = 0b10000000)) || (NOT (proflagaoe2 & 0b10000000 = 0b10000000)) BEGIN	//排除仅对友方和单人AOE
+								SET $areapro(~%readproname%~) = readpro
+								//PATCH_PRINT ~AOEforEnemy:%readproname%~
+							END
+						END
+					END
+				BUT_ONLY
+			END
+		END
+		//PATCH_IF arearow > 100 BEGIN SET arearow = arearows + 1 END	//太多了放不下了
+	END
+BUT_ONLY
 
 //防毒面具可对付云类投射的处理
+ACTION_CLEAR_ARRAY cloudpro
 OUTER_SET temppro = %MM#GRN5% - 1
 APPEND ~clearair.2da~ ~MM#GRN5    %temppro%~
 OUTER_SET temppro = %MM#GRN6% - 1
@@ -1626,129 +1700,83 @@ COPY_EXISTING ~PROJECTL.IDS~ ~override~
 		END
 	END
 BUT_ONLY
-//找出云类法术（排除毒以外伤害类，排除隐藏类）和范围毒系法术
+//云类AOE可用的pro存在cloudpro数值里
+
+//找出AOE伤害法术，同时找出云类AOE（排除毒以外伤害类，排除隐藏类）和毒系AOE法术
 COPY_EXISTING_REGEXP GLOB ~.*\.spl~ ~override~
-	SET cloudsplnodam = 0	//用于判断
+//COPY_EXISTING ~SPWI313.spl~ ~override~
+	SET cloudsplnodam = 0	//用于判断云类和毒系AOE法术
+	SET aoespldam = 0	//用于判断伤害AOE法术
 	PATCH_IF (SOURCE_SIZE > 0x98) BEGIN
 		SPRINT splname ~%SOURCE_RES%~
 		READ_SHORT 0x98 splpro
-		PHP_EACH cloudpro AS proindex => int BEGIN
+		PHP_EACH cloudpro AS proindex => int BEGIN	//如果属于云类AOE可用的pro
 			PATCH_IF (splpro - 1) == proindex BEGIN
-				SET cloudsplnodam = 1	//是云类法术
+				SET cloudsplnodam = 1
 				READ_LONG 0x6a effoffset
 				READ_SHORT 0x70 globaleffs
 				READ_SHORT 0x90 head1effs
 				FOR (spleff = 0; spleff < head1effs; ++spleff) BEGIN
 					READ_SHORT (effoffset + 0x30 * (globaleffs + spleff)) effcode
 					PATCH_IF effcode == 12 BEGIN
+						SET aoespldam = 1	//是云类伤害AOE
 						READ_BYTE (effoffset + 0x30 * (globaleffs + spleff) + 0x0a) damagetype
-						PATCH_IF damagetype != 32 BEGIN SET cloudsplnodam = 2 END	//存在非毒素伤害，排除
+						PATCH_IF damagetype != 32 BEGIN SET cloudsplnodam = 2 END	//是云类但存在非毒素伤害，排除
 					END
-					PATCH_IF (effcode == 20)||(effcode == 69)||(effcode == 100) BEGIN SET cloudsplnodam = 2 END	//隐藏类法术，排除
+					PATCH_IF (effcode == 20)||(effcode == 69)||(effcode == 100) BEGIN SET cloudsplnodam = 2 END	//是云类但躲藏类法术，排除
 				END
 			END
 		END
-		PATCH_IF cloudsplnodam == 0 BEGIN	//非云类AOE法术
-			PHP_EACH areapro AS proname => proindex BEGIN
+		PATCH_IF cloudsplnodam == 0 BEGIN	//检查非云类
+			PHP_EACH areapro AS proname => proindex BEGIN	//如果属于对敌伤害类AOE可用的pro
+				//PATCH_PRINT ~pro=%proname%~
 				PATCH_IF (splpro - 1) == proindex BEGIN
+					//PATCH_PRINT ~procorre=%proname%~
 					READ_LONG 0x6a effoffset
 					READ_SHORT 0x70 globaleffs
 					READ_SHORT 0x90 head1effs
 					FOR (spleff = 0; spleff < head1effs; ++spleff) BEGIN
 						READ_SHORT (effoffset + 0x30 * (globaleffs + spleff)) effcode
 						PATCH_IF effcode == 12 BEGIN
+							SET aoespldam = 1	//是非云类伤害AOE
+							//PATCH_PRINT ~spl=%splname%~
 							READ_BYTE (effoffset + 0x30 * (globaleffs + spleff) + 0x0a) damagetype
-							PATCH_IF damagetype = 32 BEGIN SET cloudsplnodam = 1 END	//毒素伤害
+							PATCH_IF damagetype = 32 BEGIN SET cloudsplnodam = 1 END	//是非云类毒伤AOE
 						END
-						PATCH_IF effcode == 25 BEGIN SET cloudsplnodam = 1 END	//中毒效果
+						PATCH_IF effcode == 25 BEGIN SET cloudsplnodam = 1 END	//是非云类中毒AOE
 					END
 				END
 			END
-		END
+		END		
+	END
+	PATCH_IF aoespldam == 1 BEGIN
+		SET $aoedamspl(~%splname%~) = 1
 	END
 	PATCH_IF cloudsplnodam == 1 BEGIN
 		SET $cloudspl(~%splname%~) = 1
 	END
 BUT_ONLY
-//防毒面具，添加对上述法术免疫
+
+//无人机初始化，添加对AOE的免疫
+COPY ~%MOD_FOLDER%/spl/MM#UAV1A.spl~ ~override~ //高空状态，动画高，免疫AOE，不会成为直接目标。1B移除1A，动画降低高度
+	PHP_EACH aoedamspl AS splname => int BEGIN
+		LPF ADD_SPELL_EFFECT INT_VAR header = 1 opcode = 206 insert_point = 5 target = 1 timing = 1 STR_VAR resource = EVAL ~%splname%~ END
+	END
+
+COPY_EXISTING ~MM#UAV1A.spl~ ~override/MM#UAV2A.spl~
+	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 321 STR_VAR resource = ~MM#UAV2B~ END
+	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 215 STR_VAR resource = ~MM#UAV2A~ END
+	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 206 STR_VAR resource = ~MM#UAV2A~ END
+
+COPY_EXISTING ~MM#UAV1A.spl~ ~override/MM#UAV3A.spl~
+	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 321 STR_VAR resource = ~MM#UAV3B~ END
+	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 215 STR_VAR resource = ~MM#UAV3A~ END
+	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 206 STR_VAR resource = ~MM#UAV3A~ END
+	
+//防毒面具，添加对cloudspl记录的法术免疫
 COPY ~%MOD_FOLDER%/itm/MM#RSP1.itm~ ~override~
 	SAY NAME2 @8153
 	SAY IDENTIFIED_DESC @8253
 	PHP_EACH cloudspl AS splname => int BEGIN
 		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 206 target = 1 timing = 2 STR_VAR resource = EVAL ~%splname%~ END
 	END
-
-
-/****************召唤坦克*******************/
-
-ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#SHL1.pro~	//普通炮弹飞行轨迹
-ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#SHL3.pro~	//钢针
-
-//添加坦克动画
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~) BEGIN	//不能新增动画，取消挑战对话和情节
-	COPY_EXISTING ~MM#STO.bcs~ ~override~
-		REPLACE_BCS_BLOCK ~%MOD_FOLDER%/baf/MM#STO0.baf~ ~%MOD_FOLDER%/baf/MM#STO1.baf~ ON_MISMATCH END
-	COPY_EXISTING ~MM#STO.dlg~ ~override~
-		REPLACE_TEXTUALLY ~~~~~Global("challenge","LOCALS",0)~~~~~ ~~~~~False()~~~~~
-	PRINT ~@6~
-END ELSE BEGIN
-
-	LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
-	ACTION_IF (slot <= 0) BEGIN	//没有空位新增动画，取消挑战对话和情节
-		COPY_EXISTING ~MM#STO.bcs~ ~override~
-			REPLACE_BCS_BLOCK ~%MOD_FOLDER%/baf/MM#STO0.baf~ ~%MOD_FOLDER%/baf/MM#STO1.baf~ ON_MISMATCH END
-		COPY_EXISTING ~MM#STO.dlg~ ~override~
-			REPLACE_TEXTUALLY ~~~~~Global("challenge","LOCALS",0)~~~~~ ~~~~~False()~~~~~
-		PRINT ~@7~
-	END ELSE BEGIN
-		//新增动画
-		LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
-		APPEND ~animate.ids~ ~0x%hexNumber% MM#TANK~ UNLESS ~MM#TANK~
-		APPEND ~anisnd.ids~ ~0x%hexNumber% MMTK MM#TANK~ UNLESS ~MM#TANK~
-		CLEAR_IDS_MAP
-		COPY ~%MOD_FOLDER%/tank/MM#TANK.ini~ ~override/%hexNumber%.ini~
-		ACTION_BASH_FOR ~%MOD_FOLDER%/tank~ ~^.+\.bam$~ BEGIN
-			COPY ~%BASH_FOR_FILESPEC%~ ~override/MMTK%BASH_FOR_FILE%~
-		END
-		
-	END
-END
-
-COPY ~%MOD_FOLDER%/cre/MM#TANK.cre~ ~override~
-	SAY NAME1 @180
-	SAY NAME2 @180
-	WRITE_SHORT 0x28 (IDS_OF_SYMBOL (~animate~ ~MM#TANK~))
-
-COPY ~%MOD_FOLDER%/spl/MM#TANK1.spl~ ~override~
-	SAY NAME1 @181    SAY UNIDENTIFIED_DESC @181
-
-COPY ~%MOD_FOLDER%/spl/MM#TANK2.spl~ ~override~
-	SAY NAME1 @182    SAY UNIDENTIFIED_DESC @182
-
-COMPILE ~%MOD_FOLDER%/baf/MM#TANK.baf~
-	
-COPY ~%MOD_FOLDER%/itm/MM#HMCB.itm~ ~override~
-	SAY NAME2 @149
-	SAY IDENTIFIED_DESC @149
-
-COPY ~%MOD_FOLDER%/itm/MM#TANK.itm~ ~override~
-	SAY NAME2 @184
-	SAY IDENTIFIED_DESC @185
-
-COPY ~%MOD_FOLDER%/spl/MM#SHL1.spl~ ~override~
-	SAY NAME1 @187    SAY UNIDENTIFIED_DESC @187
-	WRITE_SHORT   0x98 ~%MM#SHL1%~
-	
-COPY ~%MOD_FOLDER%/spl/MM#SHL2.spl~ ~override~
-	SAY NAME1 @188    SAY UNIDENTIFIED_DESC @188
-	WRITE_SHORT   0x98 ~%MM#SHL1%~
-	
-COPY ~%MOD_FOLDER%/spl/MM#SHL3.spl~ ~override~
-	SAY NAME1 @189    SAY UNIDENTIFIED_DESC @189
-	WRITE_SHORT   0x98 ~%MM#SHL3%~
-
-COPY ~%MOD_FOLDER%/spl/MM#SHL1A.spl~ ~override~ ~%MOD_FOLDER%/spl/MM#SHL2A.spl~ ~override~
-	WRITE_SHORT   0x98 ~%MM#GRN1%~
-
-COPY ~%MOD_FOLDER%/spl/MM#SHL2B.spl~ ~override~
-	WRITE_SHORT   0x98 ~%MM#GRN2%~

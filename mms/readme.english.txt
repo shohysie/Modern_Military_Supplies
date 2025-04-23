@@ -1,9 +1,9 @@
 /////////////////////////////////////////////////////
-/////Shohy's Modern Military Store v0.95 ////////
+/////Shohy's Modern Military Store v0.96 ////////
 /////////////////////////////////////////////////////
 
 
----------- Installation & Compatibility ----------  
+---------- Installation & Notes ----------  
 
 This mod is **only compatible with the Enhanced Edition (EE)** series of Baldur's Gate games and cannot be used with the original SOA, TOB, or other non-EE versions.  
 
@@ -12,7 +12,15 @@ A merchant selling modern military equipment has been added to the following loc
 - **SOA**: Trademeet.  
 - **TOB**: The Oasis.  
 
-*(Note: Firearms are with the animation of crossbow as custom animations are beyond the modder's capability.)*  
+The merchant sells modern firearms (e.g., assault rifles, sniper rifles), military supplies (e.g., bulletproof vests, tactical grenades), and advanced gear.
+
+Firearms use a ‌unique firing system‌ and independent proficiency system‌ distinct from vanilla weapons. Detailed mechanics are explained in the following instructions.
+
+Powerful items‌ (e.g., drones, robotic dogs) ‌will not appear in early gameplay.
+
+Drone Usage Note‌: When operated outdoors, drones enter a high-altitude state, ‌immune to all AoE damage and ‌not prioritized by enemies‌. In indoor environments, these protections are disabled, rendering drones ‌vulnerable to destruction‌.
+
+Players with sufficient combat strength can challenge the merchant for rare rewards.
 
 **Install this mod after other equipment mods**, as it modifies all armor in the game.  
 
@@ -28,6 +36,7 @@ A merchant selling modern military equipment has been added to the following loc
   - Creatures with natural armor (e.g., Ankhegs, Umber Hulks) are treated as heavily armored.  
 - **Damage Balance**: Average damage aligns with D&D 3.5e/5e modern weapon rules.  
 - **Spell Interactions**: Blocked by *Protection from Missiles*, *Protection from Magic Weapons*, etc. *Stoneskin* and *Iron Skin* can block damage and effects but may fail against high-kinetic firearms.  
+*(Firearms are with the animation of crossbow as custom animations are beyond the modder's capability.)*  
 
 2. **Ammunition & Firing Modes**  
 - **Ammo Types**: Bullets, magazines, drums, belts (universal for simplicity).  
@@ -69,6 +78,12 @@ A merchant selling modern military equipment has been added to the following loc
 
 
 ---------- Version History ----------  
+
+**v0.96**  
+- Fixed an issue where tank AI installation reports errors.
+- Fixed an issue where drone animations might not appear.
+- Fixed an issue where drones could still be affected by ground-based area attacks while in high-altitude states.
+- Added obstacle-leaping functionality to drones (outdoor only).
 
 **v0.95**  
 - English Version Available.

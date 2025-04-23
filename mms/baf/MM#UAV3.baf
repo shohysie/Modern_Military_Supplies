@@ -1,10 +1,11 @@
 IF
-	OnCreation()
+	!GlobalGT("initialize","LOCALS",0)
 	OR(2)
 		AreaType(OUTDOOR)
 		AreaType(FOREST)
 THEN
 	RESPONSE #100
+		SetGlobal("initialize","LOCALS",1)
 		SetGlobalTimer("Existime","LOCALS",600)
 		ReallyForceSpellRES("MM#UAV3A",Myself)
 		SetGlobal("ACTVMODE","LOCALS",1)
@@ -13,11 +14,12 @@ THEN
 END
 
 IF
-	OnCreation()
+	!GlobalGT("initialize","LOCALS",0)
 	!AreaType(OUTDOOR)
 	!AreaType(FOREST)
 THEN
 	RESPONSE #100
+		SetGlobal("initialize","LOCALS",1)
 		SetGlobalTimer("Existime","LOCALS",600)
 		ReallyForceSpellRES("MM#UAV3B",Myself)
 		SetGlobal("ACTVMODE","LOCALS",1)
@@ -564,14 +566,6 @@ THEN
 		SetGlobal("moveitem","LOCALS",8)
 		Continue()
 END
-//死了丢地上
-IF
-	Die()
-THEN
-	RESPONSE #100
-		DropItem("MM#UAV3A",[-1.-1])
-		DestroySelf()
-END
 
 //关机
 IF
@@ -595,7 +589,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@141)	//返回中……
-		MoveToObject(Player1)
+		MoveToObjectNoInterrupt(Player1)
 END
 
 IF
@@ -619,7 +613,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@141)	//返回中……
-		MoveToObject(Player2)
+		MoveToObjectNoInterrupt(Player2)
 END
 
 IF
@@ -643,7 +637,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@141)	//返回中……
-		MoveToObject(Player3)
+		MoveToObjectNoInterrupt(Player3)
 END
 
 IF
@@ -667,7 +661,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@141)	//返回中……
-		MoveToObject(Player4)
+		MoveToObjectNoInterrupt(Player4)
 END
 
 IF
@@ -691,7 +685,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@141)	//返回中……
-		MoveToObject(Player5)
+		MoveToObjectNoInterrupt(Player5)
 END
 
 IF
@@ -715,7 +709,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@141)	//返回中……
-		MoveToObject(Player6)
+		MoveToObjectNoInterrupt(Player6)
 END
 
 //如果中途出问题

@@ -1,23 +1,26 @@
 IF
-	OnCreation()
+	!GlobalGT("initialize","LOCALS",0)
 	OR(2)
 		AreaType(OUTDOOR)
 		AreaType(FOREST)
 THEN
 	RESPONSE #100
+		SetGlobal("initialize","LOCALS",1)
 		SetGlobalTimer("Existime","LOCALS",600)
 		ReallyForceSpellRES("MM#UAV1A",Myself)
+		AddSpecialAbility("MM#UAV1J")
 		SetGlobal("ACTVMODE","LOCALS",1)
 		DisplayStringHead(Myself,@151)	//室外环境，可高空飞行。攻击模式默认开启
 		Continue()
 END
 
 IF
-	OnCreation()
+	!GlobalGT("initialize","LOCALS",0)
 	!AreaType(OUTDOOR)
 	!AreaType(FOREST)
 THEN
 	RESPONSE #100
+		SetGlobal("initialize","LOCALS",1)
 		SetGlobalTimer("Existime","LOCALS",600)
 		ReallyForceSpellRES("MM#UAV1B",Myself)
 		SetGlobal("ACTVMODE","LOCALS",1)
@@ -43,14 +46,14 @@ IF
 	!GlobalGT("moveitem","LOCALS",0)
 	!Exists(LastSummonerOf())
 	OR(3)
-		CheckItemSlot([PC],"MM#UAV1",SLOT_MISC0)
-		CheckItemSlot([PC],"MM#UAV1",SLOT_MISC1)
-		CheckItemSlot([PC],"MM#UAV1",SLOT_MISC2)
+		CheckItemSlot(LastSummonerOf(),"MM#UAV1",SLOT_MISC0)
+		CheckItemSlot(LastSummonerOf(),"MM#UAV1",SLOT_MISC1)
+		CheckItemSlot(LastSummonerOf(),"MM#UAV1",SLOT_MISC2)
 THEN
 	RESPONSE #100
 		SetGlobal("moveitem","LOCALS",1)
-		ClearActions([PC])
-		ActionOverride([PC],GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
+		ClearActions(LastSummonerOf())
+		ActionOverride(LastSummonerOf(),GiveItem("MM#UAV1",[CONTROLLED.WEAPON.GOLEM.IMP.NO_MAGIC.BOTH.NEUTRAL]))
 END
 
 IF
@@ -139,14 +142,7 @@ THEN
 		SetGlobal("moveitem","LOCALS",2)
 		Continue()
 END
-//死了丢地上
-IF
-	Die()
-THEN
-	RESPONSE #100
-		DropItem("MM#UAV1A",[-1.-1])
-		DestroySelf()
-END
+
 //关机回收
 IF
 	OR(2)
@@ -163,11 +159,23 @@ IF
 	OR(2)
 		GlobalTimerExpired("Existime","LOCALS")
 		Global("SHUTDOWN","LOCALS",1)
+	Detect([PC])
 	!Range([PC],4)
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@150)	//返回中……
-		MoveToObject([PC])
+		MoveToObjectNoInterrupt([PC])
+END
+
+IF
+	OR(2)
+		GlobalTimerExpired("Existime","LOCALS")
+		Global("SHUTDOWN","LOCALS",1)
+	!Detect([PC])
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@150)	//返回中……
+		MoveToObjectNoInterrupt(Player1)
 END
 
 //如果中途出问题

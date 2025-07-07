@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-/////Shohy's Modern Military Store v0.96 ////////
+/////Shohy's Modern Military Store v0.97 ////////
 /////////////////////////////////////////////////////
 
 
@@ -78,6 +78,18 @@ Players with sufficient combat strength can challenge the merchant for rare rewa
 
 
 ---------- Version History ----------  
+
+**v0.97** 
+
+- Fixed an issue where attaching a bayonet to firearms caused them to disappear.
+- Fixed an issue with firearm special effects (e.g., knockdown) triggering incorrectly.
+- Fixed an issue where firearms had no special effect against certain types of armor.
+- Adjusted Firearm Critical Hits: Critical hits now always deal extra damage and knock down the enemy. The specific effect also varies based on the bullet's kinetic energy (some creatures are immune to these effects).
+- Fixed an issue preventing firearm proficiency from increasing through combat experience.
+- Fixed an issue where the QLU-11 did not display its compatible ammunition type.
+- Fixed an issue related to firearm durability/jamming. Characters will now automatically switch to a backup weapon and continue attacking if their firearm becomes unusable (prioritizing ranged weapons).
+- Fixed an issue where the firearm training cost displayed as 100 gold but actually charged 1000 gold.
+- Fixed an issue where tanks could be killed by base stats drain effects.
 
 **v0.96**  
 - Fixed an issue where tank AI installation reports errors.

@@ -66,7 +66,7 @@
 @62 = "Full-auto weapons demand caution. Sustained recoil disrupts accuracy. Muzzle control requires expertise. High-rate, powerful automatics need skilled handling to maximize hits."
 @63 = "Show me your current skill level to determine appropriate training."
 @64 = "No firearm proficiency detected. Free training available up to Expertise (1-Star)."
-@65 = "Firearm skill at Expertise (1-Star). Advance to Specialist (2-Star) with 1 day and 100 gold coins."
+@65 = "Firearm skill at Expertise (1-Star). Advance to Specialist (2-Star) with 1 day and 1000 gold coins."
 @66 = "Firearm skill at Specialist (2-Star). Advance to Master (3-Star) with 2 days and 2000 gold coins."
 @67 = "Firearm skill at Master (3-Star). Further progress requires combat experience."
 @68 = "Firearm skill at Grandmaster (4-Star). No further training available. Hone skills in battle."

@@ -4,14 +4,14 @@
 
 BACKUP ~mms/backup~
 AUTHOR ~shohy@126.com~
-VERSION ~v0.95~
+VERSION ~v0.97~
 
 AUTO_EVAL_STRINGS
 
 README ~%MOD_FOLDER%/README.%LANGUAGE%.txt~
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
-  
+
 LANGUAGE  ~American English~	~english~ 	~%MOD_FOLDER%/tra/english/talk.tra~
 											~%MOD_FOLDER%/tra/english/guns.tra~
 											~%MOD_FOLDER%/tra/english/other.tra~
@@ -63,7 +63,8 @@ SAY NAME2 @2
 
 /****************枪械投射********************/
 
-ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#AMM1.pro~	//单发子弹/短点射，无飞行时间
+ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#AMM0.pro~	//单发子弹/短点射，无飞行时间
+ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#AMM1.pro~	//子弹实际效果，有飞行时间
 ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#AMM2.pro~	//短筒霰弹，45度12范围（192）
 ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#AMM3.pro~	//冲锋枪长点射5hits，45度29范围（464），攻击5次
 ADD_PROJECTILE      ~%MOD_FOLDER%/pro/MM#AMM4.pro~	//机枪长点射5hits，45度48范围（768），攻击5次
@@ -165,46 +166,40 @@ COPY ~%MOD_FOLDER%/spl/MM#MELEC.spl~ ~override~
 //MM#SP1-7为枪械单发实际效果，首先造成伤害，再以特效概率、以枪械动能等级调用MM#SPa1-h3
 //MM#SPa1-h3为枪械的各种特殊效果
 //此处设置保底法术：1级头部，有投射，有开火动画和声音（声音文件留空待改，1-7a没有声音），有最低等级调用一发MM#SP1-7，b-d还有移除MM#SNDA1和2。显示文字提示的999级头部在大循环之后加
-//还有1%概率召唤看不见的MM#FAIL.cre处理武器熟练和损坏
+//施展法术以1%概率召唤看不见的MM#FAIL.cre处理武器熟练和损坏
+//AMM1-7A法术投射为瞬间到达100%施展SP1-7，B投射瞬间到达延迟调用数次SP1-7，C和D100%调用EF范围概率施展SP1-7
+//鸟由AMM1-7A法术1%召唤，其概率和枪械开火概率损坏相互独立，召唤鸟的法术在最后加上不在这里
+//MM#AMM1-7a-d所有效果均为100%，因此投射用瞬间到达没有冲突
 ACTION_FOR_EACH gunammtype IN 1 2 3 4 5 6 7 BEGIN
 	COPY ~%MOD_FOLDER%/spl/MM#AMM1A.spl~ ~override/MM#AMM%gunammtype%A.spl~	//原始文件为播放3F的MM#MFLS1动画以及施展MM#SP1
-		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM1 END
+		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM0 END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 146 STR_VAR resource = ~MM#SP%gunammtype%~ END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 target = 9 parameter1 = 5 parameter2 = 134 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 9 timing = 0 duration = 6 parameter2 = 2 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
 
 	COPY ~%MOD_FOLDER%/spl/MM#AMM1A.spl~ ~override/MM#AMM%gunammtype%B.spl~
-		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM1 END
+		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM0 END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 146 STR_VAR resource = ~MM#SP%gunammtype%~ END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 215 duration = 7 STR_VAR resource = ~MM#MFLS2~ END
 		LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 target = 9 timing = 1 insert_point = 1 STR_VAR resource = ~MM#SNDA2~ END
 		LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 target = 9 timing = 1 insert_point = 1 STR_VAR resource = ~MM#SNDA1~ END
 		LPF ADD_SPELL_EFFECT INT_VAR header = 1 opcode = 174 target = 9 timing = 0 duration = 1 END
 		LPF ADD_SPELL_EFFECT INT_VAR header = 1 opcode = 165 target = 9 timing = 10 duration = 7 END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 target = 9 parameter1 = 5 parameter2 = 134 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 9 timing = 0 duration = 6 parameter2 = 2 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
 
 	COPY ~%MOD_FOLDER%/spl/MM#AMM1A.spl~ ~override/MM#AMM%gunammtype%C.spl~
-		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM1 END
+		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM0 END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 146 STR_VAR resource = ~MM#AMM%gunammtype%E~ END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 215 duration = 14 STR_VAR resource = ~MM#MFLS2~ END
 		LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 target = 9 timing = 1 insert_point = 1 STR_VAR resource = ~MM#SNDA2~ END
 		LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 target = 9 timing = 1 insert_point = 1 STR_VAR resource = ~MM#SNDA1~ END
 		LPF ADD_SPELL_EFFECT INT_VAR header = 1 opcode = 174 target = 9 timing = 0 duration = 1 END
 		LPF ADD_SPELL_EFFECT INT_VAR header = 1 opcode = 165 target = 9 timing = 10 duration = 14 END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 target = 9 parameter1 = 5 parameter2 = 134 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 9 timing = 0 duration = 6 parameter2 = 2 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
-		
 	COPY ~%MOD_FOLDER%/spl/MM#AMM1A.spl~ ~override/MM#AMM%gunammtype%D.spl~
-		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM1 END
+		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM0 END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 146 STR_VAR resource = ~MM#AMM%gunammtype%F~ END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 215 duration = 25 STR_VAR resource = ~MM#MFLS2~ END
 		LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 target = 9 timing = 1 insert_point = 1 STR_VAR resource = ~MM#SNDA2~ END
 		LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 target = 9 timing = 1 insert_point = 1 STR_VAR resource = ~MM#SNDA1~ END
 		LPF ADD_SPELL_EFFECT INT_VAR header = 1 opcode = 174 target = 9 timing = 0 duration = 1 END
 		LPF ADD_SPELL_EFFECT INT_VAR header = 1 opcode = 165 target = 9 timing = 10 duration = 25 END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 target = 9 parameter1 = 5 parameter2 = 134 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 9 timing = 0 duration = 6 parameter2 = 2 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
 
 	COPY ~%MOD_FOLDER%/spl/MM#AMM1A.spl~ ~override/MM#AMM%gunammtype%E.spl~
 		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM3 END
@@ -216,25 +211,32 @@ ACTION_FOR_EACH gunammtype IN 1 2 3 4 5 6 7 BEGIN
 		LPF DELETE_SPELL_EFFECT INT_VAR match_opcode = 215 END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 146 STR_VAR resource = ~MM#SP%gunammtype%~ END
 		
-	//COPY ~%MOD_FOLDER%/spl/MM#SP%gunammtype%.spl~ ~override~
-	//WRITE_SHORT   0x98 ~%MM#AMM1%~
+	COPY ~%MOD_FOLDER%/spl/MM#SP%gunammtype%.spl~ ~override~
+		WRITE_SHORT   0x98 ~%MM#AMM1%~
 END
 
 ACTION_FOR_EACH sptype IN A1 A2 A3 B1 B2 C1 C2 C3 D1 E2 E3 F1 G1 H2 BEGIN
 	COPY ~%MOD_FOLDER%/spl/MM#SP%sptype%.spl~ ~override~
+		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM1 END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 318 STR_VAR resource = ~MM#SP%sptype%~ END
+		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 39 STR_VAR parameter2 = 1 END
 		LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 parameter1 = 0x40000000 parameter2 = 138 insert_point = 0 STR_VAR resource = ~MM#SP%sptype%~ END
 END
-
 
 /******************狙击榴专用的MM#AMM8B近战不会炸********************/
 //MM#AMM8b为97号狙击榴特殊处理，不用读表格直接写数值，不暂停，得有枪焰和枪声，该枪并没有单发枪声所以不需要移除
 //对自己施展im8对敌人施展sp8
+	
 COPY ~%MOD_FOLDER%/spl/MM#AMM8B.spl~ ~override~
-	WRITE_SHORT   0x98 ~%MM#AMM1%~
-	LPF ADD_SPELL_HEADER INT_VAR type = 2 location = 0 range = 250 required_level = 999 projectile = MM#AMM1 RET insert_point END
+	WRITE_SHORT   0x98 ~%MM#AMM0%~
+	LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 target = 9 parameter1 = 5 parameter2 = 134 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
+	LPF ADD_SPELL_EFFECT INT_VAR opcode = 146 target = 9 timing = 1 parameter2 = 1 probability1 = 0 STR_VAR resource = ~MM#FAIL~ END
+	LPF ADD_SPELL_HEADER INT_VAR type = 2 location = 0 range = 250 required_level = 999 projectile = MM#AMM0 RET insert_point END
 	LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 139 target = 9 timing = 1 parameter1 = RESOLVE_STR_REF(@80) END
 
+COPY ~%MOD_FOLDER%/spl/MM#SP8.spl~ ~override~
+	WRITE_SHORT   0x98 ~%MM#AMM1%~
+	
 //MM#SP8是单体，调用的sp81才是爆炸。如果MM#SP8是爆炸则无法被MM#IM8阻挡
 COPY ~%MOD_FOLDER%/spl/MM#SP81.spl~ ~override~
 	WRITE_SHORT   0x98 ~%MM#AMM7%~
@@ -258,7 +260,7 @@ COPY  ~%MOD_FOLDER%/spl/MM#AMMI.spl~ ~override~	//显示枪弹不匹配提示
 //gunsinglehit为0以及90>gunid>80的霰弹枪系列不允许使用达姆弹
 
 COPY ~%MOD_FOLDER%/spl/MM#AMM9E.spl~ ~override~
-	LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM1 END
+	LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM0 END
 	LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@80) END
 	
 
@@ -380,7 +382,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 						SPRINT writeammo ~%writeammo%~^~/%ammotype2%~
 						PATCH_IF gunlongframe > 0 BEGIN
 							SPRINT writeammo ~%writeammo%~^~/%ammotype3%~
-							PATCH_IF gunlongframe > 0 BEGIN
+							PATCH_IF gunstrafeframe > 0 BEGIN
 								SPRINT writeammo ~%writeammo%~^~/%ammotype4%~
 							END
 						END
@@ -390,7 +392,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 						SPRINT writeammo ~%writeammo%~^~%ammotype2%~
 						PATCH_IF gunlongframe > 0 BEGIN
 							SPRINT writeammo ~%writeammo%~^~/%ammotype3%~
-							PATCH_IF gunlongframe > 0 BEGIN
+							PATCH_IF gunstrafeframe > 0 BEGIN
 								SPRINT writeammo ~%writeammo%~^~/%ammotype4%~
 							END
 						END
@@ -403,6 +405,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 					SPRINT writedamage ~%writedamage%~^~+%gundiceplus%~
 				END
 				PATCH_IF gunid == 97 BEGIN
+					SPRINT writeammo ~%writeammo%~^~%ammotype2%~
 					SPRINT writedamage ~%writedamage%~^~%directhit%~
 				END
 				
@@ -454,6 +457,20 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 					WRITE_EVALUATED_ASCII 0x10 ~MM#%guncode%~
 				END
 				LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 1 target = 1 parameter1 = gunapr parameter2 = 1 timing = 2 END	//攻击频率
+				
+				PATCH_IF gunkinetic < 6 BEGIN
+					LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 STR_VAR resource = ~MM#CRTI1~ END	//致命一击
+				END				
+				PATCH_IF (gunkinetic > 5)&&(gunkinetic < 11) BEGIN
+					LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 STR_VAR resource = ~MM#CRTI2~ END	//致命一击
+				END				
+				PATCH_IF (gunkinetic > 10)&&(gunkinetic < 16) BEGIN
+					LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 STR_VAR resource = ~MM#CRTI3~ END	//致命一击
+				END				
+				PATCH_IF gunkinetic > 15 BEGIN
+					LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 STR_VAR resource = ~MM#CRTI4~ END	//致命一击
+				END
+				
 				PATCH_IF ( gunid == 27 ) BEGIN
 					LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 6 target = 1 parameter1 = 1 timing = 2 END	//沙鹰+1魅力
 				END
@@ -519,12 +536,12 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 				PATCH_IF ( gunbayonet > 0 ) BEGIN	//上刺刀按钮，还要复制CD两个物品改成上刺刀的枪械
 					LPF ADD_ITEM_HEADER INT_VAR target = 5 speed = 3 drained = 0 STR_VAR icon = ~MM#BYNA~ name = ~@92~ RET new_header END
 					LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 112 target = 1 STR_VAR resource = ~MM#%guncode%~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 122 target = 1 STR_VAR resource = ~MM#%guncode%C~ END								
+					//LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
+					LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 122 target = 1 timing = 1 STR_VAR resource = ~MM#%guncode%C~ END								
 					LPF ADD_ITEM_HEADER INT_VAR target = 5 speed = 3 drained = 0 STR_VAR icon = ~MM#BYNB~ name = ~@93~ RET new_header END
 					LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 112 target = 1 STR_VAR resource = ~MM#%guncode%~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 122 target = 1 STR_VAR resource = ~MM#%guncode%D~ END
+					//LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
+					LPF ADD_ITEM_EFFECT INT_VAR header = new_header type = 3 opcode = 122 target = 1 timing = 1 STR_VAR resource = ~MM#%guncode%D~ END
 				END
 				
 				PATCH_IF ( gunscope > 0 ) BEGIN	//瞄准镜按钮，MM#SCP图标
@@ -554,6 +571,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 			
 			//复制枪械成损坏的
 			COPY_EXISTING ~MM#%guncode%.itm~ ~override/MM#%guncode%A.itm~
+				LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = "-1" END
 				PATCH_IF ( gunfail != 0 ) BEGIN	//轻微损坏
 					WRITE_SHORT 0x18 0x2c
 					WRITE_SHORT 0x1c 0
@@ -568,6 +586,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 				END
 			BUT_ONLY
 			COPY_EXISTING ~MM#%guncode%.itm~ ~override/MM#%guncode%B.itm~
+				LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = "-1" END
 				PATCH_IF ( gunruin != 0 ) BEGIN	//严重损坏
 					WRITE_SHORT 0x1c 0
 					WRITE_LONG 0x1e 0xffff
@@ -581,7 +600,8 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 			BUT_ONLY
 			
 			//复制枪械成长矛
-			COPY_EXISTING ~MM#%guncode%.itm~ ~override/MM#%guncode%C.itm~			
+			COPY_EXISTING ~MM#%guncode%.itm~ ~override/MM#%guncode%C.itm~
+				LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = "-1" END
 				PATCH_IF ( gunbayonet != 0 ) & ( gunbayonet < 10 ) BEGIN	//上普通刺刀
 					WRITE_SHORT 0x18 0x2e
 					WRITE_SHORT 0x1c 29
@@ -595,8 +615,8 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 					LPF ADD_ITEM_HEADER INT_VAR new_header_type = 1 location = 1 target = 1 range = gunbayonet speed = 2 dicesize = 4 dicenumber = 2 damage_type = 6 animation_backhand = 20 animation_thrust = 80 flag_strength = 1 STR_VAR icon = ~MM#BYNC~ END
 					LPF ADD_ITEM_HEADER INT_VAR target = 5 range = 1 speed = 3 STR_VAR icon = ~MM#BYNE~ name = ~@94~ END
 					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 112 target = 1 STR_VAR resource = ~MM#%guncode%C~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 STR_VAR resource = ~MM#%guncode%~ END
+					//LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
+					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 timing = 1 STR_VAR resource = ~MM#%guncode%~ END
 				END
 				PATCH_IF ( gunbayonet == 11 ) BEGIN	//G11刺刀
 					WRITE_SHORT 0x18 0x2e
@@ -611,8 +631,8 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 					LPF ADD_ITEM_HEADER INT_VAR new_header_type = 1 location = 1 target = 1 range = 1 speed = 2 dicesize = 6 dicenumber = 1 damage_type = 6 animation_backhand = 20 animation_thrust = 80 flag_strength = 1 STR_VAR icon = ~MM#BYNC~ END
 					LPF ADD_ITEM_HEADER INT_VAR target = 5 range = 1 speed = 3 STR_VAR icon = ~MM#BYNE~ name = ~@94~ END
 					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 112 target = 1 STR_VAR resource = ~MM#%guncode%C~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 STR_VAR resource = ~MM#%guncode%~ END
+					//LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
+					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 timing = 1 STR_VAR resource = ~MM#%guncode%~ END
 				END
 				PATCH_IF ( gunbayonet == 12 ) BEGIN	//李-恩菲尔德刺刀
 					WRITE_SHORT 0x18 0x2e
@@ -627,11 +647,12 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 					LPF ADD_ITEM_HEADER INT_VAR new_header_type = 1 location = 1 target = 1 range = 2 speed = 2 dicesize = 6 dicenumber = 1 damage_type = 6 animation_backhand = 20 animation_thrust = 80 flag_strength = 1 STR_VAR icon = ~MM#BYNC~ END
 					LPF ADD_ITEM_HEADER INT_VAR target = 5 range = 1 speed = 3 STR_VAR icon = ~MM#BYNE~ name = ~@94~ END
 					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 112 target = 1 STR_VAR resource = ~MM#%guncode%C~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 STR_VAR resource = ~MM#%guncode%~ END
+					//LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
+					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 timing = 1 STR_VAR resource = ~MM#%guncode%~ END
 				END
 			BUT_ONLY
 			COPY_EXISTING ~MM#%guncode%.itm~ ~override/MM#%guncode%D.itm~
+				LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = "-1" END
 				PATCH_IF ( gunbayonet != 0 ) & ( gunbayonet < 10 ) BEGIN	//上+3刺刀
 					WRITE_SHORT 0x18 0x6e
 					WRITE_SHORT 0x1c 29
@@ -645,8 +666,8 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 					LPF ADD_ITEM_HEADER INT_VAR new_header_type = 1 location = 1 target = 1 range = gunbayonet speed = 2 dicesize = 4 dicenumber = 2 damage_type = 6 animation_backhand = 20 animation_thrust = 80 flag_strength = 1 STR_VAR icon = ~MM#BYND~ END
 					LPF ADD_ITEM_HEADER INT_VAR target = 5 range = 1 speed = 3 STR_VAR icon = ~MM#BYNE~ name = ~@94~ END
 					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 112 target = 1 STR_VAR resource = ~MM#%guncode%D~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 STR_VAR resource = ~MM#%guncode%~ END
+					//LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
+					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 timing = 1 STR_VAR resource = ~MM#%guncode%~ END
 				END
 				PATCH_IF ( gunbayonet == 11 ) BEGIN	//G11刺刀
 					WRITE_SHORT 0x18 0x6e
@@ -661,8 +682,8 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 					LPF ADD_ITEM_HEADER INT_VAR new_header_type = 1 location = 1 target = 1 range = 1 speed = 2 dicesize = 6 dicenumber = 1 damage_type = 6 animation_backhand = 20 animation_thrust = 80 flag_strength = 1 STR_VAR icon = ~MM#BYND~ END
 					LPF ADD_ITEM_HEADER INT_VAR target = 5 range = 1 speed = 3 STR_VAR icon = ~MM#BYNE~ name = ~@94~ END
 					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 112 target = 1 STR_VAR resource = ~MM#%guncode%D~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 STR_VAR resource = ~MM#%guncode%~ END
+					//LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
+					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 timing = 1 STR_VAR resource = ~MM#%guncode%~ END
 				END
 				PATCH_IF ( gunbayonet == 12 ) BEGIN	//李-恩菲尔德刺刀
 					WRITE_SHORT 0x18 0x6e
@@ -677,8 +698,8 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 					LPF ADD_ITEM_HEADER INT_VAR new_header_type = 1 location = 1 target = 1 range = 2 speed = 2 dicesize = 6 dicenumber = 1 damage_type = 6 animation_backhand = 20 animation_thrust = 80 flag_strength = 1 STR_VAR icon = ~MM#BYND~ END
 					LPF ADD_ITEM_HEADER INT_VAR target = 5 range = 1 speed = 3 STR_VAR icon = ~MM#BYNE~ name = ~@94~ END
 					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 112 target = 1 STR_VAR resource = ~MM#%guncode%D~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
-					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 STR_VAR resource = ~MM#%guncode%~ END
+					//LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 111 target = 1 timing = 0 duration = 0 STR_VAR resource = ~MELFMET~ END
+					LPF ADD_ITEM_EFFECT INT_VAR header = 2 type = 3 opcode = 122 target = 1 timing = 1 STR_VAR resource = ~MM#%guncode%~ END
 				END
 			BUT_ONLY
 
@@ -789,6 +810,20 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 			
 			口径5无扫射枪械装子弹b：弹免疫MM#AMMI 弹免疫MM#AMM1-7a+1-7c+2467d+8a+9e 枪放MM#AMM5a-c（所需等级）+5d（999级）+9e（动能等级） 最终结果：MM#AMM5b+5d（所需等级）
 			要不弹IZ添加对135d的免疫，要不枪弹不符统一指向8a
+			
+			狙击榴：施展MM#IM8（防止近炸），以等级1施展MM#AMMI（防护AMM1-9A-E），以等级999施展MM#AMM8A（1级显错），以等级1施展MM#AMM8B（1级开枪999级显错）
+			子弹：以等级1施展MM#AMMIZ（防护MM#AMMI，防护除1-9A之外的1-9A-E）
+			弹匣：以等级2施展MM#AMMIZ（防护MM#AMMI，防护除1-9B之外的1-9A-E）
+			弹鼓：以等级3施展MM#AMMIZ（防护MM#AMMI，防护除1-9C之外的1-9A-E）不用防8A
+			弹带：以等级4施展MM#AMMIZ（防护MM#AMMI，防护除1-9D之外的1-9A-E）不用防8A
+			达姆：以等级5施展MM#AMMIZ（防护MM#AMMI，防护除1-9E之外的1-9A-E）不用防8A
+			
+			大部分枪械：以等级1施展MM#AMMI（防护AMM1-9A-E），以动能等级施展9E
+			子弹：以等级1施展MM#AMMIZ（防护MM#AMMI，防护除1-9A之外的1-9A-D和9E）
+			弹匣：以等级2施展MM#AMMIZ（防护MM#AMMI，防护除1-9B之外的1-9A-D和9E）
+			弹鼓：以等级3施展MM#AMMIZ（防护MM#AMMI，防护除1-9C之外的1-9A-D和9E）
+			弹带：以等级4施展MM#AMMIZ（防护MM#AMMI，防护除1-9D之外的1-9A-D和9E）
+			达姆：以等级5施展MM#AMMIZ（防护MM#AMMI，防护1-9A-D）
 			*/
 			
 			//所有可单发枪械开枪时以不同等级施法MM#SNDA1和2，内容为延迟1帧对自己播放单发枪声
@@ -807,7 +842,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 							LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 174 target = 1 timing = 0 duration = 1 probability1 = 61 probability2 = 50 STR_VAR resource = ~MM#%guncode%Z~ END
 						END
 						//提升自动武器经验，单发只有50%概率
-						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 309 target = 9 probability1 = 49 parameter1 = 1 parameter2 = 1 timing = 1 STR_VAR resource = ~MM#PROFA~ END
+						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 309 target = 9 probability1 = 49 parameter1 = 1 parameter2 = 1 timing = 1 STR_VAR resource = ~MM#PRFA~ END
 					END
 					PATCH_IF ( gunid == 81 ) BEGIN	//81号短霰弹特殊投射，对每个敌人打2-4发钢珠，对大体型多造成一些伤害
 						//枪声特殊，要移除单发枪声播放自己的
@@ -896,7 +931,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 326 target = 2 timing = 6 duration = 4 parameter2 = 13 probability2 = 50 STR_VAR resource = ~MM#SP%gunammtype%~ END
 					END
 					PATCH_IF gunbursthits > 0 BEGIN	//提升自动武器经验
-						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 309 target = 9 parameter1 = 1 parameter2 = 1 timing = 1 STR_VAR resource = ~MM#PROFA~ END
+						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 309 target = 9 parameter1 = 1 parameter2 = 1 timing = 1 STR_VAR resource = ~MM#PRFA~ END
 					END
 				BUT_ONLY
 
@@ -909,7 +944,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 						LPF ALTER_SPELL_EFFECT INT_VAR header = (insert_point + 1) match_opcode = 165 duration = gunlongframe END
 						LPF ALTER_SPELL_EFFECT INT_VAR header = (insert_point + 1) match_opcode = 146 parameter1 = gunsinglehit STR_VAR resource = ~MM#AMM%gunammtype%E~ END
 						//提升自动武器经验
-						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 309 target = 9 parameter1 = 2 parameter2 = 1 timing = 1 STR_VAR resource = ~MM#PROFA~ END
+						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 309 target = 9 parameter1 = 2 parameter2 = 1 timing = 1 STR_VAR resource = ~MM#PRFA~ END
 					END
 				BUT_ONLY
 
@@ -922,7 +957,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 						LPF ALTER_SPELL_EFFECT INT_VAR header = (insert_point + 1) match_opcode = 165 duration = gunstrafeframe END
 						LPF ALTER_SPELL_EFFECT INT_VAR header = (insert_point + 1) match_opcode = 146 parameter1 = gunsinglehit STR_VAR resource = ~MM#AMM%gunammtype%F~ END
 						//提升自动武器经验
-						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 309 target = 9 parameter1 = 2 parameter2 = 1 timing = 1 STR_VAR resource = ~MM#PROFA~ END
+						LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 309 target = 9 parameter1 = 2 parameter2 = 1 timing = 1 STR_VAR resource = ~MM#PRFA~ END
 					END
 				BUT_ONLY
 
@@ -1024,10 +1059,12 @@ EXTEND_BOTTOM ~MM#FAIL.bcs~ ~%MOD_FOLDER%/baf/MM#FAIL2.baf~
 
 /*****************最后加上显示枪弹不符的999级提示*******************/
 //8a只有显示提示的效果，8b和9e要加999级提示，这些前面已经加过了
+//顺便加上召唤鸟的法术
 ACTION_FOR_EACH gunammtype IN 1 2 3 4 5 6 7 BEGIN
 	ACTION_FOR_EACH ammcode IN a b c d BEGIN
 		COPY_EXISTING ~MM#AMM%gunammtype%%ammcode%.spl~ ~override~
-			LPF ADD_SPELL_HEADER INT_VAR type = 2 location = 0 range = 250 required_level = 999 projectile = MM#AMM1 RET insert_point END
+			LPF ADD_SPELL_EFFECT INT_VAR opcode = 146 target = 9 timing = 1 parameter2 = 1 STR_VAR resource = ~MM#FAIL~ END
+			LPF ADD_SPELL_HEADER INT_VAR type = 2 location = 0 range = 250 required_level = 999 projectile = MM#AMM0 RET insert_point END
 			LPF ADD_SPELL_EFFECT INT_VAR header = (insert_point + 1) opcode = 139 target = 9 timing = 1 parameter1 = RESOLVE_STR_REF(@80) END
 	END
 END

@@ -11,7 +11,7 @@ IF
 	OnCreation()
 THEN
 	RESPONSE #100
-		SetGlobalTimer("ExistTime","LOCALS",5)
+		SetGlobalTimer("Existime","LOCALS",3)
 		Continue()
 END
 
@@ -71,13 +71,15 @@ THEN
 		DestroySelf()
 END
 
+//枪械熟练度达到大师时，一半概率跳过武器损坏检定
 IF
 	TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRF","LOCALS",4))
 THEN
 	RESPONSE #100
 		ReallyForceSpellRES("MM#PRFA",LastSummonerOf())
 		DestroySelf()
+	RESPONSE #100
+		ReallyForceSpellRES("MM#PRFA",LastSummonerOf())
+		Continue()
 END
-
-
 

@@ -1,65 +1,34 @@
 //处理武器损坏
 IF
 	TriggerOverride(LastSummonerOf(),Global("MM#FAIL","LOCALS",1))
-	HasItemEquipedReal("MM#%guncode%",LastSummonerOf())
+	HasItemEquiped("MM#%guncode%",LastSummonerOf())
 	NotStateCheck(LastSummonerOf(),STATE_HELPLESS)
 	CheckStatLT(LastSummonerOf(),1,CasterHold)
-	TriggerOverride(LastSummonerOf(),CanEquipRanged())
 THEN
 	RESPONSE #100
 		TakeItemReplace("MM#%guncode%A","MM#%guncode%",LastSummonerOf())
 		DisplayStringHead(LastSummonerOf(),@90) 
 		ClearActions(LastSummonerOf())
-		ActionOverride(LastSummonerOf(),EquipRanged())
-		ActionOverride(LastSummonerOf(),SetGlobal("MM#FAIL","LOCALS",0))
-		DestroySelf()
-END
-
-IF
-	TriggerOverride(LastSummonerOf(),Global("MM#FAIL","LOCALS",1))
-	HasItemEquipedReal("MM#%guncode%",LastSummonerOf())
-	NotStateCheck(LastSummonerOf(),STATE_HELPLESS)
-	CheckStatLT(LastSummonerOf(),1,CasterHold)
-	!TriggerOverride(LastSummonerOf(),CanEquipRanged())
-THEN
-	RESPONSE #100
-		TakeItemReplace("MM#%guncode%A","MM#%guncode%",LastSummonerOf())
-		DisplayStringHead(LastSummonerOf(),@90) 
-		ClearActions(LastSummonerOf())
-		ActionOverride(LastSummonerOf(),EquipMostDamagingMelee())
+		ActionOverride(LastSummonerOf(Myself),FillSlot(SLOT_WEAPON))
+		ActionOverride(LastSummonerOf(Myself),EquipMostDamagingMelee())
+		ActionOverride(LastSummonerOf(Myself),EquipRanged())
 		ActionOverride(LastSummonerOf(),SetGlobal("MM#FAIL","LOCALS",0))
 		DestroySelf()
 END
 
 IF
 	TriggerOverride(LastSummonerOf(),Global("MM#FAIL","LOCALS",2))
-	HasItemEquipedReal("MM#%guncode%",LastSummonerOf())
+	HasItemEquiped("MM#%guncode%",LastSummonerOf())
 	NotStateCheck(LastSummonerOf(),STATE_HELPLESS)
 	CheckStatLT(LastSummonerOf(),1,CasterHold)
-	TriggerOverride(LastSummonerOf(),CanEquipRanged())
 THEN
 	RESPONSE #100
 		TakeItemReplace("MM#%guncode%B","MM#%guncode%",LastSummonerOf())
 		DisplayStringHead(LastSummonerOf(),@90) 
 		ClearActions(LastSummonerOf())
-		ActionOverride(LastSummonerOf(),EquipRanged())
+		ActionOverride(LastSummonerOf(Myself),FillSlot(SLOT_WEAPON))
+		ActionOverride(LastSummonerOf(Myself),EquipMostDamagingMelee())
+		ActionOverride(LastSummonerOf(Myself),EquipRanged())
 		ActionOverride(LastSummonerOf(),SetGlobal("MM#FAIL","LOCALS",0))
 		DestroySelf()
 END
-
-IF
-	TriggerOverride(LastSummonerOf(),Global("MM#FAIL","LOCALS",2))
-	HasItemEquipedReal("MM#%guncode%",LastSummonerOf())
-	NotStateCheck(LastSummonerOf(),STATE_HELPLESS)
-	CheckStatLT(LastSummonerOf(),1,CasterHold)
-	!TriggerOverride(LastSummonerOf(),CanEquipRanged())
-THEN
-	RESPONSE #100
-		TakeItemReplace("MM#%guncode%B","MM#%guncode%",LastSummonerOf())
-		DisplayStringHead(LastSummonerOf(),@90) 
-		ClearActions(LastSummonerOf())
-		ActionOverride(LastSummonerOf(),EquipMostDamagingMelee())
-		ActionOverride(LastSummonerOf(),SetGlobal("MM#FAIL","LOCALS",0))
-		DestroySelf()
-END
-

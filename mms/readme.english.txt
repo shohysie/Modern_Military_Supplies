@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-/////Shohy's Modern Military Store v0.97 ////////
+/////Shohy's Modern Military Store v0.98 ////////
 /////////////////////////////////////////////////////
 
 
@@ -78,6 +78,10 @@ Players with sufficient combat strength can challenge the merchant for rare rewa
 
 
 ---------- Version History ----------  
+
+**v0.98** 
+
+- Fixed a problem where the extra shot during bursts and sweeps that grows with improvement of "Automatic Weapon Proficiency" sometimes does not take effect.
 
 **v0.97** 
 

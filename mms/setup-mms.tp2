@@ -4,7 +4,7 @@
 
 BACKUP ~mms/backup~
 AUTHOR ~shohy@126.com~
-VERSION ~v0.97~
+VERSION ~v0.98~
 
 AUTO_EVAL_STRINGS
 
@@ -268,9 +268,8 @@ COPY ~%MOD_FOLDER%/spl/MM#AMM9E.spl~ ~override~
 
 ////如果在攻击时根据自己熟练度施法锥形范围给敌人加标记，那么这个标记要比#146参数2的枪械效果靠后，因此枪械效果没法追加，排除。只能制作不使用#146参数2的效果进行追加
 ///在弹药上给敌人加标记，比枪更先。在枪击效果中使用#146参数1调用新法术测试，仍然是新法术比标记更早生效，排除
-//结论：在弹药上施展范围法术给敌人加标记，比枪更先。#326检查自身十字弓熟练度再施展MM#AMEX1/2/3.spl（34星）和4/5/6.spl（5星）法术范围分别为15°/45°/90°
-
-//在弹药上以#326检查开枪者的十字弓熟练度
+///在弹药上需要施展范围法术给敌人加标记，必须比枪更先，但因为没法用#146参数2，只有次而选择瞬达的投射
+//在弹药上以#326检查开枪者的十字弓熟练度再施展MM#AMEX1/2/3.spl（34星）和4/5/6.spl（5星）法术范围分别为以敌人为中心的小中大圆形，给敌人加标记
 COPY_EXISTING ~MM#AMMB.itm~ ~override~ ~MM#AMMC.itm~ ~override~ ~MM#AMMD.itm~ ~override~ ~MM#AMMG.itm~ ~override~ ~MM#AMMH.itm~ ~override~ ~MM#AMMI.itm~ ~override~
 	//PATCH_PRINT ~splprot_row=%splprot_row%~
 	LPF ALTER_ITEM_EFFECT INT_VAR check_headers = 1 header_type = 2 match_opcode = 326 parameter2 = splprot_row END
@@ -285,6 +284,23 @@ COPY ~%MOD_FOLDER%/spl/MM#AMEX1.spl~ ~override/MM#AMEX3.spl~ ~%MOD_FOLDER%/spl/M
 //然后枪械攻击时根据枪械类型另外对自身施展90°的法术MM#AMB%gunburstplus%，即MM#AMB1-7a-d，这里的a-d不是点射扫射，是额外打中子弹数量等级（gunburstplushits为具体数量）
 //MM#AMB%gunburstplus%检查正常不可能有的标记（26 ENTANGLE/27 WEB + 29 FREEACTION）调用SP1-7给出额外攻击
 
+//子弹施展MM#AMEX1-6加标记，枪械以#146模式1调用MM#AMB1-7a-d，MM#AMB1-7a-d（投射MM#AMEX0）以模式2指定等级调用SP1-7
+//3处参数可调：MM#AMEX1-6投射MM#AMEX123是否瞬达和法术持续帧，枪械#146模式2，投射MM#AMEX0是否瞬达
+
+//MM#AMEX1-6投射MM#AMEX2瞬达持续帧0，枪械#146模式1，投射MM#AMEX0非瞬达：MM#AMEX0以自身为圆心画圆或往背后画锥，扫射不生效
+//MM#AMEX1-6投射MM#AMEX2瞬达持续帧1，枪械#146模式1，投射MM#AMEX0非瞬达：MM#AMEX0以自身为圆心画圆或往背后画锥，扫射偶尔生效
+//MM#AMEX1-6投射MM#AMEX2瞬达持续帧2，枪械#146模式1，投射MM#AMEX0非瞬达：MM#AMEX0以自身为圆心画圆或往背后画锥，扫射完全生效	**选这一种设置
+//MM#AMEX1-6投射MM#AMEX2瞬达持续帧0，枪械#146模式1，投射MM#AMEX0瞬达：MM#AMEX0以自身为圆心画圆或往背后画锥，扫射仅当人物在上方时生效  *旧设置
+
+//MM#AMEX1-6投射MM#AMEX2瞬达持续帧0，枪械#146模式2，投射MM#AMEX0瞬达：MM#AMEX0以敌人为圆心画圆或往背后画锥，扫射不生效
+//MM#AMEX1-6投射MM#AMEX2瞬达持续帧1，枪械#146模式2，投射MM#AMEX0瞬达：MM#AMEX0以敌人为圆心画圆或往背后画锥，扫射一半生效
+//MM#AMEX1-6投射MM#AMEX2瞬达持续帧2，枪械#146模式2，投射MM#AMEX0瞬达：MM#AMEX0以敌人为圆心画圆或往背后画锥，扫射大半生效
+//MM#AMEX1-6投射MM#AMEX2瞬达持续帧3，枪械#146模式2，投射MM#AMEX0瞬达：MM#AMEX0以敌人为圆心画圆或往背后画锥，扫射几乎完全生效
+
+//MM#AMEX1-6投射MM#AMEX2非瞬达持续帧0，枪械#146模式2，投射MM#AMEX0非瞬达：MM#AMEX0以敌人为圆心画圆或往背后画锥，扫射不生效
+//MM#AMEX1-6投射MM#AMEX2非瞬达持续帧1，枪械#146模式2，投射MM#AMEX0非瞬达：MM#AMEX0以敌人为圆心画圆或往背后画锥，扫射偶尔生效
+//MM#AMEX1-6投射MM#AMEX2非瞬达持续帧2，枪械#146模式2，投射MM#AMEX0非瞬达：MM#AMEX0以敌人为圆心画圆或往背后画锥，扫射大半生效
+//MM#AMEX1-6投射MM#AMEX2非瞬达持续帧3，枪械#146模式2，投射MM#AMEX0非瞬达：MM#AMEX0以敌人为圆心画圆或往背后画锥，扫射几乎完全生效
 
 /*******************枪械批处理******************** */
 

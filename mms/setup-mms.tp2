@@ -4,7 +4,7 @@
 
 BACKUP ~mms/backup~
 AUTHOR ~shohy@126.com~
-VERSION ~v0.98~
+VERSION ~v0.99~
 
 AUTO_EVAL_STRINGS
 
@@ -25,6 +25,26 @@ REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~	@2
 INCLUDE ~%MOD_FOLDER%/lib/_functions.tpa~
 
 COMPILE ~%MOD_FOLDER%/baf/MM#FAIL.baf~	//枪械损坏处理
+
+//添加石肤的标记（镜影不用添加）
+OUTER_SET "splprot_stonskins" = 0
+COPY_EXISTING ~splprot.2da~ ~override~
+	COUNT_2DA_ROWS 4 rows
+	FOR ( index = 0 ; index < rows ; index = index + 1 ) BEGIN
+		READ_2DA_ENTRY "%index%" 1 4 "splprot_stat"
+		READ_2DA_ENTRY "%index%" 2 4 "splprot_value"
+		READ_2DA_ENTRY "%index%" 3 4 "splprot_relation"
+	  //PATCH_PRINT ~%index% %splprot_stat% %splprot_value% %splprot_relation%~
+		PATCH_IF ("%splprot_stat%" STRING_COMPARE_CASE "88" = 0) & ("%splprot_value%" STRING_COMPARE_CASE "-1" = 0) & ("%splprot_relation%" STRING_COMPARE_CASE "4" = 0) BEGIN	//有现成的STONESKINS判断行
+			SET "splprot_stonskins" = "%index%"
+			SET "index" = "%rows%" + 1 // kills loop
+		END
+	END
+	PATCH_IF (splprot_stonskins = 0) BEGIN
+		SET "splprot_stonskins" = "%rows%"
+		INSERT_2DA_ROW rows 4 ~%rows%_STONESKINS=n                           88                                            -1                                            4~
+	END
+BUT_ONLY	//splprot_stonskins为splprot.2da新增STONESKINS判断行的编号
 
 /****************商人和位置*******************/
 
@@ -220,7 +240,8 @@ ACTION_FOR_EACH sptype IN A1 A2 A3 B1 B2 C1 C2 C3 D1 E2 E3 F1 G1 H2 BEGIN
 		LPF ALTER_SPELL_HEADER INT_VAR projectile = MM#AMM1 END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 318 STR_VAR resource = ~MM#SP%sptype%~ END
 		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 39 STR_VAR parameter2 = 1 END
-		LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 parameter1 = 0x40000000 parameter2 = 138 insert_point = 0 STR_VAR resource = ~MM#SP%sptype%~ END
+		LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 324 new_opcode = 318 parameter1 = 1 parameter2 = ~%splprot_stonskins%~ END	//石肤免疫特效
+		LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 parameter1 = 0x40000000 parameter2 = 138 insert_point = 0 STR_VAR resource = ~MM#SP%sptype%~ END	//镜影免疫特效
 END
 
 /******************狙击榴专用的MM#AMM8B近战不会炸********************/

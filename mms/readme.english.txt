@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-/////Shohy's Modern Military Store v0.98 ////////
+/////Shohy's Modern Military Store v0.99 ////////
 /////////////////////////////////////////////////////
 
 
@@ -78,6 +78,10 @@ Players with sufficient combat strength can challenge the merchant for rare rewa
 
 
 ---------- Version History ----------  
+
+**v0.99** 
+
+- Stone Skin protects against all damage and effects from low kinetic energy ammunition, as well as damage and the majority of effects from high kinetic energy ammunition (though remains vulnerable to effects such as knockback).
 
 **v0.98** 
 

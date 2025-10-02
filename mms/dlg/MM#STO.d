@@ -354,12 +354,12 @@ IF ~~ THEN BEGIN repair
 	IF ~HasItem("MM#GMC3B",LastTalkedToBy())~ THEN REPLY @6013 GOTO repairgmc3
 	IF ~HasItem("MM#GMC4B",LastTalkedToBy())~ THEN REPLY @6014 GOTO repairgmc4
 	IF ~HasItem("MM#HMC1B",LastTalkedToBy())~ THEN REPLY @6021 GOTO repairhmc1
-	IF ~HasItem("MM#HMC2B",LastTalkedToBy())~ THEN REPLY @6021 GOTO repairhmc2
-	IF ~HasItem("MM#HMC3B",LastTalkedToBy())~ THEN REPLY @6021 GOTO repairhmc3	
-	IF ~HasItem("MM#UMC1A",LastTalkedToBy())~ THEN REPLY @6021 GOTO repairuav1
-	IF ~HasItem("MM#UMC3A",LastTalkedToBy())~ THEN REPLY @6021 GOTO repairuav3
-	IF ~HasItem("MM#DOG1A",LastTalkedToBy())~ THEN REPLY @6021 GOTO repairdog1
-	IF ~HasItem("MM#DOG2A",LastTalkedToBy())~ THEN REPLY @6021 GOTO repairdog2	
+	IF ~HasItem("MM#HMC2B",LastTalkedToBy())~ THEN REPLY @6022 GOTO repairhmc2
+	IF ~HasItem("MM#HMC3B",LastTalkedToBy())~ THEN REPLY @6023 GOTO repairhmc3	
+	IF ~HasItem("MM#UAV1A",LastTalkedToBy())~ THEN REPLY @8001 GOTO repairuav1
+	IF ~HasItem("MM#UAV3A",LastTalkedToBy())~ THEN REPLY @8003 GOTO repairuav3
+	IF ~HasItem("MM#DOG1A",LastTalkedToBy())~ THEN REPLY @8011 GOTO repairdog1
+	IF ~HasItem("MM#DOG2A",LastTalkedToBy())~ THEN REPLY @8012 GOTO repairdog2
 	IF ~~ THEN REPLY @123 EXIT	//我想想还是算了。
 END
 

@@ -62,6 +62,10 @@
 @6021 = "Repair this Maxim Gun for me please."
 @6022 = "Repair this M2HB for me please."
 @6023 = "Repair this M134 Minigun for me please."
+@8001 = "Repair this Drone for me please."
+@8003 = "Repair this Hover Turret for me please."
+@8011 = "Repair this Robot Dog for me please."
+@8012 = "Repair this Robot Boar for me please."
 
 
 @1101 = "Colt Python"

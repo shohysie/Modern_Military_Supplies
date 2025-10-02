@@ -1,0 +1,6 @@
+IF
+	TriggerOverride(LastSummonerOf(),GlobalGT("MM#PRF","LOCALS",4))
+THEN
+	RESPONSE #100
+		DestroySelf()
+END

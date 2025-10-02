@@ -81,6 +81,9 @@ Players with sufficient combat strength can challenge the merchant for rare rewa
 
 **v0.99** 
 
+- Fixed a problem where drones and some guns can not be repaired correctly.
+- Fixed a problem where some guns work well with stone bullets.
+- Fixed a problem where some guns disappear on breaking down.
 - Stone Skin protects against all damage and effects from low kinetic energy ammunition, as well as damage and the majority of effects from high kinetic energy ammunition (though remains vulnerable to effects such as knockback).
 
 **v0.98** 

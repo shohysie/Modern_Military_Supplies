@@ -604,7 +604,8 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 				
 			BUT_ONLY
 			
-			EXTEND_BOTTOM ~MM#FAIL.bcs~ ~%MOD_FOLDER%/baf/MM#FAIL1.baf~ EVALUATE_BUFFER
+			ACTION_IF ( gunfail != 0 ) BEGIN EXTEND_BOTTOM ~MM#FAIL.bcs~ ~%MOD_FOLDER%/baf/MM#FAIL1.baf~ EVALUATE_BUFFER END
+			ACTION_IF ( gunruin != 0 ) BEGIN EXTEND_BOTTOM ~MM#FAIL.bcs~ ~%MOD_FOLDER%/baf/MM#FAIL2.baf~ EVALUATE_BUFFER END
 			
 			//复制枪械成损坏的
 			COPY_EXISTING ~MM#%guncode%.itm~ ~override/MM#%guncode%A.itm~
@@ -1092,7 +1093,7 @@ COPY ~%MOD_FOLDER%/2da/MM#DTLS.2DA~ ~override~
 	END
 BUT_ONLY
 
-EXTEND_BOTTOM ~MM#FAIL.bcs~ ~%MOD_FOLDER%/baf/MM#FAIL2.baf~
+EXTEND_BOTTOM ~MM#FAIL.bcs~ ~%MOD_FOLDER%/baf/MM#FAIL3.baf~
 
 /*****************最后加上显示枪弹不符的999级提示*******************/
 //8a只有显示提示的效果，8b和9e要加999级提示，这些前面已经加过了

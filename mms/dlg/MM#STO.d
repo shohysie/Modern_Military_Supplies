@@ -1,6 +1,8 @@
 BEGIN ~MM#STO~
 
-IF ~AreaCheck("AR5400")~
+IF OR(2)
+~AreaCheck("AR5400")~
+~AreaCheck("BG5400")~
 THEN BEGIN firstmeet1
 	SAY @160	//你好啊，朋友。
 	IF ~~ THEN REPLY @170 GOTO firstmeet2	//你好，你在这里做什么呢？
@@ -30,6 +32,7 @@ SetGlobal("MM#MEET","GLOBAL",1)~ EXIT
 END
 
 IF ~!AreaCheck("AR5400")
+!AreaCheck("BG5400")
 !GlobalGT("trained","LOCALS",0)
 !Global("MM#MEET","GLOBAL",3)
 !Global("MM#MEET","GLOBAL",5)~ THEN BEGIN meet

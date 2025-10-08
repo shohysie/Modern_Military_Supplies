@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-/////Shohy's Modern Military Store v0.99 ////////
+/////Shohy's Modern Military Store v0.991 ////////
 /////////////////////////////////////////////////////
 
 
@@ -78,6 +78,11 @@ Players with sufficient combat strength can challenge the merchant for rare rewa
 
 
 ---------- Version History ----------  
+
+**v0.991** 
+
+- Fixed a problem where an animation of fireball exists on firing.
+- Fixed a problem where the Merchant doesn't deliver any gift on Nashkel Mines when installing on EET.
 
 **v0.99** 
 

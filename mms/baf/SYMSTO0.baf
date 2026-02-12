@@ -1,0 +1,22 @@
+IF
+	!GlobalGT("challenge","LOCALS",0)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		SetGlobal("challenge","LOCALS",1)
+		Dialogue([PC])
+END
+
+IF
+	OR(2)
+		AttackedBy([NOTGOOD],DEFAULT)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+	OR(2)
+		AttackedBy([NOTGOOD],DEFAULT)
+		GlobalGT("challenge","LOCALS",2)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_SHADOW_DOOR)
+		DestroySelf()
+END
+

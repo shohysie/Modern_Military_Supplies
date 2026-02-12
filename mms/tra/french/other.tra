@@ -1,0 +1,346 @@
+@8111 = "Grenade offensive"
+@8211 = "Cette grenade contient une charge explosive plus importante pour détruire les fortifications ennemies et éliminer les cibles à l'intérieur avec des effets de souffle. Son enveloppe fine produit un minimum de fragmentation, réduisant la létalité en zones ouvertes et les risques pour le lanceur et les alliés. Permet à l'infanterie d'avancer de continuer son mouvement après le lancer sans mesures de protection. Son design aérodynamique permet des lancers plus longs avec une fusée à retardement.
+
+STATISTIQUES :
+
+- Inflige 5D6 points de dégâts contondants aux créatures dans un rayon de 6 pieds
+Poids : 1"
+
+@8112 = "Grenade défensive"
+@8212 = "Conçue pour disperser des fragments lourds ou des billes d'acier mortels à distance étendue, idéale contre des ennemis groupés. Exige que le lanceur se mette à couvert et surveille la position des alliés. Dotée d'une enveloppe pré-fragmentée, fabriquée spécialement ou via un manchon métallique ajouté sur des grenades offensives standard.
+
+STATISTIQUES :
+
+- Inflige 2D6 points de dégâts contondants aux créatures dans un rayon de 6 pieds
+- Inflige 2D6 points de dégâts tranchants + 2D6 points de dégâts perforants aux créatures dans un rayon de 15 pieds (Dégâts réduits de moitié si la cible réussit un jet de sauvegarde contre le souffle)
+Poids : 1"
+
+@8113 = "Grenade à flash"
+@8213 = "Une sphère en plastique contenant du magnésium et du perchlorate de potassium comme composition pyrotechnique. L'hémisphère supérieur abrite l'amorce scellée par un bouchon en caoutchouc ; l'hémisphère inférieur a un revêtement en caoutchouc à pointes pour empêcher le roulement. Privilégie l'émission lumineuse — la détonation produit un bruit de 125 dB et un flash de 30 millions de candelas visible à travers les paupières fermées. Provoque une cécité, une surdité et une désorientation temporaires.
+
+STATISTIQUES :
+
+- Afflige les créatures dans un rayon de 15 pieds de Cécité, Surdité et Ralentissement pendant 6 rounds
+- La durée est réduite de moitié si les cibles réussissent un jet de sauvegarde contre la mort avec un malus de -4
+- Sans effet sur les êtres non naturels
+Poids : 1"
+
+@8114 = "Grenade assourdissante (de désorientation)"
+@8214 = "Grenade non létale pour des effets de flash/bang intenses, idéale pour les opérations en milieu clos. Privilégie l'impact acoustique — l'explosion provoque une surdité temporaire, des acouphènes et perturbe le liquide de l'oreille interne, induisant un déséquilibre/étourdissement. Se boucher les oreilles offre une protection minimale.
+
+STATISTIQUES :
+
+- Inflige Surdité et Ralentissement pendant 1 tour (pas de jet de sauvegarde) aux créatures dans un rayon de 15 pieds
+- Aveugle pendant 4 rounds sauf si les cibles réussissent un jet de sauvegarde contre la mort (durée réduite de moitié en cas de réussite)
+- Assomme pendant 1 tour les créatures dans un rayon de 6 pieds échouant à un jet de sauvegarde contre la mort avec un malus de -4
+- Sans effet sur les êtres non naturels
+Poids : 1"
+
+@8115 = "Grenade fumigène"
+@8215 = "Crée un obstacle visuel pour un avantage tactique. La détonation disperse des composés combustibles générant une fumée dense bloquant la détection infrarouge/ micro-ondes. La fumée de qualité militaire résiste à la dispersion par le vent.
+
+STATISTIQUES :
+
+- Crée un nuage de gaz d'un rayon de 10 pieds durant 5 rounds
+- Les créatures dans le nuage deviennent Aveugles et Invisibles, immunisées contre le ciblage direct mais vulnérables aux effets de zone
+- Les effets prennent fin immédiatement en quittant le nuage
+Poids : 1"
+
+@8116 = "Grenade lacrymogène"
+@8216 = "Déploie des agents lacrymogènes pour le contrôle de foule. Irrite les yeux/les muqueuses nasales, provoquant larmoiement, toux et incapacité temporaire. Les symptômes disparaissent quelques minutes après avoir quitté la zone contaminée.
+
+STATISTIQUES :
+
+- Crée un nuage irritant d'un rayon de 10 pieds durant 5 rounds
+- Les créatures dans le nuage doivent réussir un jet de sauvegarde contre le poison avec un malus de -2 chaque round, sinon elles deviennent Confuses
+- Les jets de sauvegarde réussis imposent quand même des malus de -4 à l'Attaque, la CA et aux Dégâts, et un taux d'échec de 50% pour les sorts/aptitudes
+- Les états de Panique/Confusion disparaissent 2 rounds après avoir quitté le nuage ; les autres pénalités durent 1 tour
+- Sans effet sur les êtres ne respirant pas
+Poids : 1"
+
+@8117 = "Grenade au phosphore blanc"
+@8217 = "Cette grenade disperse du phosphore blanc dans toutes les directions, lequel s'enflamme au contact de l'air et adhère à la chair, causant une corrosion continue jusqu'à l'os. Sa fumée toxique irrite sévèrement les yeux et les voies nasales. Bien que contenant une charge explosive limitée pour la pénétration des armures, un contact rapproché du phosphore avec la peau nue est catastrophique.
+
+STATISTIQUES :
+
+- Les créatures dans un rayon de 6 pieds lors de la détonation doivent réussir un jet de sauvegarde contre le souffle avec un malus de -4. Celles qui échouent sont couvertes de phosphore, subissant 1 point de dégâts d'acide + 1 point de dégâts de feu toutes les 3 secondes pendant 5 rounds (protection à 50% pour les créatures blindées/carapacées)
+- Les créatures affectées doivent réussir un jet de sauvegarde contre la mort chaque round. L'échec induit un état de peur pour ce round (les créatures immunisées à l'acide ne sont pas affectées)
+- Une fumée toxique persiste dans un rayon de 10 pieds pendant 5 rounds. Les créatures dans la zone doivent réussir un jet de sauvegarde contre le poison chaque round. L'échec cause 1D4 points de dégâts d'acide et de la confusion (aucun effet sur les créatures immunisées à l'acide ou ne respirant pas)
+Poids : 1"
+
+@8118 = "Grenade au napalm"
+@8218 = "Ce composé gélifié d'essence adhère aux cibles, générant des flammes inextinguibles à 1000°C. Bien que de portée de combustion limitée, ses victimes font face à une mort agonisante.
+
+STATISTIQUES :
+
+- Les créatures dans un rayon de 6 pieds lors de la détonation prennent feu, subissant 1D3 points de dégâts de feu par seconde pendant 4 rounds
+- Les créatures dans un rayon de 10 pieds doivent réussir un jet de sauvegarde contre le souffle. Celles qui échouent brûlent pendant 4 rounds avec 1D2 points de dégâts de feu par seconde
+- Les créatures en feu doivent réussir un jet de sauvegarde contre la mort avec un malus de -4 chaque round. L'échec provoque la panique jusqu'à l'extinction des flammes ou la mort
+- Un feu au sol persiste dans un rayon de 10 pieds pendant 4 rounds, infligeant 1D8 points de dégâts de feu par round aux créatures dans la zone
+- Les créatures immunisées au feu ne sont pas affectées
+Poids : 1"
+
+@8119 = "Grenade thermobarique"
+@8219 = "La grenade la plus dévastatrice utilisant la technologie des explosifs à dispersion de carburant. La détonation de son nuage aerosolisé crée des ondes de surpression prolongées et une chaleur extrême, particulièrement létales contre les cibles molles.
+
+STATISTIQUES :
+
+- Inflige 10D6 points de dégâts contondants + 2D8 points de dégâts de feu aux créatures dans un rayon de 10 pieds. Les cibles échouant à leur jet de sauvegarde contre le souffle meurent instantanément
+- Les créatures immunisées au feu ne peuvent pas être tuées instantanément par cet effet
+- Les objets non-vivants subissent la moitié des dégâts et ne peuvent pas être tués instantanément
+Poids : 1"
+
+@8121 = "Mine papillon"
+@8221 = "La Mine Papillon est une mine antipersonnel miniature efficace pour perturber les transports ennemis, généralement déployée par largage aérien. Petite mais peu coûteuse et produite en masse, sa charge explosive minimale mutile généralement le pied du déclencheur plutôt que de causer des blessures mortelles, créant d'importants fardeaux logistiques. Son détonateur à pression est très sensible, ne peut pas être réarmé une fois activé, et pose de graves menaces aux civils en raison des difficultés de déminage.
+
+STATISTIQUES :
+
+- Peut être lancée sur un sol vide visible, explosant cinq fois par lancer
+- Se déclenche quand des créatures s'approchent à moins de 2 pieds après déploiement
+- Inflige 1D3 points de dégâts contondants à une cible unique dans un rayon de 3 pieds, la cible doit réussir un jet de sauvegarde contre le souffle avec un malus de -4 ou être ralentie pendant 1 heure
+- Les créatures protégées par Peau de pierre, les créatures de grande taille et celles ne se déplaçant pas sur des pieds ne sont pas affectées
+Poids : 1"
+
+@8122 = "Mine directionnelle"
+@8222 = "Cette mine antipersonnel à boîtier plastique incurvé contient des billes d'acier à l'avant et des explosifs à l'arrière. Lors de la détonation, elle projette des éclats dans un arc horizontal de 60 degrés. Des options de déploiement flexibles permettent une défense frontale, des attaques de flanc ou des configurations piégées. Peut être déclenchée par fils de piège, pression ou ignition électrique manuelle. [Note : Cette mine disparaît parfois sans se déclencher lorsqu'elle est placée au sol - il est recommandé de l'activer directement contre des cibles]
+
+STATISTIQUES :
+
+- Peut cibler des ennemis à moins de 10 pieds sans déploiement
+- Ne se déclenche que lorsque des créatures hostiles s'approchent à moins de 10 pieds après déploiement
+- Inflige 6D8 points de dégâts perforants aux ennemis dans un arc de 120° d'un rayon de 15 pieds, les cibles réussissant un jet de sauvegarde contre le souffle subissent la moitié des dégâts
+Poids : 3"
+
+@8123 = "Mine bondissante"
+@8223 = "Une mine antipersonnel compacte qui explose lorsque le poids est retiré plutôt qu'appliqué. Lors du déclenchement, elle s'élève à environ 3 pieds dans les airs avant d'exploser avec une couverture d'éclats quasi omnidirectionnelle depuis 2000 directions, laissant des angles morts minimaux.
+
+STATISTIQUES :
+
+- Ne peut être placée qu'à moins de 3 pieds de l'utilisateur
+- Se déclenche quand des créatures s'approchent à moins de 2 pieds après déploiement
+- Inflige 3D6 points de dégâts perforants et 3D6 points de dégâts tranchants à toutes les créatures dans un rayon de 15 pieds
+Poids : 2"
+
+@8124 = "Mine à déclenchement par fil de piège"
+@8224 = "Mine antipersonnel avancée avec capacités de déploiement à distance. Déploie automatiquement quatre fils de piège à l'atterrissage. Lorsqu'un fil est percuté, elle lance sa charge explosive en l'air pour une détonation à fragmentation.
+
+STATISTIQUES :
+
+- Peut être lancée sur un sol vide visible
+- Se déclenche quand des créatures s'approchent à moins de 10 pieds après déploiement
+- Inflige 3D6 points de dégâts tranchants et 3D6 points de dégâts perforants à toutes les créatures dans un rayon de 15 pieds
+Poids : 4"
+
+@8125 = "Mine à tête chercheuse"
+@8225 = "Une mine intelligente équipée de détecteurs pour les champs électromagnétiques, les vibrations et les radiations infrarouges afin d'identifier des cibles. Lors de la confirmation d'une menace, son petit moteur lance une charge de type drone dans les airs pour poursuivre et détoner sur les cibles, attaquant principalement le blindage supérieur faible des unités blindées.
+
+STATISTIQUES :
+
+- Ne peut être placée qu'à moins de 3 pieds de l'utilisateur
+- Ne se déclenche que lorsque des créatures hostiles s'approchent à moins de 15 pieds après déploiement
+- Détonne sur la créature hostile la plus proche lors du déclenchement, infligeant 8D6 points de dégâts contondants à toutes les créatures dans un rayon de 6 pieds
+Poids : 10"
+
+@8126 = "Mine araignée"
+@8226 = "Une mine intelligente avec des capteurs pour identifier des cibles à portée. La détection d'une menace hostile déclenche l'alignement et le tir de ses six ogives séquentielles. Conçue à l'origine contre les chars/hélicoptères, cette version utilise des ogives à fléchettes ciblant le personnel.
+
+STATISTIQUES :
+
+- Ne peut être placée qu'à moins de 3 pieds de l'utilisateur
+- Ne se déclenche que lorsque des créatures hostiles s'approchent à moins de 10 pieds après déploiement
+- S'active une fois par round jusqu'à 6 fois, infligeant 3D8 points de dégâts perforants et 3D8 points de dégâts tranchants à chaque cible hostile dans un cône de 60° d'un rayon de 15 pieds par activation, les cibles réussissant un jet de sauvegarde contre le souffle subissent la moitié des dégâts
+Poids : 20"
+
+@8127 = "Mine antichar"
+@8227 = "Conçue pour détruire les chars/VBPC avec des charges creuses concentrées, ces mines nécessitent typiquement la pression d'un véhicule pour se déclencher. Cette version modifiée a un détonateur sensible qui explose même si elle est piétinée par du personnel.
+
+STATISTIQUES :
+
+- Ne peut être placée qu'à moins de 3 pieds de l'utilisateur
+- Se déclenche quand des créatures s'approchent à moins de 2 pieds après déploiement
+- Inflige 12D8 points de dégâts contondants à toutes les créatures dans un rayon de 8 pieds
+Poids : 18"
+
+@8131 = "Stimulant"
+@8231 = "Cette drogue améliore les capacités physiques des soldats en stimulant les muscles et en régulant le métabolisme des protéines, augmentant temporairement la force et l'endurance pour les marches de longue distance. Une utilisation à court terme ne montre pas d'effets secondaires évidents, mais une utilisation répétée ne procure pas de bénéfices supplémentaires. Ses effets sont non magiques et donc non affectés par Dissipation de la magie.
+
+STATISTIQUES :
+
+- Augmente la Force et la Constitution de 1 pendant 8 heures (non cumulable)
+Poids : 0"
+
+@8132 = "Substance de vigilance"
+@8232 = "Ce stimulant améliore la vigilance mentale, la rétention de mémoire et la capacité d'apprentissage, permettant aux soldats de maintenir une concentration accrue. Une utilisation à court terme ne montre pas d'effets secondaires évidents, mais une utilisation répétée ne procure pas de bénéfices supplémentaires. Ses effets sont non magiques et donc non affectés par Dissipation de la magie.
+
+STATISTIQUES :
+
+- Augmente la Dextérité, l'Intelligence et la Sagesse de 1 et confère une immunité au sommeil pendant 8 heures (non cumulable)
+Poids : 0"
+
+@8133 = "Sédatif"
+@8233 = "Le stress du combat et la fatigue du champ de bataille submergent souvent les soldats. Cette drogue réduit l'anxiété, aide les recrues à rester détendues et maintient la clarté mentale. Ses effets sont non magiques et donc non affectés par Dissipation de la magie.
+
+STATISTIQUES :
+
+- Soigne et confère une immunité de 8 heures contre la peur, la confusion, le charme et les effets de berserker
+Poids : 0"
+
+@8134 = "Restaurateur d'endurance"
+@8234 = "Ce supplément nutritionnel de qualité militaire reconstitue rapidement les protéines, les électrolytes et les nutriments essentiels. Conçu pour la récupération post-combat, il élimine la fatigue et maintient l'aptitude au combat.
+
+STATISTIQUES :
+
+- Supprime et confère une immunité de 8 heures contre la fatigue, y compris l'épuisement causé par les sorts Hâte ou Restauration
+Poids : 0"
+
+@8135 = "Caisse de munitions en métal"
+@8235 = "Ce conteneur métallique robuste stocke de manière sécurisée les armes à feu, les munitions et les explosifs.
+
+STATISTIQUES :
+
+Poids : 60"
+
+@8136 = "Caisse de munitions en plastique"
+@8236 = "Ce conteneur en plastique léger est conçu pour le transport de munitions en vrac et de petites quantités d'armes à feu/explosifs.
+
+STATISTIQUES :
+
+Poids : 20"
+
+@8141 = "Lampe-torpe (Lampe torche incapacitante)"
+@8241 = "Cette lampe torche à double fonction combine un flash aveuglant et une décharge électrique. Son faisceau concentré induit une cécité temporaire à courte portée, tandis que l'électrode frontale délivre des impulsions haute tension non létales provoquant une incapacitation neuromusculaire. Construite avec un boîtier étanche renforcé, elle résiste à des conditions extrêmes. La batterie permet 10 activations de flash et 10 utilisations de choc.
+
+STATISTIQUES :
+
+Aptitude à charge :
+- Flash : Affecte les ennemis dans un arc frontal de 45° jusqu'à 30 pieds avec une cécité de 6 rounds, durée réduite de moitié si les cibles réussissent un jet de sauvegarde contre le souffle avec un malus de -4. Aucun effet sur les cibles non-vivantes
+- Choc : Une cible unique à moins de 3 pieds doit réussir un jet de sauvegarde contre la mort avec un malus de -2 ou être inconsciente pendant 4 rounds, et doit en plus réussir un jet de sauvegarde contre le souffle avec un malus de -6 ou être paralysée pendant 2 rounds. Aucun effet sur les cibles non-vivantes
+Poids : 2"
+
+@8142 = "Spray au poivre"
+@8242 = "Contient un mélange de gaz lacrymogène et de capsaïcine à 2 millions d'USC provoquant une incapacitation immédiate par détresse respiratoire et irritation cutanée. La bombe de 20 utilisations permet un contrôle de foule rapide.
+
+STATISTIQUES :
+
+Aptitude à charge :
+- Les cibles doivent réussir un jet de sauvegarde contre le poison avec un malus de -4 ou devenir paniquées/confuses pendant 5 rounds. Les jets de sauvegarde réussis imposent quand même un malus de -5 à l'Attaque, la CA et aux Dégâts, et un taux d'échec de 100% pour les sorts/aptitudes
+- Aucun effet sur les créatures artificielles/mortes-vivantes
+Portée : 5
+Zone d'effet : Cible unique
+Poids : 1"
+
+@8143 = "Lance-flammes"
+@8243 = "Arme de terreur à carburant napalm utilisant une propulsion à azote comprimé. Adhère aux cibles tout en provoquant des effets de guerre psychologique. Une capacité de carburant de 20 utilisations fait des opérateurs des cibles prioritaires.
+
+STATISTIQUES :
+
+Aptitude à charge :
+- Jet de flamme : Enflamme les créatures dans un arc de 15° jusqu'à 30 pieds, infligeant 1D3 points de dégâts de feu par seconde pendant 4 rounds. Les cibles doivent réussir un jet de sauvegarde contre la mort avec un malus de -4 chaque round ou fuir paniquées jusqu'à l'extinction du feu ou de leur mort. Les créatures immunisées au feu ne sont pas affectées
+Poids : 40"
+
+@8144 = "Lance-roquettes"
+@8244 = "Premier système antichar jetable alliant portabilité et puissance de feu dévastatrice. Tire un obus multi-usages utilisant une dispersion de shrapnels améliorée au zirconium et des effets incendiaires.
+
+STATISTIQUES :
+
+Aptitude à charge :
+- Tire une roquette qui inflige 6D6 points de dégâts contondants dans un rayon de 6 pieds à l'explosion, plus 3D6 points de dégâts perforants, 3D6 points de dégâts tranchants et 2D6 points de dégâts de feu dans un rayon de 15 pieds
+Poids : 20"
+
+@8151 = "Lunettes de vision nocturne"
+@8251 = "Ces lunettes améliorées combinent une vision nocturne traditionnelle avec une imagerie thermique, projetant les signatures thermiques sur l'affichage standard en faible luminosité. Permet de voir dans une obscurité quasi totale tout en détectant les signatures thermiques d'ennemis cachés. Fonctionne en vision nocturne continue avec mode thermique activé manuellement en raison d'une consommation d'énergie plus élevée.
+
+STATISTIQUES :
+
+Aptitudes équipées :
+- Capacité de vision nocturne
+
+Aptitude à charge :
+- 1/jour révèle les membres non-alliés invisibles à portée visuelle (inefficace contre les entités non thermiques) pendant 1 minute
+Poids : 2"
+
+@8152 = "Détecteur de vie"
+@8252 = "Ce capteur avancé détecte les organismes vivants et les objets en mouvement via des technologies infrarouges, audio et radar. Capable d'identifier les champs bioélectriques à ultra-basse fréquence, la respiration et les schémas de battement cardiaque, avec une sensibilité ajustable pour les activités suspectes.
+
+STATISTIQUES :
+
+Aptitude à charge :
+- 3/jour dissipe l'invisibilité et les illusions des membres non-alliés à portée visuelle (traverse les obstacles) pendant 1 minute
+Poids : 28"
+
+@8153 = "Masque à gaz"
+@8253 = "Équipement de protection individuel couvrant le système respiratoire, les yeux et le visage. Filtre les gaz toxiques, les particules, les agents biologiques et les vapeurs chimiques via un ensemble intégré comprenant un facial, un tube respiratoire et une cartouche filtrante. Ne permet que l'absorption d'air purifié.
+
+STATISTIQUES :
+
+- Immunité aux effets de type nuage (Nuage puant, Nuage mortel, gaz lacrymogène) et aux sorts de poison de zone
+Poids : 2"
+
+@8161 = "Drone"
+@8261 = "Drone multirotor radiocommandé avec une endurance de vol étendue. Équipé d'une caméra HD pour la reconnaissance et armé d'un fusil de petit calibre (munitions non enchantées) + quatre grenades à fragmentation. Maintient un avantage d'altitude en extérieur le rendant immunisé contre la plupart des attaques de mêlée et des sorts de zone — les opérations en intérieur annulent ces bénéfices.
+
+STATISTIQUES :
+
+- Peut être déployé une fois par jour : drone contrôlable avec vision partagée pendant 10 tours, rappelé automatiquement à expiration. Utiliser le bouton [Arrêt et récupération] pour un rappel anticipé
+- Par défaut en Mode Combat : tire automatiquement un coup simple/round sur l'ennemi le plus proche. Ciblage manuel disponible
+- Appuyer sur le bouton [Désactiver le Mode Combat] (ou sélectionner + D) pour désactiver l'agressivité. Utiliser le bouton [Mode Combat] (ou sélectionner + F) pour le réactiver
+- Déploiement manuel de grenades requis : la détonation inflige 2D6 points de dégâts contondants (pas de jet de sauvegarde) dans un rayon de 6 pieds, 2D6 points de dégâts tranchants + 2D6 points de dégâts perforants dans un rayon de 15 pieds (les cibles réussissant un jet de sauvegarde contre le souffle subissent la moitié des dégâts)
+- Le déploiement de grenades en intérieur risque des dégâts personnels dus aux éclats
+Poids : 15"
+
+@8361 = "Drone endommagé"
+
+@8162 = "Grenade volante"
+@8262 = "Sac à dos contenant 15 drones semi-micro avec une charge explosive de 100g. Dotés d'une fonction d'évitement d'obstacles et d'un guidage optique pour le contrôle de zone. L'altitude en extérieur protège des attaques directes et de la plupart des sorts — l'utilisation en intérieur annule cette protection mais la haute vitesse accorde une esquive partielle.
+
+STATISTIQUES :
+
+- Déploie un drone d'éclairage à usage unique par activation : durée de vol de 15 tours avant autodestruction
+- Par défaut en Mode Reconnaissance : appuyer sur le bouton [Mode Bombardement] (ou sélectionner + B) pour des attaques kamikaze contre les menaces hostiles les plus proches. Désignation manuelle de cible disponible
+- Perd la protection d'altitude lors de l'approche d'attaque : devient vulnérable à l'interception. La destruction provoque une détonation immédiate
+- Appuyer sur [Désactiver le Bombardement] (ou sélectionner + D) pour une pure reconnaissance
+- La détonation équivaut à une grenade à fragmentation : 2D6 points de dégâts contondants (pas de jet de sauvegarde) dans un rayon de 6 pieds, 2D6 points de dégâts tranchants + 2D6 points de dégâts perforants dans un rayon de 15 pieds (les cibles réussissant un jet de sauvegarde contre le souffle subissent la moitié des dégâts)
+Poids : 32"
+
+@8163 = "Tourelle volante"
+@8263 = "Drone intelligent à orbite automatique avec fusil intégré de petit calibre (munitions non enchantées). Priorise les attaquants ciblant l'opérateur. L'altitude en extérieur confère une immunité contre la plupart des attaques et des sorts — les opérations en intérieur désactivent cette protection.
+
+STATISTIQUES :
+
+- Peut être déployé une fois par jour : drone d'escorte autonome pendant 10 tours, rappelé automatiquement à expiration. Utiliser [Arrêt et récupération] pour un rappel anticipé
+- Par défaut en Mode Combat : tire un coup simple/round sur la menace la plus proche. Contrôle manuel disponible
+- Appuyer sur le bouton [Désactiver le Mode Combat] (ou sélectionner + D) pour un escortage passif. Utiliser le bouton [Mode Combat] (ou sélectionner + F) pour réactiver l'agressivité
+Poids : 12"
+
+@8363 = "Tourelle volante endommagée"
+
+@8171 = "Chien robot"
+@8271 = "Plateforme de combat quadrupède radiocommandée avec fusil d'assaut intégré de petit calibre (munitions non enchantées). Des systèmes de vision avancés et des mécanismes de compensation du recul contrebalancent les vibrations de tir/le jeu des articulations/les fluctuations du centre de masse via des ajustements de posture en temps réel. Surpasse les tireurs d'élite humains en précision et temps de réaction. La construction métallique lourde confère une résistance inhérente aux attaques de mêlée et à la magie, mais ne peut pas recevoir de soins magiques une fois endommagée.
+
+STATISTIQUES :
+
+- Peut être déployé une fois par jour : unité contrôlable avec vision partagée pendant 10 tours, rappelée automatiquement à expiration. Appuyer sur [Arrêt et récupération] pour un rappel anticipé
+- Par défaut en Mode Passif : appuyer sur le bouton [Mode Combat] (ou sélectionner + F) pour activer le ciblage autonome — tire un coup de précision simple/round sur l'ennemi le plus proche. Ciblage manuel disponible
+- Appuyer sur le bouton [Désactiver le Mode Combat] (ou sélectionner + D) pour désactiver l'agressivité. Réactiver via le bouton [Mode Combat] (sélectionner + F)
+- Ne peut pas soigner les unités endommagées via des sorts ou des moyens similaires
+Poids : 150"
+
+@8371 = "Chien robot endommagé"
+
+@8172 = "Sanglier robot"
+@8272 = "Plateforme quadrupède lourde optimisée pour la stabilisation des armes. Monte un minigun Gatling avec système d'alimentation par bande de munitions. La masse accrue procure une stabilité de plateforme de tir supérieure comparée aux unités plus petites. Le corps métallique résiste aux attaques physiques/magiques mais ne peut pas recevoir de réparations magiques.
+
+STATISTIQUES :
+
+- Peut être déployé une fois par jour : unité contrôlable avec vision partagée pendant 5 tours, rappelée automatiquement à expiration. Appuyer sur [Arrêt et récupération] pour un rappel anticipé
+- Par défaut en Mode Passif : appuyer sur le bouton [Mode Combat] (ou sélectionner + F) pour activer le ciblage autonome — tire une rafale simple/round sur l'ennemi le plus proche. Ciblage manuel disponible
+- Appuyer sur le bouton [Désactiver le Mode Combat] (ou sélectionner + D) pour désactiver l'agressivité. Réactiver via le bouton [Mode Combat] (sélectionner + F)
+Poids : 350"
+
+@8372 = "Sanglier robot endommagé"
+
+@8173 = "Meute de loups robots"
+@8273 = ""
+
+@8373 = "Meute de loups robots endommagée"
+

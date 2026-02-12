@@ -1,0 +1,2479 @@
+@1001 = "Réparer ce Colt « Python » pour moi, s'il vous plaît."
+@1002 = "Réparer ce Ruger « Blackhawk » pour moi, s'il vous plaît."
+@1003 = "Réparer ce Smith & Wesson M500 pour moi, s'il vous plaît."
+@1011 = "Réparer ce Luger P08 pour moi, s'il vous plaît."
+@1012 = "Réparer ce Colt M1911 pour moi, s'il vous plaît."
+@1013 = "Réparer ce Tokarev TT-33 pour moi, s'il vous plaît."
+@1014 = "Réparer ce Walther PPK pour moi, s'il vous plaît."
+@1015 = "Réparer ce CZ 75 pour moi, s'il vous plaît."
+@1016 = "Réparer ce Glock 17 pour moi, s'il vous plaît."
+@1017 = "Réparer ce Desert Eagle pour moi, s'il vous plaît."
+@1018 = "Réparer ce FN Five-seveN pour moi, s'il vous plaît."
+@2001 = "Réparer ce Mauser C96/M1932 pour moi, s'il vous plaît."
+@2002 = "Réparer ce Micro Uzi pour moi, s'il vous plaît."
+@2003 = "Réparer ce Škorpion Vz.61 pour moi, s'il vous plaît."
+@2004 = "Réparer ce H&K MP5 pour moi, s'il vous plaît."
+@2005 = "Réparer ce FN P90 pour moi, s'il vous plaît."
+@2006 = "Réparer ce H&K UMP45 pour moi, s'il vous plaît."
+@2007 = "Réparer ce PP-2000 pour moi, s'il vous plaît."
+@2011 = "Réparer ce Thompson M1921 pour moi, s'il vous plaît."
+@2012 = "Réparer ce MP40 pour moi, s'il vous plaît."
+@2013 = "Réparer ce Sten Mk.II pour moi, s'il vous plaît."
+@2014 = "Réparer ce PPSh-41 pour moi, s'il vous plaît."
+@2015 = "Réparer ce M3 Grease Gun pour moi, s'il vous plaît."
+@2016 = "Réparer ce ShAK-12 pour moi, s'il vous plaît."
+@3001 = "Réparer ce Lee-Enfield No.1 Mk.III pour moi, s'il vous plaît."
+@3002 = "Réparer ce Type 38 Arisaka pour moi, s'il vous plaît."
+@3003 = "Réparer ce Mosin-Nagant M1891/30 pour moi, s'il vous plaît."
+@3004 = "Réparer ce Mauser Kar98k pour moi, s'il vous plaît."
+@3005 = "Réparer ce PTRD-41 pour moi, s'il vous plaît."
+@3011 = "Réparer ce M1 Garand pour moi, s'il vous plaît."
+@3012 = "Réparer ce M1 Carbine pour moi, s'il vous plaît."
+@3013 = "Réparer ce Gewehr 43 pour moi, s'il vous plaît."
+@3014 = "Réparer ce SKS pour moi, s'il vous plaît."
+@3021 = "Réparer ce StG-44 pour moi, s'il vous plaît."
+@3022 = "Réparer ce AK-47 pour moi, s'il vous plaît."
+@3023 = "Réparer ce FN FAL pour moi, s'il vous plaît."
+@3024 = "Réparer ce M16A1 pour moi, s'il vous plaît."
+@3025 = "Réparer ce Steyr AUG pour moi, s'il vous plaît."
+@3026 = "Réparer ce H&K G11 pour moi, s'il vous plaît."
+@3027 = "Réparer ce AN-94 pour moi, s'il vous plaît."
+@4001 = "Réparer ce Colt M1878 scié pour moi, s'il vous plaît."
+@4002 = "Réparer ce Winchester M1887 pour moi, s'il vous plaît."
+@4003 = "Réparer ce Remington M870 pour moi, s'il vous plaît."
+@4004 = "Réparer ce Benelli M1014/M4 Super 90 pour moi, s'il vous plaît."
+@4005 = "Réparer ce AA-12 pour moi, s'il vous plaît."
+@5001 = "Réparer ce Springfield M1903A4 pour moi, s'il vous plaît."
+@5002 = "Réparer ce Remington 700 pour moi, s'il vous plaît."
+@5003 = "Réparer ce SVD pour moi, s'il vous plaît."
+@5004 = "Réparer ce Barrett M82A1 pour moi, s'il vous plaît."
+@5005 = "Réparer ce AWM pour moi, s'il vous plaît."
+@5006 = "Réparer ce CheyTac M200 pour moi, s'il vous plaît."
+@5007 = "Réparer ce QLU-11 pour moi, s'il vous plaît."
+@6001 = "Réparer ce BAR M1918A2 pour moi, s'il vous plaît."
+@6002 = "Réparer ce ZB-26 pour moi, s'il vous plaît."
+@6003 = "Réparer ce DP-28 pour moi, s'il vous plaît."
+@6004 = "Réparer ce M249 SAW pour moi, s'il vous plaît."
+@6005 = "Réparer ce Ultimax 100 pour moi, s'il vous plaît."
+@6011 = "Réparer ce MG42 pour moi, s'il vous plaît."
+@6012 = "Réparer ce M60 pour moi, s'il vous plaît."
+@6013 = "Réparer ce PKM pour moi, s'il vous plaît."
+@6014 = "Réparer ce QJZ-171 pour moi, s'il vous plaît."
+@6021 = "Réparer cette mitrailleuse Maxim pour moi, s'il vous plaît."
+@6022 = "Réparer ce M2HB pour moi, s'il vous plaît."
+@6023 = "Réparer ce M134 Minigun pour moi, s'il vous plaît."
+@8001 = "Réparer ce drone pour moi, s'il vous plaît."
+@8003 = "Réparer cette tourelle volante pour moi, s'il vous plaît."
+@8011 = "Réparer ce chien robot pour moi, s'il vous plaît."
+@8012 = "Réparer ce sanglier robot pour moi, s'il vous plaît."
+
+@1101 = "Colt Python"
+@1201 = "Le revolver Python est salué comme l'un des meilleurs revolvers jamais fabriqués, réputé pour son fonctionnement fluide, sa précision de niveau compétition et sa finition lustrée. Ses balles .357 Magnum offrent une puissance d'arrêt suffisante pour abattre de grands prédateurs à courte portée. La combinaison d'une fiabilité légendaire, d'une précision de niveau compétition et d'une esthétique élégante a fait du Python un favori instantané des amateurs civils dès sa sortie. « Dieu créa l'homme, mais Colt les rendit égaux. »
+Cette arme tire des cartouches .357 à haute vélocité offrant une pénétration d'armure modérée, particulièrement efficace contre les cibles à armure moyenne. Cependant, elle souffre de surpénétration contre les cibles non blindées ou légèrement blindées, et d'une pénétration insuffisante contre les armures lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 21|21|42|15% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 1D10
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 2
+Portée : 20
+Facteur de vitesse : 1
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 10
+Poids : 3"
+
+@1102 = "Ruger Blackhawk"
+@1202 = "Ce revolver à simple action .44 Magnum Super Blackhawk a été proclamé par Ruger comme « l'évolution ultime des revolvers à simple action ». Adopté par les tireurs de vitesse compétitifs dans le sport de tir à la croissance la plus rapide d'Amérique, il domine la plupart des concours de « fanning ». Bien que des heures de manipulation rapide de la gâchette sollicitent la conception à sommet plat, ces revolvers se révèlent presque indestructibles.
+Les balles .44 Magnum à haute vélocité offrent une pénétration d'armure modérée, particulièrement efficace contre les armures moyennes. Cependant, elles ont tendance à surpénétrer les cibles non blindées/légères tout en peinant contre les armures lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D4 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 30|30|60|21% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 2D6+1
+THAC0 : +3
+Type de dégâts : Projectile
+Attaques par round : 3
+Portée : 20
+Facteur de vitesse : 2
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 14
+Poids : 2"
+
+@1103 = "Smith & Wesson M500"
+@1203 = "La renommée de ce revolver .500 S&W Magnum provient de son calibre massif et de sa puissance dévastatrice. Limité à 5 balles au lieu des 6 standards en raison de ses chambres surdimensionnées, son barillet renforcé résiste à des charges en surpression de +50% pour éviter les blocages. Le recul punitif rend les tirs rapides de suivi difficiles, nécessitant une force exceptionnelle pour une utilisation à une main.
+Les balles .500 à haute énergie pénètrent efficacement les armures moyennes tout en délivrant un impact substantiel contre d'autres types d'armure grâce à la force cinétique pure.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D6 / Affaiblissement de l'Attaque et de la Défense (partiellement annulé pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 35|35|70|25% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 2D10
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 1
+Portée : 24
+Facteur de vitesse : 4
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 17
+Poids : 5"
+
+@1111 = "Luger P08"
+@1211 = "Le Luger P08 a la distinction d'être le premier pistolet semi-automatique adopté par une armée, avec son mécanisme emblématique à bascule inspiré des mitrailleuses Maxim et des fusils à levier Winchester. Réputé pour sa précision chirurgicale et sa fiabilité sur le champ de bataille, il est devenu une arme de poing de confiance pour les troupes allemandes. Son esthétique épurée et sa maîtrise artisanale en font un chef-d'œuvre d'armurerie, très prisé des collectionneurs.
+Chambré en 9×19mm Parabellum, ce pistolet offre une puissance d'arrêt supérieure contre les cibles non blindées/légères/moyennes mais souffre d'une mauvaise pénétration contre les armures lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D2 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 30|30|30|9% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 1D7
+THAC0 : +3
+Type de dégâts : Projectile
+Attaques par round : 3
+Portée : 20
+Facteur de vitesse : 2
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 8
+Poids : 2"
+
+@1112 = "Colt M1911"
+@1212 = "Le M1911 est devenu l'arme de poing réglementaire de l'armée américaine dès son introduction et est resté en service pendant 74 ans. En tant que premier pistolet semi-automatique adopté par l'armée américaine, son calibre massif de 11,43 mm lui confère une létalité incomparable. De plus, il possède de nombreux avantages, notamment la fiabilité, la durabilité et la facilité d'entretien. Ses principaux inconvénients sont son poids/volume substantiel, sa trajectoire courbe et son fort recul – autant de facteurs qui compromettent quelque peu la précision.
+Cette arme tire des balles de pistolet .45 ACP à basse vélocité avec une puissance d'arrêt exceptionnelle, performant très bien contre les cibles non blindées/à armure légère. Cependant, sa faible capacité de pénétration réduit son efficacité contre les armures moyennes et s'avère inadéquate contre les armures lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 40|40|27|5% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 1D10+1
+THAC0 : +1
+Type de dégâts : Projectile
+Attaques par round : 2
+Portée : 20
+Facteur de vitesse : 1
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 14
+Poids : 2"
+
+@1113 = "Tokarev TT-33"
+@1213 = "Le TT-33 est un pistolet semi-automatique de fabrication soviétique conçu par Tokarev, servant initialement d'arme de poing standard de l'Armée rouge. Avec seulement 46 composants au total, il présente des dimensions modérées, une énergie à la bouche formidable et un fort pouvoir de dissuasion. Sa conception simple mais robuste permet d'excellentes performances dans des environnements difficiles, en faisant un pistolet tactique classique.
+Cette arme tire des balles de pistolet 7,62 mm à haute vélocité avec des capacités de pénétration modérées, efficaces contre les cibles à armure moyenne. Cependant, elle a tendance à surpénétrer les cibles non blindées/légères tout en s'avérant insuffisante contre les armures lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 14|14|28|10% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 1D10
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 2.5
+Portée : 20
+Facteur de vitesse : 2
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 12
+Poids : 2"
+
+@1114 = "Walther PPK"
+@1214 = "Les dimensions compactes et le fonctionnement fiable du Walther PPK en font une arme idéale pour le port dissimulé et les opérations clandestines, ayant longtemps servi d'arme de prédilection de James Bond dans la série de films 007. Sa conception intègre des mécanismes de sécurité et de tir de pointe qui ont inspiré les pistolets suivants, avec des principes de conception perdurant depuis plus d'un siècle. Malgré une létalité faible, il permet un tir rapide sans effort avec des exigences de force minimales.
+Cette arme tire des balles de pistolet .32 ACP avec une énergie cinétique relativement faible, montrant une efficacité limitée contre les cibles non blindées/légères/moyennes. Sa faible capacité de pénétration la rend largement inefficace contre les adversaires lourdement blindés.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D1 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 12|12|12|3% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 1D5
+Type de dégâts : Projectile
+Attaques par round : 4
+Portée : 18
+Facteur de vitesse : 1
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 4
+Poids : 1"
+
+@1115 = "CZ 75"
+@1215 = "Le pistolet tchécoslovaque CZ-75 est devenu l'un des pistolets les plus réussis au monde grâce à sa conception ingénieuse et à ses performances exceptionnelles, offrant aux tireurs une précision et une flexibilité opérationnelle inégalées. Ce pistolet excelle non seulement dans le tir sportif mais a également été largement adopté par les agences militaires, policières et de maintien de l'ordre. Grâce à une innovation et une évolution continues, le CZ-75 a maintenu le prestige de sa version originale classique tout en introduisant des modèles optimisés et des dérivés, s'établissant comme une référence qui continue de mener et de façonner le paysage mondial des pistolets.
+Cette arme tire des cartouches de pistolet 10 mm avec une bonne puissance d'arrêt, performant bien contre les cibles non blindées/à armure légère/moyenne, mais présente une pénétration plus faible contre les armures lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 40|40|40|12% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 2D5
+Type de dégâts : Projectile
+Attaques par round : 2.5
+Portée : 20
+Facteur de vitesse : 1
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 9
+Poids : 2"
+
+@1116 = "Glock 17"
+@1216 = "Le pistolet semi-automatique Glock 17 a été adopté par les forces militaires et policières de plus de 40 pays, ce qui en fait l'une des armes à feu modernes les plus célèbres. Le pistolet utilise largement des plastiques techniques, ce qui réduit les coûts de fabrication, améliore l'ergonomie et réduit considérablement le poids. Son mécanisme de sécurité ne nécessite aucune manipulation dédiée, permettant un déploiement rapide. De plus, sa conception interne permet un contrôle facile de l'arme pendant le tir ; des rapports indiquent une amélioration de 20 % des scores de tir parmi les policiers américains après son adoption. L'arme présente également une excellente maintenabilité, avec seulement 32 pièces, démontable en une minute à l'aide d'une goupille.
+Cette arme tire des cartouches de pistolet 9 mm avec une puissance d'arrêt décente, efficace contre les cibles non blindées/à armure légère/moyenne, mais montre une pénétration réduite contre les armures lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D2 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 30|30|30|9% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 1D7
+THAC0 : +3
+Type de dégâts : Projectile
+Attaques par round : 3
+Portée : 20
+Facteur de vitesse : 1
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 6
+Poids : 1"
+
+@1117 = "Desert Eagle"
+@1217 = "Le Desert Eagle utilise un mécanisme à emprunt de gaz similaire à celui des fusils d'assaut, lui permettant de supporter un recul plus important et de tirer des munitions plus puissantes. Cependant, sa grande taille, son poids, son recul significatif, sa structure complexe et sa faible fiabilité le rendent inadapté aux environnements de combat difficiles. Son apparence agressive et sa puissance de frappe ont retenu l'attention d'Hollywood, en faisant un accessoire iconique dans des milliers de films et d'émissions de télévision. En réalité, ses utilisations principales sont le tir sur cible et la chasse.
+Cette arme tire des balles de pistolet .50 AE à haute vélocité avec une pénétration modérée, particulièrement efficace contre les cibles à armure moyenne. Son énergie cinétique considérable offre également un impact substantiel contre d'autres types d'armure.
+
+Capacités d'équipement :
+- Charisme +1
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D4 / Affaiblissement de l'Attaque et de la Défense (partiellement annulé pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 32|32|64|23% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 2D8
+THAC0 : +3
+Type de dégâts : Projectile
+Attaques par round : 1.5
+Portée : 28
+Facteur de vitesse : 4
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 16
+Poids : 4"
+
+@1118 = "FN Five-seveN"
+@1218 = "Dans les années 1990, la société belge FN a introduit cette arme révolutionnaire – le pistolet FN Five-seveN. Bien que son calibre soit relativement petit, ses balles voyagent à une vitesse initiale presque deux fois supérieure à celle des pistolets comparables. Cette conception à haute vélocité améliore la pénétration et la létalité, les balles perforantes SS190 étant capables de pénétrer des gilets pare-balles légers à 100 mètres, ce qui lui vaut le surnom de « Terminator de gilet pare-balles ». Il offre une précision de tir exceptionnelle avec un recul remarquablement faible, permettant même aux utilisatrices de le manipuler sans effort.
+Cette arme tire des balles de pistolet spécialisées 5,7×28 mm à haute vélocité avec une forte pénétration contre les cibles à armure moyenne, mais a tendance à surpénétrer les cibles non blindées/légères tout en restant insuffisante contre les armures lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D2 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 16|16|32|11% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche
+Dégâts : 1D8
+THAC0 : +4
+Type de dégâts : Projectile
+Attaques par round : 3.5
+Portée : 24
+Facteur de vitesse : 1
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 6
+Poids : 1"
+
+@2101 = "Mauser C96/M1932"
+@2201 = "Premier pistolet automatique militaire au monde, réputé pour ses performances puissantes, son action fiable et sa facilité d'utilisation, il a connu une large distribution dans de nombreux pays. Sa conception originale approchait tellement la perfection que ses mécanismes internes sont restés pratiquement inchangés pendant quatre décennies de production de masse. Cependant, aucune nation ne l'a officiellement adopté comme arme de poing réglementaire en raison de sa taille/poids excessifs pour un rôle de pistolet, de son recul formidable entravant le tir précis soutenu et de la complexité opérationnelle nécessitant l'attachement d'une crosse pour contrôler le relèvement. Cette arme a gagné en popularité en Chine, où les utilisateurs ont développé des méthodes simples mais efficaces pour surmonter ses limites.
+Cette arme tire des balles de pistolet 7,63 mm Mauser à haute vélocité avec des capacités de pénétration modérées, efficaces contre les cibles à armure moyenne. Cependant, elle a tendance à surpénétrer les cibles non blindées/légères tout en s'avérant insuffisante contre les armures lourdes.
+La cadence de tir automatique rapide génère un recul intense, rendant le contrôle à une main extrêmement difficile. L'amélioration de la compétence en armes automatiques augmente considérablement la stabilité du tir en rafale, permettant à plus de balles de toucher la cible.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 14|14|28|10% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D10
+THAC0 : +3
+Type de dégâts : Projectile
+Attaques par round : 2.5 (en tir semi-automatique)
+Portée : 26
+Facteur de vitesse : 3
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 12
+Poids : 3"
+
+@2102 = "Micro Uzi"
+@2202 = "Le pistolet-mitrailleur Micro Uzi correspond aux dimensions d'un pistolet mais délivre un taux de tir terrifiant de 1 200 coups par minute, vidant les chargeurs en deux secondes – le rendant inadapté aux troupes régulières mais idéal pour les agents et les gardes du corps. En tant que pionnier des pistolets-mitrailleurs compacts, il présente une fabrication simple, une construction légère, une opération intuitive et une fonctionnalité fiable avec une puissance de feu instantanée forte. Cependant, sa portée effective limitée et sa puissance d'arrêt le restreignent au combat rapproché, ne répondant pas aux exigences des engagements à moyenne portée.
+Cette arme tire des balles de pistolet 9 mm avec une puissance d'arrêt modérée contre les cibles non blindées/moyennes, mais une mauvaise pénétration contre les armures lourdes.
+Le taux de tir extrême rend le contrôle en automatique très difficile à une main. L'amélioration de la compétence en armes automatiques améliore considérablement la stabilité du tir en rafale, permettant à plus de balles de toucher la cible.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D2 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 26|26|26|7% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D6
+Type de dégâts : Projectile
+Attaques par round : 3.5 (en tir semi-automatique)
+Portée : 18
+Facteur de vitesse : 3
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 14
+Poids : 4"
+
+@2103 = "Škorpion Vz.61"
+@2203 = "Le pistolet-mitrailleur Škorpion Vz.61 fournit à l'infanterie non combattante de première ligne une arme de défense personnelle légère supérieure aux pistolets, occupant une place historique significative dans le développement des armes légères. Son facteur de forme compact et sa capacité de tir sélectif (coup par coup/automatique) en font un pionnier des armes de défense personnelle modernes. La conception de crosse pliante assure un transport facile sans entraver les mouvements tactiques. En mode automatique, il délivre une puissance de feu suffisante pour repousser les assauts ennemis.
+Cette arme tire des balles .32 ACP avec une énergie cinétique relativement faible, montrant une efficacité limitée contre les cibles non blindées/à armure légère/moyenne. Sa faible capacité de pénétration la rend largement inefficace contre les adversaires lourdement blindés.
+Malgré un cycle de tir élevé, son recul extrêmement faible permet un contrôle facile à une main même pendant le tir en automatique. Par conséquent, l'amélioration de la compétence en armes automatiques n'améliore que marginalement la stabilité du tir en rafale.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D1 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 12|12|12|3% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D5
+THAC0 : +1
+Type de dégâts : Projectile
+Attaques par round : 4 (en tir semi-automatique)
+Portée : 18
+Facteur de vitesse : 1
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 8
+Poids : 3"
+
+@2104 = "H&K MP5"
+@2204 = "Conçu et fabriqué par l'armurier allemand Heckler & Koch, ce PM a été adopté comme arme réglementaire par de nombreuses unités militaires et policières dans le monde. Comme son slogan le suggère, le MP5 est devenu synonyme d'unités anti-terroristes. Le fonctionnement à culasse semi-culassée retardée par rouleaux et le mécanisme verrouillé par rouleaux offrent des performances supérieures, offrant une précision inégalée par les PM contemporains – permettant même des rafales courtes précises à une main.
+Cette arme tire des balles 9 mm avec une puissance d'arrêt modérée contre les cibles non blindées/moyennes, mais une mauvaise pénétration contre les armures lourdes.
+Le taux de tir élevé se combine avec un recul gérable pour un contrôle en automatique à une main. L'amélioration de la compétence en armes automatiques améliore légèrement la stabilité des rafales pour une probabilité de toucher accrue.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 32|32|32|9% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D8
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 3 (en tir semi-automatique)
+Portée : 20
+Poids : 5
+Facteur de vitesse : 3
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 10
+Poids : 5"
+
+@2105 = "FN P90"
+@2205 = "La conception ergonomique radicale du P90 résulte de recherches approfondies en ingénierie humaine, offrant un confort de manipulation exceptionnel. Avec un nombre minimal de composants (démontable en 15 secondes), il combine une maintenance facile avec une solidité et une précision. Notamment, c'est la première arme de défense personnelle au monde à utiliser une munition propriétaire – les balles SS190 à basse pression produisent un recul minimal, encore réduit par des ressorts de rappel doubles et un tampon de recul.
+Cette arme tire des balles spécialisées 5,7×28 mm à haute vélocité avec une forte pénétration contre les cibles à armure moyenne. Cependant, elles ont tendance à surpénétrer les cibles non blindées/légères tout en restant insuffisantes contre les armures lourdes.
+Le taux de tir rapide s'associe à un recul modéré pour une opération contrôlable à une main. L'amélioration de la compétence en armes automatiques améliore légèrement la stabilité des rafales pour une probabilité de toucher accrue.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 18|18|36|13% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D9
+THAC0 : +4
+Type de dégâts : Projectile
+Attaques par round : 3.5 (en tir semi-automatique)
+Portée : 28
+Facteur de vitesse : 4
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 9
+Poids : 6"
+
+@2106 = "H&K UMP45"
+@2206 = "Le UMP45 a été développé par H&K à la demande des forces spéciales américaines et des unités de police pour répondre aux exigences de compatibilité des munitions, de haute puissance d'arrêt et de capacité de suppression. Les conceptions initiales ont incorporé des concepts du fusil d'assaut G36 tout en utilisant des matériaux polymères pour réduire le poids et les coûts de production. Le fonctionnement à culasse libre priorise intrinsèquement la cadence de tir par rapport à la précision, conduisant à l'installation d'un réducteur de cadence maintenant 600 coups par minute. Réputé pour sa fiabilité, sa précision et sa puissance formidable, il est salué par les opérateurs comme « la norme des opérations spéciales » et « l'arme secondaire parfaite ».
+Cette arme tire des balles .45 ACP à basse vélocité avec une puissance d'arrêt exceptionnelle contre les cibles non blindées/légères, bien que la pénétration baisse considérablement contre les armures moyennes et s'avère inadéquate contre les armures lourdes.
+La cadence de tir modérée et le recul contrôlable permettent une opération en automatique à une main. L'amélioration de la compétence en armes automatiques apporte une amélioration limitée à la stabilité du tir en rafale.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 42|42|28|5% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D10+1
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 3 (en tir semi-automatique)
+Portée : 22
+Facteur de vitesse : 4
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 10
+Poids : 6"
+
+@2107 = "PP-2000"
+@2207 = "Le PP-2000 est un micro pistolet-mitrailleur conçu pour des missions spécifiques, présentant des dimensions ultra-compactes et une construction légère pour un port dissimulé tout en offrant une puissance de feu rapprochée essentielle. Malgré sa longueur réduite, un tampon de recul bien conçu maintient des cadences de tir gérables. Bien qu'innovant dans son facteur de forme, ses principes de fonctionnement restent conventionnels – bien que la sélection des munitions s'avère exceptionnelle.
+Cette arme tire des balles 9 mm spécialisées avec une vitesse initiale élevée et une capacité perforante, efficaces contre les cibles à armure moyenne. Cependant, les balles ont tendance à surpénétrer les cibles non blindées/légères tout en peinant contre les armures lourdes.
+Bien que capable d'une utilisation à une main, le contrôle du tir rapide s'avère difficile. L'amélioration de la compétence en armes automatiques améliore considérablement la stabilité des rafales pour une probabilité de toucher accrue.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 16|16|32|11% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D9
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 3 (en tir semi-automatique)
+Portée : 28
+Facteur de vitesse : 3
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 11
+Poids : 3"
+
+@2111 = "Thompson M1921"
+@2211 = "Le pistolet-mitrailleur Thompson, également connu sous le nom de Machine à écrire de Chicago (en raison de son son de tir ressemblant aux touches d'une machine à écrire) et du Violon de Chicago (car les composants démontés peuvent tenir dans un étui à violon), a été le PM américain le plus emblématique pendant la Seconde Guerre mondiale. Le Thompson présente des inconvénients évidents : poids excessif, mécanisme complexe, coût de production élevé, portée effective limitée, précision médiocre et taux de dysfonctionnement relativement élevé. Néanmoins, il reste l'une des armes automatiques les plus remarquables de son époque. Son système de fonctionnement à culasse semi-libre unique lui permet de chambrer de grosses balles .45 ACP, offrant une puissance d'arrêt significativement supérieure par rapport aux PM contemporains. La puissance de feu écrasante a même nécessité des modifications de réducteur de cadence dans les variantes ultérieures.
+Cette arme tire des balles .45 ACP à basse vélocité avec une puissance d'arrêt exceptionnelle contre les cibles non blindées/à armure légère, mais démontre de mauvaises performances de pénétration contre les armures moyennes et devient presque inefficace contre les armures lourdes.
+Avec une cadence de tir élevée et une impulsion de recul notable, le contrôle des rafales soutenues nécessite une compétence considérable. L'augmentation de la compétence en armes automatiques améliore marginalement la stabilité pendant les rafales courtes/longues, permettant à plus de balles de rester sur la cible.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 45|45|30|6% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D10+2
+THAC0 : +3
+Type de dégâts : Projectile
+Attaques par round : 2.5
+Portée : 26
+Facteur de vitesse : 3
+Compétence : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 13
+Poids : 10"
+
+@2112 = "MP40"
+@2212 = "Le pistolet-mitrailleur MP40, fréquemment mal nommé Schmeisser, a été largement déployé dans les forces armées allemandes pendant la Seconde Guerre mondiale. En tant que premier PM de conception moderne de l'histoire, il a profondément influencé le développement ultérieur des armes légères. Notable pour sa précision, son recul minimal et sa cadence de tir modérée, cette arme offre une précision inégalée en tir soutenu. La conception rationalisée permet un démontage facile, bien que sa capacité de chargeur limitée et sa cadence de tir plus lente l'aient rendu vulnérable à la suppression par les PM soviétiques en combat rapproché. De plus, la conception du chargeur exige un entretien méticuleux et une manipulation appropriée pour un alimentation fiable – un standard souvent inaccessible pour l'infanterie moyenne.
+Les balles 9 mm Parabellum offrent une puissance d'arrêt décente contre les cibles non blindées/à armure moyenne, mais présentent une mauvaise pénétration contre les armures lourdes.
+Doté d'un long ensemble de boîtier/tige de guidage qui absorbe efficacement l'énergie de recul et d'un mécanisme d'amorçage avancé qui contrecarre le relèvement du canon, la maniabilité de ce PM rivalise avec la manipulation d'un tuyau d'arrosage. Ainsi, la compétence en armes automatiques ne procure aucun bonus de stabilité supplémentaire pour le tir en rafale.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 34|34|34|10% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D8
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 3.5
+Portée : 26
+Facteur de vitesse : 3
+Compétence : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 9
+Poids : 9"
+
+@2113 = "Sten Mk.II"
+@2213 = "Le PM Sten est sans doute l'arme à feu la plus laide de la Seconde Guerre mondiale – essentiellement un assemblage de tubes d'acier grossiers soudés. Suite aux pertes d'équipement de Dunkerque, les forces britanniques avaient désespérément besoin d'armes légères produites en masse. Les ingénieurs d'Enfield ont répondu avec cette conception minimaliste : seuls le canon et la culasse nécessitent de l'usinage, tandis que les autres composants peuvent être fabriqués dans des ateliers primitifs. Les problèmes chroniques incluent des enrayements fréquents et des décharges accidentelles. Cet « excellent déchet » a mérité des surnoms comme « The Woolworth Special », « The Plumbers Delight » et « The Stench Gun » parmi les troupes.
+Les balles 9 mm offrent une puissance d'arrêt décente contre les cibles non blindées/à armure moyenne, mais présentent une mauvaise pénétration contre les armures lourdes.
+Avec une cadence de tir modérée et un recul gérable, le contrôle des rafales s'avère relativement facile. Cependant, la compétence en armes automatiques n'améliore que minimalement la stabilité des rafales.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+- Charisme -1
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 34|34|34|10% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D8
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 3
+Portée : 26
+Facteur de vitesse : 3
+Compétence : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 7
+Poids : 7"
+
+@2114 = "PPSh-41"
+@2214 = "Le PM PPSh-41 « Papasha » offrait une fiabilité exceptionnelle avec des processus de démontage et de fabrication simples. Produisant plus de 6 millions d'unités dans des conditions de guerre primitives, il a offert aux troupes soviétiques une supériorité écrasante en combat rapproché qui a contribué à leur victoire sur le front de l'Est. Chambré en 7,62×25 mm Tokarev avec une longueur de canon étendue, il a atteint une vitesse initiale et une portée effective plus élevées que les PM contemporains. Son utilisation facile, sa puissance de feu dévastatrice et ses rafales contrôlables l'ont rendu emblématique dans les combats urbains de Stalingrad. Des spécimens capturés ont même reçu des désignations militaires allemandes formelles.
+Les balles de pistolet 7,62 mm à haute vélocité de cette arme présentent une efficacité de pénétration modérée contre les armures moyennes, bien que sujettes à la surpénétration contre les cibles non blindées/légères et à une pénétration insuffisante contre les armures lourdes.
+Malgré la cadence de tir rapide, le recul gérable permet un contrôle soutenu. La compétence en armes automatiques améliore légèrement la stabilité des rafales pour une meilleure probabilité de toucher.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 18|18|36|13% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D11
+THAC0 : +3
+Type de dégâts : Projectile
+Attaques par round : 3
+Portée : 28
+Facteur de vitesse : 3
+Compétence : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 11
+Poids : 8"
+
+@2115 = "M3 Grease Gun"
+@2215 = "Suite à l'éclatement de la Seconde Guerre mondiale, l'armée américaine avait un besoin urgent de PM produits en masse, conduisant au développement du M3 inspiré du Sten britannique. Initialement raillé par les troupes pour son apparence peu orthodoxe (méritant le dédain de « Grease Gun » – pistolet à graisse), ce PM a rapidement prouvé sa valeur grâce à une maniabilité exceptionnelle au combat.
+Tirant des balles .45 ACP à basse vélocité, il offre une puissance d'arrêt exceptionnelle contre les cibles non blindées/à armure légère, mais souffre de déficiences de pénétration contre les armures moyennes/lourdes.
+Le recul atténué dû à la cadence de tir lente compense partiellement les vibrations induites par la culasse lourde pendant les rafales. La compétence en armes automatiques apporte une amélioration minimale du contrôle des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D3 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 45|45|30|6% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 1D10+2
+THAC0 : +2
+Type de dégâts : Projectile
+Attaques par round : 3
+Portée : 26
+Facteur de vitesse : 2
+Compétence : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 10
+Poids : 8"
+
+@2116 = "ShAK-12"
+@2216 = "Reflétant la doctrine anti-terroriste russe qui priorise la neutralisation absolue des menaces (même au prix d'otages), le ShAK-12 est apparu comme une arme de combat rapproché spécialisée pour les opérations anti-terroristes urbaines contre des cibles lourdement armées. Présentant des dimensions compactes et tirant la munition propriétaire 12,7×55 mm STs-130, cette arme fait le pont entre les rôles de PM et de fusil d'assaut avec une puissance d'arrêt extrême à très courte portée.
+Les balles sans étui 12,7 mm à basse vélocité produisent des effets d'arrêt catastrophiques contre les cibles non blindées/à armure légère, bien que la pénétration diminue rapidement contre les armures moyennes/lourdes.
+La cadence de tir modérée combinée à un recul étonnamment gérable (compte tenu du calibre) permet des rafales contrôlables. La compétence en armes automatiques offre de légères améliorations des performances en rafale.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement / Ralentissement / Étourdissement / Inconscience / Dégâts supplémentaires de 2D5 / Affaiblissement de l'Attaque et de la Défense (la plupart des effets sont annulés pour les cibles inorganiques et les grandes créatures). Probabilité de déclenchement contre les cibles sans armure / armure légère / armure moyenne / armure lourde : 60|60|40|8% (les grandes créatures et les golems comptent comme armure lourde, les êtres chitineux comme armure moyenne).
+- Reçoit des bonus de toucher et de défense au corps à corps au lieu des pénalités standards des armes à distance.
+
+Type de munition : cartouche / chargeur / tambour
+Dégâts : 2D8+1
+THAC0 : +1
+Type de dégâts : Projectile
+Attaques par round : 2
+Portée : 28
+Facteur de vitesse : 4
+Compétence : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 15
+Poids : 13"
+
+@3101 = "Lee-Enfield No.1 Mk.III"
+@3201 = "Le fusil Lee-Enfield à chargeur court a été l'arme standard des forces du Commonwealth durant la Première et la Seconde Guerres mondiales ainsi que la guerre de Corée. Doté d'une culasse manuelle et d'un chargeur amovible à boîte, il est l'un des fusils à verrou les plus rapides. Sa capacité de tir rapide s'est avérée décisive dans la guerre des tranchées. Réputé pour sa fiabilité, son court mouvement de culasse et sa facilité d'utilisation, les performances de ce fusil peuvent être considérablement améliorées en remplaçant ses munitions par des versions modernes. Bien qu'initialement équipé d'une baïonnette, sa conception notoirement médiocre a conduit à son abandon fréquent.
+Cette arme tire des balles de fusil pleine puissance de 7,7 mm dont la capacité de pénétration supérieure augmente contre les armures plus lourdes, tout en étant sujette à la surpénétration contre les cibles non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 22|22|37|42 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche
+Dégâts : 2D8+1
+THAC0 : +4
+Type de dégâts : à distance
+Attaques par round : 2.5
+Portée : 38
+Facteur de vitesse : 2
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 13
+Poids : 9"
+
+@3102 = "Type 38 Arisaka"
+@3202 = "Pendant la Seconde Guerre mondiale, les forces japonaises en Chine ont priorisé la guerre de forteresse/des tranchées plutôt que le combat mécanisé, adoptant ce fusil exceptionnellement long - le Type 38, le fusil de service le plus long de la Seconde Guerre mondiale. Une construction simple et un recul modéré caractérisent cette arme. Son canon allongé améliore la précision et la portée, tandis que la longueur combinée avec la baïonnette compensait la taille plus petite des soldats japonais au corps à corps. Cependant, le petit calibre de 6,5 mm et la trajectoire stable de la balle entraînent un pouvoir d'arrêt médiocre à certaines distances.
+Malgré son calibre modeste, les balles de fusil pleine puissance de 6,5 mm présentent une grande capacité de pénétration qui augmente contre les armures plus lourdes, tout en étant sujette à la surpénétration contre les cibles non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 19|19|31|36 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche
+Dégâts : 1D12
+THAC0 : +5
+Type de dégâts : à distance
+Attaques par round : 2
+Portée : 33
+Facteur de vitesse : 3
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 8
+Poids : 9"
+
+@3103 = "Mosin-Nagant M1891/30"
+@3203 = "Le Mosin-Nagant présente une conception de culasse manuelle grossière et dépassée avec un fonctionnement encombrant, compensé par une fabrication simple et une facilité d'utilisation. Son recul brutal correspond à sa puissance et sa portée formidables. Facile d'entretien mais sujet aux enrayages de culasse nécessitant des coups de pied pour s'ouvrir (gagnant le surnom de 'Fusil à culasse de botte' des volontaires chinois). D'une précision remarquable - les détenteurs de records de tireurs d'élite finlandais, soviétiques et chinois ont tous utilisé des variantes du Mosin.
+Ce spécimen a été entretenu pour la dernière fois à Berlin en 1945. À l'origine recouvert d'un vernis anti-corrosion, il a été enterré sous un appartement à Budapest. En utilisant des munitions excavées de terres agricoles ukrainiennes, il atteint des groupes de 16 pouces à 1000 yards !
+Les balles de fusil pleine puissance de 7,62 mm présentent une grande capacité de pénétration qui augmente contre les armures plus lourdes, tout en étant sujette à la surpénétration contre les cibles non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 24|24|39|45 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche
+Dégâts : 3D6
+THAC0 : +6
+Type de dégâts : à distance
+Attaques par round : 1.5
+Portée : 40
+Facteur de vitesse : 5
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 14
+Poids : 10"
+
+@3104 = "Mauser Kar98k"
+@3204 = "Le fusil Mauser Kar98k à culasse manuelle a servi d'arme d'infanterie standard de l'Allemagne pendant la Seconde Guerre mondiale, largement considéré comme l'une des meilleures conceptions à verrou de son époque. Bien qu'offrant des performances équilibrées avec une excellente précision et une puissance formidable, ses limites incluaient une faible capacité de 5 cartouches, un faible taux de tir et des exigences élevées en compétences de l'opérateur. Le mécanisme complexe avec de nombreux composants a également entraîné des coûts de production élevés et une fiabilité médiocre.
+Les modèles de fin de guerre ont souffert d'une détérioration progressive de la qualité en raison des pressions du temps de guerre. Heureusement, ce Kar98k particulier est un spécimen de production précoce offrant une précision et une fiabilité supérieures.
+Ce fusil tire des balles de fusil pleine puissance de 7,92 mm avec une grande capacité de pénétration qui augmente contre les armures plus lourdes, tout en étant sujet à la surpénétration contre les cibles non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 22|22|37|42 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche
+Dégâts : 2D8+1
+THAC0 : +5
+Attaques par round : 2
+Portée : 38
+Facteur de vitesse : 3
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@3105 = "PTRD-41"
+@3205 = "Le fusil antichar PTRD-41 utilisé par les forces soviétiques pendant la Seconde Guerre mondiale dissimulait des systèmes sophistiqués d'atténuation du recul sous son extérieur grossier. En tant qu'artillerie portable d'infanterie, sa longueur/poids excessifs et son bruit tonitruant induisaient l'appréhension de l'opérateur. Initialement efficace contre les blindés légers du début de la guerre, il est devenu obsolète contre les chars avancés plus tard sur le front de l'Est.
+Cette arme tire des balles perforantes spécialisées de 14,5 × 114 mm avec un potentiel de surpuissance contre les cibles humaines, idéalement employée contre les créatures géantes/les constructs. La capacité de pénétration augmente contre les armures plus lourdes, tout en étant sujette à la surpénétration contre les cibles non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 4D8/Affaiblissement de l'Attaque et de la Défense (immunité limitée pour les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 60|60|70|90 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Type de munition : cartouche
+Dégâts : 4D10
+THAC0 : +5
+Attaques par round : 1
+Portée : 41
+Facteur de vitesse : 8
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 12
+Poids : 38"
+
+@3111 = "M1 Garand"
+@3211 = "Le M1 Garand a servi de fusil standard pour les forces américaines pendant la Seconde Guerre mondiale, devenant le premier fusil semi-automatique produit en série pour le service militaire. Réputé pour sa précision, sa facilité de démontage/nettoyage et sa fiabilité/durabilité éprouvée, il a été reconnu comme le meilleur fusil de combat de la Seconde Guerre mondiale. Les troupes de l'armée sud-coréenne d'après-guerre ont eu du mal avec son poids substantiel malgré leur statut d'utilisateurs majeurs.
+Ce fusil tire des balles de fusil pleine puissance de 7,62 mm avec une grande capacité de pénétration qui augmente contre les armures plus lourdes, tout en étant sujet à la surpénétration contre les cibles non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 25|25|41|48 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche
+Dégâts : 2D10
+THAC0 : +5
+Attaques par round : 2.5
+Portée : 38
+Facteur de vitesse : 3
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 14
+Poids : 10"
+
+@3112 = "M1 Carbine"
+@3212 = "Conçu pour le personnel logistique et les spécialistes non combattants, le M1 Carbine offre une utilisation légère avec un recul minimal, nécessitant un entraînement minime. Dépassant les pistolets en portée efficace/précision tout en maintenant une puissance de feu durable, il s'est avéré idéal comme arme défensive à courte portée. Bien que ses balles .30 Carbine sous-performent dans les engagements complexes/à longue portée, de nombreux cas de défense réussis valident son utilité.
+Cette arme tire des balles de carabine intermédiaires de 7,62 mm avec une capacité de pénétration modérée culminant contre l'armure moyenne, montrant des performances limitées contre les armures légères/lourdes.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D4/Affaiblissement de l'Attaque et de la Défense (principalement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 19|19|38|13 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Type de munition : cartouche
+Dégâts : 2D6
+THAC0 : +3
+Attaques par round : 4
+Portée : 28
+Facteur de vitesse : 1
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 5
+Poids : 5"
+
+@3113 = "Gewehr 43"
+@3213 = "Le Gewehr 43 (G43) a marqué le premier fusil semi-automatique pratique de l'Allemagne nazie, développé de manière innovante avec des influences du SVT-40. Malgré les captures alliées et la concurrence du STG44, il a démontré une supériorité technologique avec une construction légère, une durabilité, une puissance de feu formidable et une faisabilité de production de masse. Bien que résolvant rapidement les problèmes d'alimentation, son rôle ambigu a conduit à son obsolescence éventuelle. La qualité de production a décliné alors que la situation de guerre de l'Allemagne se détériorait, mais ce spécimen fabriqué précocement conserve une précision/fiabilité exceptionnelles.
+Ce fusil tire des balles pleine puissance de 7,92 mm avec une grande capacité de pénétration qui augmente contre les armures plus lourdes, tout en étant sujet à la surpénétration contre les cibles non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 21|21|35|40 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche
+Dégâts : 2D8+1
+THAC0 : +4
+Attaques par round : 3
+Portée : 38
+Facteur de vitesse : 3
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 11
+Poids : 9"
+
+@3114 = "SKS Carbine"
+@3214 = "La carabine semi-automatique Simonov adoptée en 1946 a été pionnière dans l'adoption de cartouches intermédiaires, offrant une taille compacte, un poids/recul réduit, une mécanique simplifiée et une fiabilité améliorée par rapport aux semi-automatiques traditionnels. Bien que compétente sur tous les plans, son lancement mal chronométré l'a reléguée au statut d'arme de transition dans les pays d'origine, tandis que les variantes du bloc socialiste (notamment le Type 56 chinois) ont acquis un statut légendaire grâce à des exploits de tir.
+Cette arme tire des balles intermédiaires de 7,62 mm avec une pénétration supérieure contre les armures moyenne/lourde, tout en étant sujette à la surpénétration contre les cibles légères/non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 18|18|36|36 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche
+Dégâts : 2D6+1
+THAC0 : +4
+Attaques par round : 3.5
+Portée : 32
+Facteur de vitesse : 2
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 8
+Poids : 8"
+
+@3121 = "StG-44"
+@3221 = "Le fusil d'assaut StG-44 représente l'une des réalisations majeures de l'infanterie moderne, étant le premier fusil d'assaut produit en série utilisant des cartouches intermédiaires. Les premiers prototypes ont reçu des éloges généralisés sur le front avant qu'Hitler ne le désigne personnellement 'Sturmgewehr' en 1944 après les améliorations finales. Il a comblé les lacunes critiques d'engagement à 200-500 m avec un feu de suppression dévastateur, surpassant à la fois les pistolets mitrailleurs et les fusils à pleine puissance aux distances de combat courantes.
+Cette arme tire des balles intermédiaires de 7,92 × 33 mm Kurz avec une pénétration supérieure contre les armures moyenne/lourde, tout en étant sujette à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique contrôlé et un recul gérable permettent des rafales soutenues. La maîtrise des armes automatiques améliore légèrement la stabilité des rafales courtes/longues pour augmenter la probabilité de toucher.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 16|16|32|32 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche/chargeur/tambour
+Dégâts : 1D12+1
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 3.5
+Portée : 30
+Facteur de vitesse : 3
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 10
+Poids : 11"
+
+@3122 = "AK-47"
+@3222 = "L'AK-47 représente le fusil d'assaut de première génération de l'Union soviétique. Réputé pour sa simplicité, sa fiabilité et sa durabilité, il maintient sa fonctionnalité dans des conditions extrêmes avec une précision semi-automatique décente. Cependant, un recul important, l'élévation du canon pendant les rafales et des viseurs rudimentaires limitent la précision, optimisée pour les tactiques d'embuscade à courte portée. La prolifération mondiale en a fait l'arme à feu la plus omniprésente dans la guerre, responsable de pertes sans précédent.
+Ce fusil peut être utilisé par des conscrits illettrés de nations à PIB à deux chiffres contre des forces d'élite. Il ne nécessite aucun entretien - jamais. Les pannes sont réparables avec des masses et des coups de pied.
+Chambré pour des balles intermédiaires de 7,62 × 39 mm, il présente une pénétration supérieure contre les armures moyenne/lourde, tout en étant sujet à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique modéré se combine à des schémas de recul violents nécessitant une manipulation experte. La maîtrise des armes automatiques améliore modérément le contrôle des rafales pour des groupes de tir plus serrés.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 16|16|32|32 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Type de munition : cartouche/chargeur/tambour
+Dégâts : 2D6+1
+THAC0 : +4
+Type de dégâts : à distance
+Attaques par round : 3.5
+Portée : 31
+Facteur de vitesse : 2
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@3123 = "FN FAL"
+@3223 = "Le fusil de bataille FN FAL est issu des programmes de développement de fusils britanniques d'après-guerre. Conçu initialement pour des cartouches intermédiaires de 7 × 43 mm dans des prototypes entièrement automatiques, il a été contraint d'adopter les balles de 7,62 × 51 mm OTAN sous la pression américaine. Devenu l'un des fusils militaires les plus produits en masse et les plus largement distribués après-guerre en raison de son rapport coût-efficacité, il a acquis les éloges des mercenaires comme 'l'une des plus grandes armes de mercenaire du 20e siècle' dans les publications américaines de sous-traitants.
+Ce fusil tire des balles pleine puissance de 7,62 mm avec une grande capacité de pénétration contre les armures moyenne/lourde, tout en étant sujet à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique rapide et un recul intense exigent une manipulation experte. La maîtrise des armes automatiques améliore significativement la stabilité des rafales pour augmenter la probabilité de toucher.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 24|24|39|45 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche/chargeur/tambour
+Dégâts : 3D6
+THAC0 : +5
+Type de dégâts : à distance
+Attaques par round : 2.5
+Portée : 38
+Poids : 9
+Facteur de vitesse : 3
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 15
+Poids : 9"
+
+@3124 = "M16A1"
+@3224 = "Le M16A1 représente le fusil de service de deuxième génération d'après-guerre de l'Amérique, pionnier dans les munitions de petit calibre qui ont révolutionné la miniaturisation des armes à feu. Le marketing initial de Colt a exagéré son fonctionnement sans entretien, conduisant à des enrayages/corrosions catastrophiques dans les jungles du Vietnam. Bien que technologiquement avancé, il demande un nettoyage/lubrification fréquents pour la fiabilité.
+Tirant des balles de 5,56 mm qui basculent/se fragmentent à l'impact, cette arme excelle contre les cibles non blindées/à armure moyenne mais sous-performe contre les armures lourdes.
+Un taux cyclique élevé se combine à un recul modéré. La maîtrise des armes automatiques améliore légèrement le contrôle des rafales pour des groupes de tir plus serrés.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 50|50|50|30 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche/chargeur/tambour
+Dégâts : 1D12+1
+THAC0 : +4
+Type de dégâts : à distance
+Attaques par round : 3.5
+Portée : 35
+Facteur de vitesse : 2
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 9
+Poids : 8"
+
+@3125 = "Steyr AUG"
+@3225 = "Le système d'arme modulaire Steyr AUG intègre des composants polymères (y compris le chien/détente/gâchette) ne nécessitant pas de lubrification, offrant une durabilité et un entretien sans outil. La conception compacte bullpup permet une manipulation supérieure avec une précision de rafale exceptionnelle. Rare parmi les bullpups pour son adoption par les forces de l'ordre/les forces spéciales, c'est un fusil d'assaut à succès commercial.
+Tirant des balles de 5,56 mm qui basculent/se fragmentent à l'impact, cette arme excelle contre les cibles non blindées/à armure moyenne mais sous-performe contre les armures lourdes.
+Un recul contrôlable complète un taux cyclique élevé. La maîtrise des armes automatiques améliore modérément la stabilité des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 50|50|50|30 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Type de munition : cartouche/chargeur/tambour
+Dégâts : 1D12+1
+THAC0 : +5
+Type de dégâts : à distance
+Attaques par round : 3.5
+Portée : 35
+Facteur de vitesse : 2
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 8
+Poids : 7"
+
+@3126 = "H&K G11"
+@3226 = "Le H&K G11 a passé deux décennies à résoudre les problèmes d'auto-inflammation des munitions sans étui. Éliminer les cycles d'éjection permet des cadences de tir extrêmes avec une précision de compétition. Son tour de force le plus impressionnant est de délivrer trois balles à une vitesse fulgurante (2100 tr/min) avant que le recul ne les remarque, atteignant une précision de rafale courte inégalée. Le tir soutenu revient à 600-700 tr/min. La configuration bullpup scellée ressemble à une précision horlogère suisse enfermée dans du polymère.
+Ce fusil tire des balles à haute vélocité de 4,7 × 33 mm offrant des effets de fragmentation contre les cibles molles plus une pénétration modérée. Efficace contre les cibles non blindées/à armure moyenne, moins efficace contre les armures lourdes.
+Le mode hyper-rafale annule l'impact du recul ; le tir soutenu reste contrôlable. Aucun bonus de maîtrise des armes automatiques ne s'applique à la stabilité des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D4/Affaiblissement de l'Attaque et de la Défense (principalement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 35|35|35|21 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Tire une rafale fixe de trois balles instantanément pendant le rechargement du chargeur, maintenant une action continue sans pause
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Type de munition : cartouche/chargeur/tambour
+Dégâts : 1D12
+THAC0 : +4
+Type de dégâts : à distance
+Attaques par round : 4
+Portée : 32
+Poids : 8
+Facteur de vitesse : 3
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 7
+Poids : 8"
+
+@3127 = "AN-94"
+@3227 = "L'AN-94 peut délivrer deux balles à 1800 tr/min pendant que le recul n'y prête pas attention, revenant à 600 tr/min standard à partir de la troisième balle. Ce mode hyper-rafale surpasse le tir unique en pénétration/pouvoir d'arrêt tout en maintenant une précision équivalente. Les évaluations militaires russes jugent cette capacité superflue pour les troupes de rang, réservant son efficacité aux unités d'élite. Son système à culasse double/poulies augmente les coûts de production/entretien, limitant son adoption généralisée.
+Tirant des balles de 5,45 × 39 mm avec des effets extrêmes de basculement/fragmentation, cette arme excelle contre les cibles non blindées/à armure moyenne mais sous-performe contre les armures lourdes.
+L'hyper-rafale annule le recul ; le tir soutenu reste gérable. Aucun bonus de maîtrise des armes automatiques ne s'applique à la stabilité des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (principalement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 45|45|45|27 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Tire une rafale fixe de deux balles instantanément pendant le rechargement du chargeur, maintenant une action continue sans pause
+
+Type de munition : cartouche/chargeur/tambour
+Dégâts : 1D12
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 4
+Portée : 36
+Poids : 8
+Facteur de vitesse : 3
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 9
+Poids : 8"
+
+@4101 = "Colt M1878 (Scié)"
+@4201 = "Pour la dissimulation et la portabilité, ce fusil à pompe présente un canon tronqué et une crosse retirée, permettant une utilisation à une main dans des espaces restreints. L'absence de contrainte de canon augmente considérablement la dispersion des plombs tout en réduisant la portée efficace aux engagements à bout portant.
+Tirant des chevrotines de 12 mm avec des plombs sous-alimentés en raison de l'accélération manquante du canon, il montre une efficacité marginale contre les cibles non blindées/à armure légère ; les performances diminuent contre l'armure moyenne et deviennent presque inutiles contre l'armure lourde.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Cône de 10 pieds (arc de 60°) où chaque créature peut être touchée par 2-4 plombs (les grandes créatures touchées par plus)
+- Chaque plomb peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D1/Affaiblissement de l'Attaque et de la Défense (principalement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 7|7|5|1 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Type de munition : cartouche
+Dégâts : 1D2
+THAC0 : +6
+Type de dégâts : à distance
+Attaques par round : 2
+Portée : 10
+Poids : 4
+Facteur de vitesse : 0
+Maîtrise : Armes automatiques (Arbalète)
+Type: 1 main
+Force nécessaire: 13
+Poids : 10"
+
+@4102 = "Winchester M1887"
+@4202 = "Le Winchester M1887 se distingue comme le premier fusil à pompe à répétition réussi. Malgré la préférence de Browning pour les conceptions à pompe, Winchester a insisté sur les mécanismes à levier. Bien que dépassé commercialement par les pompes, son immortalité culturelle a été assurée par la scène de rechargement emblématique à moto de la franchise Terminator.
+Ce fusil à canon lisse de 12 mm dévaste les cibles non blindées/à armure légère, avec une efficacité réduite contre les armures moyenne/lourde.
+Capable de forcer des serrures de porte ordinaires lorsqu'il est tiré à des angles optimaux pour éviter les ricochets.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (principalement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 75|75|50|10 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Capacité spéciale :
+- Forcer des serrures ordinaires
+
+Type de munition : cartouche
+Dégâts : 4D4
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 1
+Portée : 24
+Poids : 8
+Facteur de vitesse : 1
+Maîtrise : Armes automatiques (Arbalète)
+Type: 1 main
+Force nécessaire: 16
+Poids : 8"
+
+@4103 = "Remington M870"
+@4203 = "Le Remington M870 règne en monarque des fusils à pompe américains, prisé pour sa conception compacte, sa fiabilité et son abordabilité à travers les secteurs militaires/policiers/civils. Ses performances pendant la guerre du Vietnam ont cimenté sa réputation mondiale. Délivrant une puissance de feu équivalente à des douzaines de balles de pistolet par coup, il excelle dans les opérations de combat rapproché et défensives.
+Ce fusil à canon lisse de 12 mm dévaste les cibles non blindées/à armure légère, avec une efficacité réduite contre les armures moyenne/lourde.
+Capable de forcer des serrures de porte ordinaires lorsqu'il est tiré à des angles optimaux pour éviter les ricochets.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (principalement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 75|75|50|10 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Capacité spéciale :
+- Forcer des serrures ordinaires
+
+Type de munition : cartouche
+Dégâts : 4D4
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 2.5
+Portée : 24
+Poids : 7
+Facteur de vitesse : 1
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 12
+Poids : 7"
+
+@4104 = "Benelli M1014/M4 SUPER 90"
+@4204 = "Le fusil à pompe semi-automatique Benelli M4 utilise un système à gaz plutôt que la mécanique traditionnelle à inertie. Sa conception à double piston assure un cycle fiable avec des cartouches à faible recul dans des extrêmes de température, capable de tirer divers types de cartouches sans ajustements. Évalué pour 25 000+ cartouches sans remplacement de composant majeur, il maintient une fiabilité par tous les temps.
+Ce fusil à canon lisse de 12 mm dévaste les cibles non blindées/à armure légère, avec une efficacité réduite contre les armures moyenne/lourde.
+Capable de forcer des serrures de porte ordinaires lorsqu'il est tiré à des angles optimaux pour éviter les ricochets.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (principalement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 75|75|50|10 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Capacité spéciale :
+- Forcer des serrures ordinaires
+
+Type de munition : cartouche
+Dégâts : 4D4
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 3
+Portée : 24
+Facteur de vitesse : 1
+Maîtrise : Armes automatiques (Arbalète)
+Type: 2 mains
+Force nécessaire: 12
+Poids : 7"
+
+@4105 = "MPS AA-12"
+@4205 = "Le système Constant Recoil de l'AA-12 réduit le recul à 10 % des fusils à pompe conventionnels, permettant un contrôle en tir automatique comparable aux pistolets mitrailleurs - même tiré à une main sans contact avec l'épaule. La mécanique auto-nettoyante éjecte les contaminants, ne nécessitant qu'un rinçage à l'eau pour l'entretien dans des conditions extrêmes. Bien que surdimensionné comme arme secondaire militaire et surpuissant pour les forces de l'ordre, il brille dans les scénarios d'apocalypse zombie.
+Ce fusil à canon lisse de 12 mm dévaste les cibles non blindées/à armure légère, avec une efficacité réduite contre les armures moyenne/lourde.
+Capable de forcer des serrures de porte ordinaires lorsqu'il est tiré à des angles optimaux pour éviter les ricochets.
+Un taux cyclique bas et un recul négligeable annulent les bonus de maîtrise des armes automatiques pour la stabilité.
+
+Capacité spéciale :
+- Forcer des serrures ordinaires
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (principalement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 75|75|50|10 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Reçoit des bonus de toucher/défense en mêlée au lieu des pénalités standard des armes à distance
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 4D4
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 3
+Portée : 24
+Facteur de vitesse : 2
+Maîtrise : Armes automatiques (Arbalète)
+Type: 1 main
+Force nécessaire: 10
+Poids : 11"
+
+@5101 = "Springfield M1903A4"
+@5201 = "Pour contrer les tireurs d'élite japonais, les forces américaines ont modifié d'urgence des fusils M1903A3 avec des canons de précision et des viseurs télescopiques de 2,2× (retirant les viseurs métalliques/rails). Le montage de l'optique interdisait le rechargement par lame chargeuse et désactivait la visée en cas de dommage. Bien que limité par un faible grossissement et l'absence de bipied, il a comblé des lacunes critiques dans le rôle de tireur d'élite en utilisant des balles .30-06 standard plutôt que des munitions spécialisées.
+Ce fusil tire des balles pleine puissance de 7,62 mm avec une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D7/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 27|27|44|51 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Capacité spéciale :
+- La lunette étend la portée de vision : Attaque des cibles au-delà de la vue normale (dans la portée de l'arme) pendant 1 round, accordant un bonus de toucher à distance de +2
+
+Type de munition : cartouche
+Dégâts : 3D6+1
+THAC0 : +5
+Type de dégâts : à distance
+Attaques par round : 1
+Portée : 38
+Facteur de vitesse : 9
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 8
+Poids : 9"
+
+@5102 = "Remington 700"
+@5202 = "Le fusil de précision à verrou Remington 700, introduit en 1962, a gagné en renommée pour sa précision et sa puissance. Un excellent contrôle qualité et une conception simple en ont fait une référence sur le marché civil. Adopté par l'USMC avec la lunette Redfield Accu-Range 3-9×40 mm, son fabricant a proclamé : 'Le fusil à verrou le plus puissant au monde'.
+Chambré pour des balles .308 Winchester PST, il présente une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D7/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 28|28|46|54 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Capacité spéciale :
+- La lunette étend la portée de vision : Attaque des cibles au-delà de la vue normale (dans la portée de l'arme) pendant 1 round, accordant un bonus de toucher à distance de +3
+
+Type de munition : cartouche
+Dégâts : 2D10+1
+THAC0 : +8
+Type de dégâts : à distance
+Attaques par round : 1
+Portée : 38
+Facteur de vitesse : 7
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 8
+Poids : 7"
+
+@5103 = "Fusil de précision SVD"
+@5203 = "Le fusil de précision semi-automatique SVD a été conçu sur la base de l'AK-47, offrant une excellente précision, un poids léger, une fiabilité et une durabilité exceptionnelle pour son époque. Il a été le premier fusil de précision de l'histoire à former un système complet, utilisant une lunette PSO-1 de grossissement 4×. Cependant, il a été conçu simplement pour étendre la portée effective des escouades d'infanterie, et beaucoup de ses détails ont affecté négativement la précision de tir — il était même livré avec une baïonnette, il ne peut donc être considéré comme un véritable fusil de précision professionnel. La conception originale du SVD ne tenait pas compte de l'utilisation d'un bipied, et le montage d'un bipied sur le canon flottant dégraderait la précision. Plus tard, la Russie a intégré les retours des tireurs d'élite et a développé un bipied télescopique dédié pour résoudre ce problème.
+Tirant des balles pleine puissance de 7,62 mm, il présente une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 24|24|39|45 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Capacité spéciale :
+- La lunette étend la portée de vision : Attaque des cibles au-delà de la vue normale (dans la portée de l'arme) pendant 1 round, accordant un bonus de toucher à distance de +4
+
+Type de munition : cartouche
+Dégâts : 3D6
+THAC0 : +7
+Type de dégâts : à distance
+Attaques par round : 1.5
+Portée : 43
+Facteur de vitesse : 7
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 7
+Poids : 9"
+
+@5104 = "Barrett M82A1"
+@5204 = "Le Barrett M82A1 domine le marché des fusils de précision de calibre .50 grâce à l'avantage du premier arrivé plutôt qu'à la précision. Extensivement utilisé par les forces américaines avec une portée effective de plus de 1500 m, il déchire les cibles humaines, pénètre les murs en béton et neutralise des équipements comme les stations radar/camions – méritant la désignation de 'Fusil antimatériel'. Un recul minimal assure le confort et la précision du tireur.
+Cette arme dévaste les cibles avec des balles de 12,7 mm : exceptionnelle contre les armures lourdes/moyennes, efficace contre les ennemis légèrement blindés/non blindés, et menaçante même pour les constructs/les grandes créatures.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 4D6/Affaiblissement de l'Attaque et de la Défense (immunité limitée pour les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 52|52|60|78 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Capacité spéciale :
+- La lunette étend la portée de vision : Attaque des cibles au-delà de la vue normale (dans la portée de l'arme) pendant 1 round, accordant un bonus de toucher à distance de +6
+
+Type de munition : cartouche
+Dégâts : 3D10
+THAC0 : +7
+Type de dégâts : à distance
+Attaques par round : 1.5
+Portée : 45
+Facteur de vitesse : 10
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 12
+Poids : 28"
+
+@5105 = "Fusil de précision AWM"
+@5205 = "Conçu par le champion de tir Malcolm Cooper, ce fusil combine fiabilité, poids modéré et recul minimal avec une excellente ergonomie. Garantit une probabilité de toucher de 100 % à moins de 600 m (extensible à 1200 m avec des optiques de précision), ses variantes militaires sont devenues notoires dans les conflits du Moyen-Orient grâce à des améliorations successives.
+Tirant des balles .338 Lapua Magnum avec une trajectoire stable et une pénétration élevée : dévastateur contre les armures lourdes/moyennes, efficace contre les cibles légères/non blindées.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D10/Affaiblissement de l'Attaque et de la Défense (immunité limitée pour les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 40|40|65|75 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Capacité spéciale :
+- La lunette étend la portée de vision : Attaque des cibles au-delà de la vue normale (dans la portée de l'arme) pendant 1 round, accordant un bonus de toucher à distance de +6
+
+Type de munition : cartouche
+Dégâts : 3D8
+THAC0 : +9
+Type de dégâts : à distance
+Attaques par round : 1
+Portée : 43
+Facteur de vitesse : 8
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 10
+Poids : 17"
+
+@5106 = "CheyTac M200"
+@5206 = "Le CheyTac M200 'Intervention' est un fusil de précision à verrou produit par l'entreprise américaine CheyTac, principalement conçu pour engager des cibles molles à longue portée. En tant que fusil de précision semi-intelligent, le 'Système de fusil à longue portée' de CheyTac comprend un ordinateur balistique, un petit appareil de suivi météorologique connecté à un assistant numérique personnel (PDA), un télémètre laser, une lunette et un dispositif de bouche. L'ensemble du système est capable d'atteindre une précision inférieure à 1 MOA à des distances allant jusqu'à 2 286 mètres, ce qui en fait le fusil ayant la plus longue portée parmi tous les fusils de précision modernes. Malgré son excellence, le fusil a connu des ventes très faibles en raison de son coût élevé et de sa difficulté de transport.
+Chambré pour des balles .408 CheyTac spécialement conçues pour une précision/portée ultimes : pénétration dévastatrice contre tous les types d'armure, y compris lourde/moyenne.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D12/Affaiblissement de l'Attaque et de la Défense (immunité limitée pour les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 50|50|58|75 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Capacité spéciale :
+- La lunette étend la portée de vision : Attaque des cibles au-delà de la vue normale (dans la portée de l'arme) pendant 1 round, accordant un bonus de toucher à distance de +8
+
+Type de munition : cartouche
+Dégâts : 2D12+2
+THAC0 : +10
+Type de dégâts : à distance
+Attaques par round : 1
+Portée : 47
+Facteur de vitesse : 10
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 11
+Poids : 31"
+
+@5107 = "QLU-11"
+@5207 = "Le seul lance-grenades de précision officiellement adopté à ce jour, équipé d'un système de conduite de tir intelligent comprenant le télémétrie laser, le calcul balistique et les capacités de vision nocturne. Il mesure et compense les facteurs environnementaux tels que la pression atmosphérique, la température et l'angle de tir pour améliorer considérablement la précision du premier coup. Le système comprend une fonctionnalité programmable, permettant aux grenades d'exploser à des distances ou temps de vol prédéfinis. Pour améliorer la précision à longue portée, la grenade est lancée à une vitesse initiale extrêmement élevée. Malgré l'incorporation de multiples mesures d'atténuation du recul, il génère toujours un recul significatif.
+Cette arme tire des grenades explosives programmables de 35 mm. En raison des protocoles de programmation de sécurité, la grenade n'explosera pas lorsqu'elle touche des cibles à courte portée. Cependant, recevoir un projectile de 200g vous claquant au visage à des vitesses supersoniques n'est pas exactement une journée de spa.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Explose à l'impact, infligeant 3D4 de dégâts de perforation et 3D4 de dégâts de taille dans un rayon de 6 pieds
+- N'explosera pas si la cible est à moins de 7 pieds de l'utilisateur, infligeant plutôt des dégâts d'impact directs à la cible unique.
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Capacité spéciale :
+- La lunette étend la portée de vision : Attaque des cibles au-delà de la vue normale (dans la portée de l'arme) pendant 1 round, accordant un bonus de toucher à distance de +6
+
+Type de munition : chargeur
+Dégâts : 2D12+1 (impact direct)
+THAC0 : +6
+Type de dégâts : contondant
+Attaques par round : 1.5
+Portée : 41
+Facteur de vitesse : 10
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 14
+Poids : 28"
+
+@6101 = "BAR M1918A2"
+@6201 = "Conçu initialement comme un fusil automatique, les balles de fusil pleine puissance du BAR ont nécessité son rôle d'arme de soutien d'escouade, comblant le fossé entre les mitrailleuses lourdes et les pistolets mitrailleurs. Des modifications ultérieures ont solidifié sa position de fusil-mitrailleur. Trop lourd comme fusil mais trop léger comme FM, ses chargeurs de 20 cartouches et son canon fixe limitent le feu soutenu. Toujours prisé pour conserver la capacité de 'tir en marche'.
+Cette arme tire des balles pleine puissance de 7,62 mm avec une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique modéré se combine à un poids substantiel pour la stabilité, bien que le recul complique le tir mobile. La maîtrise des armes automatiques améliore modérément le contrôle des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 24|24|39|45 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 3D6
+THAC0 : +4
+Type de dégâts : à distance
+Attaques par round : 2.5
+Portée : 38
+Facteur de vitesse : 4
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 14
+Poids : 19"
+
+@6102 = "ZB-26"
+@6202 = "Le fusil-mitrailleur léger ZB-26 a gagné en popularité mondiale grâce à sa simplicité, sa fiabilité et ses changements de canon rapides. Efficace dans les assauts mobiles malgré le chargeur monté sur le dessus obstruant le champ de vision. L'infanterie pouvait l'utiliser avec un entraînement minimal.
+Chambré pour des balles pleine puissance de 7,92 mm avec une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique contrôlé et un poids substantiel permettent un tir mobile stable. La maîtrise des armes automatiques améliore légèrement la précision des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 24|24|40|46 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 3D6
+THAC0 : +4
+Type de dégâts : à distance
+Attaques par round : 2.5
+Portée : 41
+Facteur de vitesse : 5
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 13
+Poids : 21"
+
+@6103 = "DP-28"
+@6203 = "Le fusil-mitrailleur léger DP, également connu sous le nom de fusil-mitrailleur Degtyaryov, était le principal fusil-mitrailleur léger utilisé par l'Union soviétique pendant la Seconde Guerre mondiale, et son grand chargeur à disque est impressionnant. Il a une structure simple, le rendant adapté à la production de masse, et c'est aussi un fusil-mitrailleur facile à utiliser et fiable — peu importe à quel point il est sale, ses performances de tir sont à peine affectées. Le fusil-mitrailleur léger DP a été loué par les soldats pendant la Grande Guerre patriotique, mais après un tir soutenu, son fonctionnement pouvait être compromis en raison de l'échauffement du ressort de rappel. De plus, sa conception avant lourd, arrière léger le rendait moins adapté au tir à la hanche ou au tir en mouvement.
+Tirant des balles pleine puissance de 7,62 mm avec une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique modéré se combine à une distribution de poids déséquilibrée, compliquant les engagements mobiles. La maîtrise des armes automatiques améliore modérément le contrôle des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 24|24|39|45 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 3D6
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 2.5
+Portée : 38
+Facteur de vitesse : 5
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 14
+Poids : 20"
+
+@6104 = "M249 SAW"
+@6204 = "Dans les années 1960, l'armée américaine voulait un fusil-mitrailleur léger à un homme : plus léger que le M60, plus mortel que le M16. Après avoir hésité entre des munitions expérimentales et la fidèle 5,56 mm OTAN, ils ont opté pour le FN Minimi belge (l'option la moins problématique d'une gamme médiocre). Bien que n'étant pas un performant vedette, il coche toutes les cases : compact, polyvalent et obstinément adéquat. Les soldats ont apprécié ses capacités de tir de suppression, mais ont maudit sa nature capricieuse – l'entretien sur le terrain ressemblait souvent à résoudre un puzzle les yeux bandés.
+Cette arme tire des balles de 5,56 mm sujettes à la fragmentation à distance : efficaces contre les cibles non blindées/à armure moyenne, moins efficaces contre les armures lourdes.
+Un taux cyclique élevé avec un recul gérable permet le tir mobile. La maîtrise des armes automatiques améliore modérément le contrôle des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D4/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 45|45|45|27 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 2D6
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 3.5
+Portée : 38
+Facteur de vitesse : 3
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 11
+Poids : 17"
+
+@6105 = "Ultimax 100"
+@6205 = "Ce FM singapourien utilise la mécanique Constant Recoil et une construction en polymère, pesant moins que les modèles non chargés homologues. Un recul minimal en 5,56 mm permet une stabilité à une main, ressemblant à un fusil automatique à canon lourd. Malgré des avantages, la mécanique complexe réduit la fiabilité/durée de vie, tandis que les coûts élevés limitent l'adoption.
+Tirant des balles de 5,56 mm sujettes à la fragmentation à distance : efficaces contre les cibles non blindées/à armure moyenne, moins efficaces contre les armures lourdes.
+Un taux cyclique contrôlé et un recul négligeable annulent les bonus de maîtrise des armes automatiques pour la stabilité.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 50|50|50|30 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 1D12+1
+THAC0 : +4
+Type de dégâts : à distance
+Attaques par round : 3.5
+Portée : 32
+Facteur de vitesse : 2
+Maîtrise : Arme automatique (Arbalète)
+Type: 1 main
+Force nécessaire: 8
+Poids : 11"
+
+@6111 = "MG42 MGPM"
+@6211 = "L'Allemagne d'après-Première Guerre mondiale a développé cette mitrailleuse à usage multiple sous les restrictions du traité de Versailles. Avec un taux fulgurant de 1200-1500 tr/min (méritant le surnom de 'Scie mécanique d'Hitler'), elle délivre plusieurs coups par pression de la détente. Des caractéristiques révolutionnaires incluent des canons à changement rapide, une fabrication simplifiée et un montage polyvalent. Bien que les vibrations et le court rayon de visée limitent la précision à longue portée, son tir de suppression a dominé les champs de bataille.
+Cette arme tire des balles pleine puissance de 7,92 mm avec une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique extrême et un recul important exigent une stabilisation physique. La maîtrise des armes automatiques améliore modérément le contrôle des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 21|21|35|40 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Type de munition : chargeur/tambour/bande
+Dégâts : 2D8+1
+THAC0 : +5
+Type de dégâts : à distance
+Attaques par round : 3
+Portée : 44
+Facteur de vitesse : 7
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 15
+Poids : 24"
+
+@6112 = "M60 MGPM"
+@6212 = "Pendant la Seconde Guerre mondiale, les Américains ont été impressionnés par le concept allemand nazi de mitrailleuse à usage multiple. Après une étude approfondie du MG42, ils ont développé la mitrailleuse M60. Beaucoup de gens connaissent la M60 grâce au film Rambo – jusqu'à aujourd'hui, elle est toujours surnommée le 'Fusil Rambo'. Cependant, les performances du M60 étaient loin d'être stellaires. Elle a commis de nombreuses erreurs de production et de conception, et a finalement été adoptée par l'armée principalement parce que les conceptions concurrentes à l'époque étaient encore plus farfelues. Sa fiabilité était notoirement capricieuse – les opérateurs devaient constamment surveiller la surchauffe du canon pendant le tir, et son temps de maintenance dépassait largement le temps de tir effectif, en particulier dans des environnements difficiles. Cette mitrailleuse légendaire fonctionnait essentiellement sur le principe : 'Soit constipation du canon, soit diarrhée de la chambre – ne fonctionne que quand elle en a envie.'
+Chambrée pour des balles pleine puissance de 7,62 mm avec une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique modéré avec un recul contrôlable. La maîtrise des armes automatiques améliore légèrement la précision des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D5/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 25|25|41|48 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 2D10
+THAC0 : +6
+Type de dégâts : à distance
+Attaques par round : 3
+Portée : 43
+Facteur de vitesse : 7
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 15
+Poids : 24"
+
+@6113 = "PKM MGPM"
+@6213 = "Un autre chef-d'œuvre de l'équipe Kalachnikov, le PKM représente l'apogée des armes légères soviétiques de la Guerre froide – une MGPM qui domine chaque métrique de performance. Sa précision, sa facilité de fabrication et sa longévité sont inégalées, avec l'adage iconique parmi les amateurs d'armes à feu : 'Aucune arme ne reste technologiquement leader pendant plus de 30 ans... sauf le PKM.' Le support élastique révolutionnaire, conçu par analyse manuelle des éléments finis par des mathématiciens soviétiques (qui ont calculé des équations complexes sans ordinateurs modernes), réduit le poids sans sacrifier la précision. Les ingénieurs occidentaux s'interrogent encore sur la façon dont ils ont réalisé une telle sorcellerie balistique avec des règles à calcul et du papier millimétré.
+Tirant des balles pleine puissance de 7,62 mm avec une pénétration supérieure contre les armures moyenne/lourde, sujet à la surpénétration contre les cibles légères/non blindées.
+Un taux cyclique stable avec une dispersion induite par le support pendant le tir soutenu. La maîtrise des armes automatiques améliore légèrement le contrôle des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 24|24|40|46 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Type de munition : chargeur/tambour/bande
+Dégâts : 3D6
+THAC0 : +7
+Type de dégâts : à distance
+Attaques par round : 3
+Portée : 43
+Facteur de vitesse : 6
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 13
+Poids : 17"
+
+@6114 = "QJZ-171"
+@6214 = "La seule MGPM de calibre .50, surpassant ses prédécesseurs grâce à des composants en titane et une atténuation avancée du recul. Redéfinit la portabilité des armes servies par équipage avec de nouvelles munitions/boîtiers en matériaux innovants. En tant que mitrailleuse spécialisée en montagne, elle écrit les règles : Me dépassez-vous en escalade ? Vous êtes sous-armé. Me surpassez-vous en puissance de feu ? Vous êtes hors terrain. Le vieux meme 'Trois Porteurs d'Armes Pourchassant un Grassouillet' qui cristallisait à la fois le fardeau opérationnel du Type 89 et l'humour noir des troupes sur le poids de l'équipement pourrait devenir 'Un porteur pourchassant un grassouillet' sur le QJZ-171 qui pèse 27 % de moins que le Type 89.
+Tirant des balles de 12,7 mm optimisées : dévastateur contre tous les types d'armure, efficace contre les constructs/les grandes créatures.
+Un taux cyclique contrôlé avec une dispersion induite par le support. La maîtrise des armes automatiques améliore légèrement le contrôle des rafales.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 4D6/Affaiblissement de l'Attaque et de la Défense (immunité limitée pour les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 54|54|63|81 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour redéployer le bipied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 3D10+2
+THAC0 : +6
+Type de dégâts : à distance
+Attaques par round : 3
+Portée : 45
+Poids : 37
+Facteur de vitesse : 8
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 9
+Poids : 37"
+
+@6121 = "Maxim Mitrailleuse Lourde"
+@6221 = "La première arme à feu véritablement automatique au monde alimentée par l'opération des gaz a fait ses débuts sanglants dans l'Offensive de la Somme de la Première Guerre mondiale, où des unités allemandes l'ont utilisée pour revendiquer 60 000 vies britanniques en une seule journée – inventant essentiellement la guerre industrialisée. Surnommée 'La Tondeuse du Faucheur', ce colosse refroidi à l'eau échangeait la portabilité contre un feu implacable. Bien que sa stabilité sur trépied et son taux de feu régulier en aient fait une vedette de la guerre des tranchées, les soldats plaisantaient que son fonctionnement nécessitait 'trois hommes pour la porter, quatre autres pour la nourrir en munitions, et un prêtre pour prier que la bande ne s'enraye pas'.
+Cette arme tire des balles pleine puissance de 7,7 mm avec une pénétration supérieure contre les armures plus lourdes, tout en étant sujette à la surpénétration contre les cibles non blindées.
+Montée sur sa forteresse trépied, la stabilité de tir est absolue – aucun bonus de maîtrise des armes automatiques ne s'applique.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 22|22|37|42 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1 round pour redéployer le trépied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 2D8+1
+THAC0 : +6
+Type de dégâts : à distance
+Attaques par round : 3.5
+Portée : 45
+Poids : 60
+Facteur de vitesse : 9
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 8
+Poids : 60"
+
+@6122 = "M2HB"
+@6222 = "La 'Ma Deuce' – la superstar centenaire de la guerre qui continue de faire sensation avec sa conception des Années folles. Ce broyeur de dinosaures de calibre .50 se moque des blindés, des avions et du concept de la retraite. Les armuriers plaisantent : 'La maintenance nécessite trois choses – une clé, une prière et une mémoire sélective concernant son certificat de naissance de 1921'. Avec une balistique plus plate que le Kansas et une gestion du recul plus fluide que le jazz, sa seule faiblesse est de ressembler à la machine à coudre de grand-mère en tirant.
+Tirant des balles de 12,7 mm qui transforment les couvertures en confetti, cette arme dévaste tous les types d'armure, y compris les constructs/les grandes créatures.
+La stabilité sur trépied annule les bonus de maîtrise des armes automatiques.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 4D6/Affaiblissement de l'Attaque et de la Défense (immunité limitée pour les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 54|54|63|81 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1 round pour redéployer le trépied après le tir, immobilisant l'utilisateur pendant la mise en place
+
+Type de munition : cartouche/chargeur/tambour/bande
+Dégâts : 3D10+1
+THAC0 : +6
+Type de dégâts : à distance
+Attaques par round : 3
+Portée : 47
+Facteur de vitesse : 10
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 13
+Poids : 84"
+
+@6123 = "M134 Minigun"
+@6223 = "Le M134 utilise un moteur électrique pour entraîner la rotation de six canons, lui permettant de cracher une tempête de métal à un rythme de milliers de coups par minute, déchiquetant les cibles en morceaux. Cela entraîne également des inconvénients significatifs : une consommation excessive de munitions et des canons sujets à la surchauffe. Bien que l'arme se vante d'un taux de dysfonctionnement extrêmement bas, sa structure complexe rend le dépannage en temps opportun difficile une fois que des dysfonctionnements se produisent. Bien que l'arme elle-même soit relativement compacte et légère, son alimentation électrique externe, son système de contrôle, son stockage de munitions et ses systèmes d'alimentation sont notablement encombrants, limitant sévèrement sa polyvalence opérationnelle. Même si les batteries et les munitions sont placées au sol pour réduire le poids, la force de recul dépassant 150 kilogrammes pendant le tir à cadence élevée devient insupportable. Par conséquent, lorsqu'elle est modifiée en version portable, la cadence de tir de l'arme est ajustée à la baisse en conséquence.
+Tirant des balles de 7,62 mm avec un enthousiasme perforant, sujet à la surpénétration contre les cibles légères/non blindées.
+Contrôler cette ruche en colère nécessite une maîtrise de niveau expert des armes automatiques.
+
+STATISTIQUES :
+
+Capacités de combat :
+- Peut infliger Saignement/Ralentissement/Étourdissement/Inconscience/Dégâts supplémentaires de 2D6/Affaiblissement de l'Attaque et de la Défense (partiellement annulés par les cibles inorganiques/les grandes créatures). Probabilité de déclenchement de l'effet contre armure aucune|légère|moyenne|lourde : 25|25|41|48 % (Les grandes créatures/les constructs comptent comme armure lourde, les êtres chitineux comme armure moyenne)
+- Nécessite 1/2 round pour gérer les cellules d'alimentation/l'alimentation en munitions, immobilisant l'utilisateur pendant la mise en place
+
+Type de munition : chargeur/tambour/bande
+Dégâts : 2D10
+THAC0 : +3
+Type de dégâts : à distance
+Attaques par round : 2
+Portée : 41
+Poids : 57
+Facteur de vitesse : 4
+Maîtrise : Arme automatique (Arbalète)
+Type: 2 mains
+Force nécessaire: 18
+Poids : 57"
+
+
+@1301 = "Colt « Python » défectueux"
+@1302 = "Ruger « Blackhawk » défectueux"
+@1303 = "Smith & Wesson M500 défectueux"
+@1311 = "Luger P08 défectueux"
+@1312 = "Colt M1911 défectueux"
+@1313 = "Tokarev TT-33 défectueux"
+@1314 = "Walther PPK défectueux"
+@1315 = "CZ 75 défectueux"
+@1316 = "Glock 17 défectueux"
+@1317 = "Desert Eagle défectueux"
+@1318 = "FN Five-seveN défectueux"
+@2301 = "Mauser C96/M1932 défectueux"
+@2302 = "Micro Uzi défectueux"
+@2303 = "Škorpion Vz.61 défectueux"
+@2304 = "H&K MP5 défectueux"
+@2305 = "FN P90 défectueux"
+@2306 = "H&K UMP45 défectueux"
+@2307 = "PP-2000 défectueux"
+@2311 = "Thompson M1921 défectueux"
+@2312 = "MP40 défectueux"
+@2313 = "Sten MkII défectueux"
+@2314 = "PPSh-41 défectueux"
+@2315 = "M3 Grease Gun défectueux"
+@2316 = "ShAK-12 défectueux"
+@3301 = "Lee-Enfield No1 MkIII défectueux"
+@3302 = "Type 38 Arisaka défectueux"
+@3303 = "Mosin-Nagant M1891/30 défectueux"
+@3304 = "Mauser Kar98k défectueux"
+@3305 = "PTRD-41 défectueux"
+@3311 = "M1 Garand défectueux"
+@3312 = "M1 Carbine défectueux"
+@3313 = "Gewehr 43 défectueux"
+@3314 = "SKS défectueux"
+@3321 = "StG-44 défectueux"
+@3322 = "AK-47 défectueux"
+@3323 = "FN FAL défectueux"
+@3324 = "M16A1 défectueux"
+@3325 = "Steyr AUG défectueux"
+@3326 = "H&K G11 défectueux"
+@3327 = "AN-94 défectueux"
+@4301 = "Colt M1878 scié défectueux"
+@4302 = "Winchester M1887 défectueux"
+@4303 = "Remington M870 défectueux"
+@4304 = "Benelli M1014/M4 Super90 défectueux"
+@4305 = "AA-12 défectueux"
+@5301 = "Springfield M1903A4 défectueux"
+@5302 = "Remington 700 défectueux"
+@5303 = "SVD défectueux"
+@5304 = "Barrett M82A1 défectueux"
+@5305 = "AWM défectueux"
+@5306 = "CheyTac M200 défectueux"
+@5307 = "QLU-11 défectueux"
+@6301 = "BAR M1918A2 défectueux"
+@6302 = "ZB-26 défectueux"
+@6303 = "DP-28 défectueux"
+@6304 = "M249 SAW défectueux"
+@6305 = "Ultimax 100 défectueux"
+@6311 = "MG42 défectueux"
+@6312 = "M60 défectueux"
+@6313 = "PKM défectueux"
+@6314 = "QJZ-171 défectueux"
+@6321 = "Maxim Gun défectueux"
+@6322 = "M2HB défectueux"
+@6323 = "M134 Minigun défectueux"
+
+@1401 = "Colt « Python » hors service"
+@1402 = "Ruger « Blackhawk » hors service"
+@1403 = "Smith & Wesson M500 hors service"
+@1411 = "Luger P08 hors service"
+@1412 = "Colt M1911 hors service"
+@1413 = "Tokarev TT-33 hors service"
+@1414 = "Walther PPK hors service"
+@1415 = "CZ 75 hors service"
+@1416 = "Glock 17 hors service"
+@1417 = "Desert Eagle hors service"
+@1418 = "FN Five-seveN hors service"
+@2401 = "Mauser C96/M1932 hors service"
+@2402 = "Micro Uzi hors service"
+@2403 = "Škorpion Vz.61 hors service"
+@2404 = "H&K MP5 hors service"
+@2405 = "FN P90 hors service"
+@2406 = "H&K UMP45 hors service"
+@2407 = "PP-2000 hors service"
+@2411 = "Thompson M1921 hors service"
+@2412 = "MP40 hors service"
+@2413 = "Sten MkII hors service"
+@2414 = "PPSh-41 hors service"
+@2415 = "M3 Grease Gun hors service"
+@2416 = "ShAK-12 hors service"
+@3401 = "Lee-Enfield No1 MkIII hors service"
+@3402 = "Type 38 Arisaka hors service"
+@3403 = "Mosin-Nagant M1891/30 hors service"
+@3404 = "Mauser Kar98k hors service"
+@3405 = "PTRD-41 hors service"
+@3411 = "M1 Garand hors service"
+@3412 = "M1 Carbine hors service"
+@3413 = "Gewehr 43 hors service"
+@3414 = "SKS hors service"
+@3421 = "StG-44 hors service"
+@3422 = "AK-47 hors service"
+@3423 = "FN FAL hors service"
+@3424 = "M16A1 hors service"
+@3425 = "Steyr AUG hors service"
+@3426 = "H&K G11 hors service"
+@3427 = "AN-94 hors service"
+@4401 = "Colt M1878 scié hors service"
+@4402 = "Winchester M1887 hors service"
+@4403 = "Remington M870 hors service"
+@4404 = "Benelli M1014/M4 Super90 hors service"
+@4405 = "AA-12 hors service"
+@5401 = "Springfield M1903A4 hors service"
+@5402 = "Remington 700 hors service"
+@5403 = "SVD hors service"
+@5404 = "Barrett M82A1 hors service"
+@5405 = "AWM hors service"
+@5406 = "CheyTac M200 hors service"
+@5407 = "QLU-11 hors service"
+@6401 = "BAR M1918A2 hors service"
+@6402 = "ZB-26 hors service"
+@6403 = "DP-28 hors service"
+@6404 = "M249 SAW hors service"
+@6405 = "Ultimax 100 hors service"
+@6411 = "MG42 hors service"
+@6412 = "M60 hors service"
+@6413 = "PKM hors service"
+@6414 = "QJZ-171 hors service"
+@6421 = "Maxim Gun hors service"
+@6422 = "M2HB hors service"
+@6423 = "M134 Minigun hors service"
+
+@2513 = "Sten MkII avec baïonnette"
+@3501 = "Lee-Enfield No1 MkIII avec baïonnette"
+@3502 = "Type 38 Arisaka avec baïonnette"
+@3503 = "Mosin-Nagant M1891/30 avec baïonnette"
+@3504 = "Mauser Kar98k avec baïonnette"
+@3511 = "M1 Garand avec baïonnette"
+@3512 = "M1 Carbine avec baïonnette"
+@3514 = "SKS avec baïonnette"
+@3522 = "AK-47 avec baïonnette"
+@3523 = "FN FAL avec baïonnette"
+@3524 = "M16A1 avec baïonnette"
+@3525 = "Steyr AUG avec baïonnette"
+@3526 = "H&K G11 avec baïonnette"
+@3527 = "AN-94 avec baïonnette"
+@5503 = "SVD avec baïonnette"
+
+@2613 = "Sten MkII avec baïonnette enchantée"
+@3601 = "Lee-Enfield No1 MkIII avec baïonnette enchantée"
+@3602 = "Type 38 Arisaka avec baïonnette enchantée"
+@3603 = "Mosin-Nagant M1891/30 avec baïonnette enchantée"
+@3604 = "Mauser Kar98k avec baïonnette enchantée"
+@3611 = "M1 Garand avec baïonnette enchantée"
+@3612 = "M1 Carbine avec baïonnette enchantée"
+@3614 = "SKS avec baïonnette enchantée"
+@3622 = "AK-47 avec baïonnette enchantée"
+@3623 = "FN FAL avec baïonnette enchantée"
+@3624 = "M16A1 avec baïonnette enchantée"
+@3625 = "Steyr AUG avec baïonnette enchantée"
+@3626 = "H&K G11 avec baïonnette enchantée"
+@3627 = "AN-94 avec baïonnette enchantée"
+@5603 = "SVD avec baïonnette enchantée"
+
+@2713 = "Ce Sten MkII grossier est équipé d'une baïonnette « Clou de fer n°4 » tout aussi rudimentaire, représentant l'ultime simplicité des baïonnettes de la Seconde Guerre mondiale. Il ressemble à un tas de ferraille dont le seul but est de vous laisser mourir... un peu moins, euh, mais toujours pas particulièrement digne, après avoir vidé votre chargeur en combat rapproché.
+
+STATISTIQUES :
+
+Dégâts : 1D4 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 3
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 7
+Poids : 7"
+
+@2813 = "Ce Sten MkII grossier est équipé d'une baïonnette « Clou de fer n°4 » tout aussi rudimentaire, représentant l'ultime simplicité des baïonnettes de la Seconde Guerre mondiale. Il ressemble à un tas de ferraille dont le seul but est de vous laisser mourir... un peu moins, euh, mais toujours pas particulièrement digne, après avoir vidé votre chargeur en combat rapproché.
+La baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement toucher. On se demande quel individu au bord de l'ennui mortel se serait donné la peine d'enchanter ce tas de ferraille ?
+
+STATISTIQUES :
+
+Dégâts : 1D4 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 3
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 7
+Poids : 7"
+
+@3701 = "La baïonnette n°4 sur ce Lee-Enfield No1 MkIII brise toutes les conventions de conception des baïonnettes. Ressemblant plus à un clou de chemin de fer surdimensionné qu'à une lame appropriée, elle se contente de glisser sur le canon sans même un ressort de verrouillage - échouant pratiquement à la qualification de baïonnette. La métallurgie moderne a étonnamment rendu cette curiosité historique plus efficace que son incarnation originale.
+
+STATISTIQUES :
+
+Dégâts : 1D6 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 13
+Poids : 9"
+
+@3801 = "La baïonnette n°4 sur ce Lee-Enfield No1 MkIII brise toutes les conventions de conception des baïonnettes. Ressemblant plus à un clou de chemin de fer surdimensionné qu'à une lame appropriée, elle se contente de glisser sur le canon sans même un ressort de verrouillage - échouant pratiquement à la qualification de baïonnette. La métallurgie moderne a étonnamment rendu cette curiosité historique plus efficace que son incarnation originale.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D6 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 13
+Poids : 9"
+
+@3702 = "Ce fusil Type 38 Arisaka est équipé d'une baïonnette Type 30. Le Type 38 lui-même était le fusil standard le plus long parmi les belligérants de la Seconde Guerre mondiale, et la baïonnette Type 30 détient également le titre de baïonnette standard la plus longue. Une fois montée, la longueur combinée approche 1,8 mètre - dépassant souvent la taille moyenne de l'utilisateur, la rendant exceptionnellement mortelle dans les charges à la baïonnette.
+
+STATISTIQUES :
+
+Dégâts : 1D10 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@3802 = "Ce fusil Type 38 Arisaka est équipé d'une baïonnette Type 30. Le Type 38 lui-même était le fusil standard le plus long parmi les belligérants de la Seconde Guerre mondiale, et la baïonnette Type 30 détient également le titre de baïonnette standard la plus longue. Une fois montée, la longueur combinée approche 1,8 mètre - dépassant souvent la taille moyenne de l'utilisateur, la rendant exceptionnellement mortelle dans les charges à la baïonnette.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D10 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@3703 = "Ce Mosin-Nagant est doté d'une baïonnette quadrangulaire pliante qui lui donne la silhouette des mousquets anciens. Plus longue que votre jambe, elle domine au combat d'estoc - bien que sa conception monofonctionnelle interdisait les manœuvres de taille ou de hachage, conduisant finalement à son obsolescence. Des améliorations métallurgiques modernes ont étonnamment transformé cette relique historique en une arme plus efficace.
+
+STATISTIQUES :
+
+Dégâts : 1D10 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 14
+Poids : 10"
+
+@3803 = "Ce Mosin-Nagant est doté d'une baïonnette quadrangulaire pliante qui lui donne la silhouette des mousquets anciens. Plus longue que votre jambe, elle domine au combat d'estoc - bien que sa conception monofonctionnelle interdisait les manœuvres de taille ou de hachage, conduisant finalement à son obsolescence. Des améliorations métallurgiques modernes ont étonnamment transformé cette relique historique en une arme plus efficace.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D10 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Poids : 10
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 14"
+
+@3704 = "Ce fusil Mauser Modèle 1898 porte la baïonnette S84/98 - le standard militaire allemand de 1915 à 1945 et une icône mondiale de la conception des baïonnettes. Ressemblant à un poignard allongé, ce précurseur des baïonnettes polyvalentes (bien que non affûté) excellait en tout, sauf dans sa fonction supposée principale : le véritable combat à la baïonnette. La fabrication contemporaine a ironiquement amélioré ses performances au combat.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@3804 = "Ce fusil Mauser Modèle 1898 porte la baïonnette S84/98 - le standard militaire allemand de 1915 à 1945 et une icône mondiale de la conception des baïonnettes. Ressemblant à un poignard allongé, ce précurseur des baïonnettes polyvalentes (bien que non affûté) excellait en tout, sauf dans sa fonction supposée principale : le véritable combat à la baïonnette. La fabrication contemporaine a ironiquement amélioré ses performances au combat.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@3711 = "Ce fusil Garand porte la baïonnette M5, une refonte complète basée sur la baïonnette M4 pour carabines. Rompant avec les conceptions traditionnelles de baïonnettes Garand (M1905/M1), la M5 n'a pas de bagues de museau au-dessus de sa garde transversale, la faisant ressembler davantage à un couteau de combat qu'à une véritable baïonnette - ce qu'elle n'est techniquement pas.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 13
+Poids : 10"
+
+@3811 = "Ce fusil Garand porte la baïonnette M5, une refonte complète basée sur la baïonnette M4 pour carabines. Rompant avec les conceptions traditionnelles de baïonnettes Garand (M1905/M1), la M5 n'a pas de bagues de museau au-dessus de sa garde transversale, la faisant ressembler davantage à un couteau de combat qu'à une véritable baïonnette - ce qu'elle n'est techniquement pas.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Poids : 10
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 13"
+
+@3712 = "Cette carabine M1 arbore la baïonnette M4, modifiée à partir du couteau de combat M3. Ironiquement, les premières carabines n'avaient pas de logement pour baïonnette, obligeant les soldats à scotcher des couteaux sur leurs fusils. L'armée n'a ajouté des montages appropriés que dans les dernières semaines de la guerre. Des améliorations modernes ont rendu cette conception tardive étonnamment compétente.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 10
+Poids : 8"
+
+@3812 = "Cette carabine M1 arbore la baïonnette M4, modifiée à partir du couteau de combat M3. Ironiquement, les premières carabines n'avaient pas de logement pour baïonnette, obligeant les soldats à scotcher des couteaux sur leurs fusils. L'armée n'a ajouté des montages appropriés que dans les dernières semaines de la guerre. Des améliorations modernes ont rendu cette conception tardive étonnamment compétente.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 10
+Poids : 8"
+
+@3714 = "Ce fusil SKS est doté de la baïonnette pliante CKC, une évolution du modèle de 1944. Sa poignée entièrement métallique se verrouille solidement au fusil, avec une lame principalement à simple tranchant se terminant par une pointe à double tranchant et des gouttières. Une fois pliée sous le canon, elle devient trompeusement compacte - parfaite pour surprendre des adversaires trop confiants.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 8
+Poids : 8"
+
+@3814 = "Ce fusil SKS est doté de la baïonnette pliante CKC, une évolution du modèle de 1944. Sa poignée entièrement métallique se verrouille solidement au fusil, avec une lame principalement à simple tranchant se terminant par une poite à double tranchant et des gouttières. Une fois pliée sous le canon, elle devient trompeusement compacte - parfaite pour surprendre des adversaires trop confiants.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 8
+Poids : 8"
+
+@3722 = "Cet AK-47 porte la classique baïonnette de type sabre - une lame à simple tranchant, courbée vers le haut, avec une pointe émoussée. Bien que moins polyvalente que les baïonnettes multi-outils ultérieures des AKM/AK-74, son efficacité à l'estoc reste inégalée. Une refonte moderne a amélioré ce qui était déjà brutalement simple.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 13
+Poids : 9"
+
+@3822 = "Cet AK-47 porte la classique baïonnette de type sabre - une lame à simple tranchant, courbée vers le haut, avec une pointe émoussée. Bien que moins polyvalente que les baïonnettes multi-outils ultérieures des AKM/AK-74, son efficacité à l'estoc reste inégalée. Une refonte moderne a amélioré ce qui était déjà brutalement simple.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 13
+Poids : 9"
+
+@3723 = "Ce FN FAL est livré avec le rejeton maudit des ingénieurs de Herstal - une baïonnette tubulaire conçue sur mesure. Le tout est forgé à partir d'une seule tige métallique, atteignant le sommet du minimalisme belge : aucune lame à proprement parler, à part la pointe perforante, ce qui en fait moins un couteau qu'un « bâton pointu en métal ». Mais bon, quand votre cahier des charges est « qu'elle transperce bien et coûte 3 francs », ils ont parfaitement réussi.
+
+STATISTIQUES :
+
+Dégâts : 1D10 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@3823 = "Ce FN FAL est livré avec le rejeton maudit des ingénieurs de Herstal - une baïonnette tubulaire conçue sur mesure. Le tout est forgé à partir d'une seule tige métallique, atteignant le sommet du minimalisme belge : aucune lame à proprement parler, à part la pointe perforante, ce qui en fait moins un couteau qu'un « bâton pointu en métal ». Mais bon, quand votre cahier des charges est « qu'elle transperce bien et coûte 3 francs », ils ont parfaitement réussi.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D10 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@3724 = "Ce M16 est associé à la baïonnette M9 - un dérivé du couteau de chasse Buckmaster qui fait aussi office d'outil de campagne. Sa multifonctionnalité complexe en fait le couteau suisse des baïonnettes, à supposer que vous ayez besoin d'une baïonnette qui puisse aussi ouvrir des boîtes et couper du fil.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 10
+Poids : 8"
+
+@3824 = "Ce M16 est associé à la baïonnette M9 - un dérivé du couteau de chasse Buckmaster qui fait aussi office d'outil de campagne. Sa multifonctionnalité complexe en fait le couteau suisse des baïonnettes, à supposer que vous ayez besoin d'une baïonnette qui puisse aussi ouvrir des boîtes et couper du fil.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 10
+Poids : 8"
+
+@3725 = "Ce fusil AUG est équipé de la baïonnette Glock, développée pour les forces spéciales autrichiennes Jagdkommando. Un chef-d'œuvre de simplicité brutale avec un équilibre parfait, elle a essentiellement remporté le contrat de baïonnette AUG par défaut - car qui d'autre voudrait concurrencer la perfection ?
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 10
+Poids : 7"
+
+@3825 = "Ce fusil AUG est équipé de la baïonnette Glock, développée pour les forces spéciales autrichiennes Jagdkommando. Un chef-d'œuvre de simplicité brutale avec un équilibre parfait, elle a essentiellement remporté le contrat de baïonnette AUG par défaut - car qui d'autre voudrait concurrencer la perfection ?
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 10
+Poids : 7"
+
+@3726 = "Le fusil d'assaut G11 arrive d'une manière ou d'une autre à monter une baïonnette, ce qui revient à souder un couteau à steak sur une calculatrice. Cette « pointe métallique qui dépasse d'une brique en plastique » défie l'ergonomie et le bon sens - parfait pour quand vous devez poignarder quelqu'un tout en calculant la vitesse de la balle dans votre tête.
+
+STATISTIQUES :
+
+Dégâts : 1D6 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 10
+Poids : 8"
+
+@3826 = "Le fusil d'assaut G11 arrive d'une manière ou d'une autre à monter une baïonnette, ce qui revient à souder un couteau à steak sur une calculatrice. Cette « pointe métallique qui dépasse d'une brique en plastique » défie l'ergonomie et le bon sens - parfait pour quand vous devez poignarder quelqu'un tout en calculant la vitesse de la balle dans votre tête.
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D6 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 10
+Poids : 8"
+
+@3727 = "Cet AN-94 utilise la baïonnette M83 montée inhabituellement sur le côté droit du guidon. Bien que théoriquement améliorant la puissance d'estoc, la vraie raison est de maintenir la compatibilité avec le lance-grenades. La lame fine, peu affûtée, privilégie la pénétration à la durabilité - car pourquoi être logique quand on peut défier la physique ?
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 8"
+
+@3827 = "Cet AN-94 utilise la baïonnette M83 montée inhabituellement sur le côté droit du guidon. Bien que théoriquement améliorant la puissance d'estoc, la vraie raison est de maintenir la compatibilité avec le lance-grenades. La lame fine, peu affûtée, privilégie la pénétration à la durabilité - car pourquoi être logique quand on peut défier la physique ?
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 8"
+
+@5703 = "Le SVD, étant un fusil de tireur désigné aux engagements mitigés, dispose d'un logement de baïonnette de type AK car ses utilisateurs sont littéralement de simples grognards censés participer à des charges à la baïonnette entre deux cigarettes. Ce spécimen particulier arbore la baïonnette AKM - le couteau suisse original des objets pointus, introduisant des caractéristiques révolutionnaires comme « avoir une scie » et « pouvoir couper du fil » qui apparemment n'avaient jamais effleuré les concepteurs de baïonnettes avant 1953. Étonnamment compétente tant en conception qu'en fonctionnalité, elle est en service avec pratiquement la même conception (n'ayant reçu que des ajustements mineurs - surtout pour empêcher les soldats de perdre des doigts).
+
+STATISTIQUES :
+
+Dégâts : 1D8 +1
+Bonus de THAC0 : +1
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@5803 = "Le SVD, étant un fusil de tireur désigné aux engagements mitigés, dispose d'un logement de baïonnette de type AK car ses utilisateurs sont littéralement de simples grognards censés participer à des charges à la baïonnette entre deux cigarettes. Ce spécimen particulier arbore la baïonnette AKM - le couteau suisse original des objets pointus, introduisant des caractéristiques révolutionnaires comme « avoir une scie » et « pouvoir couper du fil » qui apparemment n'avaient jamais effleuré les concepteurs de baïonnettes avant 1953. Étonnamment compétente tant en conception qu'en fonctionnalité, elle est en service avec pratiquement la même conception (n'ayant reçu que des ajustements mineurs - surtout pour empêcher les soldats de perdre des doigts).
+Cette anomalie d'ingénierie de baïonnette porte désormais des enchantements militaires standard, fonctionnant comme une arme +2 pour déterminer ce qu'elle peut réellement transpercer.
+
+STATISTIQUES :
+
+Dégâts : 1D8 +3
+Bonus de THAC0 : +3
+Type de dégâts : Perçant/Contondant
+Facteur de vitesse : 2
+Compétence : Lance
+Type: 2 mains
+Force nécessaire: 12
+Poids : 9"
+
+@7001 = "Cartouche"
+@7101 = "Une cartouche est un projectile lancé par une arme à feu, servant d'outil le plus simple pour éliminer des ennemis ou détruire du matériel. Composée de balle, douille, propergol et amorce, elle représente l'aboutissement de la physique, de la chimie, de la science des matériaux, de l'aérodynamique et de la fabrication - bien que conçue pour tuer. Utilisant la propulsion par poudre et la stabilisation par rayure, elle pénètre facilement les blindages standards. Même les projectiles tirés par mousquet surpassent les armes de mêlée en pénétration.
+Sans arme à feu, elle reste simplement du métal inerte.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +2
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Armes à feu compatibles : Toutes les armes à feu à coup unique
+Poids : 0"
+
+@7002 = "Chargeur"
+@7102 = "Les chargeurs stockent les cartouches, généralement dans des configurations courbes ou droites. Leur mécanisme à ressort alimente les cartouches en position de chambrage. Ce chargeur permet un tir en rafale précis, concentrant plusieurs balles sur une seule cible rapidement.
+Sans arme à feu, il fonctionne comme un simple objet métallique.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +2
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Impacts supplémentaires possibles contre les cibles plus grandes qu'un humain
+- Impacts supplémentaires avec la Maîtrise des Armes Automatiques
+Armes à feu compatibles : Toutes les armes à feu capables de rafales courtes
+Poids : 1"
+
+@7003 = "Chargeur tambour"
+@7103 = "Avec des mécanismes d'alimentation rotatifs complexes, les chargeurs tambour offrent une capacité étendue sans rechargement. Particulièrement efficaces avec les armes automatiques pour un tir soutenu. Ce modèle permet des rafales automatiques contrôlées sur des arcs de 45° - difficile à gérer avec des plates-formes à fort recul.
+Sans arme à feu, il constitue des composants métalliques encombrants.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +2
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Impacts supplémentaires possibles contre les cibles plus grandes qu'un humain
+- Impacts supplémentaires avec la Maîtrise des Armes Automatiques
+Armes à feu compatibles : Toutes les armes à feu capables de longues rafales
+Poids : 2"
+
+@7004 = "Bande de munitions"
+@7104 = "Les cartouches reliées en configuration de bande alimentent les mitrailleuses pour un tir de suppression continu. Généralement stockées dans des boîtes à bandes attachées aux mitrailleuses légères/moyennes/polyvalentes. Cette bande facilite les arcs de suppression de 90° - extrêmement difficile à contrôler sur des plates-formes à haute vibration.
+Sans arme à feu, elle reste de simples maillons métalliques.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +2
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Impacts supplémentaires possibles contre les cibles plus grandes qu'un humain
+- Impacts supplémentaires avec la Maîtrise des Armes Automatiques
+Armes à feu compatibles : Toutes les armes à feu capables de balayage automatique complet
+Poids : 3"
+
+@7005 = "Cartouche Dum-dum"
+@7105 = "À l'origine, terme désignant les cartouches britanniques manufacturées à l'Arsenal de Dum Dum (années 1890), ces balles comportent un noyau de plomb exposé conçu pour se déformer à l'impact. Les blessures par cavitation qui en résultaient causaient une douleur atroce et étaient notoirement difficiles à traiter, conduisant à leur interdiction par la Déclaration IV,3 de la Convention de La Haye de 1899. Les variantes modernes comme cette balle à pointe creuse chemisée avancée (JHP) maintiennent une vitesse initiale plus élevée que les conceptions à pointe molle traditionnelles tout en offrant un pouvoir d'arrêt amélioré grâce à une expansion contrôlée. Parfait pour abattre des pillards drogués, mais totalement inutile contre une armure assistée.
+Sans arme à feu, elle fonctionne comme un simple objet métallique.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +1
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Modifie les effets de l'arme à feu :
+  Améliore grandement les chances d'effets spéciaux contre les cibles sans armure/à armure légère
+  Effet modéré contre les armures moyennes
+  Effet négligeable contre les armures lourdes
+Armes à feu compatibles : Toutes les armes à feu à coup unique
+Poids : 0"
+
+@7011 = "Cartouche enchantée"
+@7111 = "Une cartouche est un projectile lancé par une arme à feu, servant d'outil le plus simple pour éliminer des ennemis ou détruire du matériel. Composée de balle, douille, propergol et amorce, elle représente l'aboutissement de la physique, de la chimie, de la science des matériaux, de l'aérodynamique et de la fabrication - bien que conçue pour tuer. Utilisant la propulsion par poudre et la stabilisation par rayure, elle pénètre facilement les blindages standards. Même les projectiles tirés par mousquet surpassent les armes de mêlée en pénétration.
+Ce lot de munitions rayonne désormais d'énergie arcanique. Lors du calcul de la probabilité de toucher, elles comptent comme des armes +3.
+Sans arme à feu, elles restent simplement du métal inerte.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +2
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Armes à feu compatibles : Toutes les armes à feu à coup unique
+Poids : 0"
+
+@7012 = "Chargeur enchanté"
+@7112 = "Les chargeurs stockent les cartouches, généralement dans des configurations courbes ou droites. Leur mécanisme à ressort alimente les cartouches en position de chambrage. Ce chargeur permet un tir en rafale précis, concentrant plusieurs balles sur une seule cible rapidement.
+Ce lot de munitions rayonne désormais d'énergie arcanique. Lors du calcul de la probabilité de toucher, elles comptent comme des armes +3.
+Sans arme à feu, il fonctionne comme un simple objet métallique.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +2
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Impacts supplémentaires possibles contre les cibles plus grandes qu'un humain
+- Impacts supplémentaires avec la Maîtrise des Armes Automatiques
+Poids : 1"
+
+@7013 = "Tambour enchanté"
+@7113 = "Avec des mécanismes d'alimentation rotatifs complexes, les chargeurs tambour offrent une capacité étendue sans rechargement. Particulièrement efficaces avec les armes automatiques pour un tir soutenu. Ce modèle permet des rafales automatiques contrôlées sur des arcs de 45° - difficile à gérer avec des plates-formes à fort recul.
+Ce lot de munitions rayonne désormais d'énergie arcanique. Lors du calcul de la probabilité de toucher, elles comptent comme des armes +3.
+Sans arme à feu, il constitue des composants métalliques encombrants.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +2
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Impacts supplémentaires possibles contre les cibles plus grandes qu'un humain
+- Impacts supplémentaires avec la Maîtrise des Armes Automatiques
+Armes à feu compatibles : Toutes les armes à feu capables de longues rafales
+Poids : 2"
+
+@7014 = "Bande de munitions enchantée"
+@7114 = "Les cartouches reliées en configuration de bande alimentent les mitrailleuses pour un tir de suppression continu. Généralement stockées dans des boîtes à bandes attachées aux mitrailleuses légères/moyennes/polyvalentes. Cette bande facilite les arcs de suppression de 90° - extrêmement difficile à contrôler sur des plates-formes à haute vibration.
+Ce lot de munitions rayonne désormais d'énergie arcanique. Lors du calcul de la probabilité de toucher, elles comptent comme des armes +3.
+Sans arme à feu, elle reste de simples maillons métalliques.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +2
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Impacts supplémentaires possibles contre les cibles plus grandes qu'un humain
+- Impacts supplémentaires avec la Maîtrise des Armes Automatiques
+Armes à feu compatibles : Toutes les armes à feu capables de balayage automatique complet
+Poids : 3"
+
+@7015 = "Cartouche Dum-dum enchantée"
+@7115 = "À l'origine, terme désignant les cartouches britanniques manufacturées à l'Arsenal de Dum Dum (années 1890), ces balles comportent un noyau de plomb exposé conçu pour se déformer à l'impact. Les blessures par cavitation qui en résultaient causaient une douleur atroce et étaient notoirement difficiles à traiter, conduisant à leur interdiction par la Déclaration IV,3 de la Convention de La Haye de 1899. Les variantes modernes comme cette balle à pointe creuse chemisée avancée (JHP) maintiennent une vitesse initiale plus élevée que les conceptions à pointe molle traditionnelles tout en offrant un pouvoir d'arrêt amélioré grâce à une expansion contrôlée. Parfait pour abattre des pillards drogués, mais totalement inutile contre une armure assistée.
+Ce lot de munitions rayonne désormais d'énergie arcanique. Lors du calcul de la probabilité de toucher, elles comptent comme des armes +3.
+Sans arme à feu, elle fonctionne comme un simple objet métallique.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +1
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Modifie les effets de l'arme à feu :
+  Améliore grandement les chances d'effets spéciaux contre les cibles sans armure/à armure légère
+  Effet modéré contre les armures moyennes
+  Effet négligeable contre les armures lourdes
+Armes à feu compatibles : Toutes les armes à feu à coup unique
+Poids : 0"
+
+@7021 = "Balle en argent"
+@7121 = "Forgées en argent pur trempé dans de l'huile sainte, ces cartouches portent des gravures complexes de sceaux de Salomon et de motifs hexagrammiques. Le rituel de consécration implique des moines bénédictins chantant les Psaumes 91:5-7 pendant les éclipses lunaires, imprégnant chaque cartouche de propriétés photophobes. Bien qu'inefficaces contre les cibles mondaines, elles manifestent des effets d'effet tunnel quantique contre les entités surnaturelles - rendant essentiellement les cycles de régénération lycanthropique aussi utiles qu'une moustiquaire sur un sous-marin. Le noyau revêtu d'aérogel maintient la stabilité balistique tout en conservant une masse équivalente aux balles standard.
+
+STATISTIQUES :
+
+Bonus de THAC0 : +5
+Dégâts : Spéciaux
+Type de dégâts : À distance
+Fonctions spéciales :
+- Désintégration instantanée des lycanthropes
+- 4D4 de dégâts magiques contre les morts-vivants/êtres planaires/aberrations
+Armes à feu compatibles : Toutes les armes à feu à coup unique
+Poids : 0"
+
+@7201 = "Combinaison double-protection furtive"
+@7301 = "Cette combinaison double-protection combine des fibres de Kevlar et de polyéthylène à ultra-haut poids moléculaire (UHMWPE), avec une couche extérieure en tissu mélange polyester-coton. Indiscernable des vêtements ordinaires en apparence et en confort, elle disperse efficacement l'énergie cinétique des impacts, offrant une protection contre les lames, les balles de pistolet, les éclats d'explosifs, tout en résistant à l'eau, aux acides et aux UV. Légère et permettant une bonne mobilité, elle répond aux normes NIJ Niveau II.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Chance de bloquer les attaques de pistolet/fusil à pompe (excluant les balles de pistolet haute vélocité)
+- Chance de bloquer les dégâts de fragmentation des explosifs tels que les grenades
+- Résistance aux Tranchants : 20%
+- Résistance aux Perçants/Projectiles : 15%
+- Résistance au Feu/Foudre/Froid/Acide : 10%
+Classe d'Armure : 6
+Poids : 6"
+
+@7202 = "Combinaison double-protection légère"
+@7302 = "Construite avec des composites de Kevlar et des plaques pare-balles légères, cette combinaison équilibre discrétion et protection contre les pistolets. Ajustable via des fermetures auto-agrippantes (Velcro) latérales/aux épaules pour tous les types de corps. Principalement utilisée par les forces de l'ordre, elle maintient une bonne flexibilité tout en atteignant la protection NIJ Niveau IIIA.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Chance de bloquer les attaques de pistolet/fusil à pompe (inefficace contre les fusils)
+- Chance de bloquer les dégâts de fragmentation des explosifs tels que les grenades
+- Résistance aux Tranchants/Perçants : 20%
+- Résistance aux Projectiles : 25%
+- Résistance au Feu/Foudre/Froid/Acide : 10%
+- Désactive les sorts arcaniques
+Classe d'Armure : 4
+Force nécessaire: 4
+Poids : 8"
+
+@7203 = "Combinaison double-protection moyenne"
+@7303 = "Un gilet tactique modulaire avec des plaques pare-balles rigides capables d'arrêter les balles de fusil de petit calibre. Sacrifie la mobilité pour la défense, paraissant plus volumineux tout en répondant aux normes NIJ Niveau III.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Chance de bloquer les balles de pistolet/fusil de petit calibre (inefficace contre les fusils pleine puissance/gros calibre)
+- Chance de bloquer les dégâts de fragmentation des explosifs tels que les grenades
+- Résistance aux Contondants : 20%
+- Résistance aux Tranchants/Perçants : 25%
+- Résistance aux Projectiles : 30%
+- Résistance au Feu/Foudre/Froid/Acide : 15%
+- Désactive la furtivité, les compétences de voleur et les sorts arcaniques
+Classe d'Armure : 2
+Force nécessaire: 8
+Poids : 15"
+
+@7204 = "Combinaison double-protection lourde"
+@7304 = "Une forteresse composite céramique-métal conçue pour les combats à haut risque. Arrête les tirs de fusil/mitrailleuse de calibre moyen au prix de la mobilité, répondant aux normes NIJ Niveau IV.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Chance de bloquer les armes de pistolet/calibre moyen (inefficace contre les fusils de gros calibre)
+- Chance de bloquer les dégâts de fragmentation des explosifs tels que les grenades
+- Résistance aux Contondants : 25%
+- Résistance aux Tranchants/Perçants : 30%
+- Résistance aux Projectiles : 35%
+- Résistance au Feu/Foudre/Froid/Acide : 20%
+- Dextérité -1
+- Désactive la furtivité, les compétences de voleur et les sorts arcaniques
+Classe d'Armure : 0
+Force nécessaire: 10
+Poids : 20"
+
+@7401 = "Bouclier de bras"
+@7501 = "Ce bouclier monté sur le bras équilibre protection et portabilité. Offrant une couverture supérieure aux boucliers ronds standards sans gêner le mouvement, sa construction en UHMWPE résiste aux tailles/estocs tout en offrant une résistance limitée au feu/à la corrosion. Deux pointes en acier tungstène sur le bord avant peuvent percer des obstacles.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Résistance aux Contondants/Projectiles : 5%
+- Résistance aux Tranchants/Perçants : 10%
+- Résistance au Feu/Foudre/Froid/Acide : 5%
+- Les attaques à mains nues gagnent +1D3 dégâts perforants et +1D3 dégâts contondants
+- Bonus de CA : +2 (+1 contre les armes à distance)
+Poids : 4"
+
+@7402 = "Bouclier anti-émeute à électrochoc"
+@7502 = "Un bouclier transparent en polycarbonate pour le contrôle des foules, combinant défense et pointes Taser 50 000V. Sa fonction stroboscopique désoriente les agresseurs - les manuels de terrain avertissent : « Ne regardez jamais directement le flash... ou votre prochain repas sera du pudding d'hôpital. »
+
+STATISTIQUES :
+
+Capacités de combat :
+- Les attaquants en mêlée doivent réussir un jet de sauvegarde contre la Mort avec un bonus de +4 ou sont étourdis 4 rounds, et faire un jet de sauvegarde contre le Souffle ou sont paralysés 2 rounds (inefficace contre les créatures artificielles/de grande taille)
+
+Capacité spéciale :
+- Flash stroboscopique (1/jour) : Les attaquants ciblant le porteur subissent un jet de sauvegarde contre le Souffle - l'échec cause la cécité pendant 1 round, la réussite impose toujours des pénalités de -4 en attaque/défense
+
+Capacités équipées :
+- Résistance au Feu/Foudre/Froid/Acide : 10%
+- Bonus d'Attaque : +1
+- Bonus de CA : +3
+Force nécessaire: 7
+Poids : 7"
+
+@7403 = "Bouclier anti-émeute"
+@7503 = "Bouclier transparent standard pour le contrôle des foules. Classé balistique contre les balles de pistolet et les éclats, bien que les officiers plaisantent : « Si vous entendez un coup de fusil, commencez à écrire votre testament. »
+
+STATISTIQUES :
+
+Capacités équipées :
+- Forte chance de bloquer les attaques de pistolet/fusil à pompe (excluant les balles de pistolet haute vélocité)
+- Forte chance de bloquer les dégâts de fragmentation des explosifs tels que les grenades
+- Résistance Physique : 15%
+- Résistance au Feu/Foudre/Froid/Acide : 20%
+- Bonus d'Attaque : +1
+- Bonus de CA : +4 (+1 contre les armes à distance)
+Force nécessaire: 8
+Poids : 8"
+
+@7404 = "Bouclier d'assaut tactique"
+@7504 = "Bouclier de niveau SWAT avec construction composite Kevlar-céramique. Des ports d'observation et des fentes de tir permettent une capacité de combat complète - bien que les utilisateurs se plaignent : « Regarder par le hublot donne l'impression de prendre d'assaut la Normandie à travers une fente aux lettres. »
+
+STATISTIQUES :
+
+Capacités équipées :
+- Forte chance de bloquer les balles de pistolet/fusil de calibre intermédiaire (inefficace contre les fusils pleine puissance/gros calibre)
+- Forte chance de bloquer les dégâts de fragmentation des explosifs tels que les grenades
+- Résistance Physique : 20%
+- Résistance au Feu/Foudre/Froid/Acide : 20%
+- Bonus de CA : +5 (+2 contre les armes à distance)
+Force nécessaire: 12
+Poids : 15"
+
+@7405 = "Bouclier tactique lourd"
+@7505 = "Une monstruosité sur roues en alliage-céramique pesant autant qu'un réfrigérateur. Le déploiement nécessite soit un chariot à roues, soit une force de type Hulk - d'où son surnom « Le Brise-dos ».
+
+STATISTIQUES :
+
+Capacités équipées :
+- Forte chance de bloquer les tirs de mitrailleuse de calibre moyen (inefficace contre les fusils de gros calibre)
+- Forte chance de bloquer les dégâts de fragmentation des explosifs tels que les grenades
+- Résistance Physique : 25%
+- Résistance au Feu/Foudre/Froid/Acide : 20%
+- Dextérité -1
+- Bonus de CA : +5 (+2 contre les armes à distance)
+Force nécessaire: 16
+Poids : 30"
+
+@7601 = "Casque d'acier"
+@7701 = "Le casque militaire moderne a évolué à partir des conceptions anciennes. Sa surface courbe lisse dévie les attaques. Fabriqué en acier standard avec une épaisseur modérée, il protège principalement contre les éclats et améliore la survie sur le champ de bataille.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Légère chance de bloquer les attaques de pistolet/fusil à pompe (inefficace contre les balles haute vélocité)
+- Bonus de CA : +1
+- Protège des coups critiques
+Poids : 2"
+
+@7602 = "Casque d'acier haute résistance"
+@7702 = "Un casque militaire moderne avec des surfaces courbes balistiquement profilées. Forgé en acier allié aux terres rares avec une épaisseur accrue, il représente le summum de la protection céphalique métallique.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Légère chance de bloquer les attaques de pistolet/fusil à pompe (inefficace contre les fusils)
+- Bonus de CA : +2
+- Résistance Physique : 5%
+- Protège des coups critiques
+Poids : 3"
+
+@7603 = "Casque de combat composite"
+@7703 = "Construit en fibre de carbone et composites UHMWPE, ce casque surpasse les modèles en acier contre les tirs de pistolet/fusil de petit calibre tout en étant 30% plus léger.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Légère chance de bloquer les pistolets/fusils de petit calibre (inefficace contre les fusils pleine puissance/gros calibre)
+- Bonus de CA : +1
+- Résistance aux Tranchants/Projectiles/Perçants : 5%
+- Résistance au Feu/Foudre/Froid/Acide : 5%
+- Protège des coups critiques
+Poids : 2"
+
+@7604 = "Casque de combat amélioré"
+@7704 = "Doté d'une construction fibre de carbone-UHMWPE avec une couche de fluide non newtonien, ce casque résiste aux impacts directs de fusil - l'apogée actuelle de la protection céphalique.
+
+STATISTIQUES :
+
+Capacités de combat :
+Capacités équipées :
+- Légère chance de bloquer les mitrailleuses de calibre moyen (inefficace contre le .50cal+)
+- Bonus de CA : +1
+- Résistance Physique : 5%
+- Résistance au Feu/Foudre/Froid/Acide : 5
+- Protège des coups critiques
+Poids : 3"
+
+@7801 = "Gants anti-coupures"
+@7901 = "Conçus avec des fibres UHMWPE sur des cœurs en fibre de verre/spandex/fil d'acier. Permettent de saisir des lames à mains nues - testés sur le terrain contre des couteaux de combat avec zéro pénétration.
+
+STATISTIQUES :
+
+Capacités équipées :
+- Bonus de CA : +4 contre les armes tranchantes
+- Bonus de CA : +3 contre les armes perforantes/à distance
+- Résistance au Feu/Foudre/Froid/Acide : 5%
+- 10% de chance de désarmer les adversaires à mains nues (contre les humanoïdes maniant des armes tranchantes/perforantes)
+Poids : 2"

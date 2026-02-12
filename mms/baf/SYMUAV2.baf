@@ -1,0 +1,155 @@
+//时间未到且战斗模式且附近有敌人无队友则被摧毁自爆
+IF
+	Die()
+	!GlobalTimerExpired("Existime","LOCALS")
+	Global("ACTVMODE","LOCALS",1)
+	Range(NearestEnemyOf(),20)
+	!Range([GOODCUTOFF],20)
+THEN
+	RESPONSE #100
+		DestroyItem("SYMGRN2")
+		CreateVisualEffect("SYMGRN1",[-1.-1])
+		PlaySound("SYMGRN1")
+		ReallyForceSpellDeadRES("SYMGRN2",Myself)
+		ReallyForceSpellDeadRES("SYMGRN2A",Myself)
+		DestroyItem("SYMRBRT")
+		DestroySelf()
+END
+
+IF
+	GlobalTimerExpired("Existime","LOCALS")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@159)	//动力耗尽
+		DropItem("SYMGRN2",[-1.-1])
+		DestroyItem("SYMRBRT")
+		DestroySelf()
+END
+
+//其余死亡不会自爆
+IF
+	Die()
+THEN
+	RESPONSE #100
+		DropItem("SYMGRN2",[-1.-1])
+		DestroyItem("SYMRBRT")
+		DestroySelf()
+END
+
+//初始化高度
+IF
+	!GlobalGT("initialize","LOCALS",0)
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+THEN
+	RESPONSE #100
+		SetGlobal("initialize","LOCALS",1)
+		CreateItem("SYMGRN2",1,0,0)
+		SetGlobalTimer("Existime","LOCALS",900)
+		ReallyForceSpellRES("SYMUAV2A",Myself)
+		AddSpecialAbility("SYMUAV1J")
+		DisplayStringHead(Myself,@153)	//室外环境，可高空飞行。自爆模式默认关闭
+		Continue()
+END
+
+IF
+	!GlobalGT("initialize","LOCALS",0)
+	!AreaType(OUTDOOR)
+	!AreaType(FOREST)
+THEN
+	RESPONSE #100
+		SetGlobal("initialize","LOCALS",1)
+		CreateItem("SYMGRN2",1,0,0)
+		SetGlobalTimer("Existime","LOCALS",900)
+		ReallyForceSpellRES("SYMUAV2B",Myself)
+		DisplayStringHead(Myself,@154)	//室内环境，可低空飞行，请小心障碍物。自爆模式默认关闭
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,CONTROLLED)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,CONTROLLED)
+		Continue()
+END
+
+//被动模式
+IF
+	HotKey(D)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SYMUAV2U",Myself)	//变量ACTVMODE变成0
+END
+//主动模式
+IF
+	HotKey(B)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SYMUAV2W",Myself)	//变量ACTVMODE变成1
+END
+
+//和队友太近的话
+IF
+	OR(3)
+		Range([PC],1)
+		Range([GOODCUTOFF.0.0.0.0.SUMMONED],1)
+		Range([GOODCUTOFF.0.0.0.0.BOTH],1)
+THEN
+	RESPONSE #100
+		JumpToObject(Nearest())
+		Continue()
+END
+
+//自爆攻击
+IF
+	Global("ACTVMODE","LOCALS",1)
+	Range(NearestEnemyOf(),4)
+	!Race(NearestEnemyOf(),DRAGON)
+THEN
+  RESPONSE #100
+		DestroyItem("SYMGRN2")
+		ReallyForceSpellRES("SYMGRN2",Myself)
+		ReallyForceSpellRES("SYMGRN2A",Myself)
+		DestroySelf()
+END
+
+IF
+	Global("ACTVMODE","LOCALS",1)
+	Range(NearestEnemyOf(),9)
+	Race(NearestEnemyOf(),DRAGON)
+THEN
+  RESPONSE #100
+		DestroyItem("SYMGRN2")
+		ReallyForceSpellRES("SYMGRN2",Myself)
+		ReallyForceSpellRES("SYMGRN2A",Myself)
+		DestroySelf()
+END
+//接近敌人准备引爆，移除高空状态
+IF
+	Global("ACTVMODE","LOCALS",1)
+	ActionListEmpty()
+	See(NearestEnemyOf())
+	!Range(NearestEnemyOf(),4)
+	!Race(NearestEnemyOf(),DRAGON)
+THEN
+  RESPONSE #100
+		DisplayStringHead(Myself,@155)	//发现敌人，开始攻击
+		ReallyForceSpellRES("SYMUAV2B",Myself)
+		MoveToObject(NearestEnemyOf())
+END
+
+IF
+	Global("ACTVMODE","LOCALS",1)
+	ActionListEmpty()
+	See(NearestEnemyOf())
+	!Range(NearestEnemyOf(),9)
+	Race(NearestEnemyOf(),DRAGON)
+THEN
+  RESPONSE #100
+		DisplayStringHead(Myself,@155)	//发现敌人，开始攻击
+		ReallyForceSpellRES("SYMUAV2B",Myself)
+		MoveToObject(NearestEnemyOf())
+END
+

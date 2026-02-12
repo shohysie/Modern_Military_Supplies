@@ -30,9 +30,9 @@ Weight: 1"
 
 STATISTICS:
 
-- Inflicts Deafness and Slow for 1 round (no save) on creatures within 15-ft radius
+- Inflicts Deafness and Slow for 1 turn (no save) on creatures within 15-ft radius
 - Blinds for 4 rounds unless targets succeed Saving Throws vs. Death (halved duration on success)
-- Knocks unconscious for 1 round creatures within 6-ft radius failing Saving Throws vs. Death at -4 penalty
+- Knocks unconscious for 1 turn creatures within 6-ft radius failing Saving Throws vs. Death at -4 penalty
 - No effect on unnatural beings
 Weight: 1"
 
@@ -219,8 +219,8 @@ Weight: 20"
 STATISTICS:  
 
 Charged Ability:
-- Strobe: Affects enemies within 30ft in 45° frontal arc with 6-round blindness, duration halved if targets roll successful Saving Throws vs. Breath at -4 penalty. No effect on non-living targets  
-- Shock: Single target within 3ft must save vs. Death or be unconscious for 4 rounds, additionally must save vs. Breath at -4 penalty or be paralyzed for 2 rounds. No effect on constructs/large creatures  
+- Strobe: Affects enemies within 30ft in 45° frontal arc with 6-round blindness, duration halved if targets roll successful Saving Throws vs. Breath at -4 penalty. No effect on non-living targets
+- Shock: Single target within 3ft must save vs. Death at -2 penalty or be unconscious for 4 rounds, additionally must save vs. Breath at -6 penalty or be paralyzed for 2 rounds. No effect on non-living targets
 Weight: 2"  
 
 @8142 = "Pepper Spray"  
@@ -230,7 +230,7 @@ STATISTICS:
 
 Charged Ability:
 - Targets must save vs. Poison at -4 penalty or become panicked/confused for 5 rounds. Successful saves still impose -5 penalty to attack/AC/damage and 100% spell/ability failure  
-- No effect on constructs   
+- No effect on constructs/undead
 Range: 5  
 Area of Effect: Single target
 Weight: 1"  
@@ -241,7 +241,7 @@ Weight: 1"
 STATISTICS: 
 
 Charged Ability: 
-- Flame Jet: Ignites creatures in 30ft 15° arc, dealing 1D3 fire damage per second for 4 rounds. Targets must save vs. Death at -4 penalty each round or flee panic-stricken until fire or his life extinguished. Fire-immune creatures unaffected  
+- Flame Jet: Ignites creatures in 30ft 15° arc, dealing 1D3 fire damage per second for 4 rounds. Targets must save vs. Death at -4 penalty each round or flee panic-stricken until fire or his life extinguished. Fire-immune creatures unaffected
 Weight: 40"  
 
 @8144 = "Rocket Launcher"  
@@ -291,7 +291,7 @@ Weight: 2"
 
 STATISTICS:
 
-- Can deploy once daily: controllable drone with shared vision for 10 rounds, auto-recalled when expired. Use [Shutdown and retrieve] button for early retrieval 
+- Can deploy once daily: controllable drone with shared vision for 10 turns, auto-recalled when expired. Use [Shutdown and retrieve] button for early retrieval 
 - Defaults to Fighting Mode: autonomously fires single shot/round at nearest enemy. Manual targeting available 
 - Press [Disable Fighting Mode] button (or select + D) to deactivate aggression. Use [Fighting Mode] button (or select + F) to re-enable 
 - Manual grenade deployment required: detonation deals 2D6 crushing damage (no save) within 6 ft, 2D6 slashing + 2D6 piercing damage within 15 ft (targets roll successful Saving Throws vs. Breath receive half damage) 
@@ -305,7 +305,7 @@ Weight: 15"
 
 STATISTICS:
 
-- Deploy single-use scout drone per activation: 15-round flight duration before auto-destruction 
+- Deploy single-use scout drone per activation: 15-turn flight duration before auto-destruction 
 - Defaults to Recon Mode: press [Bombing‌ Mode] button (or select + B) for kamikaze attacks against nearest hostiles. Manual target designation available 
 - Loses altitude protection during attack approach: becomes vulnerable to interception. Destruction causes immediate detonation 
 - Press [Disable Bombing‌] (or select + D) for pure reconnaissance 
@@ -317,7 +317,7 @@ Weight: 32"
 
 STATISTICS:
 
-- Can deploy once daily: autonomous escort drone for 10 rounds, auto-recalled when expired. Use [Shutdown and retrieve] for early retrieval 
+- Can deploy once daily: autonomous escort drone for 10 turns, auto-recalled when expired. Use [Shutdown and retrieve] for early retrieval 
 - Defaults to Fighting Mode: fires single shot/round at nearest threat. Manual override available 
 - Press [Disable Fighting Mode] button (or select + D) for passive escort. Use [Fighting Mode] button (or select + F) to re-activate aggression 
 Weight: 12"
@@ -332,7 +332,7 @@ Weight: 12"
 
 STATISTICS:
 
-- Can deploy once daily: controllable unit with shared vision for 10 rounds, auto-recalled when expired. Press [Shutdown and retrieve] for early retrieval 
+- Can deploy once daily: controllable unit with shared vision for 10 turns, auto-recalled when expired. Press [Shutdown and retrieve] for early retrieval 
 - Defaults to Passive Mode: press [Fighting Mode] button(or select + F) to activate autonomous targeting - fires single precision shot/round at nearest enemy. Manual targeting available 
 - Press [Disable Fighting Mode] button (or select + D) to deactivate aggression. Re-enable via [Fighting Mode] button (select + F) 
 - Cannot heal damaged units via spells or similar means 
@@ -345,7 +345,7 @@ Weight: 150"
 
 STATISTICS:
 
-- Can deploy once daily: controllable unit with shared vision for 5 rounds, auto-recalled when expired. Press [Shutdown and retrieve] for early retrieval 
+- Can deploy once daily: controllable unit with shared vision for 5 turns, auto-recalled when expired. Press [Shutdown and retrieve] for early retrieval 
 - Defaults to Passive Mode: press [Fighting Mode] button (or select + F) to activate autonomous targeting - fires single burst/round at nearest enemy. Manual targeting available 
 - Press [Disable Fighting Mode] button (or select + D) to deactivate aggression. Re-enable via [Fighting Mode] button (select + F) 
 Weight: 350"

@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-/////Shohy's Modern Military Store v0.991 ////////
+/////Shohy's Modern Military Store v0.993 ////////
 /////////////////////////////////////////////////////
 
 
@@ -74,15 +74,49 @@ Players with sufficient combat strength can challenge the merchant for rare rewa
 
 6. **Close Combat Compensation**  
 - Pistols, SMGs, shotguns, and PDWs negate the usual ranged penalty (-8 attack, -4 AC) when enemies are within 4 feet.  
-- The specific compensation mechanism works as follows: When enemies enter within 4 feet of a firearm-wielding player, sidearm users receive combat compensation of +8 hit advantage and +4 defense bonus. However, distance checks occur once per second and may not update in real-time.
+- The specific compensation mechanism works as follows: When enemies enter within 4 feet of a firearm-wielding player, sidearm users receive combat compensation of +10 hit advantage and +4 defense bonus. However, distance checks occur once per second and may not update in real-time.
 
 
 ---------- Version History ----------  
 
-**v0.991** 
+**v0.993**
 
-- Fixed a problem where an animation of fireball exists on firing.
-- Fixed a problem where the Merchant doesn't deliver any gift on Nashkel Mines when installing on EET.
+- French version Available.
+- Removed the setting where firearms might uncontrollably hit other targets (e.g., teammates) during burst or full-auto fire.
+- For repairs, the character being spoken to must now carry the item needing repair, with a dialogue reminder added.
+- Fixed the issue where firearms could not correctly trigger different effect probabilities based on armor types.
+- Firearm effects are now strictly configured according to the described values.
+- Increased the effective range of machine gun sustained bursts and full-auto fire (approximately 1.5 times the visual range)—beware of stray bullets hitting distant creatures; SMG range remains at visual range.
+- Fixed the issue where the Ultimax 100 could not be used one-handed.
+- Fixed the issue where merchants did not sell gloves.
+- Reduced some useless item files.
+- While driving a tank, immunity to toxins, diseases, and attribute drain is granted, with a +5 bonus to saving throws.
+- Fixed the issue where characters continued to have a crushing effect on nearby creatures for a short time after exiting the tank.
+- Fixed enchantment errors for Dum-dum Cartridges and Silver Bullets.
+- Pepper Spray can now cause enemies to fall down and thrash on the ground.
+- Fixed issues where Flying Grenades and Hover Turrets were vulnerable to area-of-effect spell damage and unable to fly over obstacles.
+- Fixed the action of Hover Turrets.
+- Bulletproof Vests and Ballistic Shields now have a chance to block shrapnel from Sniper Grenades.
+- Fixed an issue where certain Helmets failed to protect against Critical Hits.
+- Fixed minor descriptions in the English version where "round" and "turn" were sometimes confused.
+
+**v0.992**
+
+- Targets knocked down by firearms will not immediately stand up if hit again.
+- Grenades now display their attack range (requires enabling spell range display in game settings).
+- Flamethrower effective angle increased to 30°.
+- Fixed the issue where stun grenades could not cause unconsciousness.
+- Fixed the issue where tear gas causing spell failure was a permanent effect.
+- Increased the attack frequency of the Hover Turret, which now prioritize attacking over moving closer to their owner.
+- Significantly reduced the experience required for firearm proficiency upgrades.
+- Fixed the issue where some potions had no effect.
+- Fixed the issue where the tank could be used unlimited times.
+- Fixed the issue where damaged Flying Grenades, if they did not self-destruct, would remain a field of view.
+
+**v0.991**
+
+- Fixed the issue of fireball animation appearing under the character's feet during firing.
+- Fixed the issue where merchants in the Nashkel Mines do not send gifts when installing on EET.
 
 **v0.99** 
 

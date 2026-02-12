@@ -1,0 +1,17 @@
+//枪械轻微损坏
+IF
+	TriggerOverride(LastSummonerOf(),Global("SYMFAIL","LOCALS",1))
+	HasItemEquiped("SYM%guncode%",LastSummonerOf())
+	NotStateCheck(LastSummonerOf(),STATE_HELPLESS)
+	CheckStatLT(LastSummonerOf(),1,CasterHold)
+THEN
+	RESPONSE #100
+		TakeItemReplace("SYM%guncode%A","SYM%guncode%",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@90) 
+		ClearActions(LastSummonerOf())
+		ActionOverride(LastSummonerOf(Myself),FillSlot(SLOT_WEAPON))
+		ActionOverride(LastSummonerOf(Myself),EquipMostDamagingMelee())
+		ActionOverride(LastSummonerOf(Myself),EquipRanged())
+		ActionOverride(LastSummonerOf(),SetGlobal("SYMFAIL","LOCALS",0))
+		DestroySelf()
+END

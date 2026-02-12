@@ -1,0 +1,179 @@
+//被非PC打施法消失/在那西凯矿场被PC打施法消失/挑战后被PC打施法消失
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	OR(4)
+		AttackedBy([NOTGOOD],DEFAULT)
+		AreaCheck("AR5400")
+		AreaCheck("BG5400")
+		GlobalGT("SYMMEET","GLOBAL",5)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_SHADOW_DOOR)
+		DestroySelf()
+END
+//如果已经在其它地方见过，在那西凯矿场直接消失
+IF
+	OR(2)
+		AreaCheck("AR5400")
+		AreaCheck("BG5400")
+	GlobalGT("SYMMEET","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SmallWait(1)
+		DestroySelf()
+END
+//不在那西凯矿场，被PC打视为挑战
+IF
+	!GlobalGT("SYMMEET","GLOBAL",3)
+	!AreaCheck("AR5400")
+	!AreaCheck("BG5400")
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		SetGlobal("SYMMEET","GLOBAL",3)
+		SmallWait(1)
+		StartDialogNoSet([PC])
+END
+//坦克被打爆
+IF
+	Global("SYMMEET","GLOBAL",5)
+THEN
+	RESPONSE #100
+		Activate(Myself)
+END
+
+IF
+	Global("SYMMEET","GLOBAL",5)
+	IsActive(Myself)
+	See([PC])
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+//在博德之门或其它地方遇到，如果SYMMEET为1则商店删除送的东西
+IF
+	!AreaCheck("AR5400")
+	!AreaCheck("BG5400")
+	Global("SYMMEET","GLOBAL",1)
+THEN
+	RESPONSE #100
+		RemoveStoreItem("SYMSTO","SYMPST3",1)
+		RemoveStoreItem("SYMSTO","SYMMCR1",1)
+		RemoveStoreItem("SYMSTO","SYMSBM3",1)
+		RemoveStoreItem("SYMSTO","SYMBLT3",1)
+		RemoveStoreItem("SYMSTO","SYMAST2",1)
+		RemoveStoreItem("SYMSTO","SYMSHT2",1)
+		RemoveStoreItem("SYMSTO","SYMSNP1",1)
+		RemoveStoreItem("SYMSTO","SYMLMC2",1)
+		RemoveStoreItem("SYMSTO","SYMHMC1",1)
+		SetGlobal("SYMMEET","GLOBAL",2)
+END
+//如果之前为0则商店内容不变，但之后都变2
+IF
+	!AreaCheck("AR5400")
+	!AreaCheck("BG5400")
+	!GlobalGT("SYMMEET","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SYMMEET","GLOBAL",2)
+END
+
+IF
+	AreaCheck("BD0122")	//SOD
+	!GlobalGT("addammo","LOCALS",0)
+THEN
+	RESPONSE #100
+		AddStoreItem("SYMSTO","SYMAMMF",800,1)
+		AddStoreItem("SYMSTO","SYMAMMG",400,1)
+		AddStoreItem("SYMSTO","SYMAMMH",200,1)
+		AddStoreItem("SYMSTO","SYMAMMI",200,1)
+		AddStoreItem("SYMSTO","SYMAMMJ",200,1)
+		AddStoreItem("SYMSTO","SYMAMMK",20,1)
+		AddStoreItem("SYMSTO","SYMGRN3",50,1)
+		AddStoreItem("SYMSTO","SYMGRN4",50,1)
+		AddStoreItem("SYMSTO","SYMGRN5",50,1)
+		AddStoreItem("SYMSTO","SYMGRN6",50,1)
+		AddStoreItem("SYMSTO","SYMGRN7",20,1)
+		AddStoreItem("SYMSTO","SYMGRN8",20,1)
+		AddStoreItem("SYMSTO","SYMGRN9",10,1)
+		AddStoreItem("SYMSTO","SYMLND4",50,1)
+		AddStoreItem("SYMSTO","SYMFLM1",1,1)
+		AddStoreItem("SYMSTO","SYMRPG1",1,1)
+		AddStoreItem("SYMSTO","SYMDRG1",100,1)
+		AddStoreItem("SYMSTO","SYMDRG2",100,1)
+		AddStoreItem("SYMSTO","SYMDRG3",100,1)
+		AddStoreItem("SYMSTO","SYMDRG4",100,1)
+		AddStoreItem("SYMSTO","SYMDOG1",1,1)
+		SetGlobal("addammo","LOCALS",1)
+END
+
+IF
+	AreaCheck("AR2000")	//SOA
+	!GlobalGT("addammo","LOCALS",1)
+THEN
+	RESPONSE #100
+		AddStoreItem("SYMSTO","SYMAMMF",1600,1)
+		AddStoreItem("SYMSTO","SYMAMMG",800,1)
+		AddStoreItem("SYMSTO","SYMAMMH",400,1)
+		AddStoreItem("SYMSTO","SYMAMMI",400,1)
+		AddStoreItem("SYMSTO","SYMAMMJ",400,1)
+		AddStoreItem("SYMSTO","SYMAMMK",40,1)
+		AddStoreItem("SYMSTO","SYMGRN3",100,1)
+		AddStoreItem("SYMSTO","SYMGRN4",100,1)
+		AddStoreItem("SYMSTO","SYMGRN5",100,1)
+		AddStoreItem("SYMSTO","SYMGRN6",100,1)
+		AddStoreItem("SYMSTO","SYMGRN7",50,1)
+		AddStoreItem("SYMSTO","SYMGRN8",50,1)
+		AddStoreItem("SYMSTO","SYMGRN9",20,1)
+		AddStoreItem("SYMSTO","SYMLND4",100,1)
+		AddStoreItem("SYMSTO","SYMLND5",10,1)
+		AddStoreItem("SYMSTO","SYMLND6",5,1)
+		AddStoreItem("SYMSTO","SYMLND7",5,1)
+		AddStoreItem("SYMSTO","SYMFLM1",1,1)
+		AddStoreItem("SYMSTO","SYMRPG1",1,1)
+		AddStoreItem("SYMSTO","SYMDRG1",100,1)
+		AddStoreItem("SYMSTO","SYMDRG2",100,1)
+		AddStoreItem("SYMSTO","SYMDRG3",100,1)
+		AddStoreItem("SYMSTO","SYMDRG4",100,1)
+		AddStoreItem("SYMSTO","SYMUAV1",1,1)
+		AddStoreItem("SYMSTO","SYMUAV2",1,1)
+		AddStoreItem("SYMSTO","SYMDOG1",1,1)
+		SetGlobal("addammo","LOCALS",2)
+END
+
+IF
+	AreaCheck("AR6300")	//TOB
+	!GlobalGT("addammo","LOCALS",2)
+THEN
+	RESPONSE #100
+		AddStoreItem("SYMSTO","SYMAMMF",1600,1)
+		AddStoreItem("SYMSTO","SYMAMMG",800,1)
+		AddStoreItem("SYMSTO","SYMAMMH",400,1)
+		AddStoreItem("SYMSTO","SYMAMMI",400,1)
+		AddStoreItem("SYMSTO","SYMAMMJ",400,1)
+		AddStoreItem("SYMSTO","SYMAMMK",40,1)
+		AddStoreItem("SYMSTO","SYMGRN3",100,1)
+		AddStoreItem("SYMSTO","SYMGRN4",100,1)
+		AddStoreItem("SYMSTO","SYMGRN5",100,1)
+		AddStoreItem("SYMSTO","SYMGRN6",100,1)
+		AddStoreItem("SYMSTO","SYMGRN7",50,1)
+		AddStoreItem("SYMSTO","SYMGRN8",50,1)
+		AddStoreItem("SYMSTO","SYMGRN9",20,1)
+		AddStoreItem("SYMSTO","SYMLND4",100,1)
+		AddStoreItem("SYMSTO","SYMLND5",20,1)
+		AddStoreItem("SYMSTO","SYMLND6",5,1)
+		AddStoreItem("SYMSTO","SYMLND7",5,1)
+		AddStoreItem("SYMSTO","SYMFLM1",1,1)
+		AddStoreItem("SYMSTO","SYMRPG1",1,1)
+		AddStoreItem("SYMSTO","SYMDRG1",100,1)
+		AddStoreItem("SYMSTO","SYMDRG2",100,1)
+		AddStoreItem("SYMSTO","SYMDRG3",100,1)
+		AddStoreItem("SYMSTO","SYMDRG4",100,1)
+		AddStoreItem("SYMSTO","SYMUAV1",1,1)
+		AddStoreItem("SYMSTO","SYMUAV2",1,1)
+		AddStoreItem("SYMSTO","SYMUAV3",3,1)
+		AddStoreItem("SYMSTO","SYMDOG1",1,1)
+		AddStoreItem("SYMSTO","SYMDOG2",1,1)
+		SetGlobal("addammo","LOCALS",3)
+END

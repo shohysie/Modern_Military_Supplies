@@ -1,0 +1,85 @@
+IF
+	OR(2)
+		GlobalTimerExpired("Existime","LOCALS")
+		!Detect(LastSummonerOf())
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Existime","LOCALS",3)
+		Continue()
+END
+
+//处理枪械熟练度
+IF
+	!TriggerOverride(LastSummonerOf(),GlobalGT("SYMPRF","LOCALS",0))
+	TriggerOverride(LastSummonerOf(),GlobalGT("SYMPRFA","LOCALS",100))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SYMPRF0I",LastSummonerOf())	//1星
+		ReallyForceSpellRES("SYMPRFA",LastSummonerOf())	//记录归零
+		DisplayStringHead(LastSummonerOf(),@72) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),Global("SYMPRF","LOCALS",1))
+	TriggerOverride(LastSummonerOf(),GlobalGT("SYMPRFA","LOCALS",250))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SYMPRF1I",LastSummonerOf())
+		ReallyForceSpellRES("SYMPRFA",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@73) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),Global("SYMPRF","LOCALS",2))
+	TriggerOverride(LastSummonerOf(),GlobalGT("SYMPRFA","LOCALS",500))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SYMPRF2I",LastSummonerOf())
+		ReallyForceSpellRES("SYMPRFA",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@74) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),Global("SYMPRF","LOCALS",3))
+	TriggerOverride(LastSummonerOf(),GlobalGT("SYMPRFA","LOCALS",1000))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SYMPRF3I",LastSummonerOf())
+		ReallyForceSpellRES("SYMPRFA",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@75) 
+		DestroySelf()
+END
+
+IF
+	TriggerOverride(LastSummonerOf(),Global("SYMPRF","LOCALS",4))
+	TriggerOverride(LastSummonerOf(),GlobalGT("SYMPRFA","LOCALS",1500))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SYMPRF4I",LastSummonerOf())
+		ReallyForceSpellRES("SYMPRFA",LastSummonerOf())
+		DisplayStringHead(LastSummonerOf(),@76) 
+		DestroySelf()
+END
+
+//枪械熟练度达到大师时，一半概率跳过武器损坏检定
+IF
+	TriggerOverride(LastSummonerOf(),GlobalGT("SYMPRF","LOCALS",4))
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SYMPRFA",LastSummonerOf())
+		DestroySelf()
+	RESPONSE #100
+		ReallyForceSpellRES("SYMPRFA",LastSummonerOf())
+		Continue()
+END
+
